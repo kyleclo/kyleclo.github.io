@@ -35,6 +35,21 @@ There's too much scientific literature being published for people to make sense 
   * Quantifying sex bias in clinical trial participation ([JAMA 2019 paper](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2737103))
 
 
-### My co-authors
+### Community stuff
 
-All of my projects has been collaborations with other awesome researchers.  Many thanks to:  [Waleed Ammar](https://wammar.github.io/), [Iz Beltagy](https://beltagy.net/), [Isabel Cachola](https://isabelcachola.com/), [Arman Cohan](https://armancohan.com/), [Sergey Feldman](https://www.data-cowboys.com/team), [Suchin Gururangan](https://suchin.io/), [Rodney Kinney](https://www.linkedin.com/in/rodney-kinney-503926), [Ana Marasović](https://www.anamarasovic.com/), [Mark Neumann](http://markneumann.xyz/), [Swabha Swayamdipta](https://swabhs.com/), [Dave Wadden](https://github.com/dwadden), [Lucy Lu Wang](https://llwang.net/).
+It'd be great if more researchers in the NLP & text mining communities worked on scientific text.  To promote this, I've co-organized workshops & shared tasks:
+
+* Shared tasks
+
+  * TREC-COVID - Information retrieval challenge over an evolving CORD-19 corpus ([link](https://ir.nist.gov/covidSubmit/)) ([JAMIA 2020 paper](https://academic.oup.com/jamia/article/doi/10.1093/jamia/ocaa091/5828938)) ([SIGIR Forum 2020 paper](http://www.sigir.org/wp-content/uploads/2020/06/p03.pdf))
+
+* Workshops
+
+  * 1st SciNLP workshop at AKBC 2020  ([link](http://scinlp.org/)) ([recorded talks](https://www.youtube.com/playlist?list=PLOTELVgUs9jKW2EkJbAyi6DcunfaXf0r6))
+
+
+### My collaborators
+
+All of my projects has been collaborations with other awesome researchers.  Many thanks to:  
+
+[Waleed Ammar (Google)](https://wammar.github.io/), [Iz Beltagy (AI2)](https://beltagy.net/), [Isabel Cachola (AI2)](https://isabelcachola.com/), [Arman Cohan (AI2)](https://armancohan.com/), [Sergey Feldman (AI2)](https://www.data-cowboys.com/team), [Suchin Gururangan (UW/AI2)](https://suchin.io/), [Rodney Kinney (AI2)](https://www.linkedin.com/in/rodney-kinney-503926), [Ana Marasović (UW/AI2)](https://www.anamarasovic.com/), [Mark Neumann (AI2)](http://markneumann.xyz/), [Swabha Swayamdipta (UW/AI2)](https://swabhs.com/), [Dave Wadden (UW)](https://github.com/dwadden), [Lucy Lu Wang (AI2)](https://llwang.net/).
