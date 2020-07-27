@@ -11,7 +11,7 @@ redirect_from:
 I'm a researcher at the Allen Institute for AI on the Semantic Scholar Research team, where I work on NLP and text mining over scientific literature.  Before that, I spent a couple years working as a data scientist in Seattle, and a year as an applied probability researcher at Academia Sinica in Taiwan.  I graduated in 2015 with an MS in Statistics from the University of Washington.
 
 
-### My research
+### Research stuff
 
 There's too much scientific literature being published for people to make sense of.  It'd be great if NLP models could improve access to & understanding of the knowledge contained in those papers.  Yet, NLP models that work well on news or Wikipedia articles often perform poorly when applied to scientific text.  I'm interested in understanding why that is & how we can get these systems to perform better.
 
@@ -33,3 +33,8 @@ There's too much scientific literature being published for people to make sense 
 * Finally, I'm interested (and concerned) about bias in scientific papers/publishing.  Can we use NLP to study these biases?
 
   * Quantifying sex bias in clinical trial participation ([JAMA 2019 paper](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2737103))
+
+
+### My co-authors
+
+All of my projects has been collaborations with other awesome researchers.  Many thanks to:  [Waleed Ammar](https://wammar.github.io/), [Iz Beltagy](https://beltagy.net/), [Isabel Cachola](https://isabelcachola.com/), [Arman Cohan](https://armancohan.com/), [Sergey Feldman](https://www.data-cowboys.com/team), [Suchin Gururangan](https://suchin.io/), [Rodney Kinney](https://www.linkedin.com/in/rodney-kinney-503926), [Ana Marasović](https://www.anamarasovic.com/), [Mark Neumann](http://markneumann.xyz/), [Swabha Swayamdipta](https://swabhs.com/), [Dave Wadden](https://github.com/dwadden), [Lucy Lu Wang](https://llwang.net/).
