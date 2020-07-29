@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a researcher at the Allen Institute for AI on the Semantic Scholar Research team, where I work on NLP and text mining over scientific literature.  Before that, I spent a couple years working as a data scientist in Seattle, and a year as an applied probability researcher at Academia Sinica in Taiwan.  I graduated in 2015 with an MS in Statistics from the University of Washington.
+I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [Semantic Scholar Research team](https://research.semanticscholar.org/), where I work on NLP and text mining over scientific literature.  Before that, I spent a couple years working as a data scientist in Seattle, and a year as an applied probability researcher at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/).
 
 
 # Research stuff
