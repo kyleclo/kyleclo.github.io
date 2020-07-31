@@ -39,7 +39,7 @@ Scientific text is difficult to access (copyright restrictions 😤).  We need l
 
   * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
     * [ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)
-  * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19))([arXiv preprint](https://arxiv.org/abs/2004.10706)) - Accepted to NLP-COVID workshop at ACL 2020 ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
+  * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19))([arXiv preprint](https://arxiv.org/abs/2004.10706)) - Accepted to NLP-COVID at ACL 2020 ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
     * [SIIRH 2020 at ECIR 2020 keynote (18 min)](https://www.youtube.com/watch?v=geX4hSRW2vA) (April 14, 2020)
     * [NY-NLP meetup talk (30 min)](https://www.youtube.com/watch?v=GivUfb8KhZY) (April 27, 2020)
     * [AWS Education: Research Seminar talk (60 min)](https://www.youtube.com/watch?v=qjv8MLJVbZw&feature=youtu.be) (July 29, 2020)
