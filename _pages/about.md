@@ -20,7 +20,8 @@ There's too much scientific literature being published for people to make sense 
 One of the best ways to improve performance on many scientific NLP tasks is to adapt the underlying language models to the scientific domain:
 
   * SciBERT - basically BERT but for scientific text ([code](https://github.com/allenai/scibert)) ([EMNLP 2019 paper](https://www.aclweb.org/anthology/D19-1371/))
-  * Don't Stop Pretraining 🎶 your language models ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 talk (11 min)](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) - 🎉 Runner-up for Best Paper
+  * Don't Stop Pretraining 🎶 your language models ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) - 🎉 Runner-up for Best Paper
+    * [ACL 2020 talk (11 min) - by Suchin](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)
     * [video (15 min) by Henry AI Labs](https://www.youtube.com/watch?v=zNjiTcF3FZE)
 
 ### Scientific NLP tasks & datasets
@@ -39,6 +40,7 @@ Scientific text is difficult to access (copyright restrictions 😤).  We need l
 
   * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
     * [ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)
+    
   * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19))([arXiv preprint](https://arxiv.org/abs/2004.10706)) - Accepted to NLP-COVID at ACL 2020 ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
     * [SIIRH 2020 at ECIR 2020 keynote (18 min)](https://www.youtube.com/watch?v=geX4hSRW2vA) (April 14, 2020)
     * [NY-NLP meetup talk (30 min)](https://www.youtube.com/watch?v=GivUfb8KhZY) (April 27, 2020)
