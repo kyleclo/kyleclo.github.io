@@ -20,13 +20,15 @@ There's too much scientific literature being published for people to make sense 
 One of the best ways to improve performance on many scientific NLP tasks is to adapt the underlying language models to the scientific domain:
 
   * SciBERT - basically BERT but for scientific text ([code](https://github.com/allenai/scibert)) ([EMNLP 2019 paper](https://www.aclweb.org/anthology/D19-1371/))
-  * Don't Stop Pretraining 🎶 your language models ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 talk (11 min)](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) ([video (15 min) by Henry AI Labs](https://www.youtube.com/watch?v=zNjiTcF3FZE)) - 🎉 Runner-up for Best Paper
+  * Don't Stop Pretraining 🎶 your language models ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 talk (11 min)](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) - 🎉 Runner-up for Best Paper
+    * [video (15 min) by Henry AI Labs](https://www.youtube.com/watch?v=zNjiTcF3FZE)
 
 ### Scientific NLP tasks & datasets
 
 We need new challenging scientific tasks & datasets for evaluating these models:
 
-  * Generating short TLDRs that summarize machine learning/AI papers ([demo](https://scitldr.apps.allenai.org/)) ([code](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) ([video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ))
+  * Generating short TLDRs that summarize machine learning/AI papers ([demo](https://scitldr.apps.allenai.org/)) ([code](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) 
+    * [video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ)
     
   * Scientific fact checking!  Can we verify claims using biomedical papers? ([demo](https://scifact.apps.allenai.org/))  ([code](https://github.com/allenai/scifact)) ([arXiv preprint](https://arxiv.org/abs/2004.14974)) 
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/05/29/1002349/ai-coronavirus-scientific-fact-checking/), [VentureBeat](https://venturebeat.com/2020/05/04/allen-institutes-verisci-uses-ai-to-fact-check-scientific-claims/), [ZDNet](https://www.zdnet.com/article/scientific-fact-checking-using-ai-language-models-covid19-research-and-beyond/)
@@ -35,8 +37,12 @@ We need new challenging scientific tasks & datasets for evaluating these models:
 
 Scientific text is difficult to access (copyright restrictions 😤).  We need large, machine-readable, open-access corpora to support scientific NLP research:
 
-  * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
-  * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19)) ([SIIRH 2020 keynote (18 min)](https://www.youtube.com/watch?v=geX4hSRW2vA)) ([NY-NLP meetup talk (30 min)](https://www.youtube.com/watch?v=GivUfb8KhZY)) ([AWS Education: Research Seminar talk (60 min)](https://www.youtube.com/watch?v=qjv8MLJVbZw&feature=youtu.be)) ([arXiv preprint](https://arxiv.org/abs/2004.10706)) - Accepted to NLP-COVID workshop at ACL 2020 ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
+  * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
+    * [ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)
+  * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19))([arXiv preprint](https://arxiv.org/abs/2004.10706)) - Accepted to NLP-COVID workshop at ACL 2020 ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
+    * [SIIRH 2020 at ECIR 2020 keynote (18 min)](https://www.youtube.com/watch?v=geX4hSRW2vA) (April 14, 2020)
+    * [NY-NLP meetup talk (30 min)](https://www.youtube.com/watch?v=GivUfb8KhZY) (April 27, 2020)
+    * [AWS Education: Research Seminar talk (60 min)](https://www.youtube.com/watch?v=qjv8MLJVbZw&feature=youtu.be) (July 29, 2020)
     * In the news: [White House OSTP](https://www.whitehouse.gov/briefings-statements/call-action-tech-community-new-machine-readable-covid-19-dataset/), [Science](https://www.sciencemag.org/news/2020/05/scientists-are-drowning-covid-19-papers-can-new-tools-keep-them-afloat), [Nature](https://www.nature.com/articles/d41586-020-01733-7), [TechCrunch](https://techcrunch.com/2020/03/16/coronavirus-machine-learning-cord-19-chan-zuckerberg-ostp/), Geekwire [[1]](https://www.geekwire.com/2020/ai2-microsoft-team-tech-leaders-use-ai-war-coronavirus/) [[2]](https://www.geekwire.com/2020/software-tools-mining-covid-19-research-studies-go-viral-among-scientists/)
 
 ### Tools that make research less painful
