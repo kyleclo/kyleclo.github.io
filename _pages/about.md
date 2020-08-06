@@ -15,28 +15,28 @@ I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [S
 
 There's too much scientific literature being published for people to make sense of.  It'd be great if NLP models could improve access to & understanding of the knowledge contained in those papers.  Yet, NLP models that work well on news or Wikipedia articles often perform poorly when applied to scientific text.  I'm interested in understanding why that is & how we can get these systems to perform better.
 
-### Language modeling for science
+### Language models for science
 
-One of the best ways to improve performance on many scientific NLP tasks is to adapt the underlying language models to the scientific domain:
+One of the best ways to improve performance on many scientific NLP tasks is to adapt large language models to the scientific domain:
 
-  * SciBERT - basically BERT but for scientific text ([code](https://github.com/allenai/scibert)) ([EMNLP 2019 paper](https://www.aclweb.org/anthology/D19-1371/))
-  * Don't Stop Pretraining 🎶 your language models ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) - 🎉 Runner-up for Best Paper
-    * [ACL 2020 talk (11 min) - by Suchin](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)
+  * SciBERT - BERT but for scientific text ([code](https://github.com/allenai/scibert)) ([EMNLP 2019 paper](https://www.aclweb.org/anthology/D19-1371/))
+  * Don't Stop Pretraining 🎶 ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) - 🎉 Runner-up for Best Paper
+    * [ACL 2020 talk (11 min) by Suchin](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)
     * [video (15 min) by Henry AI Labs](https://www.youtube.com/watch?v=zNjiTcF3FZE)
 
 ### Scientific NLP tasks & datasets
 
-We need new challenging scientific tasks & datasets for evaluating these models:
+It's hard to make progress without challenging tasks & datasets for evaluating our models:
 
-  * Generating short TLDRs that summarize machine learning/AI papers ([demo](https://scitldr.apps.allenai.org/)) ([code](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) 
+  * Generating short TLDRs that summarize machine learning/AI papers ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) 
     * [video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ)
     
-  * Scientific fact checking!  Can we verify claims using biomedical papers? ([demo](https://scifact.apps.allenai.org/))  ([code](https://github.com/allenai/scifact)) ([arXiv preprint](https://arxiv.org/abs/2004.14974)) 
+  * Scientific fact checking: Can we verify biomedical claims using published research? ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([arXiv preprint](https://arxiv.org/abs/2004.14974)) 
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/05/29/1002349/ai-coronavirus-scientific-fact-checking/), [VentureBeat](https://venturebeat.com/2020/05/04/allen-institutes-verisci-uses-ai-to-fact-check-scientific-claims/), [ZDNet](https://www.zdnet.com/article/scientific-fact-checking-using-ai-language-models-covid19-research-and-beyond/)
  
-### Resources for scientific NLP
+### Resources for scientific NLP research
 
-Scientific text is difficult to access (copyright restrictions 😤).  We need large, machine-readable, open-access corpora to support scientific NLP research:
+Scientific papers can be difficult to access (paywalls, copyright 😤).  We need large, machine-readable, open-access corpora to support scientific NLP research:
 
   * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
     * [ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)
@@ -47,10 +47,12 @@ Scientific text is difficult to access (copyright restrictions 😤).  We need l
     * [AWS Education: Research Seminar talk (60 min)](https://www.youtube.com/watch?v=qjv8MLJVbZw&feature=youtu.be) (July 29, 2020)
     * In the news: [White House OSTP](https://www.whitehouse.gov/briefings-statements/call-action-tech-community-new-machine-readable-covid-19-dataset/), [Science](https://www.sciencemag.org/news/2020/05/scientists-are-drowning-covid-19-papers-can-new-tools-keep-them-afloat), [Nature](https://www.nature.com/articles/d41586-020-01733-7), [TechCrunch](https://techcrunch.com/2020/03/16/coronavirus-machine-learning-cord-19-chan-zuckerberg-ostp/), Geekwire [[1]](https://www.geekwire.com/2020/ai2-microsoft-team-tech-leaders-use-ai-war-coronavirus/) [[2]](https://www.geekwire.com/2020/software-tools-mining-covid-19-research-studies-go-viral-among-scientists/)
 
-### Tools that make research less painful
 
-  * arXiv paper recommender w/ actionable explanations ([link](https://s2-sanity.apps.allenai.org)) ([arXiv preprint](https://arxiv.org/abs/2003.04315))
-    * Adopted into production. Live on [Semantic Scholar](https://www.semanticscholar.org/feed/create)
+### Helping researchers do research
+
+  * Prototyped a recommender system for arXiv papers ([demo](https://s2-sanity.apps.allenai.org/)) that was adopted into production on Semantic Scholar ([link](https://www.semanticscholar.org/feed/create))
+
+  * Enable users to tune neural recommenders by converting liked/disliked post-hoc explanations into pseudo-examples ([arXiv preprint](https://arxiv.org/abs/2003.04315))
 
 
 ### Science of science
