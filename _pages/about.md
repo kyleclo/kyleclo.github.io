@@ -8,30 +8,30 @@ redirect_from:
   - /about.html
 ---
 
-I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [Semantic Scholar Research team](https://research.semanticscholar.org/), where I work on NLP and text mining over scientific literature.  Before that, I spent a couple years working as a data scientist in Seattle, and a year as an applied probability researcher at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/).
+I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [Semantic Scholar Research team](https://research.semanticscholar.org/), where I work on NLP for scientific literature.  Before that, I spent a couple years working as a data scientist in Seattle, and a year as a researcher in the Applied Probability group at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/).
 
 
-# Research stuff
+# My research interests
 
-There's too much scientific literature being published for people to make sense of.  It'd be great if NLP models could improve access to & understanding of the knowledge contained in those papers.  Yet, NLP models that work well on news or Wikipedia articles often perform poorly when applied to scientific text.  I'm interested in understanding why that is & how we can get these systems to perform better.
+It's important yet tough for scientists to keep up with the rapid pace of publication.  It'd be great if NLP models could improve access to & understanding of the valuable knowledge contained in academic literature.  Yet, NLP models that work well on news or Wikipedia articles often perform poorly when applied to scientific text.  What makes scientific text challenging?  Why do existing models do so poorly on it?  How can we overcome these limitations?
 
-### Language models for science
+### Adapting language models for science
 
-One of the best ways to improve performance on many scientific NLP tasks is to adapt large language models to the scientific domain:
+One of the best ways to improve performance across many scientific NLP tasks is to adapt large language models to the scientific domain:
 
-  * SciBERT - BERT but for scientific text ([code](https://github.com/allenai/scibert)) ([EMNLP 2019 paper](https://www.aclweb.org/anthology/D19-1371/))
   * Don't Stop Pretraining 🎶 ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) - 🎉 Runner-up for Best Paper
     * [ACL 2020 talk (11 min) by Suchin](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)
     * [video (15 min) by Henry AI Labs](https://www.youtube.com/watch?v=zNjiTcF3FZE)
+  * SciBERT ([code](https://github.com/allenai/scibert)) ([EMNLP 2019 paper](https://www.aclweb.org/anthology/D19-1371/))
 
 ### Scientific NLP tasks & datasets
 
 It's hard to make progress without challenging tasks & datasets for evaluating our models:
 
-  * Generating short TLDRs that summarize machine learning/AI papers ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) 
+  * TLDR: Extreme summarization of scientific documents ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) - 🎉 Accepted to EMNLP 2020 (Findings)
     * [video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ)
     
-  * Scientific fact checking: Can we verify biomedical claims using published research? ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([arXiv preprint](https://arxiv.org/abs/2004.14974)) 
+  * Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([arXiv preprint](https://arxiv.org/abs/2004.14974)) - 🎉 Accepted to EMNLP 2020
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/05/29/1002349/ai-coronavirus-scientific-fact-checking/), [VentureBeat](https://venturebeat.com/2020/05/04/allen-institutes-verisci-uses-ai-to-fact-check-scientific-claims/), [ZDNet](https://www.zdnet.com/article/scientific-fact-checking-using-ai-language-models-covid19-research-and-beyond/)
  
 ### Resources for scientific NLP research
@@ -50,34 +50,37 @@ Scientific papers can be difficult to access (paywalls, copyright 😤).  We nee
 
 ### Helping researchers do research
 
-  * Prototyped a recommender system for arXiv papers ([demo](https://s2-sanity.apps.allenai.org/)) that was adopted into production on Semantic Scholar ([link](https://www.semanticscholar.org/feed/create))
+  * What does `\gamma` mean again?  Hate flipping back to page 2 to find the definition?  Our ScholarPhi tool provides just-in-time definitions of terms & math symbols right on the PDF ([arXiv preprint](https://arxiv.org/abs/2009.14237))
 
-  * Enable users to tune neural recommenders by converting liked/disliked post-hoc explanations into pseudo-examples ([arXiv preprint](https://arxiv.org/abs/2003.04315))
+  * LIME gives you post-hoc explanations of arbitrary model predictions.  But what if a user says *Show me more/less* for that explanation?  Tuning a linear model for this is easy, but for neural models, our solution is LIMEADE ([arXiv preprint](https://arxiv.org/abs/2003.04315))
+
+  * Prototype recommender system for arXiv papers ([demo](https://s2-sanity.apps.allenai.org/)).  Now adopted into production on Semantic Scholar ([link](https://www.semanticscholar.org/feed/create))
 
 
 ### Science of science
 
-I'm interested (and concerned) about bias in scientific papers/publishing.  Can we use NLP to study these biases?
+I'm interested (and concerned) about bias in scientific research.  How can NLP help us identify & quantify these biases?
 
   * Quantifying sex bias in clinical trial participation ([JAMA 2019 paper](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2737103))
     * In the news: [Quartz](https://qz.com/1657408/why-are-women-still-underrepresented-in-clinical-research/)
 
 
-# Community stuff
+# Professional organizations
 
 It'd be great if more researchers in the NLP & text mining communities worked on scientific text.  To promote this, I've co-organized workshops & shared tasks:
 
 * Shared tasks
 
-  * TREC-COVID - Information retrieval challenge over an evolving CORD-19 corpus ([link](https://ir.nist.gov/covidSubmit/)) ([JAMIA 2020 paper](https://academic.oup.com/jamia/article/doi/10.1093/jamia/ocaa091/5828938)) ([SIGIR Forum 2020 paper](http://www.sigir.org/wp-content/uploads/2020/06/p03.pdf))
+  * EPIC-QA at TAC 2020 - Open domain question answering challenge: Can systems handle a mixture of questions from *experts* as well as *consumers*? ([link](https://bionlp.nlm.nih.gov/epic_qa/))
+  * TREC-COVID at TREC 2020 - Information retrieval challenge over an evolving CORD-19 corpus ([link](https://ir.nist.gov/covidSubmit/)) ([JAMIA 2020 paper](https://academic.oup.com/jamia/article/doi/10.1093/jamia/ocaa091/5828938)) ([SIGIR Forum 2020 paper](http://www.sigir.org/wp-content/uploads/2020/06/p03.pdf))
 
 * Workshops
 
-  * 1st SciNLP workshop at AKBC 2020  ([link](http://scinlp.org/)) ([recorded talks](https://www.youtube.com/playlist?list=PLOTELVgUs9jKW2EkJbAyi6DcunfaXf0r6)) - What a success!  Over 
+  * 1st SciNLP workshop at AKBC 2020  ([link](http://scinlp.org/)) ([recorded talks](https://www.youtube.com/playlist?list=PLOTELVgUs9jKW2EkJbAyi6DcunfaXf0r6)) - What a success!  166 of 422 AKBC attendees signed up for our workshop!  Stay tuned for the next one ;)
 
 
 # My collaborators
 
-All of my projects have been collaborations with other awesome researchers.  Many thanks to:  
+All of my projects have been collaborations with other awesome researchers ❤️.  Many thanks to:  
 
-[Waleed Ammar (Google)](https://wammar.github.io/), [Iz Beltagy (AI2)](https://beltagy.net/), [Isabel Cachola (AI2)](https://isabelcachola.com/), [Arman Cohan (AI2)](https://armancohan.com/), [Doug Downey (AI2/Northwestern)](https://users.cs.northwestern.edu/~ddowney/), [Sergey Feldman (AI2)](https://www.data-cowboys.com/team), [Suchin Gururangan (UW/AI2)](https://suchin.io/), [Rodney Kinney (AI2)](https://www.linkedin.com/in/rodney-kinney-503926), [Ben Lee (UW)](https://bcglee.github.io/), [Ana Marasović (UW/AI2)](https://www.anamarasovic.com/), [Mark Neumann (AI2)](http://markneumann.xyz/), [Swabha Swayamdipta (UW/AI2)](https://swabhs.com/), [Dave Wadden (UW)](https://github.com/dwadden), [Lucy Lu Wang (AI2)](https://llwang.net/).
+[Waleed Ammar (Google)](https://wammar.github.io/), [Iz Beltagy (AI2)](https://beltagy.net/), [Isabel Cachola (JHU)](https://isabelcachola.com/), [Arman Cohan (AI2)](https://armancohan.com/), [Doug Downey (AI2/Northwestern)](https://users.cs.northwestern.edu/~ddowney/), [Sergey Feldman (AI2)](https://www.data-cowboys.com/team), [Suchin Gururangan (UW/AI2)](https://suchin.io/), [Andrew Head (UC Berkeley)](https://andrewhead.info/), [Dongyeop Kang (UC Berkeley)](https://dykang.github.io/), [Rodney Kinney (AI2)](https://www.linkedin.com/in/rodney-kinney-503926), [Ben Lee (UW)](https://bcglee.github.io/), [Ana Marasović (UW/AI2)](https://www.anamarasovic.com/), [Mark Neumann (AI2)](http://markneumann.xyz/), [Swabha Swayamdipta (UW/AI2)](https://swabhs.com/), [Dave Wadden (UW)](https://github.com/dwadden), [Lucy Lu Wang (AI2)](https://llwang.net/).
