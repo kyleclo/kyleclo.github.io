@@ -34,8 +34,6 @@ It's important yet tough for scientists to keep up with the rapid pace of public
  
 ### Corpora / Resources
 
-Scientific papers can be difficult to access (paywalls, copyright 😤).  We need large, machine-readable, open-access corpora to support scientific NLP research:
-
   * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
     * [ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)
     
@@ -48,11 +46,13 @@ Scientific papers can be difficult to access (paywalls, copyright 😤).  We nee
 
 ### Augmented Reading
 
-  * What does `\gamma` mean again?  Hate flipping back to page 2 to find the definition?  Our ScholarPhi tool provides just-in-time definitions of terms & math symbols right on the PDF ([arXiv preprint](https://arxiv.org/abs/2009.14237))
+*What does `\gamma` mean again?  Hate flipping back to page 2 to find the definition?*
+
+  * ScholarPhi: Just-in-Time, Position-Sensitive Definitions of Terms and Symbols ([arXiv preprint](https://arxiv.org/abs/2009.14237))
 
 ### Explanations
 
-  * LIME gives you post-hoc explanations of arbitrary model predictions.  But what if a user says *Show me more/less* for that explanation?  Tuning a linear model for this is easy, but for neural models, our solution is LIMEADE ([arXiv preprint](https://arxiv.org/abs/2003.04315))
+  * LIME gives you post-hoc explanations of arbitrary model predictions.  But what if a user says *Show me more/less* for that explanation?  Tuning a linear model for this is easy, but for neural models, our solution is **LIMEADE** ([arXiv preprint](https://arxiv.org/abs/2003.04315))
 
 
 ### Science of science
