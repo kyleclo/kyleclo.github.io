@@ -15,46 +15,44 @@ I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [S
 
 It's important yet tough for scientists to keep up with the rapid pace of publication.  It'd be great if NLP models could improve access to & understanding of the valuable knowledge contained in academic literature.  Yet, NLP models that work well on news or Wikipedia articles often perform poorly when applied to scientific text.  What makes scientific text challenging?  Why do existing models do so poorly on it?  How can we overcome these limitations?
 
-### Adapting language models for science
-
-One of the best ways to improve performance across many scientific NLP tasks is to adapt large language models to the scientific domain:
+### Language modeling 
 
   * Don't Stop Pretraining 🎶 ([code](https://github.com/allenai/dont-stop-pretraining)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.740/)) - 🎉 Runner-up for Best Paper
     * [ACL 2020 talk (11 min) by Suchin](https://slideslive.com/38929123/dont-stop-pretraining-adapt-language-models-to-domains-and-tasks)
     * [video (15 min) by Henry AI Labs](https://www.youtube.com/watch?v=zNjiTcF3FZE)
   * SciBERT ([code](https://github.com/allenai/scibert)) ([EMNLP 2019 paper](https://www.aclweb.org/anthology/D19-1371/))
 
-### Scientific NLP tasks & datasets
-
-It's hard to make progress without challenging tasks & datasets for evaluating our models:
+### Summarization
 
   * TLDR: Extreme summarization of scientific documents ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) - 🎉 Accepted to EMNLP 2020 (Findings)
     * [video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ)
-    
+
+### Fact checking
+
   * Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([arXiv preprint](https://arxiv.org/abs/2004.14974)) - 🎉 Accepted to EMNLP 2020
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/05/29/1002349/ai-coronavirus-scientific-fact-checking/), [VentureBeat](https://venturebeat.com/2020/05/04/allen-institutes-verisci-uses-ai-to-fact-check-scientific-claims/), [ZDNet](https://www.zdnet.com/article/scientific-fact-checking-using-ai-language-models-covid19-research-and-beyond/)
  
-### Resources for scientific NLP research
+### Corpora / Resources
 
 Scientific papers can be difficult to access (paywalls, copyright 😤).  We need large, machine-readable, open-access corpora to support scientific NLP research:
 
   * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
     * [ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)
     
-  * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19))([arXiv preprint](https://arxiv.org/abs/2004.10706)) - Accepted to NLP-COVID at ACL 2020 ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
+  * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19))([NLP-COVID at ACL 2020 paper](https://www.aclweb.org/anthology/2020.nlpcovid19-acl.1/)) ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
     * [SIIRH 2020 at ECIR 2020 keynote (18 min)](https://www.youtube.com/watch?v=geX4hSRW2vA) (April 14, 2020)
     * [NY-NLP meetup talk (30 min)](https://www.youtube.com/watch?v=GivUfb8KhZY) (April 27, 2020)
     * [AWS Education: Research Seminar talk (60 min)](https://www.youtube.com/watch?v=qjv8MLJVbZw&feature=youtu.be) (July 29, 2020)
     * In the news: [White House OSTP](https://www.whitehouse.gov/briefings-statements/call-action-tech-community-new-machine-readable-covid-19-dataset/), [Science](https://www.sciencemag.org/news/2020/05/scientists-are-drowning-covid-19-papers-can-new-tools-keep-them-afloat), [Nature](https://www.nature.com/articles/d41586-020-01733-7), [TechCrunch](https://techcrunch.com/2020/03/16/coronavirus-machine-learning-cord-19-chan-zuckerberg-ostp/), Geekwire [[1]](https://www.geekwire.com/2020/ai2-microsoft-team-tech-leaders-use-ai-war-coronavirus/) [[2]](https://www.geekwire.com/2020/software-tools-mining-covid-19-research-studies-go-viral-among-scientists/)
 
 
-### Helping researchers do research
+### Augmented Reading
 
   * What does `\gamma` mean again?  Hate flipping back to page 2 to find the definition?  Our ScholarPhi tool provides just-in-time definitions of terms & math symbols right on the PDF ([arXiv preprint](https://arxiv.org/abs/2009.14237))
 
-  * LIME gives you post-hoc explanations of arbitrary model predictions.  But what if a user says *Show me more/less* for that explanation?  Tuning a linear model for this is easy, but for neural models, our solution is LIMEADE ([arXiv preprint](https://arxiv.org/abs/2003.04315))
+### Explanations
 
-  * Prototype recommender system for arXiv papers ([demo](https://s2-sanity.apps.allenai.org/)).  Now adopted into production on Semantic Scholar ([link](https://www.semanticscholar.org/feed/create))
+  * LIME gives you post-hoc explanations of arbitrary model predictions.  But what if a user says *Show me more/less* for that explanation?  Tuning a linear model for this is easy, but for neural models, our solution is LIMEADE ([arXiv preprint](https://arxiv.org/abs/2003.04315))
 
 
 ### Science of science
