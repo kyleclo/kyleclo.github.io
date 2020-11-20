@@ -16,16 +16,17 @@ I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [S
 I work on NLP, HCI, and machine learning research motivated by applications to help scholars with their research.  My core focus projects now are:
 
 * [**Language models**](#language-modeling) for scientific text
-* [**Summarization**](#summarization) of scientific papers
-* [**Fact checking**](#fact-checking) claims using the broader scientific literature
+* ✨[**Summarization**](#summarization) of scientific papers
+* ✨[**Fact checking**](#fact-checking) claims using the broader scientific literature
 * [**Corpora and resources**](#corpora-and-resources) to support other researchers interested in this problem space
-* [**Augmented reading**](#augmented-reading) of scientific papers to support definitions and note-taking
+* ✨[**Augmented reading**](#augmented-reading) of scientific papers to support definitions and note-taking
 
-But I've also done some work on:
+I've also done some work in:
 
 * [**Explainable AI**](#explainable-ai)
-* [**Information extraction**](#information-extraction)
+* ✨[**Information extraction**](#information-extraction)
 * [**Science of science**](#science-of-science)
+
 
 ### Language modeling 
 
@@ -36,14 +37,14 @@ But I've also done some work on:
 
 ### Summarization
 
-  * TLDR: Extreme summarization of scientific documents ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([Findings of EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.findings-emnlp.428/))
-    * See live in production on [Semantic Scholar](https://tldr.semanticscholar.org/)
+  * ✨ TLDR: Extreme summarization of scientific documents ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([Findings of EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.findings-emnlp.428/))
+    * ✨ See live in production on [Semantic Scholar](https://tldr.semanticscholar.org/)
     * [video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ)
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/11/18/1012259/ai-summarizes-science-papers-ai2-semantic-scholar/)
 
 ### Fact checking
 
-  * Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.609/))
+  * ✨ Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.609/))
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/05/29/1002349/ai-coronavirus-scientific-fact-checking/), [VentureBeat](https://venturebeat.com/2020/05/04/allen-institutes-verisci-uses-ai-to-fact-check-scientific-claims/), [ZDNet](https://www.zdnet.com/article/scientific-fact-checking-using-ai-language-models-covid19-research-and-beyond/)
  
 ### Corpora and resources
@@ -60,21 +61,23 @@ But I've also done some work on:
 
 ### Augmented Reading
 
-  * ScholarPhi: Just-in-Time, Position-Sensitive Definitions of Terms and Symbols ([arXiv preprint; under submission](https://arxiv.org/abs/2009.14237))
+  * ✨ ScholarPhi: Just-in-Time, Position-Sensitive Definitions of Terms and Symbols ([arXiv preprint; 2020; under submission](https://arxiv.org/abs/2009.14237))
 
 ### Explainable AI
 
-  * Explanation-based tuning of opaque machine learners ([arXiv preprint; under submission](https://arxiv.org/abs/2003.04315))
+  * Explanation-based tuning of opaque machine learners ([arXiv preprint; 2020; under submission](https://arxiv.org/abs/2003.04315))
 
 ### Information extraction
 
+  * ✨ Document-Level definition detection in scholarly documents [SDP at EMNLP 2020](https://www.aclweb.org/anthology/2020.sdp-1.22/)
   * Combining distant and direct supervision for neural relation extraction [NAACL 2019 paper](https://www.aclweb.org/anthology/N19-1184/)
+  * Construction of the literature graph in Semantic Scholar [NAACL 2018 paper](https://www.aclweb.org/anthology/N18-3011/)
 
 ### Science of science
 
   * Quantifying sex bias in clinical trial participation ([JAMA 2019 paper](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2737103))
     * In the news: [Quartz article](https://qz.com/1657408/why-are-women-still-underrepresented-in-clinical-research/)
-  * Citation count analysis for papers with preprints ([arXiv preprint](https://arxiv.org/abs/1805.05238))
+  * Citation count analysis for papers with preprints ([arXiv preprint; 2018](https://arxiv.org/abs/1805.05238))
 
 # Professional organizations
 
