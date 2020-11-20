@@ -13,9 +13,9 @@ I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [S
 
 # My research interests
 
-I work on NLP, HCI, and machine learning research motivated by applications to help scholars with their research.  My core focus projects now are:
+I work on NLP, HCI, and machine learning research motivated by applications to help scholars with their research.  My core projects now are:
 
-* [**Language models**](#language-modeling) for scientific text
+* [**Language modeling**](#language-modeling) for scientific text
 * ✨[**Summarization**](#summarization) of scientific papers
 * ✨[**Fact checking**](#fact-checking) claims using the broader scientific literature
 * [**Corpora and resources**](#corpora-and-resources) to support other researchers interested in this problem space
@@ -66,7 +66,7 @@ I've also done some work in:
 
 ### Generation
 
-  * Citation text generation ([arXiv preprint; 2020; under submission])(https://arxiv.org/abs/2002.00317)
+  * Citation text generation ([arXiv preprint; 2020; under submission](https://arxiv.org/abs/2002.00317))
 
 ### Explainable AI
 
