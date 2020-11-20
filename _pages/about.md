@@ -25,7 +25,7 @@ I've also done some work in:
 
 * [**Generation**](#generation)
 * [**Explainable AI**](#explainable-ai)
-* ✨[**Information extraction**](#information-extraction)
+* [**Information extraction**](#information-extraction)
 * [**Science of science**](#science-of-science)
 
 
@@ -74,7 +74,7 @@ I've also done some work in:
 
 ### Information extraction
 
-  * ✨ Document-Level definition detection in scholarly documents [SDP at EMNLP 2020](https://www.aclweb.org/anthology/2020.sdp-1.22/)
+  * Document-Level definition detection in scholarly documents [SDP at EMNLP 2020](https://www.aclweb.org/anthology/2020.sdp-1.22/)
   * Combining distant and direct supervision for neural relation extraction [NAACL 2019 paper](https://www.aclweb.org/anthology/N19-1184/)
   * Construction of the literature graph in Semantic Scholar [NAACL 2018 paper](https://www.aclweb.org/anthology/N18-3011/)
 
@@ -84,16 +84,14 @@ I've also done some work in:
     * In the news: [Quartz article](https://qz.com/1657408/why-are-women-still-underrepresented-in-clinical-research/)
   * Citation count analysis for papers with preprints ([arXiv preprint; 2018](https://arxiv.org/abs/1805.05238))
 
-# Professional organizations
-
-It'd be great if more researchers in the NLP & text mining communities worked on scientific text.  To promote this, I've co-organized workshops & shared tasks:
-
-* **Shared tasks**
+# Shared tasks
 
   * EPIC-QA at TAC 2020 - Open domain question answering challenge: Can systems handle a mixture of questions from *experts* as well as *consumers*? ([link](https://bionlp.nlm.nih.gov/epic_qa/))
   * TREC-COVID at TREC 2020 - Information retrieval challenge over an evolving CORD-19 corpus ([link](https://ir.nist.gov/covidSubmit/)) ([JAMIA 2020 paper](https://academic.oup.com/jamia/article/doi/10.1093/jamia/ocaa091/5828938)) ([SIGIR Forum 2020 paper](http://www.sigir.org/wp-content/uploads/2020/06/p03.pdf))
 
-* **Workshops**
+# Workshops
+
+  * The 2nd SDP workshop will be at NAACL 2021! Stay tuned! ([link](https://ornlcda.github.io/SDProc/2021/index.html))
 
   * 1st SciNLP workshop at AKBC 2020  ([link](http://scinlp.org/)) ([recorded talks](https://www.youtube.com/playlist?list=PLOTELVgUs9jKW2EkJbAyi6DcunfaXf0r6)) - What a success!  166 of 422 AKBC attendees signed up for our workshop!  Stay tuned for the next one ;)
 
