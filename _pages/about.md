@@ -8,12 +8,24 @@ redirect_from:
   - /about.html
 ---
 
-I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [Semantic Scholar Research team](https://research.semanticscholar.org/), where I work on NLP for scientific literature.  Before that, I spent a couple years working as a data scientist in Seattle, and a year as a researcher in the Applied Probability group at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/).
+I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [Semantic Scholar Research team](https://research.semanticscholar.org/).  Before that, I was a data scientist in Seattle and a researcher in the Applied Probability group at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/).
 
 
 # My research interests
 
-It's important yet tough for scientists to keep up with the rapid pace of publication.  It'd be great if NLP models could improve access to & understanding of the valuable knowledge contained in academic literature.  Yet, NLP models that work well on news or Wikipedia articles often perform poorly when applied to scientific text.  What makes scientific text challenging?  Why do existing models do so poorly on it?  How can we overcome these limitations?
+I work on NLP, HCI, and machine learning research motivated by applications to help scholars with their research.  My core focus projects now are:
+
+* [**Language models**](#language-modeling) for scientific text
+* [**Summarization**](#summarization) of scientific papers
+* [**Fact checking**](#fact-checking) claims using the broader scientific literature
+* [**Corpora and resources**](#corpora-and-resources) to support other researchers interested in this problem space
+* [**Augmented reading**](#augmented-reading) of scientific papers to support definitions and note-taking
+
+But I've also done some work on:
+
+* [**Explainable AI**](#explainable-ai)
+* [**Information extraction**](#information-extraction)
+* [**Science of science**](#science-of-science)
 
 ### Language modeling 
 
@@ -24,17 +36,19 @@ It's important yet tough for scientists to keep up with the rapid pace of public
 
 ### Summarization
 
-  * TLDR: Extreme summarization of scientific documents ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([arXiv preprint](https://scitldr.apps.allenai.org/)) - 🎉 Accepted to EMNLP 2020 (Findings)
+  * TLDR: Extreme summarization of scientific documents ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([Findings of EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.findings-emnlp.428/))
+    * See live in production on [Semantic Scholar](https://tldr.semanticscholar.org/)
     * [video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ)
+    * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/11/18/1012259/ai-summarizes-science-papers-ai2-semantic-scholar/)
 
 ### Fact checking
 
-  * Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([arXiv preprint](https://arxiv.org/abs/2004.14974)) - 🎉 Accepted to EMNLP 2020
+  * Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.609/))
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/05/29/1002349/ai-coronavirus-scientific-fact-checking/), [VentureBeat](https://venturebeat.com/2020/05/04/allen-institutes-verisci-uses-ai-to-fact-check-scientific-claims/), [ZDNet](https://www.zdnet.com/article/scientific-fact-checking-using-ai-language-models-covid19-research-and-beyond/)
  
-### Corpora / Resources
+### Corpora and resources
 
-  * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/))
+  * S2ORC: The Semantic Scholar Open Research Corpus ([download](https://github.com/allenai/s2orc)) ([ACL 2020 paper](https://www.aclweb.org/anthology/2020.acl-main.447/)) 
     * [ACL 2020 talk (12 min)](https://slideslive.com/38929131/s2orc-the-semantic-scholar-open-research-corpus)
     
   * CORD-19: The COVID-19 Open Research Corpus ([download](https://github.com/allenai/cord19))([NLP-COVID at ACL 2020 paper](https://www.aclweb.org/anthology/2020.nlpcovid19-acl.1/)) ([OpenReview](https://openreview.net/forum?id=0gLzHrE_t3z))
@@ -46,22 +60,21 @@ It's important yet tough for scientists to keep up with the rapid pace of public
 
 ### Augmented Reading
 
-*What does `\gamma` mean again?  Hate flipping back to page 2 to find the definition?*
+  * ScholarPhi: Just-in-Time, Position-Sensitive Definitions of Terms and Symbols ([arXiv preprint; under submission](https://arxiv.org/abs/2009.14237))
 
-  * ScholarPhi: Just-in-Time, Position-Sensitive Definitions of Terms and Symbols ([arXiv preprint](https://arxiv.org/abs/2009.14237))
+### Explainable AI
 
-### Explanations
+  * Explanation-based tuning of opaque machine learners ([arXiv preprint; under submission](https://arxiv.org/abs/2003.04315))
 
-  * LIME gives you post-hoc explanations of arbitrary model predictions.  But what if a user says *Show me more/less* for that explanation?  Tuning a linear model for this is easy, but for neural models, our solution is **LIMEADE** ([arXiv preprint](https://arxiv.org/abs/2003.04315))
+### Information extraction
 
+  * Combining distant and direct supervision for neural relation extraction [NAACL 2019 paper](https://www.aclweb.org/anthology/N19-1184/)
 
 ### Science of science
 
-I'm interested (and concerned) about bias in scientific research.  How can NLP help us identify & quantify these biases?
-
   * Quantifying sex bias in clinical trial participation ([JAMA 2019 paper](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2737103))
-    * In the news: [Quartz](https://qz.com/1657408/why-are-women-still-underrepresented-in-clinical-research/)
-
+    * In the news: [Quartz article](https://qz.com/1657408/why-are-women-still-underrepresented-in-clinical-research/)
+  * Citation count analysis for papers with preprints ([arXiv preprint](https://arxiv.org/abs/1805.05238))
 
 # Professional organizations
 
