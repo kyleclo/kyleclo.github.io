@@ -23,6 +23,7 @@ I work on NLP, HCI, and machine learning research motivated by applications to h
 
 I've also done some work in:
 
+* [**Generation**](#generation)
 * [**Explainable AI**](#explainable-ai)
 * ✨[**Information extraction**](#information-extraction)
 * [**Science of science**](#science-of-science)
@@ -63,6 +64,10 @@ I've also done some work in:
 
   * ✨ ScholarPhi: Just-in-Time, Position-Sensitive Definitions of Terms and Symbols ([arXiv preprint; 2020; under submission](https://arxiv.org/abs/2009.14237))
 
+### Generation
+
+  * Citation text generation ([arXiv preprint; 2020; under submission])(https://arxiv.org/abs/2002.00317)
+
 ### Explainable AI
 
   * Explanation-based tuning of opaque machine learners ([arXiv preprint; 2020; under submission](https://arxiv.org/abs/2003.04315))
@@ -83,18 +88,18 @@ I've also done some work in:
 
 It'd be great if more researchers in the NLP & text mining communities worked on scientific text.  To promote this, I've co-organized workshops & shared tasks:
 
-* Shared tasks
+* **Shared tasks**
 
   * EPIC-QA at TAC 2020 - Open domain question answering challenge: Can systems handle a mixture of questions from *experts* as well as *consumers*? ([link](https://bionlp.nlm.nih.gov/epic_qa/))
   * TREC-COVID at TREC 2020 - Information retrieval challenge over an evolving CORD-19 corpus ([link](https://ir.nist.gov/covidSubmit/)) ([JAMIA 2020 paper](https://academic.oup.com/jamia/article/doi/10.1093/jamia/ocaa091/5828938)) ([SIGIR Forum 2020 paper](http://www.sigir.org/wp-content/uploads/2020/06/p03.pdf))
 
-* Workshops
+* **Workshops**
 
   * 1st SciNLP workshop at AKBC 2020  ([link](http://scinlp.org/)) ([recorded talks](https://www.youtube.com/playlist?list=PLOTELVgUs9jKW2EkJbAyi6DcunfaXf0r6)) - What a success!  166 of 422 AKBC attendees signed up for our workshop!  Stay tuned for the next one ;)
 
 
 # My collaborators
 
-All of my projects have been collaborations with other awesome researchers ❤️.  Many thanks to:  
+All of my projects have been collaborations with other awesome researchers ❤️.  Many thanks to:
 
 [Waleed Ammar (Google)](https://wammar.github.io/), [Iz Beltagy (AI2)](https://beltagy.net/), [Isabel Cachola (JHU)](https://isabelcachola.com/), [Arman Cohan (AI2)](https://armancohan.com/), [Doug Downey (AI2/Northwestern)](https://users.cs.northwestern.edu/~ddowney/), [Sergey Feldman (AI2)](https://www.data-cowboys.com/team), [Suchin Gururangan (UW/AI2)](https://suchin.io/), [Andrew Head (UC Berkeley)](https://andrewhead.info/), [Dongyeop Kang (UC Berkeley)](https://dykang.github.io/), [Rodney Kinney (AI2)](https://www.linkedin.com/in/rodney-kinney-503926), [Ben Lee (UW)](https://bcglee.github.io/), [Ana Marasović (UW/AI2)](https://www.anamarasovic.com/), [Mark Neumann (AI2)](http://markneumann.xyz/), [Swabha Swayamdipta (UW/AI2)](https://swabhs.com/), [Dave Wadden (UW)](https://github.com/dwadden), [Lucy Lu Wang (AI2)](https://llwang.net/).
