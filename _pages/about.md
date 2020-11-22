@@ -41,7 +41,7 @@ I've also done some work in:
   * ✨ TLDR: Extreme summarization of scientific documents ([demo](https://scitldr.apps.allenai.org/)) ([code/download](https://github.com/allenai/scitldr)) ([Findings of EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.findings-emnlp.428/))
     * ✨ See live in production on [Semantic Scholar](https://tldr.semanticscholar.org/)
     * [video (12 min) by Henry AI Labs](https://www.youtube.com/watch?v=5WJZgSwRUSQ)
-    * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/11/18/1012259/ai-summarizes-science-papers-ai2-semantic-scholar/)
+    * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/11/18/1012259/ai-summarizes-science-papers-ai2-semantic-scholar/), [TNW](https://thenextweb.com/neural/2020/11/20/tldr-this-ai-summarizes-research-papers-so-you-dont-have-to/)
 
 ### Fact checking
 
