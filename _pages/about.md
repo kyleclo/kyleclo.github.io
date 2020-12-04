@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [Semantic Scholar Research team](https://research.semanticscholar.org/).  Before that, I was a data scientist in Seattle and a researcher in the Applied Probability group at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/).
+I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [Semantic Scholar Research team](https://research.semanticscholar.org/).  Before that, I was a data scientist in Seattle and a researcher at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/).
 
 
 # My research interests
