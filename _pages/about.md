@@ -13,7 +13,7 @@ I'm a researcher at the [Allen Institute for AI](https://allenai.org/) on the [S
 
 # My research interests
 
-I work on NLP, HCI, and machine learning research motivated by applications to help scholars with their research.  My core projects now are:
+I work on NLP problems motivated by challenges in building applications to help scholars with their research.  I'm currently mainly interested in:
 
 * [**Language modeling**](#language-modeling) for scientific text
 * ✨[**Summarization**](#summarization) of scientific papers
@@ -21,7 +21,7 @@ I work on NLP, HCI, and machine learning research motivated by applications to h
 * [**Corpora and resources**](#corpora-and-resources) to support other researchers interested in this problem space
 * ✨[**Augmented reading**](#augmented-reading) of scientific papers to support definitions and note-taking
 
-I've also done some work in:
+and I've also done some work in:
 
 * [**Generation**](#generation)
 * [**Explainable AI**](#explainable-ai)
