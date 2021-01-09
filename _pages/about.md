@@ -26,7 +26,7 @@ and I've also done some work in:
 * [**Generation**](#generation)
 * [**Explainable AI**](#explainable-ai)
 * [**Information extraction**](#information-extraction)
-* [**Science of science**](#science-of-science)
+* ✨[**Scientometrics and Science of science**](#scientometrics-and-science-of-science)
 
 
 ### Language modeling 
@@ -45,7 +45,7 @@ and I've also done some work in:
 
 ### Fact checking
 
-  * ✨ Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.609/))
+  * ✨ SciFact: Scientific claim verification ([demo](https://scifact.apps.allenai.org/))  ([code/download](https://github.com/allenai/scifact)) ([EMNLP 2020 paper](https://www.aclweb.org/anthology/2020.emnlp-main.609/))
     * In the news: [MIT Tech Review](https://www.technologyreview.com/2020/05/29/1002349/ai-coronavirus-scientific-fact-checking/), [VentureBeat](https://venturebeat.com/2020/05/04/allen-institutes-verisci-uses-ai-to-fact-check-scientific-claims/), [ZDNet](https://www.zdnet.com/article/scientific-fact-checking-using-ai-language-models-covid19-research-and-beyond/)
  
 ### Corpora and resources
@@ -74,18 +74,20 @@ and I've also done some work in:
 
 ### Information extraction
 
-  * Document-Level definition detection in scholarly documents [SDP at EMNLP 2020](https://www.aclweb.org/anthology/2020.sdp-1.22/)
-  * Combining distant and direct supervision for neural relation extraction [NAACL 2019 paper](https://www.aclweb.org/anthology/N19-1184/)
-  * Construction of the literature graph in Semantic Scholar [NAACL 2018 paper](https://www.aclweb.org/anthology/N18-3011/)
+  * Document-Level definition detection in scholarly documents ([SDP at EMNLP 2020](https://www.aclweb.org/anthology/2020.sdp-1.22/))
+  * Combining distant and direct supervision for neural relation extraction ([NAACL 2019](https://www.aclweb.org/anthology/N19-1184/))
+  * Construction of the literature graph in Semantic Scholar ([NAACL 2018](https://www.aclweb.org/anthology/N18-3011/))
 
-### Science of science
+### Scientometrics and Science of science
 
-  * Quantifying sex bias in clinical trial participation ([JAMA 2019 paper](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2737103))
+  * ✨ Text mining approaches for dealing with the rapidly expanding literature on COVID-19 ([Briefings in Bioinformatics 2020](https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbaa296/6024738))
+  * Quantifying sex bias in clinical trial participation ([JAMA 2019](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2737103))
     * In the news: [Quartz article](https://qz.com/1657408/why-are-women-still-underrepresented-in-clinical-research/)
   * Citation count analysis for papers with preprints ([arXiv preprint; 2018](https://arxiv.org/abs/1805.05238))
 
 # Shared tasks
 
+  * SciVer at SDP 2021 (NAACL 2021) - Scientific fact checking ([link](https://sdproc.org/2021/sharedtasks.html#sciver))
   * EPIC-QA at TAC 2020 - Open domain question answering challenge: Can systems handle a mixture of questions from *experts* as well as *consumers*? ([link](https://bionlp.nlm.nih.gov/epic_qa/))
   * TREC-COVID at TREC 2020 - Information retrieval challenge over an evolving CORD-19 corpus ([link](https://ir.nist.gov/covidSubmit/)) ([JAMIA 2020 paper](https://academic.oup.com/jamia/article/doi/10.1093/jamia/ocaa091/5828938)) ([SIGIR Forum 2020 paper](http://www.sigir.org/wp-content/uploads/2020/06/p03.pdf))
 
