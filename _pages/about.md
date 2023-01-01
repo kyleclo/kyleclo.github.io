@@ -16,10 +16,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) building AI-backed tools to support scholars and scientists.
+Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) building AI tools to support scholars and scientists.
 
 
-Favorite board games: [Robinson Crusoe](https://boardgamegeek.com/boardgame/121921/robinson-crusoe-adventures-cursed-island), [Cthulu: Death May Die](https://boardgamegeek.com/boardgame/253344/cthulhu-death-may-die), [Hanabi](https://boardgamegeek.com/boardgame/98778/hanabi)
+Current favorite board games: [Robinson Crusoe](https://boardgamegeek.com/boardgame/121921/robinson-crusoe-adventures-cursed-island), [Cthulu: Death May Die](https://boardgamegeek.com/boardgame/253344/cthulhu-death-may-die), [Hanabi](https://boardgamegeek.com/boardgame/98778/hanabi)
 
 <!-- I've also worked as a statistician / data scientist in Seattle and an applied probability researcher at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/). -->
 
