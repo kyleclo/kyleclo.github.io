@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) building AI-backed tools to support knowledge workers, like scholars and scientists.
+Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) building AI-backed tools to support scholars and scientists.
 
 
 Favorite board games: [Robinson Crusoe](https://boardgamegeek.com/boardgame/121921/robinson-crusoe-adventures-cursed-island), [Cthulu: Death May Die](https://boardgamegeek.com/boardgame/253344/cthulhu-death-may-die), [Hanabi](https://boardgamegeek.com/boardgame/98778/hanabi)
