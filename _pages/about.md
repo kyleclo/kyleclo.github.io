@@ -10,16 +10,39 @@ profile:
   image_circular: false # crops the image to make it circular
   <!-- address: <p>555 your office number</p> <p>123 your address street</p> <p>Your City, State 12345</p> -->
 
-
+personal: true  # includes bio of personal info
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) building AI tools to support scholars and scientists.
+Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) building AI tools to support scholars and scientists. My research includes:
 
 
-Current favorite board games: [Robinson Crusoe](https://boardgamegeek.com/boardgame/121921/robinson-crusoe-adventures-cursed-island), [Cthulu: Death May Die](https://boardgamegeek.com/boardgame/253344/cthulhu-death-may-die), [Hanabi](https://boardgamegeek.com/boardgame/98778/hanabi)
+##### ▸ Language models for specialized text
+
+Are language models trained on broad web crawls useful when applied to specialized text, like scientific literature?  
+
+I research how we might control, adapt, and evaluate language models in out-of-domain, limited data settings. See my work in [pretraining](https://aclanthology.org/D19-1371), [domain adaptation](https://aclanthology.org/2020.acl-main.740/) and [few-shot learning](https://openreview.net/forum?id=_WnGcwXLYOE).  
+
+
+
+##### ▸ Human-centered NLP over document collections
+
+I develop NLP systems that help humans identify, organize, and summarize useful information in large document collections, such as [question-answering](https://aclanthology.org/2021.naacl-main.365/) over papers, [fact-checking](https://aclanthology.org/2020.emnlp-main.609/) claims against literature, and summarizing [papers](https://aclanthology.org/2020.findings-emnlp.428) or [legal cases](https://openreview.net/forum?id=z1d8fUiS8Cr).
+
+
+##### ▸ Augmented reading interfaces
+
+<!-- Reading papers is hard, even for experienced researchers. Can we make them more accessible by automatically transforming papers into dynamic web documents with helpful interactive features? --> 
+
+I design interactive reading interfaces that make papers more accessible, such as by [explaining math notation](https://dl.acm.org/doi/10.1145/3411764.3445648) and [highlighting salient passages](https://arxiv.org/abs/2205.04561). For non-expert readers, I build tools that [simplify difficult passages and provide navigational guidance](https://arxiv.org/abs/2203.00130).  
+
+
+##### ▸ Open science resources
+
+I curate and release large-scale, high-quality datasets and corpora to support this research, including [S2ORC](https://aclanthology.org/2020.acl-main.447), the largest, machine-readable collection of open-access full-text papers to-date.
+
 
 <!-- I've also worked as a statistician / data scientist in Seattle and an applied probability researcher at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/). -->
 
