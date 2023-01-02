@@ -9,6 +9,10 @@ on:
     branches:
       - master
       - main
+  workflow_dispatch:
+    branches:
+      - master
+      - main
 
 jobs:
   deploy:
