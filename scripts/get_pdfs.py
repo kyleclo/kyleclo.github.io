@@ -10,6 +10,7 @@ import os
 from scripts.sort_bib import get_bib_chunks
 import requests
 from collections import defaultdict
+from time import sleep
 
 
 def get_bib_id(line: str) -> str:
@@ -18,6 +19,18 @@ def get_bib_id(line: str) -> str:
 
 def get_arxiv_id(line: str) -> str:
     return re.search(r'arxiv.*=.*({|\")(.+)(}|\")', line).group(2)
+
+
+def get_acl_id(line: str) -> str:
+    return re.search(r'acl.*=.*({|\")(.+)(}|\")', line).group(2)
+
+
+def get_or_id(line: str) -> str:
+    return re.search(r'openreview.*=.*({|\")(.+)(}|\")', line).group(2)
+
+
+def get_pmc_id(line: str) -> str:
+    return re.search(r'pmc.*=.*({|\")(.+)(}|\")', line).group(2)
 
 
 def bib_title(line: str) -> str:
@@ -59,6 +72,46 @@ def create_all_slugs(titles: List[str]) -> List[str]:
     return final_slugs
 
 
+def fetch_arxiv_pdf(arxiv_id: str, target_path: str):
+    USER_AGENT = "Kyle Lo, for personal research website <kylel@allenai.org>"
+    URL_PREFIX = "https://export.arxiv.org/pdf/"
+    uri = URL_PREFIX + arxiv_id
+    response = requests.get(uri, headers={"User-Agent": USER_AGENT})
+    if response.ok:
+        with open(target_path, "wb") as f_out:
+            f_out.write(response.content)
+
+
+def fetch_acl_pdf(acl_id: str, target_path: str):
+    USER_AGENT = "Kyle Lo, for personal research website <kylel@allenai.org>"
+    URL_PREFIX = "https://aclanthology.org/"
+    uri = URL_PREFIX + acl_id + '.pdf'
+    response = requests.get(uri, headers={"User-Agent": USER_AGENT})
+    if response.ok:
+        with open(target_path, "wb") as f_out:
+            f_out.write(response.content)
+
+
+def fetch_openreview_pdf(openreview_id: str, target_path: str):
+    USER_AGENT = "Kyle Lo, for personal research website <kylel@allenai.org>"
+    URL_PREFIX = "https://openreview.net/pdf?id="
+    uri = URL_PREFIX + openreview_id
+    response = requests.get(uri, headers={"User-Agent": USER_AGENT})
+    if response.ok:
+        with open(target_path, "wb") as f_out:
+            f_out.write(response.content)
+
+
+def fetch_pmc_pdf(pmc_id: str, target_path: str):
+    USER_AGENT = "Kyle Lo, for personal research website <kylel@allenai.org>"
+    URL_PREFIX = "https://openreview.net/pdf?id="
+    uri = URL_PREFIX + pmc_id
+    response = requests.get(uri, headers={"User-Agent": USER_AGENT})
+    if response.ok:
+        with open(target_path, "wb") as f_out:
+            f_out.write(response.content)
+
+
 if __name__ == '__main__':
     # 1) read
     with open('_bibliography/papers.bib') as f_in:
@@ -77,26 +130,56 @@ if __name__ == '__main__':
     slugs = create_all_slugs(titles=titles)
     assert len(slugs) == len(bib_chunks)
 
-    # 4) figure out URLs to fetch PDFs
-    slug_to_metadata: Dict = {}
+    # 4) fetch any arXiv PDFs first
+    bib_id_to_slug: Dict = {}
     for slug, bib_chunk in zip(slugs, bib_chunks):
 
+        # bib id
+        bib_id_lines = [line for line in bib_chunk.split('\n') if line.strip().startswith('@')]
+        assert len(bib_id_lines) == 1
+        bib_id = get_bib_id(line=bib_id_lines[0])
+        bib_id_to_slug[bib_id] = slug
+
         # start w/ arxiv papers
-        arxiv_lines = [line for line in bib_chunk.split('\n') if 'arxiv' in line]
+        arxiv_lines = [line for line in bib_chunk.split('\n') if line.strip().startswith('arxiv')]
         if arxiv_lines:
+            assert len(arxiv_lines) == 1
             arxiv_id = get_arxiv_id(line=arxiv_lines[0])
+            # download
             target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
             if not os.path.exists(target_pdf_path):
-                requests.request()
+                fetch_arxiv_pdf(arxiv_id=arxiv_id, target_path=target_pdf_path)
+                sleep(2)
 
-                month_score = \
-                [score for month, score in month_to_score.items() if month in month_line][
-                    0]
-                year_line = [line.lower() for line in bib_chunk.split('\n') if 'year' in line][0]
-                year_score = get_year(year_line=year_line)
-                score = year_score * 100 + month_score
-                bib_chunks_with_scores.append((bib_chunk, score))
+        # next ACL papers
+        acl_lines = [line for line in bib_chunk.split('\n') if line.strip().startswith('acl')]
+        if acl_lines:
+            assert len(acl_lines) == 1
+            acl_id = get_acl_id(line=acl_lines[0])
+            # download
+            target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
+            if not os.path.exists(target_pdf_path):
+                fetch_acl_pdf(acl_id=acl_id, target_path=target_pdf_path)
+                sleep(2)
 
-            sorted_bib_chunks_with_scores = sorted(bib_chunks_with_scores,
-                                                   key=lambda tup: tup[-1],
-                                                   reverse=True)
+        # next OpenReview papers
+        or_lines = [line for line in bib_chunk.split('\n') if line.strip().startswith('openreview')]
+        if or_lines:
+            assert len(or_lines) == 1
+            openreview_id = get_or_id(line=or_lines[0])
+            # download
+            target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
+            if not os.path.exists(target_pdf_path):
+                fetch_openreview_pdf(openreview_id=openreview_id, target_path=target_pdf_path)
+                sleep(2)
+
+        # fetch any pubmed central papers
+        pmc_lines = [line for line in bib_chunk.split('\n') if line.strip().startswith('pmc')]
+        if pmc_lines:
+            assert len(pmc_lines) == 1
+            pmc_id = get_pmc_id(line=pmc_lines[0])
+            # download
+            target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
+            if not os.path.exists(target_pdf_path):
+                fetch_pmc_pdf(pmc_id=pmc_id, target_path=target_pdf_path)
+                sleep(2)
