@@ -27,7 +27,7 @@ I research how we might control, adapt, and evaluate language models in out-of-d
 
 
 
-##### ▸ Human-centered NLP over document collections
+##### ▸ NLP for document collections
 
 I develop NLP systems that help humans identify, organize, and summarize useful information in large document collections, such as [question-answering](https://aclanthology.org/2021.naacl-main.365/) over papers, [fact-checking](https://aclanthology.org/2020.emnlp-main.609/) claims against literature, and summarizing [papers](https://aclanthology.org/2020.findings-emnlp.428) or [legal cases](https://openreview.net/forum?id=z1d8fUiS8Cr).
 
