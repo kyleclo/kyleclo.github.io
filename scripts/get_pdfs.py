@@ -104,8 +104,8 @@ def fetch_openreview_pdf(openreview_id: str, target_path: str):
 
 def fetch_pmc_pdf(pmc_id: str, target_path: str):
     USER_AGENT = "Kyle Lo, for personal research website <kylel@allenai.org>"
-    URL_PREFIX = "https://openreview.net/pdf?id="
-    uri = URL_PREFIX + pmc_id
+    URL_PREFIX = "https://www.ncbi.nlm.nih.gov/pmc/articles/"
+    uri = URL_PREFIX + pmc_id + '/pdf/'
     response = requests.get(uri, headers={"User-Agent": USER_AGENT})
     if response.ok:
         with open(target_path, "wb") as f_out:
@@ -140,13 +140,15 @@ if __name__ == '__main__':
         bib_id = get_bib_id(line=bib_id_lines[0])
         bib_id_to_slug[bib_id] = slug
 
+        # pdf path
+        target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
+
         # start w/ arxiv papers
         arxiv_lines = [line for line in bib_chunk.split('\n') if line.strip().startswith('arxiv')]
         if arxiv_lines:
             assert len(arxiv_lines) == 1
             arxiv_id = get_arxiv_id(line=arxiv_lines[0])
             # download
-            target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
             if not os.path.exists(target_pdf_path):
                 fetch_arxiv_pdf(arxiv_id=arxiv_id, target_path=target_pdf_path)
                 sleep(2)
@@ -157,7 +159,6 @@ if __name__ == '__main__':
             assert len(acl_lines) == 1
             acl_id = get_acl_id(line=acl_lines[0])
             # download
-            target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
             if not os.path.exists(target_pdf_path):
                 fetch_acl_pdf(acl_id=acl_id, target_path=target_pdf_path)
                 sleep(2)
@@ -168,7 +169,7 @@ if __name__ == '__main__':
             assert len(or_lines) == 1
             openreview_id = get_or_id(line=or_lines[0])
             # download
-            target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
+
             if not os.path.exists(target_pdf_path):
                 fetch_openreview_pdf(openreview_id=openreview_id, target_path=target_pdf_path)
                 sleep(2)
@@ -179,7 +180,12 @@ if __name__ == '__main__':
             assert len(pmc_lines) == 1
             pmc_id = get_pmc_id(line=pmc_lines[0])
             # download
-            target_pdf_path = os.path.join('assets/pdf/', f'{slug}.pdf')
             if not os.path.exists(target_pdf_path):
                 fetch_pmc_pdf(pmc_id=pmc_id, target_path=target_pdf_path)
                 sleep(2)
+
+        # print anything else here, so manually add those PDFs
+        if not os.path.exists(target_pdf_path):
+            print(f'Missing; {slug}.pdf')
+
+
