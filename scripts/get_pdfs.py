@@ -134,6 +134,8 @@ if __name__ == '__main__':
     bib_id_to_slug: Dict = {}
     for slug, bib_chunk in zip(slugs, bib_chunks):
 
+        print('pdf={' + slug + '.pdf}')
+
         # bib id
         bib_id_lines = [line for line in bib_chunk.split('\n') if line.strip().startswith('@')]
         assert len(bib_id_lines) == 1
@@ -187,5 +189,4 @@ if __name__ == '__main__':
         # print anything else here, so manually add those PDFs
         if not os.path.exists(target_pdf_path):
             print(f'Missing; {slug}.pdf')
-
 

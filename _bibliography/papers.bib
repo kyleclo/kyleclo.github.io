@@ -11,7 +11,8 @@
   volume={abs/2212.10526},
   abstract={Multi-document summarization (MDS) has traditionally been studied assuming a set of ground-truth topic-related input documents is provided. In practice, the input document set is unlikely to be available a priori and would need to be retrieved based on an information need, a setting we call open-domain MDS. We experiment with current state-of-the-art retrieval and summarization models on several popular MDS datasets extended to the open-domain setting. We find that existing summarizers suffer large reductions in performance when applied as-is to this more realistic task, though training summarizers with retrieved inputs can reduce their sensitivity retrieval errors. To further probe these findings, we conduct perturbation experiments on summarizer inputs to study the impact of different types of document retrieval errors. Based on our results, we provide practical guidelines to help facilitate a shift to open-domain MDS. We release our code and experimental results alongside all data or model artifacts created during our investigation.},
   bibtex_show={true},
-  arxiv={2212.10526}
+  arxiv={2212.10526},
+  pdf={exploring-the-challenges-of-open-domain-multi-document-summarization.pdf}
 }
 
 @article{Fok2022ScimIS,
@@ -24,7 +25,8 @@
   volume={abs/2205.04561},
   abstract={Researchers need to keep up with immense literatures, though it is time-consuming and difficult to do so. In this paper, we investigate the role that intelligent interfaces can play in helping researchers skim papers, that is, rapidly reviewing a paper to attain a cursory understanding of its contents. After conducting formative interviews and a design probe, we suggest that skimming aids should aim to thread the needle of highlighting content that is simultaneously diverse, evenly-distributed, and important. We introduce Scim, a novel intelligent skimming interface that reifies this aim, designed to support the skimming process by highlighting salient paper contents to direct a skimmer's focus. Key to the design is that the highlights are faceted by content type, evenly-distributed across a paper, with a density configurable by readers at both the global and local level. We evaluate Scim with an in-lab usability study and deployment study, revealing how skimming aids can support readers throughout the skimming experience and yielding design considerations and tensions for the design of future intelligent skimming tools.},
   bibtex_show={true},
-  arxiv={2205.04561}
+  arxiv={2205.04561},
+  pdf={scim-intelligent-skimming-support-for-scientific-papers.pdf}
 }
 
 @article{Scao2022BLOOMA1,
@@ -37,7 +39,8 @@
   volume={abs/2211.05100},
   abstract={Large language models (LLMs) have been shown to be able to perform new tasks based on a few demonstrations or natural language instructions. While these capabilities have led to widespread adoption, most LLMs are developed by resource-rich organizations and are frequently kept from the public. As a step towards democratizing this powerful technology, we present BLOOM, a 176B-parameter open-access language model designed and built thanks to a collaboration of hundreds of researchers. BLOOM is a decoder-only Transformer language model that was trained on the ROOTS corpus, a dataset comprising hundreds of sources in 46 natural and 13 programming languages (59 in total). We find that BLOOM achieves competitive performance on a wide variety of benchmarks, with stronger results after undergoing multitask prompted finetuning. To facilitate future research and applications using LLMs, we publicly release our models and code under the Responsible AI License.},
   bibtex_show={true},
-  arxiv={2211.05100}
+  arxiv={2211.05100},
+pdf={bloom-a-176b-parameter-open-access-multilingual-language-model.pdf}
 }
 
 @inproceedings{shen2022multilexsum,
@@ -51,7 +54,8 @@ url={https://openreview.net/forum?id=z1d8fUiS8Cr},
 selected={true},
 abstract={With the advent of large language models, methods for abstractive summarization have made great strides, creating potential for use in applications to aid knowledge workers processing unwieldy document collections. One such setting is the Civil Rights Litigation Clearinghouse (CRLC, https://clearinghouse.net), which posts information about large-scale civil rights lawsuits, serving lawyers, scholars, and the general public. Today, summarization in the CRLC requires extensive training of lawyers and law students who spend hours per case understanding multiple relevant documents in order to produce high-quality summaries of key events and outcomes. Motivated by this ongoing real-world summarization effort, we introduce Multi-LexSum, a collection of 9,280 expert-authored summaries drawn from ongoing CRLC writing. Multi-LexSum presents a challenging multi-document summarization task given the length of the source documents, often exceeding two hundred pages per case. Furthermore, Multi-LexSum is distinct from other datasets in its multiple target summaries, each at a different granularity (ranging from one-sentence "extreme" summaries to multi-paragraph narrations of over five hundred words). We present extensive analysis demonstrating that despite the high-quality summaries in the training data (adhering to strict content and style guidelines), state-of-the-art summarization models perform poorly on this task. We release Multi-LexSum for further summarization research and to facilitate the development of applications to assist in the CRLC's mission at https://multilexsum.github.io.},
 bibtex_show={true},
-openreview={z1d8fUiS8Cr}
+openreview={z1d8fUiS8Cr},
+pdf={multi-lexsum-real-world-summaries-of-civil-rights-lawsuits-at-multiple-granularities.pdf}
 }
 
 @inproceedings{cohan-etal-2022-overview,
@@ -76,7 +80,8 @@ openreview={z1d8fUiS8Cr}
     pages = "1--6",
     abstract = "With the ever-increasing pace of research and high volume of scholarly communication, scholars face a daunting task. Not only must they keep up with the growing literature in their own and related fields, scholars increasingly also need to rebut pseudo-science and disinformation. These needs have motivated an increasing focus on computational methods for enhancing search, summarization, and analysis of scholarly documents. However, the various strands of research on scholarly document processing remain fragmented. To reach out to the broader NLP and AI/ML community, pool distributed efforts in this area, and enable shared access to published research, we held the 3rd Workshop on Scholarly Document Processing (SDP) at COLING as a hybrid event (https://sdproc.org/2022/). The SDP workshop consisted of a research track, three invited talks and five Shared Tasks: 1) MSLR22: Multi-Document Summarization for Literature Reviews, 2) DAGPap22: Detecting automatically generated scientific papers, 3) SV-Ident 2022: Survey Variable Identification in Social Science Publications, 4) SKGG: Scholarly Knowledge Graph Generation, 5) MuP 2022: Multi Perspective Scientific Document Summarization. The program was geared towards NLP, information retrieval, and data mining for scholarly documents, with an emphasis on identifying and providing solutions to open challenges.",
     bibtex_show={true},
-    acl={2022.sdp-1.1}
+    acl={2022.sdp-1.1},
+    pdf={overview-of-the-third-workshop-on-scholarly-document-processing.pdf}
 }
 
 @article{Wadden2022SciFactOpenTO,
@@ -89,7 +94,8 @@ openreview={z1d8fUiS8Cr}
   volume={abs/2210.13777},
   abstract = "While research on scientific claim verification has led to the development of powerful systems that appear to approach human performance, these approaches have yet to be tested in a realistic setting against large corpora of scientific literature. Moving to this open-domain evaluation setting, however, poses unique challenges; in particular, it is infeasible to exhaustively annotate all evidence documents. In this work, we present SciFact-Open, a new test collection designed to evaluate the performance of scientific claim verification systems on a corpus of 500K research abstracts. Drawing upon pooling techniques from information retrieval, we collect evidence for scientific claims by pooling and annotating the top predictions of four state-of-the-art scientific claim verification models. We find that systems developed on smaller corpora struggle to generalize to SciFact-Open, exhibiting performance drops of at least 15 F1. In addition, analysis of the evidence in SciFact-Open reveals interesting phenomena likely to appear when claim verification systems are deployed in practice, e.g., cases where the evidence supports only a special case of the claim. Our dataset is available at https://github.com/dwadden/scifact-open.",
   bibtex_show={true},
-  arxiv={2210.13777}
+  arxiv={2210.13777},
+  pdf={scifact-open-towards-open-domain-scientific-claim-verification.pdf}
 }
 
 @inproceedings{wadden-etal-2022-multivers,
@@ -110,7 +116,8 @@ openreview={z1d8fUiS8Cr}
     pages = "61--76",
     abstract = "The scientific claim verification task requires an NLP system to label scientific documents which Support or Refute an input claim, and to select evidentiary sentences (or rationales) justifying each predicted label. In this work, we present MultiVerS, which predicts a fact-checking label and identifies rationales in a multitask fashion based on a shared encoding of the claim and full document context. This approach accomplishes two key modeling goals. First, it ensures that all relevant contextual information is incorporated into each labeling decision. Second, it enables the model to learn from instances annotated with a document-level fact-checking label, but lacking sentence-level rationales. This allows MultiVerS to perform weakly-supervised domain adaptation by training on scientific documents labeled using high-precision heuristics. Our approach outperforms two competitive baselines on three scientific claim verification datasets, with particularly strong performance in zero / few-shot domain adaptation experiments. Our code and data are available at https://github.com/dwadden/multivers.",
   bibtex_show={true},
-  acl={2022.findings-naacl.6}
+  acl={2022.findings-naacl.6},
+  pdf={multivers-improving-scientific-claim-verification-with-weak-supervision-and-full-document-context.pdf}
 }
 
 @inproceedings{lauscher-etal-2022-multicite,
@@ -132,7 +139,8 @@ openreview={z1d8fUiS8Cr}
     pages = "1875--1889",
     abstract = "Citation context analysis (CCA) is an important task in natural language processing that studies how and why scholars discuss each others{'} work. Despite decades of study, computational methods for CCA have largely relied on overly-simplistic assumptions of how authors cite, which ignore several important phenomena. For instance, scholarly papers often contain rich discussions of cited work that span multiple sentences and express multiple intents concurrently. Yet, recent work in CCA is often approached as a single-sentence, single-label classification task, and thus many datasets used to develop modern computational approaches fail to capture this interesting discourse. To address this research gap, we highlight three understudied phenomena for CCA and release MULTICITE, a new dataset of 12.6K citation contexts from 1.2K computational linguistics papers that fully models these phenomena. Not only is it the largest collection of expert-annotated citation contexts to-date, MULTICITE contains multi-sentence, multi-label citation contexts annotated through-out entire full paper texts. We demonstrate how MULTICITE can enable the development of new computational methods on three important CCA tasks. We release our code and dataset at https://github.com/allenai/multicite.",
     bibtex_show={true},
-    acl={2022.naacl-main.137}
+    acl={2022.naacl-main.137},
+pdf={multicite-modeling-realistic-citations-requires-moving-beyond-the-single-sentence-single-label-setting.pdf}
 }
 
 @article{Goodwin2022,
@@ -155,7 +163,8 @@ issn={2052-4463},
 doi={10.1038/s41597-022-01533-w},
 url={https://doi.org/10.1038/s41597-022-01533-w},
 bibtex_show={true},
-nature={s41597-022-01533-w}
+nature={s41597-022-01533-w},
+pdf={automatic-question-answering-for-multiple-stakeholders-the-epidemic-question-answering-dataset.pdf}
 }
 
 @inproceedings{10.1145/3531146.3534637,
@@ -177,7 +186,8 @@ location = {Seoul, Republic of Korea},
 series = {FAccT '22},
 bibtex_show={true},
 arxiv={2206.03216},
-acm={10.1145/3531146.3534637}
+acm={10.1145/3531146.3534637},
+pdf={data-governance-in-the-age-of-large-scale-data-driven-language-technology.pdf}
 }
 
 @inproceedings{wright-etal-2022-generating,
@@ -199,7 +209,8 @@ acm={10.1145/3531146.3534637}
     pages = "2448--2460",
     abstract = "Automated scientific fact checking is difficult due to the complexity of scientific language and a lack of significant amounts of training data, as annotation requires domain expertise. To address this challenge, we propose scientific claim generation, the task of generating one or more atomic and verifiable claims from scientific sentences, and demonstrate its usefulness in zero-shot fact checking for biomedical claims. We propose CLAIMGEN-BART, a new supervised method for generating claims supported by the literature, as well as KBIN, a novel method for generating claim negations. Additionally, we adapt an existing unsupervised entity-centric method of claim generation to biomedical claims, which we call CLAIMGEN-ENTITY. Experiments on zero-shot fact checking demonstrate that both CLAIMGEN-ENTITY and CLAIMGEN-BART, coupled with KBIN, achieve up to 90{\%} performance of fully supervised models trained on manually annotated claims and evidence. A rigorous evaluation study demonstrates significant improvement in generated claim and negation quality over existing baselines",
     bibtex_show={true},
-    acl={2022.acl-long.175}
+    acl={2022.acl-long.175},
+    pdf={generating-scientific-claims-for-zero-shot-scientific-fact-checking.pdf}
 }
 
 @article{shen-etal-2022-vila,
@@ -222,7 +233,8 @@ acm={10.1145/3531146.3534637}
     abstract = "Accurately extracting structured content from PDFs is a critical first step for NLP over scientific papers. Recent work has improved extraction accuracy by incorporating elementary layout information, for example, each token{'}s 2D position on the page, into language model pretraining. We introduce new methods that explicitly model VIsual LAyout (VILA) groups, that is, text lines or text blocks, to further improve performance. In our I-VILA approach, we show that simply inserting special tokens denoting layout group boundaries into model inputs can lead to a 1.9{\%} Macro F1 improvement in token classification. In the H-VILA approach, we show that hierarchical encoding of layout-groups can result in up to 47{\%} inference time reduction with less than 0.8{\%} Macro F1 loss. Unlike prior layout-aware approaches, our methods do not require expensive additional pretraining, only fine-tuning, which we show can reduce training cost by up to 95{\%}. Experiments are conducted on a newly curated evaluation suite, S2-VLUE, that unifies existing automatically labeled datasets and includes a new dataset of manual annotations covering diverse papers from 19 scientific disciplines. Pre-trained weights, benchmark datasets, and source code are available at https://github.com/allenai/VILA.",
     selected={true},
     bibtex_show={true},
-    acl={2022.tacl-1.22}
+    acl={2022.tacl-1.22},
+    pdf={vila-improving-structured-content-extraction-from-scientific-pdfs-using-visual-layout-groups.pdf}
 }
 
 @article{Murthy2022ACCoRDAM,
@@ -235,7 +247,8 @@ acm={10.1145/3531146.3534637}
   volume={abs/2205.06982},
   abstract={Systems that can automatically define unfamiliar terms hold the promise of improving the accessibility of scientific texts, especially for readers who may lack prerequisite background knowledge. However, current systems assume a single "best" description per concept, which fails to account for the many potentially useful ways a concept can be described. We present ACCoRD, an end-to-end system tackling the novel task of generating sets of descriptions of scientific concepts. Our system takes advantage of the myriad ways a concept is mentioned across the scientific literature to produce distinct, diverse descriptions of target scientific concepts in terms of different reference concepts. To support research on the task, we release an expert-annotated resource, the ACCoRD corpus, which includes 1,275 labeled contexts and 1,787 hand-authored concept descriptions. We conduct a user study demonstrating that (1) users prefer descriptions produced by our end-to-end system, and (2) users prefer multiple descriptions to a single "best" description.},
   bibtex_show={true},
-  arxiv={2205.06982}
+  arxiv={2205.06982},
+  pdf={accord-a-multi-document-approach-to-generating-diverse-descriptions-of-scientific-concepts.pdf}
 }
 
 @inproceedings{10.1145/3491101.3519795,
@@ -257,7 +270,8 @@ location = {New Orleans, LA, USA},
 series = {CHI EA '22},
 bibtex_show={true},
 arxiv={2109.13301},
-acm={10.1145/3491101.3519795}
+acm={10.1145/3491101.3519795},
+pdf={exploring-the-role-of-local-and-global-explanations-in-recommender-systems.pdf}
 }
 
 @article{https://doi.org/10.1002/aaai.12038,
@@ -275,7 +289,8 @@ year = {2022},
 month = {mar},
 day = {31},
 bibtex_show={true},
-aaai={aimagazine/article/view/19126}
+aaai={aimagazine/article/view/19126},
+pdf={infrastructure-for-rapid-open-knowledge-network-development.pdf}
 }
 
 @article{August2022PaperPM,
@@ -289,7 +304,8 @@ aaai={aimagazine/article/view/19126}
   selected={true},
   bibtex_show={true},
   abstract={When seeking information not covered in patient-friendly documents, like medical pamphlets, healthcare consumers may turn to the research literature. Reading medical papers, however, can be a challenging experience. To improve access to medical papers, we introduce a novel interactive interface-Paper Plain-with four features powered by natural language processing: definitions of unfamiliar terms, in-situ plain language section summaries, a collection of key questions that guide readers to answering passages, and plain language summaries of the answering passages. We evaluate Paper Plain, finding that participants who use Paper Plain have an easier time reading and understanding research papers without a loss in paper comprehension compared to those who use a typical PDF reader. Altogether, the study results suggest that guiding readers to relevant passages and providing plain language summaries, or "gists," alongside the original paper content can make reading medical papers easier and give readers more confidence to approach these papers.},
-  arxiv={2203.00130}
+  arxiv={2203.00130},
+  pdf={paper-plain-making-medical-research-papers-approachable-to-healthcare-consumers-with-natural-language-processing.pdf}
 }
 
 @inproceedings{NEURIPS2021_8493eeac,
@@ -305,7 +321,8 @@ aaai={aimagazine/article/view/19126}
  month = {dec},
  bibtex_show={true},
  abstract={Few-shot NLP research is highly active, yet conducted in disjoint research threads with evaluation suites that lack challenging-yet-realistic testing setups and fail to employ careful experimental design. Consequently, the community does not know which techniques perform best or even if they outperform simple baselines. In response, we formulate the FLEX Principles, a set of requirements and best practices for unified, rigorous, valid, and cost-sensitive few-shot NLP evaluation. These principles include Sample Size Design, a novel approach to benchmark design that optimizes statistical accuracy and precision while keeping evaluation costs manageable. Following the principles, we release the FLEX benchmark, which includes four few-shot transfer settings, zero-shot evaluation, and a public leaderboard that covers diverse NLP tasks. In addition, we present UniFew, a prompt-based model for few-shot learning that unifies pretraining and finetuning prompt formats, eschewing complex machinery of recent prompt-based approaches in adapting downstream task formats to language model pretraining objectives. We demonstrate that despite simplicity, UniFew achieves results competitive with both popular meta-learning and prompt-based approaches.},
- openreview={_WnGcwXLYOE}
+ openreview={_WnGcwXLYOE},
+ pdf={flex-unifying-evaluation-for-few-shot-nlp.pdf}
 }
 
 
@@ -327,7 +344,8 @@ aaai={aimagazine/article/view/19126}
     pages = "2130--2144",
     abstract = "We address the task of explaining relationships between two scientific documents using natural language text. This task requires modeling the complex content of long technical documents, deducing a relationship between these documents, and expressing the details of that relationship in text. In addition to the theoretical interest of this task, successful solutions can help improve researcher efficiency in search and review. In this paper we establish a dataset of 622K examples from 154K documents. We pretrain a large language model to serve as the foundation for autoregressive approaches to the task. We explore the impact of taking different views on the two documents, including the use of dense representations extracted with scientific IE systems. We provide extensive automatic and human evaluations which show the promise of such models, but make clear challenges for future work.",
     bibtex_show={true},
-    acl={2021.acl-long.166}
+    acl={2021.acl-long.166},
+pdf={explaining-relationships-between-scientific-documents.pdf}
 }
 
 @inproceedings{dasigi-etal-2021-dataset,
@@ -349,7 +367,8 @@ aaai={aimagazine/article/view/19126}
     abstract = "Readers of academic research papers often read with the goal of answering specific questions. Question Answering systems that can answer those questions can make consumption of the content much more efficient. However, building such tools requires data that reflect the difficulty of the task arising from complex reasoning about claims made in multiple parts of a paper. In contrast, existing information-seeking question answering datasets usually contain questions about generic factoid-type information. We therefore present Qasper, a dataset of 5049 questions over 1585 Natural Language Processing papers. Each question is written by an NLP practitioner who read only the title and abstract of the corresponding paper, and the question seeks information present in the full text. The questions are then answered by a separate set of NLP practitioners who also provide supporting evidence to answers. We find that existing models that do well on other QA tasks do not perform well on answering these questions, underperforming humans by at least 27 F1 points when answering them from entire papers, motivating further research in document-grounded, information-seeking QA, which our dataset is designed to facilitate.",
     selected={true},
     bibtex_show={true},
-    acl={2021.naacl-main.365}
+    acl={2021.naacl-main.365},
+    pdf={a-dataset-of-information-seeking-questions-and-answers-anchored-in-research-papers.pdf}
 }
 
 @inproceedings{wadden-lo-2021-overview,
@@ -365,7 +384,8 @@ aaai={aimagazine/article/view/19126}
     pages = "124--129",
     abstract = "We present an overview of the SCIVER shared task, presented at the 2nd Scholarly Document Processing (SDP) workshop at NAACL 2021. In this shared task, systems were provided a scientific claim and a corpus of research abstracts, and asked to identify which articles Support or Refute the claim as well as provide evidentiary sentences justifying those labels. 11 teams made a total of 14 submissions to the shared task leaderboard, leading to an improvement of more than +23 F1 on the primary task evaluation metric. In addition to surveying the participating systems, we provide several insights into modeling approaches to support continued progress and future research on the important and challenging task of scientific claim verification.",
     bibtex_show={true},
-    acl={2021.sdp-1.16}
+    acl={2021.sdp-1.16},
+    pdf={overview-and-insights-from-the-sciver-shared-task-on-scientific-claim-verification.pdf}
 }
 
 @inproceedings{beltagy-etal-2021-overview,
@@ -394,7 +414,8 @@ aaai={aimagazine/article/view/19126}
     pages = "159--165",
     abstract = "With the ever-increasing pace of research and high volume of scholarly communication, scholars face a daunting task. Not only must they keep up with the growing literature in their own and related fields, scholars increasingly also need to rebut pseudo-science and disinformation. These needs have motivated an increasing focus on computational methods for enhancing search, summarization, and analysis of scholarly documents. However, the various strands of research on scholarly document processing remain fragmented. To reach out to the broader NLP and AI/ML community, pool distributed efforts in this area, and enable shared access to published research, we held the 2nd Workshop on Scholarly Document Processing (SDP) at NAACL 2021 as a virtual event (https://sdproc.org/2021/). The SDP workshop consisted of a research track, three invited talks, and three Shared Tasks (LongSumm 2021, SCIVER, and 3C). The program was geared towards the application of NLP, information retrieval, and data mining for scholarly documents, with an emphasis on identifying and providing solutions to open challenges.",
     bibtex_show={true},
-    acl={2021.sdp-1.22}
+    acl={2021.sdp-1.22},
+    pdf={overview-of-the-second-workshop-on-scholarly-document-processing.pdf}
 }
 
 @article{10.1145/3451964.3451965,
@@ -417,7 +438,8 @@ articleno = {1},
 numpages = {12},
   bibtex_show={true},
   arxiv={2005.04474},
-  acm={10.1145/3451964.3451965}
+  acm={10.1145/3451964.3451965},
+  pdf={trec-covid-constructing-a-pandemic-information-retrieval-test-collection.pdf}
 }
 
 @inproceedings{10.1145/3411764.3445648,
@@ -439,7 +461,8 @@ location = {Yokohama, Japan},
 series = {CHI '21},
 selected={true},
 arxiv={2009.14237},
-acm={10.1145/3411764.3445648}
+acm={10.1145/3411764.3445648},
+pdf={augmenting-scientific-papers-with-just-in-time-position-sensitive-definitions-of-terms-and-symbols.pdf}
 }
 
 @inproceedings{gabriel-etal-2021-discourse,
@@ -462,7 +485,8 @@ acm={10.1145/3411764.3445648}
     pages = "435--447",
     abstract = "We introduce a general framework for abstractive summarization with factual consistency and distinct modeling of the narrative flow in an output summary. Our work addresses current limitations of models for abstractive summarization that often hallucinate information or generate summaries with coherence issues. To generate abstractive summaries with factual consistency and narrative flow, we propose Cooperative Generator-Discriminator Networks (Co-opNet), a novel transformer-based framework where the generator works with a discriminator architecture to compose coherent long-form summaries. We explore four different discriminator objectives which each capture a different aspect of coherence, including whether salient spans of generated abstracts are hallucinated or appear in the input context, and the likelihood of sentence adjacency in generated abstracts. We measure the ability of Co-opNet to learn these objectives with arXiv scientific papers, using the abstracts as a proxy for gold long-form scientific article summaries. Empirical results from automatic and human evaluations demonstrate that Co-opNet learns to summarize with considerably improved global coherence compared to competitive baselines.",
     bibtex_show={true},
-    acl={2021.eacl-main.34}
+    acl={2021.eacl-main.34},
+    pdf={discourse-understanding-and-factual-consistency-in-abstractive-summarization.pdf}
 }
 
 @article{ROBERTS2021103865,
@@ -480,7 +504,8 @@ keywords = {Information retrieval, COVID-19, Pandemics, TREC-COVID},
 abstract = {We present an overview of the TREC-COVID Challenge, an information retrieval (IR) shared task to evaluate search on scientific literature related to COVID-19. The goals of TREC-COVID include the construction of a pandemic search test collection and the evaluation of IR methods for COVID-19. The challenge was conducted over five rounds from April to July 2020, with participation from 92 unique teams and 556 individual submissions. A total of 50 topics (sets of related queries) were used in the evaluation, starting at 30 topics for Round 1 and adding 5 new topics per round to target emerging topics at that state of the still-emerging pandemic. This paper provides a comprehensive overview of the structure and results of TREC-COVID. Specifically, the paper provides details on the background, task structure, topic structure, corpus, participation, pooling, assessment, judgments, results, top-performing systems, lessons learned, and benchmark datasets.},
     bibtex_show={true},
     arxiv={2104.09632},
-    sciencedirect={S1532046421001945}
+    sciencedirect={S1532046421001945},
+    pdf={searching-for-scientific-evidence-in-a-pandemic-an-overview-of-trec-covid.pdf}
 }
 
 @article{10.1093/bib/bbaa296,
@@ -499,7 +524,8 @@ abstract = {We present an overview of the TREC-COVID Challenge, an information r
     eprint = {https://academic.oup.com/bib/article-pdf/22/2/781/36654452/bbaa296.pdf},
     bibtex_show={true},
     openreview={exBoxQwNnY2},
-    oup={22/2/781/6024738}
+    oup={22/2/781/6024738},
+    pdf={text-mining-approaches-for-dealing-with-the-rapidly-expanding-literature-on-covid-19.pdf}
 }
 
 
@@ -523,7 +549,8 @@ abstract = {We present an overview of the TREC-COVID Challenge, an information r
     abstract = "We introduce scientific claim verification, a new task to select abstracts from the research literature containing evidence that SUPPORTS or REFUTES a given scientific claim, and to identify rationales justifying each decision. To study this task, we construct SciFact, a dataset of 1.4K expert-written scientific claims paired with evidence-containing abstracts annotated with labels and rationales. We develop baseline models for SciFact, and demonstrate that simple domain adaptation techniques substantially improve performance compared to models trained on Wikipedia or political news. We show that our system is able to verify claims related to COVID-19 by identifying evidence from the CORD-19 corpus. Our experiments indicate that SciFact will provide a challenging testbed for the development of new systems designed to retrieve and reason over corpora containing specialized domain knowledge. Data and code for this new task are publicly available at https://github.com/allenai/scifact. A leaderboard and COVID-19 fact-checking demo are available at https://scifact.apps.allenai.org.",
     selected={true},
     bibtex_show={true},
-    acl={2020.emnlp-main.609}
+    acl={2020.emnlp-main.609},
+    pdf={fact-or-fiction-verifying-scientific-claims.pdf}
 }
 
 @inproceedings{kang-etal-2020-document,
@@ -544,7 +571,8 @@ abstract = {We present an overview of the TREC-COVID Challenge, an information r
     pages = "196--206",
     abstract = "The task of definition detection is important for scholarly papers, because papers often make use of technical terminology that may be unfamiliar to readers. Despite prior work on definition detection, current approaches are far from being accurate enough to use in realworld applications. In this paper, we first perform in-depth error analysis of the current best performing definition detection system and discover major causes of errors. Based on this analysis, we develop a new definition detection system, HEDDEx, that utilizes syntactic features, transformer encoders, and heuristic filters, and evaluate it on a standard sentence-level benchmark. Because current benchmarks evaluate randomly sampled sentences, we propose an alternative evaluation that assesses every sentence within a document. This allows for evaluating recall in addition to precision. HEDDEx outperforms the leading system on both the sentence-level and the document-level tasks, by 12.7 F1 points and 14.4 F1 points, respectively. We note that performance on the high-recall document-level task is much lower than in the standard evaluation approach, due to the necessity of incorporation of document structure as features. We discuss remaining challenges in document-level definition detection, ideas for improvements, and potential issues for the development of reading aid applications.",
     bibtex_show={true},
-    acl={2020.sdp-1.22}
+    acl={2020.sdp-1.22},
+    pdf={document-level-definition-detection-in-scholarly-documents-existing-models-error-analyses-and-future-directions.pdf}
 }
 
 @inproceedings{cachola-etal-2020-tldr,
@@ -564,7 +592,8 @@ abstract = {We present an overview of the TREC-COVID Challenge, an information r
     abstract = "We introduce TLDR generation, a new form of extreme summarization, for scientific papers. TLDR generation involves high source compression and requires expert background knowledge and understanding of complex domain-specific language. To facilitate study on this task, we introduce SCITLDR, a new multi-target dataset of 5.4K TLDRs over 3.2K papers. SCITLDR contains both author-written and expert-derived TLDRs, where the latter are collected using a novel annotation protocol that produces high-quality summaries while minimizing annotation burden. We propose CATTS, a simple yet effective learning strategy for generating TLDRs that exploits titles as an auxiliary training signal. CATTS improves upon strong baselines under both automated metrics and human evaluations. Data and code are publicly available at https://github.com/allenai/scitldr.",
     selected={true},
     bibtex_show={true},
-    acl={2020.findings-emnlp.428}
+    acl={2020.findings-emnlp.428},
+    pdf={tldr-extreme-summarization-of-scientific-documents.pdf}
 }
 
 @article{10.3389/frma.2020.596624,
@@ -579,7 +608,8 @@ doi={10.3389/frma.2020.596624},
 issn={2504-0537},
 abstract={On the behest of the Office of Science and Technology Policy in the White House, six institutions, including ours, have created an open research dataset called COVID-19 Research Dataset (CORD-19) to facilitate the development of question-answering systems that can assist researchers in finding relevant research on COVID-19. As of May 27, 2020, CORD-19 includes more than 100,000 open access publications from major publishers and PubMed as well as preprint articles deposited into medRxiv, bioRxiv, and arXiv. Recent years, however, have also seen question-answering and other machine learning systems exhibit harmful behaviors to humans due to biases in the training data. It is imperative and only ethical for modern scientists to be vigilant in inspecting and be prepared to mitigate the potential biases when working with any datasets. This article describes a framework to examine biases in scientific document collections like CORD-19 by comparing their properties with those derived from the citation behaviors of the entire scientific community. In total, three expanded sets are created for the analyses: 1) the enclosure set CORD-19E composed of CORD-19 articles and their references and citations, mirroring the methodology used in the renowned “A Century of Physics” analysis; 2) the full closure graph CORD-19C that recursively includes references starting with CORD-19; and 3) the inflection closure CORD-19I, that is, a much smaller subset of CORD-19C but already appropriate for statistical analysis based on the theory of the scale-free nature of the citation network. Taken together, all these expanded datasets show much smoother trends when used to analyze global COVID-19 research. The results suggest that while CORD-19 exhibits a strong tilt toward recent and topically focused articles, the knowledge being explored to attack the pandemic encompasses a much longer time span and is very interdisciplinary. A question-answering system with such expanded scope of knowledge may perform better in understanding the literature and answering related questions. However, while CORD-19 appears to have topical coverage biases compared to the expanded sets, the collaboration patterns, especially in terms of team sizes and geographical distributions, are captured very well already in CORD-19 as the raw statistics and trends agree with those from larger datasets.},
   bibtex_show={true},
-  pmc={PMC8025972}
+  pmc={PMC8025972},
+  pdf={mitigating-biases-in-cord-19-for-analyzing-covid-19-literature.pdf}
 }
 
 @inproceedings{wang-etal-2020-cord,
@@ -620,7 +650,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     url = "https://aclanthology.org/2020.nlpcovid19-acl.1",
     abstract = "The COVID-19 Open Research Dataset (CORD-19) is a growing resource of scientific papers on COVID-19 and related historical coronavirus research. CORD-19 is designed to facilitate the development of text mining and information retrieval systems over its rich collection of metadata and structured full text papers. Since its release, CORD-19 has been downloaded over 200K times and has served as the basis of many COVID-19 text mining and discovery systems. In this article, we describe the mechanics of dataset construction, highlighting challenges and key design decisions, provide an overview of how CORD-19 has been used, and describe several shared tasks built around the dataset. We hope this resource will continue to bring together the computing community, biomedical experts, and policy makers in the search for effective treatments and management policies for COVID-19.",
     bibtex_show={true},
-    acl={2020.nlpcovid19-acl.1}
+    acl={2020.nlpcovid19-acl.1},
+    pdf={cord-19-the-covid-19-open-research-dataset.pdf}
 }
 
 @inproceedings{lo-etal-2020-s2orc,
@@ -641,7 +672,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     abstract = "We introduce S2ORC, a large corpus of 81.1M English-language academic papers spanning many academic disciplines. The corpus consists of rich metadata, paper abstracts, resolved bibliographic references, as well as structured full text for 8.1M open access papers. Full text is annotated with automatically-detected inline mentions of citations, figures, and tables, each linked to their corresponding paper objects. In S2ORC, we aggregate papers from hundreds of academic publishers and digital archives into a unified source, and create the largest publicly-available collection of machine-readable academic text to date. We hope this resource will facilitate research and development of tools and tasks for text mining over academic text.",
     selected={true},
     bibtex_show={true},
-    acl={2020.acl-main.447}
+    acl={2020.acl-main.447},
+    pdf={s2orc-the-semantic-scholar-open-research-corpus.pdf}
 }
 
 @inproceedings{gururangan-etal-2020-dont,
@@ -664,7 +696,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     abstract = "Language models pretrained on text from a wide variety of sources form the foundation of today{'}s NLP. In light of the success of these broad-coverage models, we investigate whether it is still helpful to tailor a pretrained model to the domain of a target task. We present a study across four domains (biomedical and computer science publications, news, and reviews) and eight classification tasks, showing that a second phase of pretraining in-domain (domain-adaptive pretraining) leads to performance gains, under both high- and low-resource settings. Moreover, adapting to the task{'}s unlabeled data (task-adaptive pretraining) improves performance even after domain-adaptive pretraining. Finally, we show that adapting to a task corpus augmented using simple data selection strategies is an effective alternative, especially when resources for domain-adaptive pretraining might be unavailable. Overall, we consistently find that multi-phase adaptive pretraining offers large gains in task performance.",
     selected={true},
     bibtex_show={true},
-    acl={2020.acl-main.740}
+    acl={2020.acl-main.740},
+    pdf={dont-stop-pretraining-adapt-language-models-to-domains-and-tasks.pdf}
 }
 
 @article{Lee2020LIMEADEFA,
@@ -677,7 +710,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
   volume={abs/2003.04315},
   abstract={Research in human-centered AI has shown the benefits of systems that can explain their predictions. Methods that allow an AI to take advice from humans in response to explanations are similarly useful. While both capabilities are well-developed for transparent learning models (e.g., linear models and GA2Ms), and recent techniques (e.g., LIME and SHAP) can generate explanations for opaque models, little attention has been given to advice methods for opaque models. This paper introduces LIMEADE, the first general framework that translates both positive and negative advice (expressed using high-level vocabulary such as that employed by post-hoc explanations) into an update to an arbitrary, underlying opaque model. We demonstrate the generality of our approach with case studies on seventy real-world models across two broad domains: image classification and text recommendation. We show our method improves accuracy compared to a rigorous baseline on the image classification domains. For the text modality, we apply our framework to a neural recommender system for scientific papers on a public website; our user study shows that our framework leads to significantly higher perceived user control, trust, and satisfaction.},
   bibtex_show={true},
-  arxiv={2003.04315}
+  arxiv={2003.04315},
+  pdf={limeade-from-ai-explanations-to-advice-taking.pdf}
 }
 
 
@@ -697,7 +731,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     abstract = "Obtaining large-scale annotated data for NLP tasks in the scientific domain is challenging and expensive. We release SciBERT, a pretrained language model based on BERT (Devlin et. al., 2018) to address the lack of high-quality, large-scale labeled scientific data. SciBERT leverages unsupervised pretraining on a large multi-domain corpus of scientific publications to improve performance on downstream scientific NLP tasks. We evaluate on a suite of tasks including sequence tagging, sentence classification and dependency parsing, with datasets from a variety of scientific domains. We demonstrate statistically significant improvements over BERT and achieve new state-of-the-art results on several of these tasks. The code and pretrained models are available at https://github.com/allenai/scibert/.",
     selected={true},
     bibtex_show={true},
-    acl={D19-1371}
+    acl={D19-1371},
+    pdf={scibert-a-pretrained-language-model-for-scientific-text.pdf}
 }
 
 
@@ -717,7 +752,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     eprint = {https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2737103/feldman\_2019\_oi\_190268.pdf},
     bibtex_show={true},
     pmc={PMC6613296},
-    jama={2737103}
+    jama={2737103},
+    pdf={quantifying-sex-bias-in-clinical-studies-at-scale-with-automated-data-extraction.pdf}
 }
 @inproceedings{beltagy-etal-2019-combining,
     title = "Combining Distant and Direct Supervision for Neural Relation Extraction",
@@ -734,7 +770,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     pages = "1858--1867",
     abstract = "In relation extraction with distant supervision, noisy labels make it difficult to train quality models. Previous neural models addressed this problem using an attention mechanism that attends to sentences that are likely to express the relations. We improve such models by combining the distant supervision data with an additional directly-supervised data, which we use as supervision for the attention weights. We find that joint training on both types of supervision leads to a better model because it improves the model{'}s ability to identify noisy sentences. In addition, we find that sigmoidal attention weights with max pooling achieves better performance over the commonly used weighted average attention in this setup. Our proposed method achieves a new state-of-the-art result on the widely used FB-NYT dataset.",
     bibtex_show={true},
-    acl={N19-1184}
+    acl={N19-1184},
+    pdf={combining-distant-and-direct-supervision-for-neural-relation-extraction.pdf}
 }
 
 @inproceedings{wang-etal-2018-ontology,
@@ -755,7 +792,8 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     pages = "47--55",
     abstract = "Ontology alignment is the task of identifying semantically equivalent entities from two given ontologies. Different ontologies have different representations of the same entity, resulting in a need to de-duplicate entities when merging ontologies. We propose a method for enriching entities in an ontology with external definition and context information, and use this additional information for ontology alignment. We develop a neural architecture capable of encoding the additional information when available, and show that the addition of external data results in an F1-score of 0.69 on the Ontology Alignment Evaluation Initiative (OAEI) largebio SNOMED-NCI subtask, comparable with the entity-level matchers in a SOTA system.",
     bibtex_show={true},
-    acl={W18-2306}
+    acl={W18-2306},
+    pdf={ontology-alignment-in-the-biomedical-domain-using-entity-definitions-and-context.pdf}
 }
 
 @inproceedings{ammar-etal-2018-construction,
@@ -793,6 +831,7 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     pages = "84--91",
     abstract = "We describe a deployed scalable system for organizing published scientific literature into a heterogeneous graph to facilitate algorithmic manipulation and discovery. The resulting literature graph consists of more than 280M nodes, representing papers, authors, entities and various interactions between them (e.g., authorships, citations, entity mentions). We reduce literature graph construction into familiar NLP tasks (e.g., entity extraction and linking), point out research challenges due to differences from standard formulations of these tasks, and report empirical results for each task. The methods described in this paper are used to enable semantic features in \url{www.semanticscholar.org}.",
     bibtex_show={true},
-    acl={N18-3011}
+    acl={N18-3011},
+    pdf={construction-of-the-literature-graph-in-semantic-scholar.pdf}
 }
 
