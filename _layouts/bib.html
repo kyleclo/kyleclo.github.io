@@ -30,12 +30,16 @@
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
 
+        <!-- figures out the array limit -->
         {% assign author_array_limit = author_array_size %}
         {%- if site.max_author_limit and author_array_size > site.max_author_limit %}
           {% assign author_array_limit = site.max_author_limit %}
         {% endif %}
 
+        <!-- loops over authors -->
         {%- for author in entry.author_array limit: author_array_limit -%}
+
+          <!-- figures out if this author is myself -->
           {%- assign author_is_self = false -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
           {%- if site.scholar.last_name contains author_last_name -%}
@@ -43,6 +47,8 @@
               {%- assign author_is_self = true -%}
             {%- endif -%}
           {%- endif -%}
+
+          <!-- figures out if this author is a designated coauthor -->
           {%- assign coauthor_url = nil -%}
           {%- if site.data.coauthors[author_last_name] -%}
             {%- for coauthor in site.data.coauthors[author_last_name] -%}
@@ -53,10 +59,13 @@
             {%- endfor -%}
           {%- endif -%}
 
+          <!-- handles whitespace formatting which needed for first & last author names. -->
           {%- if forloop.length > 1 -%}
             {%- if forloop.first == false -%},&nbsp;{%- endif -%}
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
+
+          <!-- handles printing of author names w/ correct formatting -->
           {%- if author_is_self -%}
             <em>{{author.first}} {{author.last}}</em>
           {%- else -%}
@@ -67,6 +76,8 @@
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
+
+
         {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
         {%- assign more_authors_hide = more_authors | append: " more author" -%}
