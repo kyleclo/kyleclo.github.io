@@ -16,12 +16,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) helping scientists do research. My work:
+Scientist at [Semantic Scholar Research](https://www.semanticscholar.org/research/research-team), [Allen Institute for AI](https://allenai.org/) developing AI tools that help scientists conduct research:
 
 
 ##### ▸ Language models beyond web text
 
-Are language models trained on broad web crawls useful when applied to other texts, like scientific articles or legal documents?  
+Are language models trained on broad web crawls useful when applied to specialized texts, like scientific articles or legal documents?  
 
 I study how to control, adapt, and evaluate language models in out-of-domain, limited data settings. See my work in [pretraining](https://aclanthology.org/D19-1371), [domain adaptation](https://aclanthology.org/2020.acl-main.740/) and [few-shot learning](https://openreview.net/forum?id=_WnGcwXLYOE). 
 
