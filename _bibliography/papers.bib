@@ -1,6 +1,109 @@
 ---
 ---
 
+@inproceedings{krishna-etal-2023-longeval,
+    title = "{L}ong{E}val: Guidelines for Human Evaluation of Faithfulness in Long-form Summarization",
+    author = "Krishna, Kalpesh  and
+      Bransom, Erin  and
+      Kuehl, Bailey  and
+      Iyyer, Mohit  and
+      Dasigi, Pradeep  and
+      Cohan, Arman  and
+      Lo, Kyle",
+    booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.eacl-main.121",
+    pages = "1650--1669",
+    abstract = "While human evaluation remains best practice for accurately judging the faithfulness of automatically-generated summaries, few solutions exist to address the increased difficulty and workload when evaluating long-form summaries. Through a survey of 162 papers on long-form summarization, we first shed light on current human evaluation practices surrounding long-form summaries. We find that 73{\%} of these papers do not perform any human evaluation on model-generated summaries, while other works face new difficulties that manifest when dealing with long documents (e.g., low inter-annotator agreement). Motivated by our survey, we present LongEval, a set of guidelines for human evaluation of faithfulness in long-form summaries that addresses the following challenges: (1) How can we achieve high inter-annotator agreement on faithfulness scores? (2) How can we minimize annotator workload while maintaining accurate faithfulness scores? and (3) Do humans benefit from automated alignment between summary and source snippets? We deploy LongEval in annotation studies on two long-form summarization datasets in different domains (SQuALITY and PubMed), and we find that switching to a finer granularity of judgment (e.g., clause-level) reduces inter-annotator variance in faithfulness scores (e.g., std-dev from 18.5 to 6.8). We also show that scores from a partial annotation of fine-grained units highly correlates with scores from a full annotation workload (0.89 Kendall{'}s tau using 50{\%} judgements). We release our human judgments, annotation templates, and software as a Python library for future research.",
+    bibtex_show = {true},
+    arxiv = {2301.13298},
+    acl = {2023.eacl-main.121},
+    pdf={longeval-guidelines-for-human-evaluation-of-faithfulness-in-long-form-summarization.pdf},
+    preview={longeval-guidelines-for-human-evaluation-of-faithfulness-in-long-form-summarization.png}
+}
+
+@inproceedings{10.1145/3544548.3580847,
+author = {Chang, Joseph Chee and Zhang, Amy X. and Bragg, Jonathan and Head, Andrew and Lo, Kyle and Downey, Doug and Weld, Daniel S.},
+title = {CiteSee: Augmenting Citations in Scientific Papers with Persistent and Personalized Historical Context},
+year = {2023},
+month={apr},
+isbn = {9781450394215},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3544548.3580847},
+doi = {10.1145/3544548.3580847},
+abstract = {When reading a scholarly article, inline citations help researchers contextualize the current article and discover relevant prior work. However, it can be challenging to prioritize and make sense of the hundreds of citations encountered during literature reviews. This paper introduces CiteSee, a paper reading tool that leverages a user’s publishing, reading, and saving activities to provide personalized visual augmentations and context around citations. First, CiteSee connects the current paper to familiar contexts by surfacing known citations a user had cited or opened. Second, CiteSee helps users prioritize their exploration by highlighting relevant but unknown citations based on saving and reading history. We conducted a lab study that suggests CiteSee is significantly more effective for paper discovery than three baselines. A field deployment study shows CiteSee helps participants keep track of their explorations and leads to better situational awareness and increased paper discovery via inline citation when conducting real-world literature reviews.},
+booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+articleno = {737},
+numpages = {15},
+keywords = {scientific papers, reading interfaces, personalization},
+location = {Hamburg, Germany},
+series = {CHI '23},
+  bibtex_show={true},
+  arxiv={2302.07302},
+  acm={10.1145/3544548.3580847},
+  pdf={citesee-augmenting-citations-in-scientific-papers-with-persistent-and-personalized-historical-context.pdf},
+  preview={citesee-augmenting-citations-in-scientific-papers-with-persistent-and-personalized-historical-context.png}
+}
+
+@article{Lo2023TheSR,
+  title={The Semantic Reader Project: Augmenting Scholarly Documents through AI-Powered Interactive Reading Interfaces},
+  author={Kyle Lo and Joseph Chee Chang and Andrew Head and Jonathan Bragg and Amy X. Zhang and Cassidy Trier and Chloe Anastasiades and Tal August and Russell Authur and Danielle Bragg and Erin Bransom and Isabel Cachola and Stefan Candra and Yoganand Chandrasekhar and Yen-Sung Chen and Evie (Yu-Yen) Cheng and Yvonne Chou and Doug Downey and Rob Evans and Raymond Fok and F.Q. Hu and Regan Huff and Dongyeop Kang and Tae Soo Kim and Rodney Michael Kinney and Aniket Kittur and Hyeonsu B Kang and Egor Klevak and Bailey Kuehl and Michael Langan and Matt Latzke and Jaron Lochner and Kelsey MacMillan and Eric Marsh and Tyler Murray and Aakanksha Naik and Ngoc-Uyen Nguyen and Srishti Palani and Soya Park and Caroline Paulic and Napol Rachatasumrit and Smita Rao and Paul L Sayre and Zejiang Shen and Pao Siangliulue and Luca Soldaini and Huy Tran and Madeleine van Zuylen and Lucy Lu Wang and Christopher Wilhelm and Caroline M Wu and Jiangjiang Yang and Angele Zamarron and Marti A. Hearst and Daniel S. Weld},
+  journal={ArXiv},
+  year={2023},
+  month={mar},
+  day={23},
+  volume={abs/2303.14334},
+  selected={true},
+  abstract={Scholarly publications are key to the transfer of knowledge from scholars to others. However, research papers are information-dense, and as the volume of the scientific literature grows, the need for new technology to support the reading process grows. In contrast to the process of finding papers, which has been transformed by Internet technology, the experience of reading research papers has changed little in decades. The PDF format for sharing research papers is widely used due to its portability, but it has significant downsides including: static content, poor accessibility for low-vision readers, and difficulty reading on mobile devices. This paper explores the question "Can recent advances in AI and HCI power intelligent, interactive, and accessible reading interfaces -- even for legacy PDFs?" We describe the Semantic Reader Project, a collaborative effort across multiple institutions to explore automatic creation of dynamic reading interfaces for research papers. Through this project, we've developed ten research prototype interfaces and conducted usability studies with more than 300 participants and real-world users showing improved reading experiences for scholars. We've also released a production reading interface for research papers that will incorporate the best features as they mature. We structure this paper around challenges scholars and the public face when reading research papers -- Discovery, Efficiency, Comprehension, Synthesis, and Accessibility -- and present an overview of our progress and remaining open challenges.},
+  bibtex_show={true},
+  arxiv={2303.14334},
+  pdf={the-semantic-reader-project.pdf},
+  preview={the-semantic-reader-project.png}
+}
+
+@inproceedings{10.1145/3581641.3584034,
+author = {Fok, Raymond and Kambhamettu, Hita and Soldaini, Luca and Bragg, Jonathan and Lo, Kyle and Hearst, Marti and Head, Andrew and Weld, Daniel S},
+title = {Scim: Intelligent Skimming Support for Scientific Papers},
+year = {2023},
+month={mar},
+isbn = {9798400701061},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3581641.3584034},
+doi = {10.1145/3581641.3584034},
+abstract = {Scholars need to keep up with an exponentially increasing flood of scientific papers. To aid this challenge, we introduce Scim, a novel intelligent interface that helps experienced researchers skim – or rapidly review – a paper to attain a cursory understanding of its contents. Scim supports the skimming process by highlighting salient paper contents in order to direct a reader’s attention. The system’s highlights are faceted by content type, evenly distributed across a paper, and have a density configurable by readers at both the global and local level. We evaluate Scim with both an in-lab usability study and a longitudinal diary study, revealing how its highlights facilitate the more efficient construction of a conceptualization of a paper. We conclude by discussing design considerations and tensions for the design of future intelligent skimming tools.},
+booktitle = {Proceedings of the 28th International Conference on Intelligent User Interfaces},
+pages = {476–490},
+numpages = {15},
+keywords = {scientific papers, Intelligent reading interfaces, highlights, skimming},
+location = {Sydney, NSW, Australia},
+series = {IUI '23},
+bibtex_show={true},
+arxiv={2205.04561},
+acm={10.1145/3581641.3584034},
+pdf={scim-intelligent-skimming-support-for-scientific-papers.pdf},
+preview={scim-intelligent-skimming-support-for-scientific-papers.png}
+}
+
+@article{Kinney2023TheSS,
+  title={The Semantic Scholar Open Data Platform},
+  author={Rodney Michael Kinney and Chloe Anastasiades and Russell Authur and Iz Beltagy and Jonathan Bragg and Alexandra Buraczynski and Isabel Cachola and Stefan Candra and Yoganand Chandrasekhar and Arman Cohan and Miles Crawford and Doug Downey and Jason Dunkelberger and Oren Etzioni and Rob Evans and Sergey Feldman and Joseph Gorney and David W. Graham and F.Q. Hu and Regan Huff and Daniel King and Sebastian Kohlmeier and Bailey Kuehl and Michael Langan and Daniel Lin and Haokun Liu and Kyle Lo and Jaron Lochner and Kelsey MacMillan and Tyler Murray and Christopher Newell and Smita Rao and Shaurya Rohatgi and Paul L Sayre and Zejiang Shen and Amanpreet Singh and Luca Soldaini and Shivashankar Subramanian and A. Tanaka and Alex D Wade and Linda M. Wagner and Lucy Lu Wang and Christopher Wilhelm and Caroline Wu and Jiangjiang Yang and Angele Zamarron and Madeleine van Zuylen and Daniel S. Weld},
+  journal={ArXiv},
+  year={2023},
+  month={jan},
+  day={24},
+  volume={abs/2301.10140},
+  abstract={The volume of scientific output is creating an urgent need for automated tools to help scientists keep up with developments in their field. Semantic Scholar (S2) is an open data platform and website aimed at accelerating science by helping scholars discover and understand scientific literature. We combine public and proprietary data sources using state-of-the-art techniques for scholarly PDF content extraction and automatic knowledge graph construction to build the Semantic Scholar Academic Graph, the largest open scientific literature graph to-date, with 200M+ papers, 80M+ authors, 550M+ paper-authorship edges, and 2.4B+ citation edges. The graph includes advanced semantic features such as structurally parsed text, natural language summaries, and vector embeddings. In this paper, we describe the components of the S2 data processing pipeline and the associated APIs offered by the platform. We will update this living document to reflect changes as we add new data offerings and improve existing services.},
+  bibtex_show={true},
+  arxiv={2301.10140},
+  pdf={the-semantic-scholar-open-data-platform.pdf},
+  preview={the-semantic-scholar-open-data-platform.png}
+}
+
 @article{Giorgi2022ExploringTC,
   title={Exploring the Challenges of Open Domain Multi-Document Summarization},
   author={John Giorgi and Luca Soldaini and Bo Wang and Gary Bader and Kyle Lo and Lucy Lu Wang and Arman Cohan},
@@ -14,21 +117,6 @@
   arxiv={2212.10526},
   pdf={exploring-the-challenges-of-open-domain-multi-document-summarization.pdf},
   preview={exploring-the-challenges-of-open-domain-multi-document-summarization.png}
-}
-
-@article{Fok2022ScimIS,
-  title={Scim: Intelligent Skimming Support for Scientific Papers},
-  author={Raymond Fok and Hita Kambhamettu and Luca Soldaini and Jonathan Bragg and Kyle Lo and Andrew Head and Marti A. Hearst and Daniel S. Weld},
-  journal={ArXiv},
-  year={2022},
-  month={dec},
-  day={13},
-  volume={abs/2205.04561},
-  abstract={Researchers need to keep up with immense literatures, though it is time-consuming and difficult to do so. In this paper, we investigate the role that intelligent interfaces can play in helping researchers skim papers, that is, rapidly reviewing a paper to attain a cursory understanding of its contents. After conducting formative interviews and a design probe, we suggest that skimming aids should aim to thread the needle of highlighting content that is simultaneously diverse, evenly-distributed, and important. We introduce Scim, a novel intelligent skimming interface that reifies this aim, designed to support the skimming process by highlighting salient paper contents to direct a skimmer's focus. Key to the design is that the highlights are faceted by content type, evenly-distributed across a paper, with a density configurable by readers at both the global and local level. We evaluate Scim with an in-lab usability study and deployment study, revealing how skimming aids can support readers throughout the skimming experience and yielding design considerations and tensions for the design of future intelligent skimming tools.},
-  bibtex_show={true},
-  arxiv={2205.04561},
-  pdf={scim-intelligent-skimming-support-for-scientific-papers.pdf},
-  preview={scim-intelligent-skimming-support-for-scientific-papers.png}
 }
 
 @article{Scao2022BLOOMA1,

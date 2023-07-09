@@ -4,13 +4,30 @@ Get PDFs for all papers in `papers.bib`
 
 """
 
-from typing import List, Dict
-import re
 import os
-from scripts.sort_bib import get_bib_chunks
-import requests
+import re
 from collections import defaultdict
 from time import sleep
+from typing import Dict, List
+
+import requests
+
+
+def get_bib_chunks(lines: List[str]) -> List[str]:
+    # get bib starts
+    index_starts = []
+    for i, line in enumerate(lines):
+        if line.startswith('@'):
+            index_starts.append(i)
+    # group bibs
+    bibs = []
+    for i in range(len(index_starts) - 1):
+        start = index_starts[i]
+        end = index_starts[i + 1]
+        bibs.append(''.join(lines[start: end]))
+    # get last bib too
+    bibs.append(''.join(lines[index_starts[-1]:]))
+    return bibs
 
 
 def get_bib_id(line: str) -> str:
