@@ -1,6 +1,61 @@
 ---
 ---
 
+@article{Chen2023AreLL,
+  title={Are Layout-Infused Language Models Robust to Layout Distribution Shifts? A Case Study with Scientific Documents},
+  author={Catherine Chen and Zejiang Shen and Dan Klein and Gabriel Stanovsky and Doug Downey and Kyle Lo},
+  booktitle={Findings of ACL},
+  year={2023},
+  month={jun},
+  url={https://arxiv.org/abs/2306.01058},
+  abstract={Recent work has shown that infusing layout features into language models (LMs) improves processing of visually-rich documents such as scientific papers. Layout-infused LMs are often evaluated on documents with familiar layout features (e.g., papers from the same publisher), but in practice models encounter documents with unfamiliar distributions of layout features, such as new combinations of text sizes and styles, or new spatial configurations of textual elements. In this work we test whether layout-infused LMs are robust to layout distribution shifts. As a case study we use the task of scientific document structure recovery, segmenting a scientific paper into its structural categories (e.g., "title", "caption", "reference"). To emulate distribution shifts that occur in practice we re-partition the GROTOAP2 dataset. We find that under layout distribution shifts model performance degrades by up to 20 F1. Simple training strategies, such as increasing training diversity, can reduce this degradation by over 35% relative F1; however, models fail to reach in-distribution performance in any tested out-of-distribution conditions. This work highlights the need to consider layout distribution shifts during model evaluation, and presents a methodology for conducting such evaluations.},
+  bibtex_show={true},
+  arxiv={2306.01058},
+  pdf={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.pdf},
+  preview={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.png}
+}
+
+@article{Lin2023DecomposingCQ,
+  title={Decomposing Complex Queries for Tip-of-the-tongue Retrieval},
+  author={Kevin Lin and Kyle Lo and Joseph E. Gonzalez and Dan Klein},
+  journal={ArXiv},
+  year={2023},
+  month={may},
+  volume={abs/2305.15053},
+  abstract={When re-finding items, users who forget or are uncertain about identifying details often rely on creative strategies for expressing their information needs -- complex queries that describe content elements (e.g., book characters or events), information beyond the document text (e.g., descriptions of book covers), or personal context (e.g., when they read a book). This retrieval setting, called tip of the tongue (TOT), is especially challenging for models heavily reliant on lexical and semantic overlap between query and document text. In this work, we introduce a simple yet effective framework for handling such complex queries by decomposing the query into individual clues, routing those as sub-queries to specialized retrievers, and ensembling the results. This approach allows us to take advantage of off-the-shelf retrievers (e.g., CLIP for retrieving images of book covers) or incorporate retriever-specific logic (e.g., date constraints). We show that our framework incorportating query decompositions into retrievers can improve gold book recall up to 7% relative again for Recall@5 on a new collection of 14,441 real-world query-book pairs from an online community for resolving TOT inquiries.},
+  bibtex_show={true},
+  arxiv={2305.15053},
+  pdf={decomposing-complex-queries-for-tip-of-the-tongue-retrieval.pdf},
+  preview={decomposing-complex-queries-for-tip-of-the-tongue-retrieval.png}
+}
+
+@article{Newman2023ACQ,
+  title={A Controllable QA-based Framework for Decontextualization},
+  author={Benjamin Newman and Luca Soldaini and Raymond Fok and Arman Cohan and Kyle Lo},
+  journal={ArXiv},
+  year={2023},
+  month={may},
+  volume={abs/2305.14772},
+  abstract={Many real-world applications require surfacing extracted snippets to users, whether motivated by assistive tools for literature surveys or document cross-referencing, or needs to mitigate and recover from model generated inaccuracies., Yet, these passages can be difficult to consume when divorced from their original document context. In this work, we explore the limits of LLMs to perform decontextualization of document snippets in user-facing scenarios, focusing on two real-world settings - question answering and citation context previews for scientific documents. We propose a question-answering framework for decontextualization that allows for better handling of user information needs and preferences when determining the scope of rewriting. We present results showing state-of-the-art LLMs under our framework remain competitive with end-to-end approaches. We also explore incorporating user preferences into the system, finding our framework allows for controllability.},
+  bibtex_show={true},
+  arxiv={2305.14772},
+  pdf={a-controllable-qa-based-framework-for-decontextualization.pdf},
+  preview={a-controllable-qa-based-framework-for-decontextualization.png}
+}
+
+@article{MartinBoyle2023ComplexMS,
+  title={Complex Mathematical Symbol Definition Structures: A Dataset and Model for Coordination Resolution in Definition Extraction},
+  author={Anna Martin-Boyle and Andrew Head and Kyle Lo and Risham Sidhu and Marti A. Hearst and Dongyeop Kang},
+  journal={ArXiv},
+  year={2023},
+  month={may},
+  volume={abs/2305.14660},
+  bibtex_show={true},
+  arxiv={2305.14660},
+  pdf={complex-mathematical-symbol-definition-structures-a-dataset-and-model-for-coordination-resolution-in-definition-extraction.pdf},
+  preview={complex-mathematical-symbol-definition-structures-a-dataset-and-model-for-coordination-resolution-in-definition-extraction.png}
+}
+
 @inproceedings{krishna-etal-2023-longeval,
     title = "{L}ong{E}val: Guidelines for Human Evaluation of Faithfulness in Long-form Summarization",
     author = "Krishna, Kalpesh  and
@@ -10,7 +65,7 @@
       Dasigi, Pradeep  and
       Cohan, Arman  and
       Lo, Kyle",
-    booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
+    booktitle = "EACL",
     month = may,
     year = "2023",
     address = "Dubrovnik, Croatia",
@@ -25,6 +80,20 @@
     preview={longeval-guidelines-for-human-evaluation-of-faithfulness-in-long-form-summarization.png}
 }
 
+@article{Shen2023BeyondSD,
+  title={Beyond Summarization: Designing AI Support for Real-World Expository Writing Tasks},
+  author={Zejiang Shen and Tal August and Pao Siangliulue and Kyle Lo and Jonathan Bragg and Jeff Hammerbacher and Doug Downey and Joseph Chee Chang and David Sontag},
+  booktitle={Intelligent and Interactive Writing Assistants (In2Writing) Workshop},
+  year={2023},
+  month={apr},
+  volume={abs/2304.02623},
+  abstract={Large language models have introduced exciting new opportunities and challenges in designing and developing new AI-assisted writing support tools. Recent work has shown that leveraging this new technology can transform writing in many scenarios such as ideation during creative writing, editing support, and summarization. However, AI-supported expository writing--including real-world tasks like scholars writing literature reviews or doctors writing progress notes--is relatively understudied. In this position paper, we argue that developing AI supports for expository writing has unique and exciting research challenges and can lead to high real-world impacts. We characterize expository writing as evidence-based and knowledge-generating: it contains summaries of external documents as well as new information or knowledge. It can be seen as the product of authors' sensemaking process over a set of source documents, and the interplay between reading, reflection, and writing opens up new opportunities for designing AI support. We sketch three components for AI support design and discuss considerations for future research.},
+  bibtex_show={true},
+  arxiv={2304.02623},
+  pdf={beyond-summarization-designing-ai-support-for-real-world-expository-writing-tasks.pdf},
+  preview={beyond-summarization-designing-ai-support-for-real-world-expository-writing-tasks.png}
+}
+
 @inproceedings{10.1145/3544548.3580847,
 author = {Chang, Joseph Chee and Zhang, Amy X. and Bragg, Jonathan and Head, Andrew and Lo, Kyle and Downey, Doug and Weld, Daniel S.},
 title = {CiteSee: Augmenting Citations in Scientific Papers with Persistent and Personalized Historical Context},
@@ -36,7 +105,7 @@ address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3544548.3580847},
 doi = {10.1145/3544548.3580847},
 abstract = {When reading a scholarly article, inline citations help researchers contextualize the current article and discover relevant prior work. However, it can be challenging to prioritize and make sense of the hundreds of citations encountered during literature reviews. This paper introduces CiteSee, a paper reading tool that leverages a user’s publishing, reading, and saving activities to provide personalized visual augmentations and context around citations. First, CiteSee connects the current paper to familiar contexts by surfacing known citations a user had cited or opened. Second, CiteSee helps users prioritize their exploration by highlighting relevant but unknown citations based on saving and reading history. We conducted a lab study that suggests CiteSee is significantly more effective for paper discovery than three baselines. A field deployment study shows CiteSee helps participants keep track of their explorations and leads to better situational awareness and increased paper discovery via inline citation when conducting real-world literature reviews.},
-booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+booktitle = {CHI},
 articleno = {737},
 numpages = {15},
 keywords = {scientific papers, reading interfaces, personalization},
@@ -47,6 +116,27 @@ series = {CHI '23},
   acm={10.1145/3544548.3580847},
   pdf={citesee-augmenting-citations-in-scientific-papers-with-persistent-and-personalized-historical-context.pdf},
   preview={citesee-augmenting-citations-in-scientific-papers-with-persistent-and-personalized-historical-context.png}
+}
+
+@article{10.1145/3589955,
+author = {August, Tal and Wang, Lucy Lu and Bragg, Jonathan and Hearst, Marti A. and Head, Andrew and Lo, Kyle},
+title = {Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing},
+year = {2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1073-0516},
+url = {https://doi.org/10.1145/3589955},
+doi = {10.1145/3589955},
+abstract = {When seeking information not covered in patient-friendly documents, healthcare consumers may turn to the research literature. Reading medical papers, however, can be a challenging experience. To improve access to medical papers, we explore four features enabled by natural language processing: definitions of unfamiliar terms, in-situ plain language section summaries, a collection of key questions that guides readers to answering passages, and plain language summaries of those passages. We embody these features into a prototype system, Paper Plain. We evaluate Paper Plain, finding that participants who used the prototype system had an easier time reading research papers without a loss in paper comprehension compared to those who used a typical PDF reader. Altogether, the study results suggest that guiding readers to relevant passages and providing plain language summaries alongside the original paper content can make reading medical papers easier and give readers more confidence to approach these papers.},
+journal = {ACM Transactions of Computer-Human Interaction (TOCHI)},
+month = {apr},
+selected={true},
+bibtex_show={true},
+arxiv={2203.00130},
+acm={10.1145/3589955},
+keywords = {augmented reading; plain language summaries; healthcare consumers},
+pdf={paper-plain-making-medical-research-papers-approachable-to-healthcare-consumers-with-natural-language-processing.pdf},
+preview={paper-plain-making-medical-research-papers-approachable-to-healthcare-consumers-with-natural-language-processing.png}
 }
 
 @article{Lo2023TheSR,
@@ -61,7 +151,7 @@ series = {CHI '23},
   abstract={Scholarly publications are key to the transfer of knowledge from scholars to others. However, research papers are information-dense, and as the volume of the scientific literature grows, the need for new technology to support the reading process grows. In contrast to the process of finding papers, which has been transformed by Internet technology, the experience of reading research papers has changed little in decades. The PDF format for sharing research papers is widely used due to its portability, but it has significant downsides including: static content, poor accessibility for low-vision readers, and difficulty reading on mobile devices. This paper explores the question "Can recent advances in AI and HCI power intelligent, interactive, and accessible reading interfaces -- even for legacy PDFs?" We describe the Semantic Reader Project, a collaborative effort across multiple institutions to explore automatic creation of dynamic reading interfaces for research papers. Through this project, we've developed ten research prototype interfaces and conducted usability studies with more than 300 participants and real-world users showing improved reading experiences for scholars. We've also released a production reading interface for research papers that will incorporate the best features as they mature. We structure this paper around challenges scholars and the public face when reading research papers -- Discovery, Efficiency, Comprehension, Synthesis, and Accessibility -- and present an overview of our progress and remaining open challenges.},
   bibtex_show={true},
   arxiv={2303.14334},
-  pdf={the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.png.pdf},
+  pdf={the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.pdf},
   preview={the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.png}
 }
 
@@ -76,7 +166,7 @@ address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3581641.3584034},
 doi = {10.1145/3581641.3584034},
 abstract = {Scholars need to keep up with an exponentially increasing flood of scientific papers. To aid this challenge, we introduce Scim, a novel intelligent interface that helps experienced researchers skim – or rapidly review – a paper to attain a cursory understanding of its contents. Scim supports the skimming process by highlighting salient paper contents in order to direct a reader’s attention. The system’s highlights are faceted by content type, evenly distributed across a paper, and have a density configurable by readers at both the global and local level. We evaluate Scim with both an in-lab usability study and a longitudinal diary study, revealing how its highlights facilitate the more efficient construction of a conceptualization of a paper. We conclude by discussing design considerations and tensions for the design of future intelligent skimming tools.},
-booktitle = {Proceedings of the 28th International Conference on Intelligent User Interfaces},
+booktitle = {IUI},
 pages = {476–490},
 numpages = {15},
 keywords = {scientific papers, Intelligent reading interfaces, highlights, skimming},
@@ -117,6 +207,29 @@ preview={scim-intelligent-skimming-support-for-scientific-papers.png}
   arxiv={2212.10526},
   pdf={exploring-the-challenges-of-open-domain-multi-document-summarization.pdf},
   preview={exploring-the-challenges-of-open-domain-multi-document-summarization.png}
+}
+
+@inproceedings{wadden-etal-2022-scifact,
+    title = "{S}ci{F}act-Open: Towards open-domain scientific claim verification",
+    author = "Wadden, David  and
+      Lo, Kyle  and
+      Kuehl, Bailey  and
+      Cohan, Arman  and
+      Beltagy, Iz  and
+      Wang, Lucy Lu  and
+      Hajishirzi, Hannaneh",
+    booktitle = "Findings of EMNLP",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.347",
+    pages = "4719--4734",
+    abstract = "While research on scientific claim verification has led to the development of powerful systems that appear to approach human performance, these approaches have yet to be tested in a realistic setting against large corpora of scientific literature. Moving to this open-domain evaluation setting, however, poses unique challenges; in particular, it is infeasible to exhaustively annotate all evidence documents. In this work, we present SciFact-Open, a new test collection designed to evaluate the performance of scientific claim verification systems on a corpus of 500K research abstracts. Drawing upon pooling techniques from information retrieval, we collect evidence for scientific claims by pooling and annotating the top predictions of four state-of-the-art scientific claim verification models. We find that systems developed on smaller corpora struggle to generalize to SciFact-Open, exhibiting performance drops of at least 15 F1. In addition, analysis of the evidence in SciFact-Open reveals interesting phenomena likely to appear when claim verification systems are deployed in practice, e.g., cases where the evidence supports only a special case of the claim. Our dataset is available at https://github.com/dwadden/scifact-open.",
+    bibtex_show={true},
+    acl={2022.findings-emnlp.347},
+    pdf={scifact-open-towards-open-domain-scientific-claim-verification.pdf},
+    preview={scifact-open-towards-open-domain-scientific-claim-verification.png}
 }
 
 @article{Scao2022BLOOMA1,
@@ -175,21 +288,6 @@ preview={multi-lexsum-real-world-summaries-of-civil-rights-lawsuits-at-multiple-
     acl={2022.sdp-1.1},
     pdf={overview-of-the-third-workshop-on-scholarly-document-processing.pdf},
     preview={overview-of-the-third-workshop-on-scholarly-document-processing.png}
-}
-
-@article{Wadden2022SciFactOpenTO,
-  title={SciFact-Open: Towards open-domain scientific claim verification},
-  author={David Wadden and Kyle Lo and Bailey Kuehl and Arman Cohan and Iz Beltagy and Lucy Lu Wang and Hannaneh Hajishirzi},
-  journal={ArXiv},
-  year={2022},
-  month={oct},
-  day={25},
-  volume={abs/2210.13777},
-  abstract = "While research on scientific claim verification has led to the development of powerful systems that appear to approach human performance, these approaches have yet to be tested in a realistic setting against large corpora of scientific literature. Moving to this open-domain evaluation setting, however, poses unique challenges; in particular, it is infeasible to exhaustively annotate all evidence documents. In this work, we present SciFact-Open, a new test collection designed to evaluate the performance of scientific claim verification systems on a corpus of 500K research abstracts. Drawing upon pooling techniques from information retrieval, we collect evidence for scientific claims by pooling and annotating the top predictions of four state-of-the-art scientific claim verification models. We find that systems developed on smaller corpora struggle to generalize to SciFact-Open, exhibiting performance drops of at least 15 F1. In addition, analysis of the evidence in SciFact-Open reveals interesting phenomena likely to appear when claim verification systems are deployed in practice, e.g., cases where the evidence supports only a special case of the claim. Our dataset is available at https://github.com/dwadden/scifact-open.",
-  bibtex_show={true},
-  arxiv={2210.13777},
-  pdf={scifact-open-towards-open-domain-scientific-claim-verification.pdf},
-  preview={scifact-open-towards-open-domain-scientific-claim-verification.png}
 }
 
 @inproceedings{wadden-etal-2022-multivers,
@@ -286,6 +384,20 @@ arxiv={2206.03216},
 acm={10.1145/3531146.3534637},
 pdf={data-governance-in-the-age-of-large-scale-data-driven-language-technology.pdf},
 preview={data-governance-in-the-age-of-large-scale-data-driven-language-technology.png}
+}
+
+@inproceedings{bigsciencerootscorpus,
+title={The BigScience {ROOTS} Corpus: A 1.6{TB} Composite Multilingual Dataset},
+author={Hugo Lauren{\c{c}}on and Lucile Saulnier and Thomas Wang and Christopher Akiki and Albert Villanova del Moral and Teven Le Scao and Leandro Von Werra and Chenghao Mou and Eduardo Gonz{\'a}lez Ponferrada and Huu Nguyen and J{\"o}rg Frohberg and Mario {\v{S}}a{\v{s}}ko and Quentin Lhoest and Angelina McMillan-Major and G{\'e}rard Dupont and Stella Biderman and Anna Rogers and Loubna Ben allal and Francesco De Toni and Giada Pistilli and Olivier Nguyen and Somaieh Nikpoor and Maraim Masoud and Pierre Colombo and Javier de la Rosa and Paulo Villegas and Tristan Thrush and Shayne Longpre and Sebastian Nagel and Leon Weber and Manuel Romero Mu{\~n}oz and Jian Zhu and Daniel Van Strien and Zaid Alyafeai and Khalid Almubarak and Vu Minh Chien and Itziar Gonzalez-Dios and Aitor Soroa and Kyle Lo and Manan Dey and Pedro Ortiz Suarez and Aaron Gokaslan and Shamik Bose and David Ifeoluwa Adelani and Long Phan and Hieu Tran and Ian Yu and Suhas Pai and Jenny Chim and Violette Lepercq and Suzana Ilic and Margaret Mitchell and Sasha Luccioni and Yacine Jernite},
+booktitle={NeurIPS (Datasets and Benchmarks)},
+year={2022},
+month={may},
+url={https://openreview.net/forum?id=UoEw6KigkUn},
+abstract={As language models grow ever larger, the need for large-scale high-quality text datasets has never been more pressing, especially in multilingual settings. The BigScience workshop, a 1-year international and multidisciplinary initiative, was formed with the goal of researching and training large language models as a values-driven undertaking, putting issues of ethics, harm, and governance in the foreground. This paper documents the data creation and curation efforts undertaken by BigScience to assemble the Responsible Open-science Open-collaboration Text Sources (ROOTS) corpus, a 1.6TB dataset spanning 59 languages that was used to train the 176-billion-parameter BigScience Large Open-science Open-access Multilingual (BLOOM) language model. We further release a large initial subset of the corpus and analyses thereof, and hope to empower large-scale monolingual and multilingual modeling projects with both the data and the processing tools, as well as stimulate research around this large multilingual corpus.},
+openreview={UoEw6KigkUn},
+bibtex_show={true},
+pdf={bigscience-roots-corpus-a-1-6tb-composite-multilingual-dataset.pdf},
+preview={bigscience-roots-corpus-a-1-6tb-composite-multilingual-dataset.png}
 }
 
 @inproceedings{wright-etal-2022-generating,
@@ -394,22 +506,6 @@ bibtex_show={true},
 aaai={aimagazine/article/view/19126},
 pdf={infrastructure-for-rapid-open-knowledge-network-development.pdf},
 preview={infrastructure-for-rapid-open-knowledge-network-development.png}
-}
-
-@article{August2022PaperPM,
-  title={Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing},
-  author={Tal August and Lucy Lu Wang and Jonathan Bragg and Marti A. Hearst and Andrew Head and Kyle Lo},
-  journal={ArXiv},
-  year={2022},
-  month={feb},
-  day={28},
-  volume={abs/2203.00130},
-  selected={true},
-  bibtex_show={true},
-  abstract={When seeking information not covered in patient-friendly documents, like medical pamphlets, healthcare consumers may turn to the research literature. Reading medical papers, however, can be a challenging experience. To improve access to medical papers, we introduce a novel interactive interface-Paper Plain-with four features powered by natural language processing: definitions of unfamiliar terms, in-situ plain language section summaries, a collection of key questions that guide readers to answering passages, and plain language summaries of the answering passages. We evaluate Paper Plain, finding that participants who use Paper Plain have an easier time reading and understanding research papers without a loss in paper comprehension compared to those who use a typical PDF reader. Altogether, the study results suggest that guiding readers to relevant passages and providing plain language summaries, or "gists," alongside the original paper content can make reading medical papers easier and give readers more confidence to approach these papers.},
-  arxiv={2203.00130},
-  pdf={paper-plain-making-medical-research-papers-approachable-to-healthcare-consumers-with-natural-language-processing.pdf},
-  preview={paper-plain-making-medical-research-papers-approachable-to-healthcare-consumers-with-natural-language-processing.png}
 }
 
 @inproceedings{NEURIPS2021_8493eeac,
@@ -527,31 +623,6 @@ preview={explaining-relationships-between-scientific-documents.png}
     preview={overview-of-the-second-workshop-on-scholarly-document-processing.png}
 }
 
-@article{10.1145/3451964.3451965,
-author = {Voorhees, Ellen and Alam, Tasmeer and Bedrick, Steven and Demner-Fushman, Dina and Hersh, William R. and Lo, Kyle and Roberts, Kirk and Soboroff, Ian and Wang, Lucy Lu},
-title = {TREC-COVID: Constructing a Pandemic Information Retrieval Test Collection},
-year = {2021},
-month={jun},
-issue_date = {June 2020},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {54},
-number = {1},
-issn = {0163-5840},
-url = {https://doi.org/10.1145/3451964.3451965},
-doi = {10.1145/3451964.3451965},
-abstract = {TREC-COVID is a community evaluation designed to build a test collection that captures the information needs of biomedical researchers using the scientific literature during a pandemic. One of the key characteristics of pandemic search is the accelerated rate of change: the topics of interest evolve as the pandemic progresses and the scientific literature in the area explodes. The COVID-19 pandemic provides an opportunity to capture this progression as it happens. TREC-COVID, in creating a test collection around COVID-19 literature, is building infrastructure to support new research and technologies in pandemic search.},
-journal = {SIGIR Forum},
-month = {feb},
-articleno = {1},
-numpages = {12},
-  bibtex_show={true},
-  arxiv={2005.04474},
-  acm={10.1145/3451964.3451965},
-  pdf={trec-covid-constructing-a-pandemic-information-retrieval-test-collection.pdf},
-  preview={trec-covid-constructing-a-pandemic-information-retrieval-test-collection.png}
-}
-
 @inproceedings{10.1145/3411764.3445648,
 author = {Head, Andrew and Lo, Kyle and Kang, Dongyeop and Fok, Raymond and Skjonsberg, Sam and Weld, Daniel S. and Hearst, Marti A.},
 title = {Augmenting Scientific Papers with Just-in-Time, Position-Sensitive Definitions of Terms and Symbols},
@@ -620,6 +691,30 @@ abstract = {We present an overview of the TREC-COVID Challenge, an information r
     sciencedirect={S1532046421001945},
     pdf={searching-for-scientific-evidence-in-a-pandemic-an-overview-of-trec-covid.pdf},
     preview={searching-for-scientific-evidence-in-a-pandemic-an-overview-of-trec-covid.png}
+}
+
+@article{10.1145/3451964.3451965,
+author = {Voorhees, Ellen and Alam, Tasmeer and Bedrick, Steven and Demner-Fushman, Dina and Hersh, William R. and Lo, Kyle and Roberts, Kirk and Soboroff, Ian and Wang, Lucy Lu},
+title = {TREC-COVID: Constructing a Pandemic Information Retrieval Test Collection},
+year = {2021},
+issue_date = {June 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {54},
+number = {1},
+issn = {0163-5840},
+url = {https://doi.org/10.1145/3451964.3451965},
+doi = {10.1145/3451964.3451965},
+abstract = {TREC-COVID is a community evaluation designed to build a test collection that captures the information needs of biomedical researchers using the scientific literature during a pandemic. One of the key characteristics of pandemic search is the accelerated rate of change: the topics of interest evolve as the pandemic progresses and the scientific literature in the area explodes. The COVID-19 pandemic provides an opportunity to capture this progression as it happens. TREC-COVID, in creating a test collection around COVID-19 literature, is building infrastructure to support new research and technologies in pandemic search.},
+journal = {SIGIR Forum},
+month = {feb},
+articleno = {1},
+numpages = {12},
+  bibtex_show={true},
+  arxiv={2005.04474},
+  acm={10.1145/3451964.3451965},
+  pdf={trec-covid-constructing-a-pandemic-information-retrieval-test-collection.pdf},
+  preview={trec-covid-constructing-a-pandemic-information-retrieval-test-collection.png}
 }
 
 @article{10.1093/bib/bbaa296,
