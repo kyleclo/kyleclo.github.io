@@ -1,18 +1,50 @@
 ---
 ---
 
-@inproceedings{Chen2023AreLL,
-  title={Are Layout-Infused Language Models Robust to Layout Distribution Shifts? A Case Study with Scientific Documents},
-  author={Catherine Chen and Zejiang Shen and Dan Klein and Gabriel Stanovsky and Doug Downey and Kyle Lo},
-  booktitle={Findings of ACL},
+@article{Weller2023WhenDG,
+  title={When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets},
+  author={Orion Weller and Kyle Lo and David Wadden and Dawn J Lawrie and Benjamin Van Durme and Arman Cohan and Luca Soldaini},
+  journal={ArXiv},
   year={2023},
-  month={jun},
-  url={https://arxiv.org/abs/2306.01058},
-  abstract={Recent work has shown that infusing layout features into language models (LMs) improves processing of visually-rich documents such as scientific papers. Layout-infused LMs are often evaluated on documents with familiar layout features (e.g., papers from the same publisher), but in practice models encounter documents with unfamiliar distributions of layout features, such as new combinations of text sizes and styles, or new spatial configurations of textual elements. In this work we test whether layout-infused LMs are robust to layout distribution shifts. As a case study we use the task of scientific document structure recovery, segmenting a scientific paper into its structural categories (e.g., "title", "caption", "reference"). To emulate distribution shifts that occur in practice we re-partition the GROTOAP2 dataset. We find that under layout distribution shifts model performance degrades by up to 20 F1. Simple training strategies, such as increasing training diversity, can reduce this degradation by over 35% relative F1; however, models fail to reach in-distribution performance in any tested out-of-distribution conditions. This work highlights the need to consider layout distribution shifts during model evaluation, and presents a methodology for conducting such evaluations.},
+  month={sep},
+  url={https://arxiv.org/abs/2309.08541},
+  abstract={Using large language models (LMs) for query or document expansion can improve generalization in information retrieval. However, it is unknown whether these techniques are universally beneficial or only effective in specific settings, such as for particular retrieval models, dataset domains, or query types. To answer this, we conduct the first comprehensive analysis of LM-based expansion. We find that there exists a strong negative correlation between retriever performance and gains from expansion: expansion improves scores for weaker models, but generally harms stronger models. We show this trend holds across a set of eleven expansion techniques, twelve datasets with diverse distribution shifts, and twenty-four retrieval models. Through qualitative error analysis, we hypothesize that although expansions provide extra information (potentially improving recall), they add additional noise that makes it difficult to discern between the top relevant documents (thus introducing false positives). Our results suggest the following recipe: use expansions for weaker models or when the target dataset significantly differs from training corpus in format; otherwise, avoid expansions to keep the relevance signal clear.}
   bibtex_show={true},
-  arxiv={2306.01058},
-  pdf={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.pdf},
-  preview={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.png}
+  arxiv={2309.08541},
+  pdf={when-do-generative-query-and-document-expansion-fail-a-comprehensive-study-across-methods-retrievers-and-datasets.pdf}
+  preview={when-do-generative-query-and-document-expansion-fail-a-comprehensive-study-across-methods-retrievers-and-datasets.png}
+}
+
+@article{Peng2023EfficiencyPA,
+  title={Efficiency Pentathlon: A Standardized Arena for Efficiency Evaluation},
+  author={Hao Peng and Qingqing Cao and Jesse Dodge and Matthew E. Peters and Jared Fernandez and Tom Sherborne and Kyle Lo and Sam Skjonsberg and Emma Strubell and Darrell Plessas and Iz Beltagy and Evan Pete Walsh and Noah Smith and Hanna Hajishirzi},
+  journal={ArXiv},
+  year={2023},
+  month={jul},
+  bibtex_show={true},
+  arxiv={2307.09701},
+  url={https://arxiv.org/abs/2307.09701},
+  abstract={Rising computational demands of modern natural language processing (NLP) systems have increased the barrier to entry for cutting-edge research while posing serious environmental concerns. Yet, progress on model efficiency has been impeded by practical challenges in model evaluation and comparison. For example, hardware is challenging to control due to disparate levels of accessibility across different institutions. Moreover, improvements in metrics such as FLOPs often fail to translate to progress in real-world applications. In response, we introduce Pentathlon, a benchmark for holistic and realistic evaluation of model efficiency. Pentathlon focuses on inference, which accounts for a majority of the compute in a model's lifecycle. It offers a strictly-controlled hardware platform, and is designed to mirror real-world applications scenarios. It incorporates a suite of metrics that target different aspects of efficiency, including latency, throughput, memory overhead, and energy consumption. Pentathlon also comes with a software library that can be seamlessly integrated into any codebase and enable evaluation. As a standardized and centralized evaluation platform, Pentathlon can drastically reduce the workload to make fair and reproducible efficiency comparisons. While initially focused on natural language processing (NLP) models, Pentathlon is designed to allow flexible extension to other fields. We envision Pentathlon will stimulate algorithmic innovations in building efficient models, and foster an increased awareness of the social and environmental implications in the development of future-generation NLP models.},
+  pdf={efficiency-pentathlon-a-standardized-arena-for-efficiency-evaluation.pdf},
+  preview={efficiency-pentathlon-a-standardized-arena-for-efficiency-evaluation.png}
+}
+
+@inproceedings{chen-etal-2023-layout,
+    title = "Are Layout-Infused Language Models Robust to Layout Distribution Shifts? A Case Study with Scientific Documents",
+    author = "Chen, Catherine  and Shen, Zejiang  and Klein, Dan  and Stanovsky, Gabriel  and Downey, Doug  and Lo, Kyle",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.844",
+    doi = "10.18653/v1/2023.findings-acl.844",
+    pages = "13345--13360",
+    abstract = "Recent work has shown that infusing layout features into language models (LMs) improves processing of visually-rich documents such as scientific papers. Layout-infused LMs are often evaluated on documents with familiar layout features (e.g., papers from the same publisher), but in practice models encounter documents with unfamiliar distributions of layout features, such as new combinations of text sizes and styles, or new spatial configurations of textual elements. In this work we test whether layout-infused LMs are robust to layout distribution shifts. As a case study we use the task of scientific document structure recovery, segmenting a scientific paper into its structural categories (e.g., {``}title{''}, {``}caption{''}, {``}reference{''}). To emulate distribution shifts that occur in practice we re-partition the GROTOAP2 dataset. We find that under layout distribution shifts model performance degrades by up to 20 F1. Simple training strategies, such as increasing training diversity, can reduce this degradation by over 35{\%} relative F1; however, models fail to reach in-distribution performance in any tested out-of-distribution conditions. This work highlights the need to consider layout distribution shifts during model evaluation, and presents a methodology for conducting such evaluations.",
+    bibtex_show={true},
+    arxiv={2306.01058},
+    pdf={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.pdf},
+    preview={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.png}
 }
 
 @article{Lin2023DecomposingCQ,
@@ -177,6 +209,27 @@ arxiv={2205.04561},
 acm={10.1145/3581641.3584034},
 pdf={scim-intelligent-skimming-support-for-scientific-papers.pdf},
 preview={scim-intelligent-skimming-support-for-scientific-papers.png}
+}
+
+@article{10.1145/3589345,
+author = {Lee, Benjamin Charles Germain and Downey, Doug and Lo, Kyle and Weld, Daniel S.},
+title = {LIMEADE: From AI Explanations to Advice Taking},
+year = {2023},
+month = {mar},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {2160-6455},
+url = {https://doi.org/10.1145/3589345},
+doi = {10.1145/3589345},
+abstract = {Research in human-centered AI has shown the benefits of systems that can explain their predictions. Methods that allow an AI to take advice from humans in response to explanations are similarly useful. While both capabilities are well-developed for transparent learning models (e.g., linear models and GA2Ms), and recent techniques (e.g., LIME and SHAP) can generate explanations for opaque models, little attention has been given to advice methods for opaque models. This paper introduces LIMEADE, the first general framework that translates both positive and negative advice (expressed using high-level vocabulary such as that employed by post-hoc explanations) into an update to an arbitrary, underlying opaque model. We demonstrate the generality of our approach with case studies on seventy real-world models across two broad domains: image classification and text recommendation. We show our method improves accuracy compared to a rigorous baseline on the image classification domains. For the text modality, we apply our framework to a neural recommender system for scientific papers on a public website; our user study shows that our framework leads to significantly higher perceived user control, trust, and satisfaction.},
+journal = {ACM Transactions on Interactive Intelligent Systems},
+keywords = {Explainable AI, Advice Taking, Explainable Recommendations, Interactive Machine Learning, Human-AI Interaction},
+bibtex_show={true},
+arxiv={2003.04315},
+acm={10.1145/3589345},
+pdf={limeade-from-ai-explanations-to-advice-taking.pdf},
+preview={limeade-from-ai-explanations-to-advice-taking.png}
+
 }
 
 @article{Kinney2023TheSS,
@@ -916,22 +969,6 @@ abstract={On the behest of the Office of Science and Technology Policy in the Wh
     pdf={dont-stop-pretraining-adapt-language-models-to-domains-and-tasks.pdf},
     preview={dont-stop-pretraining-adapt-language-models-to-domains-and-tasks.png}
 }
-
-@article{Lee2020LIMEADEFA,
-  title={LIMEADE: From AI Explanations to Advice Taking},
-  author={B. Lee and Doug Downey and Kyle Lo and Daniel S. Weld},
-  journal={ArXiv},
-  year={2020},
-  month={mar},
-  day={9},
-  volume={abs/2003.04315},
-  abstract={Research in human-centered AI has shown the benefits of systems that can explain their predictions. Methods that allow an AI to take advice from humans in response to explanations are similarly useful. While both capabilities are well-developed for transparent learning models (e.g., linear models and GA2Ms), and recent techniques (e.g., LIME and SHAP) can generate explanations for opaque models, little attention has been given to advice methods for opaque models. This paper introduces LIMEADE, the first general framework that translates both positive and negative advice (expressed using high-level vocabulary such as that employed by post-hoc explanations) into an update to an arbitrary, underlying opaque model. We demonstrate the generality of our approach with case studies on seventy real-world models across two broad domains: image classification and text recommendation. We show our method improves accuracy compared to a rigorous baseline on the image classification domains. For the text modality, we apply our framework to a neural recommender system for scientific papers on a public website; our user study shows that our framework leads to significantly higher perceived user control, trust, and satisfaction.},
-  bibtex_show={true},
-  arxiv={2003.04315},
-  pdf={limeade-from-ai-explanations-to-advice-taking.pdf},
-  preview={limeade-from-ai-explanations-to-advice-taking.png}
-}
-
 
 @inproceedings{beltagy-etal-2019-scibert,
     title = "{S}ci{BERT}: A Pretrained Language Model for Scientific Text",
