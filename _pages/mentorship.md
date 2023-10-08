@@ -19,7 +19,15 @@ As an intern or predoctoral researcher, you'll work directly with me and other f
 
 FAQs:
 
-* **Who?** Most interns are PhD students, but we've also hired exceptional Master's and undergraduate students. Domestic and international applicants welcome.
+* **Who?** 
+  * **Eligibility?** 
+    * ✅ Current students,
+    * ✅ Incoming students to a PhD program,
+    * ❌ Non-students,
+    * ✅ Domestic and international applicants welcome.
+  * **Experience?** 
+    * Most interns are PhD students, but we've also hired exceptional Master's and undergraduate students,
+    * I tend to hire students with aligned interests as me and a track record of research contributions, whether that's writing papers (published or preprints) or open-source contributions. Your total publication count or university affiliation doesn't matter; I look more for a good collaboration fit and quality of work. 
 * **When?** All research internships are paid, full-time positions for 3-6 months. Start times are flexible, though I typically recommend May or June for summer internships as there is usually a large, fun cohort at the office. 
 * **Where?** Internships are typically in-person at the AI2 office in Seattle, though I've also hired remote interns before. 
 * **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
@@ -74,11 +82,11 @@ If you are looking to pursue a PhD in a computing-related field, <a href="https:
 FAQs:
 
 * **Who?** 
-  * **Student status?**
-    * ✅ Current students near graduation or former students already working,
+  * **Eligibility?**
+    * ✅ Any prospective PhD applicant, including students near graduation and former students already working,
     * ✅ Already been accepted to a PhD program and looking to defer enrollment for a year,
-    * ❌ Already enrolled in a PhD program.
-  * Domestic and international applicants welcome.
+    * ❌ Already enrolled in a PhD program,
+    * ✅ Domestic and international applicants welcome.
   * **Experience?**
     * Some research experience required. You don't need many papers, nor do they have to be published (preprints are OK).
     * Strong coding skills preferred. Especially if you can point to contributions to open-source projects or demonstrations of your work. You don't need industry software development experience.
