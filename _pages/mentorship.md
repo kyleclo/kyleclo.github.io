@@ -13,26 +13,13 @@ Interested in working with me? Apply to join our team as a [**Research Intern**]
 
 As an intern or predoctoral researcher, you'll work directly with me and other full-time researchers on a research project tailored to your interests. We aim for high-impact research publications at top-tier computer science venues, and we make all project artifacts open and publicly accessible, including code, models and data.
 
+See [**FAQs**](#faqs) for more info about working with me.
+
 ### Research Internship
 
-<a href="https://boards.greenhouse.io/thealleninstitute/jobs/2172007">⭐ Apply Here ⭐</a>!
+<a href="https://boards.greenhouse.io/thealleninstitute/jobs/2172007">⭐ **Apply Here** ⭐</a>!
 
-FAQs:
-
-* **Who?** 
-  * **Eligibility?** 
-    * ✅ Current students,
-    * ✅ Incoming students to a PhD program,
-    * ❌ Non-students,
-    * ✅ Domestic and international applicants welcome.
-  * **Experience?** 
-    * Most interns are PhD students, but we've also hired exceptional Master's and undergraduate students,
-    * I tend to hire students with aligned interests as me and a track record of research contributions, whether that's writing papers (published or preprints) or open-source contributions. Your total publication count or university affiliation doesn't matter; I look more for a good collaboration fit and quality of work. 
-* **When?** All research internships are paid, full-time positions for 3-6 months. Start times are flexible, though I typically recommend May or June for summer internships as there is usually a large, fun cohort at the office. 
-* **Where?** Internships are typically in-person at the AI2 office in Seattle, though I've also hired remote interns before. 
-* **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
-
-Past Interns:
+My former interns:
 
 #### 2023
 * Orion Weller, PhD student, Johns Hopkins University
@@ -77,24 +64,9 @@ Past Interns:
 
 ### Predoctoral Research
 
-If you are looking to pursue a PhD in a computing-related field, <a href="https://boards.greenhouse.io/thealleninstitute/jobs/5358681">⭐ Apply Here ⭐</a>!
+<a href="https://boards.greenhouse.io/thealleninstitute/jobs/5358681">⭐ **Apply Here** ⭐</a>!
 
-FAQs:
-
-* **Who?** 
-  * **Eligibility?**
-    * ✅ Any prospective PhD applicant, including students near graduation and former students already working,
-    * ✅ Already been accepted to a PhD program and looking to defer enrollment for a year,
-    * ❌ Already enrolled in a PhD program,
-    * ✅ Domestic and international applicants welcome.
-  * **Experience?**
-    * Some research experience required. You don't need many papers, nor do they have to be published (preprints are OK).
-    * Strong coding skills preferred. Especially if you can point to contributions to open-source projects or demonstrations of your work. You don't need industry software development experience.
-* **When?** All predoctoral research positions are paid, full-time positions for 1-3 years. Start times are flexible. Contracts must be renewed each year. 
-* **Where?** All predoctoral research positions must be in-person at the AI2 office in Seattle at least part of the week.
-* **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
-
-Past Mentees:
+My former predoc researchers:
 
 * Benjamin Newman → PhD student at University of Washington (2023)
   * <a href="https://arxiv.org/abs/2305.14772">A Controllable QA-based Framework for Decontextualization</a> (arXiv)
@@ -106,3 +78,35 @@ Past Mentees:
 * Isabel Cachola → PhD student at Johns Hopkins University (2020)
   * <a href="https://aclanthology.org/2020.findings-emnlp.428/">TLDR: Extreme Summarization of Scientific Documents</a> (EMNLP Findings 2020)
 
+
+### FAQs
+
+For interns:
+
+* **Who?** 
+  * **Eligibility?** 
+    * ✅ Current students,
+    * ✅ Incoming students to a PhD program,
+    * ❌ Non-students,
+    * ✅ Domestic and international applicants welcome.
+  * **Experience?** 
+    * Most interns are PhD students, but we've also hired exceptional Master's and undergraduate students,
+    * I tend to hire students with aligned interests as me and a track record of research contributions, whether that's writing papers (published or preprints) or open-source contributions. Your total publication count or university affiliation doesn't matter; I look more for a good collaboration fit and quality of work. 
+* **When?** All research internships are paid, full-time positions for 3-6 months. Start times are flexible, though I typically recommend May or June for summer internships as there is usually a large, fun cohort at the office. 
+* **Where?** Internships are typically in-person at the AI2 office in Seattle, though I've also hired remote interns before. 
+* **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
+
+For predocs:
+
+* **Who?** 
+  * **Eligibility?** This is a great position for:
+    * ✅ Any prospective PhD applicant, including current students near graduation and former students already working,
+    * ✅ Anyone already been accepted to a PhD program and looking to defer enrollment for a year,
+    * ❌ Already enrolled in a PhD program,
+    * ✅ Domestic and international applicants welcome.
+  * **Experience?**
+    * Some research experience required. You don't need many papers, nor do they have to be published (preprints are OK).
+    * Strong coding skills preferred. Especially if you can point to contributions to open-source projects or demonstrations of your work. You don't need industry software development experience.
+* **When?** All predoctoral research positions are paid, full-time positions for 1-3 years. Start times are flexible. Contracts must be renewed each year. 
+* **Where?** All predoctoral research positions must be in-person at the AI2 office in Seattle at least part of the week.
+* **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
