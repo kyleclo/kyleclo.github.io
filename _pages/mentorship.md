@@ -36,7 +36,7 @@ My former interns:
 * Catherine Chen, PhD student, University of California Berkeley
   * <a href="https://aclanthology.org/2023.findings-acl.844/">Are Layout-Infused Language Models Robust to Layout Distribution Shifts? A Case Study with Scientific Documents</a> (ACL Findings 2023)
 * Hancheng Cao, PhD student, Stanford University
-  * The Rise of Open Science: Tracking the Evolution and Perceived Value of Data and Methods Link-Sharing Practices (*under submission*)
+  * <a href="https://arxiv.org/abs/2310.03193">The Rise of Open Science: Tracking the Evolution and Perceived Value of Data and Methods Link-Sharing Practices</a> (arXiv)
 
 #### 2021
 * Tal August, PhD student, University of Washington
