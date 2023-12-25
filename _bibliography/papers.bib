@@ -1,6 +1,150 @@
 ---
 ---
 
+@article{Magnusson2023PalomaAB,
+  title={Paloma: A Benchmark for Evaluating Language Model Fit},
+  author={Ian Magnusson and Akshita Bhagia and Valentin Hofmann and Luca Soldaini and A. Jha and Oyvind Tafjord and Dustin Schwenk and Evan Pete Walsh and Yanai Elazar and Kyle Lo and Dirk Groeneveld and Iz Beltagy and Hanna Hajishirzi and Noah A. Smith and Kyle Richardson and Jesse Dodge},
+  journal={ArXiv},
+  year={2023},
+  month={dec},
+  url={https://arxiv.org/abs/2312.10523},
+  abstract={Language models (LMs) commonly report perplexity on monolithic data held out from training. Implicitly or explicitly, this data is composed of domains---varying distributions of language. Rather than assuming perplexity on one distribution extrapolates to others, Perplexity Analysis for Language Model Assessment (Paloma), measures LM fit to 585 text domains, ranging from nytimes.com to r/depression on Reddit. We invite submissions to our benchmark and organize results by comparability based on compliance with guidelines such as removal of benchmark contamination from pretraining. Submissions can also record parameter and training token count to make comparisons of Pareto efficiency for performance as a function of these measures of cost. We populate our benchmark with results from 6 baselines pretrained on popular corpora. In case studies, we demonstrate analyses that are possible with Paloma, such as finding that pretraining without data beyond Common Crawl leads to inconsistent fit to many domains.},
+  bibtex_show={true},
+  arxiv={2312.10523},
+  pdf={paloma-a-benchmark-for-evaluating-language-model-fit.pdf},
+  preview={paloma-a-benchmark-for-evaluating-language-model-fit.png}
+}
+
+@inproceedings{lo-etal-2023-papermage,
+    title = "{P}aper{M}age: A Unified Toolkit for Processing, Representing, and Manipulating Visually-Rich Scientific Documents",
+    author = "Lo, Kyle  and
+      Shen, Zejiang  and
+      Newman, Benjamin  and
+      Chang, Joseph  and
+      Authur, Russell  and
+      Bransom, Erin  and
+      Candra, Stefan  and
+      Chandrasekhar, Yoganand  and
+      Huff, Regan  and
+      Kuehl, Bailey  and
+      Singh, Amanpreet  and
+      Wilhelm, Chris  and
+      Zamarron, Angele  and
+      Hearst, Marti A.  and
+      Weld, Daniel  and
+      Downey, Doug  and
+      Soldaini, Luca",
+    editor = "Feng, Yansong  and
+      Lefever, Els",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-demo.45",
+    doi = "10.18653/v1/2023.emnlp-demo.45",
+    pages = "495--507",
+    abstract = "Despite growing interest in applying natural language processing (NLP) and computer vision (CV) models to the scholarly domain, scientific documents remain challenging to work with. They{'}re often in difficult-to-use PDF formats, and the ecosystem of models to process them is fragmented and incomplete. We introduce PaperMage, an open-source Python toolkit for analyzing and processing visually-rich, structured scientific documents. PaperMage offers clean and intuitive abstractions for seamlessly representing and manipulating both textual and visual document elements. PaperMage achieves this by integrating disparate state-of-the-art NLP and CV models into a unified framework, and provides turn-key recipes for common scientific document processing use-cases. PaperMage has powered multiple research prototypes of AI applications over scientific documents, along with Semantic Scholar{'}s large-scale production system for processing millions of PDFs. GitHub: https://github.com/allenai/papermage",
+    bibtex_show={true},
+    acl={2023.emnlp-demo.45},
+    pdf={papermage-a-unified-toolkit-for-processing-representing-and-manipulating-visually-rich-scientific-documents.pdf},
+    preview={papermage-a-unified-toolkit-for-processing-representing-and-manipulating-visually-rich-scientific-documents.png}
+}
+
+@inproceedings{lin-etal-2023-decomposing,
+    title = "Decomposing Complex Queries for Tip-of-the-tongue Retrieval",
+    author = "Lin, Kevin  and
+      Lo, Kyle  and
+      Gonzalez, Joseph  and
+      Klein, Dan",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.367",
+    doi = "10.18653/v1/2023.findings-emnlp.367",
+    pages = "5521--5533",
+    abstract = "When re-finding items, users who forget or are uncertain about identifying details often rely on creative strategies for expressing their information needs{---}complex queries that describe content elements (e.g., book characters or events), information beyond the document text (e.g., descriptions of book covers), or personal context (e.g., when they read a book). Standard retrieval models that rely on lexical or semantic overlap between query and document text are challenged in such retrieval settings, known as tip-of-the-tongue (TOT) retrieval. We introduce a simple but effective framework for handling such complex queries by decomposing the query with an LLM into individual clues routing those as subqueries to specialized retrievers, and ensembling the results. Our approach takes advantage of off-the-shelf retrievers (e.g., CLIP for retrieving images of book covers) or incorporate retriever-specific logic (e.g., date constraints). We show that our framework incorporating query decomposition into retrievers can improve gold book recall up to 6{\%} absolute gain for Recall@5 on a new collection of 14,441 real-world query-book pairs from an online community for resolving TOT inquiries.",
+    arxiv={2305.15053},
+    bibtex_show={true},
+    acl={2023.findings-emnlp.367},
+    pdf={decomposing-complex-queries-for-tip-of-the-tongue-retrieval.pdf},
+    preview={decomposing-complex-queries-for-tip-of-the-tongue-retrieval.png}
+}
+
+@inproceedings{newman-etal-2023-question,
+    title = "A Question Answering Framework for Decontextualizing User-facing Snippets from Scientific Documents",
+    author = "Newman, Benjamin  and
+      Soldaini, Luca  and
+      Fok, Raymond  and
+      Cohan, Arman  and
+      Lo, Kyle",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.193",
+    doi = "10.18653/v1/2023.emnlp-main.193",
+    pages = "3194--3212",
+    abstract = "Many real-world applications (e.g., note taking, search) require extracting a sentence or paragraph from a document and showing that snippet to a human outside of the source document. Yet, users may find snippets difficult to understand as they lack context from the original document. In this work, we use language models to rewrite snippets from scientific documents to be read on their own. First, we define the requirements and challenges for this user-facing decontextualization task, such as clarifying where edits occur and handling references to other documents. Second, we propose a framework that decomposes the task into three stages: question generation, question answering, and rewriting. Using this framework, we collect gold decontextualizations from experienced scientific article readers. We then conduct a range of experiments across state-of-the-art commercial and open-source language models to identify how to best provide missing-but-relevant information to models for our task. Finally, we develop QaDecontext, a simple prompting strategy inspired by our framework that improves over end-to-end prompting. We conclude with analysis that finds, while rewriting is easy, question generation and answering remain challenging for today{'}s models.",
+    arxiv={2305.14772},
+    bibtex_show = {true},
+    acl={2023.emnlp-main.193},
+    pdf={a-question-answering-framework-for-decontextualizing-user-facing-snippets-from-scientific-documents.pdf},
+    preview={a-question-answering-framework-for-decontextualizing-user-facing-snippets-from-scientific-documents.png}
+}
+
+@inproceedings{giorgi-etal-2023-open,
+    title = "Open Domain Multi-document Summarization: A Comprehensive Study of Model Brittleness under Retrieval",
+    author = "Giorgi, John  and
+      Soldaini, Luca  and
+      Wang, Bo  and
+      Bader, Gary  and
+      Lo, Kyle  and
+      Wang, Lucy  and
+      Cohan, Arman",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.549",
+    doi = "10.18653/v1/2023.findings-emnlp.549",
+    pages = "8177--8199",
+    abstract = "Multi-document summarization (MDS) assumes a set of topic-related documents are provided as input. In practice, this document set is not always available; it would need to be retrieved given an information need, i.e. a question or topic statement, a setting we dub {``}open-domain{'} MDS. We study this more challenging setting by formalizing the task and bootstrapping it using existing datasets, retrievers and summarizers. Via extensive automatic and human evaluation, we determine: (1) state-of-the-art summarizers suffer large reductions in performance when applied to open-domain MDS, (2) additional training in the open-domain setting can reduce this sensitivity to imperfect retrieval, and (3) summarizers are insensitive to the retrieval of duplicate documents and the order of retrieved documents, but highly sensitive to other errors, like the retrieval of irrelevant documents. Based on our results, we provide practical guidelines to enable future work on open-domain MDS, e.g. how to choose the number of retrieved documents to summarize. Our results suggest that new retrieval and summarization methods and annotated resources for training and evaluation are necessary for further progress in the open-domain setting.",
+    arxiv={2212.10526},
+    bibtex_show = {true},
+    acl={2023.findings-emnlp.549},
+    pdf={open-domain-multi-document-summarization-a-comprehensive-study-of-model-brittleness-under-retrieval.pdf},
+    preview={open-domain-multi-document-summarization-a-comprehensive-study-of-model-brittleness-under-retrieval.png}
+}
+
+
+@article{Lee2023BackTB,
+  title={Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders},
+  author={Hyunji Lee and Luca Soldaini and Arman Cohan and Minjoon Seo and Kyle Lo},
+  journal={ArXiv},
+  year={2023},
+  month={nov},
+  url={https://arxiv.org/abs/2311.09765},
+  abstract={Prevailing research practice today often relies on training dense retrievers on existing large datasets such as MSMARCO and then experimenting with ways to improve zero-shot generalization capabilities to unseen domains. While prior work has tackled this challenge through resource-intensive steps such as data augmentation, architectural modifications, increasing model size, or even further base model pretraining, comparatively little investigation has examined whether the training procedures themselves can be improved to yield better generalization capabilities in the resulting models. In this work, we recommend a simple recipe for training dense encoders: Train on MSMARCO with parameter-efficient methods, such as LoRA, and opt for using in-batch negatives unless given well-constructed hard negatives. We validate these recommendations using the BEIR benchmark and find results are persistent across choice of dense encoder and base model size and are complementary to other resource-intensive strategies for out-of-domain generalization such as architectural modifications or additional pretraining. We hope that this thorough and impartial study around various training techniques, which augments other resource-intensive methods, offers practical insights for developing a dense retrieval model that effectively generalizes, even when trained on a single dataset.},
+  bibtex_show={true},
+  arxiv={2311.09765},
+  pdf={back-to-basics-a-simple-recipe-for-improving-out-of-domain-retrieval-in-dense-encoders.pdf},
+  preview={back-to-basics-a-simple-recipe-for-improving-out-of-domain-retrieval-in-dense-encoders.png}
+}
+
 @article{Cao2023TheRO,
   title={The Rise of Open Science: Tracking the Evolution and Perceived Value of Data and Methods Link-Sharing Practices},
   author={Hancheng Cao and Jesse Dodge and Kyle Lo and Daniel A. McFarland and Lucy Lu Wang},
@@ -59,34 +203,6 @@
     arxiv={2306.01058},
     pdf={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.pdf},
     preview={are-layout-infused-language-models-robust-to-layout-distribution-shifts-a-case-study-with-scientific-documents.png}
-}
-
-@article{Lin2023DecomposingCQ,
-  title={Decomposing Complex Queries for Tip-of-the-tongue Retrieval},
-  author={Kevin Lin and Kyle Lo and Joseph E. Gonzalez and Dan Klein},
-  journal={ArXiv},
-  year={2023},
-  month={may},
-  volume={abs/2305.15053},
-  abstract={When re-finding items, users who forget or are uncertain about identifying details often rely on creative strategies for expressing their information needs -- complex queries that describe content elements (e.g., book characters or events), information beyond the document text (e.g., descriptions of book covers), or personal context (e.g., when they read a book). This retrieval setting, called tip of the tongue (TOT), is especially challenging for models heavily reliant on lexical and semantic overlap between query and document text. In this work, we introduce a simple yet effective framework for handling such complex queries by decomposing the query into individual clues, routing those as sub-queries to specialized retrievers, and ensembling the results. This approach allows us to take advantage of off-the-shelf retrievers (e.g., CLIP for retrieving images of book covers) or incorporate retriever-specific logic (e.g., date constraints). We show that our framework incorportating query decompositions into retrievers can improve gold book recall up to 7% relative again for Recall@5 on a new collection of 14,441 real-world query-book pairs from an online community for resolving TOT inquiries.},
-  bibtex_show={true},
-  arxiv={2305.15053},
-  pdf={decomposing-complex-queries-for-tip-of-the-tongue-retrieval.pdf},
-  preview={decomposing-complex-queries-for-tip-of-the-tongue-retrieval.png}
-}
-
-@article{Newman2023ACQ,
-  title={A Controllable QA-based Framework for Decontextualization},
-  author={Benjamin Newman and Luca Soldaini and Raymond Fok and Arman Cohan and Kyle Lo},
-  journal={ArXiv},
-  year={2023},
-  month={may},
-  volume={abs/2305.14772},
-  abstract={Many real-world applications require surfacing extracted snippets to users, whether motivated by assistive tools for literature surveys or document cross-referencing, or needs to mitigate and recover from model generated inaccuracies., Yet, these passages can be difficult to consume when divorced from their original document context. In this work, we explore the limits of LLMs to perform decontextualization of document snippets in user-facing scenarios, focusing on two real-world settings - question answering and citation context previews for scientific documents. We propose a question-answering framework for decontextualization that allows for better handling of user information needs and preferences when determining the scope of rewriting. We present results showing state-of-the-art LLMs under our framework remain competitive with end-to-end approaches. We also explore incorporating user preferences into the system, finding our framework allows for controllability.},
-  bibtex_show={true},
-  arxiv={2305.14772},
-  pdf={a-controllable-qa-based-framework-for-decontextualization.pdf},
-  preview={a-controllable-qa-based-framework-for-decontextualization.png}
 }
 
 @article{MartinBoyle2023ComplexMS,
@@ -261,20 +377,6 @@ preview={limeade-from-ai-explanations-to-advice-taking.png}
   preview={the-semantic-scholar-open-data-platform.png}
 }
 
-@article{Giorgi2022ExploringTC,
-  title={Exploring the Challenges of Open Domain Multi-Document Summarization},
-  author={John Giorgi and Luca Soldaini and Bo Wang and Gary Bader and Kyle Lo and Lucy Lu Wang and Arman Cohan},
-  journal={ArXiv},
-  year={2022},
-  month={dec},
-  day={20},
-  volume={abs/2212.10526},
-  abstract={Multi-document summarization (MDS) has traditionally been studied assuming a set of ground-truth topic-related input documents is provided. In practice, the input document set is unlikely to be available a priori and would need to be retrieved based on an information need, a setting we call open-domain MDS. We experiment with current state-of-the-art retrieval and summarization models on several popular MDS datasets extended to the open-domain setting. We find that existing summarizers suffer large reductions in performance when applied as-is to this more realistic task, though training summarizers with retrieved inputs can reduce their sensitivity retrieval errors. To further probe these findings, we conduct perturbation experiments on summarizer inputs to study the impact of different types of document retrieval errors. Based on our results, we provide practical guidelines to help facilitate a shift to open-domain MDS. We release our code and experimental results alongside all data or model artifacts created during our investigation.},
-  bibtex_show={true},
-  arxiv={2212.10526},
-  pdf={exploring-the-challenges-of-open-domain-multi-document-summarization.pdf},
-  preview={exploring-the-challenges-of-open-domain-multi-document-summarization.png}
-}
 
 @inproceedings{wadden-etal-2022-scifact,
     title = "{S}ci{F}act-Open: Towards open-domain scientific claim verification",
