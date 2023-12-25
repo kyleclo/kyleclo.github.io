@@ -25,12 +25,13 @@ My former interns:
 * Orion Weller, PhD student, Johns Hopkins University
   * <a href="https://arxiv.org/abs/2309.08541">When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets</a> (arXiv)
 * Hyunji Lee, MS ▸ incoming PhD student, KAIST
+  * <a href="https://arxiv.org/abs/2309.08541">Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders</a> (arXiv)
 * Fangyuan Xu, PhD student, University of Texas at Austin
 * Hang Jiang, PhD student, MIT
   
 #### 2022
 * John Giorgi, PhD student, University of Toronto
-  * <a href="https://arxiv.org/abs/2212.10526">Towards multi-document summarization in the open-domain</a> (arXiv)
+  * <a href="https://aclanthology.org/2023.findings-emnlp.549/">Towards multi-document summarization in the open-domain</a> (EMNLP Findings 2023)
 * Kalpesh Krishna, PhD student, University of Massachusetts Amherst
   * <a href="https://aclanthology.org/2023.eacl-main.121/">LongEval: Guidelines for Human Evaluation of Faithfulness in Long-form Summarization</a> (EACL 2023) 🏆 Outsanding Paper Award
 * Catherine Chen, PhD student, University of California Berkeley
@@ -69,9 +70,9 @@ My former interns:
 My former predoc researchers:
 
 * Benjamin Newman → PhD student at University of Washington (2023)
-  * <a href="https://arxiv.org/abs/2305.14772">A Controllable QA-based Framework for Decontextualization</a> (arXiv)
+  * <a href="https://aclanthology.org/2023.emnlp-main.193/">A Question Answering Framework for Decontextualizing User-facing Snippets from Scientific Documents</a> (EMNLP 2023)
 * Zejiang Shen → PhD student at MIT (2022)
-  * <a href="https://aclanthology.org/2022.tacl-1.22/">VILA: Improving Structured Content Extraction from Scientific PDFs Using Visual Layout Groups</a> (Transactions of the ACL)
+  * <a href="https://aclanthology.org/2022.tacl-1.22/">VILA: Improving Structured Content Extraction from Scientific PDFs Using Visual Layout Groups</a> (Transactions of the ACL 2022)
 * Sonia Murthy → PhD student at Harvard (2022)
   * <a href="https://aclanthology.org/2022.emnlp-demos.20/">ACCoRD: A Multi-Document Approach to Generating Diverse Descriptions of Scientific Concepts</a> (EMNLP System Demo 2023)
 * Haokun Liu → PhD student at University of North Carolina at Chapel Hill (2021)
