@@ -18,7 +18,6 @@ social: true  # includes social icons at the bottom of the page
 
 I'm a Lead Scientist at the [Allen Institute for AI](https://allenai.org/) working on the [OLMo](https://allenai.org/olmo) and [Semantic Scholar](https://www.semanticscholar.org/research/research-team) projects.
 <!-- for scientific research assistance  -->
-
 I specialize in topics in natural language processing, machine learning and human-AI interaction:
 * [Open Data for Language Models](/projects/1_project)
 * [Adapting Language Models to Specialized Texts](/projects/2_project)
