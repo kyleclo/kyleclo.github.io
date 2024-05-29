@@ -1,6 +1,67 @@
 ---
 ---
 
+@article{Weller2024FollowIREA,
+  title={FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions},
+  author={Orion Weller and Benjamin Chang and Sean MacAvaney and Kyle Lo and Arman Cohan and Benjamin Van Durme and Dawn Lawrie and Luca Soldaini},
+  journal={ArXiv},
+  year={2024},
+  month={may},
+  url={https://arxiv.org/abs/2403.15246},
+  bibtex_show={true},
+  arxiv={2403.15246},
+  abstract={Modern Language Models (LMs) are capable of following long and complex instructions that enable a large and diverse set of user requests. While Information Retrieval (IR) models use these LMs as the backbone of their architectures, virtually none of them allow users to provide detailed instructions alongside queries, thus limiting their ability to satisfy complex information needs. In this work, we study the use of instructions in IR systems. First, we introduce our dataset FollowIR, which contains a rigorous instruction evaluation benchmark as well as a training set for helping IR models learn to better follow real-world instructions. FollowIR repurposes detailed instructions -- also known as narratives -- developed for professional assessors to evaluate retrieval systems. In particular, we build our benchmark from three collections curated for shared tasks at the Text REtrieval Conference (TREC). These collections contains hundreds to thousands of labeled documents per query, making them suitable for our exploration. Through this process, we can measure how well IR models follow instructions, through a new pairwise evaluation framework. Our results indicate that existing retrieval models fail to correctly use instructions, using them for basic keywords and struggling to understand long-form information. However, we show that it is possible for IR models to learn to follow complex instructions: our new FollowIR-7B model has significant improvements after fine-tuning on our training set.},
+  pdf={followir-evaluating-and-teaching-information-retrieval-models-to-follow-instructions.pdf},
+  preview={followir-evaluating-and-teaching-information-retrieval-models-to-follow-instructions.png}
+}
+
+@article{Kim2024FABLESEF,
+  title={FABLES: Evaluating faithfulness and content selection in book-length summarization},
+  author={Yekyung Kim and Yapei Chang and Marzena Karpinska and Aparna Garimella and Varun Manjunatha and Kyle Lo and Tanya Goyal and Mohit Iyyer},
+  journal={ArXiv},
+  year={2024},
+  month={apr},
+  url={https://arxiv.org/abs/2404.01261},
+  arxiv={2404.01261},
+  abstract={While long-context large language models (LLMs) can technically summarize book-length documents (>100K tokens), the length and complexity of the documents have so far prohibited evaluations of input-dependent aspects like faithfulness. In this paper, we conduct the first large-scale human evaluation of faithfulness and content selection on LLM-generated summaries of fictional books. Our study mitigates the issue of data contamination by focusing on summaries of books published in 2023 or 2024, and we hire annotators who have fully read each book prior to the annotation task to minimize cost and cognitive burden. We collect FABLES, a dataset of annotations on 3,158 claims made in LLM-generated summaries of 26 books, at a cost of $5.2K USD, which allows us to rank LLM summarizers based on faithfulness: Claude-3-Opus significantly outperforms all closed-source LLMs, while the open-source Mixtral is on par with GPT-3.5-Turbo. An analysis of the annotations reveals that most unfaithful claims relate to events and character states, and they generally require indirect reasoning over the narrative to invalidate. While LLM-based auto-raters have proven reliable for factuality and coherence in other settings, we implement several LLM raters of faithfulness and find that none correlates strongly with human annotations, especially with regard to detecting unfaithful claims. Our experiments suggest that detecting unfaithful claims is an important future direction not only for summarization evaluation but also as a testbed for long-context understanding. Finally, we move beyond faithfulness by exploring content selection errors in book-length summarization: we develop a typology of omission errors related to crucial narrative elements and also identify a systematic over-emphasis on events occurring towards the end of the book.},
+  bibtex_show={true},
+  pdf={fables-evaluating-faithfulness-and-content-selection-in-book-length-summarization.pdf},
+  preview={fables-evaluating-faithfulness-and-content-selection-in-book-length-summarization.png}
+}
+
+@article{10.1145/3665648,
+author = {Fok, Raymond and Soldaini, Luca and Trier, Cassidy and Bransom, Erin and MacMillan, Kelsey and Cheng, Evie and Kambhamettu, Hita and Bragg, Jonathan and Lo, Kyle and Hearst, Marti A. and Head, Andrew and Weld, Daniel S.},
+title = {Accelerating Scientific Paper Skimming with Augmented Intelligence Through Customizable Faceted Highlights},
+year = {2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {2160-6455},
+url = {https://doi.org/10.1145/3665648},
+doi = {10.1145/3665648},
+abstract = {Scholars need to keep up with an exponentially increasing flood of scientific papers. To aid this challenge, we introduce Scim, a novel intelligent interface that helps scholars skim papers to rapidly review and gain a cursory understanding of its contents. Scim supports the skimming process by highlighting salient content within a paper, directing a scholar’s attention. These automatically-extracted highlights are faceted by content type, evenly distributed across a paper, and have a density configurable by scholars. We evaluate Scim with an in-lab usability study and a longitudinal diary study, revealing how its highlights facilitate the more efficient construction of a conceptualization of a paper. Finally, we describe the process of scaling highlights from their conception within Scim, a research prototype, to production on over 521,000 papers within the Semantic Reader, a publicly-available augmented reading interface for scientific papers. We conclude by discussing design considerations and tensions for the design of future skimming tools with augmented intelligence.},
+journal = {ACM Transactions on Interactive Intelligent Systems},
+month = {mar},
+acm={10.1145/3665648},
+bibtex_show={true},
+pdf={accelerating-scientific-paper-skimming-with-augmented-intelligence-through-customizable-faceted-highlights.pdf},
+preview={accelerating-scientific-paper-skimming-with-augmented-intelligence-through-customizable-faceted-highlights.png}
+}
+
+@article{Xu2024KIWIAD,
+  title={KIWI: A Dataset of Knowledge-Intensive Writing Instructions for Answering Research Questions},
+  author={Fangyuan Xu and Kyle Lo and Luca Soldaini and Bailey Kuehl and Eunsol Choi and David Wadden},
+  journal={ArXiv},
+  year={2024},
+  month={mar},
+  url={https://arxiv.org/abs/2403.03866},
+  arxiv={2403.03866},
+  abstract={Large language models (LLMs) adapted to follow user instructions are now widely deployed as conversational agents. In this work, we examine one increasingly common instruction-following task: providing writing assistance to compose a long-form answer. To evaluate the capabilities of current LLMs on this task, we construct KIWI, a dataset of knowledge-intensive writing instructions in the scientific domain. Given a research question, an initial model-generated answer and a set of relevant papers, an expert annotator iteratively issues instructions for the model to revise and improve its answer. We collect 1,260 interaction turns from 234 interaction sessions with three state-of-the-art LLMs. Each turn includes a user instruction, a model response, and a human evaluation of the model response. Through a detailed analysis of the collected responses, we find that all models struggle to incorporate new information into an existing answer, and to perform precise and unambiguous edits. Further, we find that models struggle to judge whether their outputs successfully followed user instructions, with accuracy at least 10 points short of human agreement. Our findings indicate that KIWI will be a valuable resource to measure progress and improve LLMs' instruction-following capabilities for knowledge intensive writing tasks.},
+  bibtex_show={true},
+  pdf={kiwi-a-dataset-of-knowledge-intensive-writing-instructions-for-answering-research-questions.pdf},
+  preview={kiwi-a-dataset-of-knowledge-intensive-writing-instructions-for-answering-research-questions.png}
+}
+
+
 @article{Groeneveld2024OLMoAT,
   title={OLMo: Accelerating the Science of Language Models},
   author={Dirk Groeneveld and Iz Beltagy and Pete Walsh and Akshita Bhagia and Rodney Kinney and Oyvind Tafjord and Ananya Harsh Jha and Hamish Ivison and Ian Magnusson and Yizhong Wang and Shane Arora and David Atkinson and Russell Authur and Khyathi Raghavi Chandu and Arman Cohan and Jennifer Dumas and Yanai Elazar and Yuling Gu and Jack Hessel and Tushar Khot and William Merrill and Jacob Morrison and Niklas Muennighoff and Aakanksha Naik and Crystal Nam and Matthew E. Peters and Valentina Pyatkin and Abhilasha Ravichander and Dustin Schwenk and Saurabh Shah and Will Smith and Emma Strubell and Nishant Subramani and Mitchell Wortsman and Pradeep Dasigi and Nathan Lambert and Kyle Richardson and Luke Zettlemoyer and Jesse Dodge and Kyle Lo and Luca Soldaini and Noah A. Smith and Hannaneh Hajishirzi},
@@ -28,6 +89,21 @@
   pdf={dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.pdf},
   preview={dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.png}
 }
+
+@article{Trienes2024InfoLossQACA,
+  title={InfoLossQA: Characterizing and Recovering Information Loss in Text Simplification},
+  author={Jan Trienes and Sebastian Antony Joseph and Jorg Schlotterer and Christin Seifert and Kyle Lo and Wei Xu and Byron C. Wallace and Junyi Jessy Li},
+  journal={ArXiv},
+  year={2024},
+  month={jan},
+  arxiv={2401.16475},
+  url={https://arxiv.org/abs/2401.16475},
+  abstract={Text simplification aims to make technical texts more accessible to laypeople but often results in deletion of information and vagueness. This work proposes InfoLossQA, a framework to characterize and recover simplification-induced information loss in form of question-and-answer (QA) pairs. Building on the theory of Question Under Discussion, the QA pairs are designed to help readers deepen their knowledge of a text. We conduct a range of experiments with this framework. First, we collect a dataset of 1,000 linguist-curated QA pairs derived from 104 LLM simplifications of scientific abstracts of medical studies. Our analyses of this data reveal that information loss occurs frequently, and that the QA pairs give a high-level overview of what information was lost. Second, we devise two methods for this task: end-to-end prompting of open-source and commercial language models, and a natural language inference pipeline. With a novel evaluation framework considering the correctness of QA pairs and their linguistic suitability, our expert evaluation reveals that models struggle to reliably identify information loss and applying similar standards as humans at what constitutes information loss.},
+  bibtex_show={true},
+  pdf={infolossqa-characterizing-and-recovering-information-loss-in-text-simplification.pdf},
+  preview={infolossqa-characterizing-and-recovering-information-loss-in-text-simplification.png}
+}
+
 
 @article{Magnusson2023PalomaAB,
   title={Paloma: A Benchmark for Evaluating Language Model Fit},

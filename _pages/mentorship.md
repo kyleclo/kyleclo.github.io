@@ -19,7 +19,11 @@ See [**FAQs**](#faqs) for more info about working with me.
 
 <a href="https://boards.greenhouse.io/thealleninstitute/jobs/2172007">⭐ **Apply Here** ⭐</a>!
 
-My former interns:
+My current/former interns:
+
+#### 2024
+* Lucy Li, PhD student, University of California Berkeley
+* Chaitanya Malaviya, PhD student, University of Pennsylvania
 
 #### 2023
 * Orion Weller, PhD student, Johns Hopkins University
