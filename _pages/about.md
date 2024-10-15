@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a Lead Scientist at the [Allen Institute for AI](https://allenai.org/) working on the [OLMo](https://allenai.org/olmo) and [Semantic Scholar](https://www.semanticscholar.org/research/research-team) projects.
+I'm a research scientist at the [Allen Institute for AI](https://allenai.org/) on the [OLMo](https://allenai.org/olmo) and [Semantic Scholar](https://www.semanticscholar.org/research/research-team) projects.
 <!-- for scientific research assistance  -->
 I specialize in topics in natural language processing, machine learning and human-AI interaction:
 * [Open Data for Language Models](/projects/1_project)
@@ -24,7 +24,7 @@ I specialize in topics in natural language processing, machine learning and huma
 * [Standards and Best Practices in NLP Evaluation](/projects/3_project)
 * [NLP for Sensemaking over Large Collections](/projects/4_project)
 * [AI-Powered Reading Assistance](/projects/5_project)
-* [Limitations in Language Models](/projects/6_project)
+<!-- * [Limitations in Language Models](/projects/6_project) -->
 
 <!-- Reading long, technical documents is hard, even for experienced scholars. How can AI assistance help? -->
  <!-- we make them more accessible by automatically transforming papers into dynamic web documents with helpful interactive features?  -->

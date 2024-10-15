@@ -17,20 +17,28 @@ See [**FAQs**](#faqs) for more info about working with me.
 
 ### Research Internship
 
-<a href="https://boards.greenhouse.io/thealleninstitute/jobs/2172007">⭐ **Apply Here** ⭐</a>!
+<a href="https://job-boards.greenhouse.io/thealleninstitute/jobs/6322728">⭐ **Apply Here** ⭐</a>!
 
-My current/former interns:
+I've had the pleasure of working with some amazing interns:
 
 #### 2024
-* Lucy Li, PhD student, University of California Berkeley
 * Chaitanya Malaviya, PhD student, University of Pennsylvania
+* Alexander Wettig, PhD student, Princeton University
+* Niklas Muennighoff, PhD student, Stanford University
+  * <a href="https://arxiv.org/abs/2409.02060">OLMoE: Open Mixture-of-Experts Language Models</a> (arXiv)
+* Lucy Li, PhD student, University of California Berkeley
+  * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (arXiv)
+* Rose Wang, PhD student, Stanford University
+  * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (arXiv)
 
 #### 2023
 * Orion Weller, PhD student, Johns Hopkins University
-  * <a href="https://arxiv.org/abs/2309.08541">When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets</a> (arXiv)
+  * <a href="https://aclanthology.org/2024.findings-eacl.134/">When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets</a> (EACL Findings 2024)
 * Hyunji Lee, MS ▸ incoming PhD student, KAIST
+  * <a href="https://arxiv.org/abs/2409.02685">RouterRetriever: Exploring the Benefits of Routing over Multiple Expert Embedding Models</a> (arXiv)
   * <a href="https://arxiv.org/abs/2309.08541">Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders</a> (arXiv)
 * Fangyuan Xu, PhD student, University of Texas at Austin
+  * <a href="https://aclanthology.org/2024.findings-acl.770/">KIWI: A Dataset of Knowledge-Intensive Writing Instructions for Answering Research Questions</a> (ACL Findings 2024)
 * Hang Jiang, PhD student, MIT
   
 #### 2022
@@ -69,7 +77,7 @@ My current/former interns:
 
 ### Predoctoral Research
 
-<a href="https://boards.greenhouse.io/thealleninstitute/jobs/5358681">⭐ **Apply Here** ⭐</a>!
+<!-- <a href="https://boards.greenhouse.io/thealleninstitute/jobs/5358681">⭐ **Apply Here** ⭐</a>! -->
 
 My former predoc researchers:
 
