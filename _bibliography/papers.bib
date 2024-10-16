@@ -1,6 +1,268 @@
 ---
 ---
 
+@article{Lee2024RouterRetrieverET,
+  title={RouterRetriever: Exploring the Benefits of Routing over Multiple Expert Embedding Models},
+  author={Hyunji Lee and Luca Soldaini and Arman Cohan and Minjoon Seo and Kyle Lo},
+  journal={ArXiv},
+  year={2024},
+  month={sep},
+  volume={2409.02685},
+  url={https://arxiv.org/abs/2409.02685},
+  bibtex_show={true},
+  arxiv={2409.02685},
+  abstract={Information retrieval methods often rely on a single embedding model trained on large, general-domain datasets like MSMARCO. While this approach can produce a retriever with reasonable overall performance, models trained on domain-specific data often yield better results within their respective domains. While prior work in information retrieval has tackled this through multi-task training, the topic of combining multiple domain-specific expert retrievers remains unexplored, despite its popularity in language model generation. In this work, we introduce RouterRetriever, a retrieval model that leverages multiple domain-specific experts along with a routing mechanism to select the most appropriate expert for each query. It is lightweight and allows easy addition or removal of experts without additional training. Evaluation on the BEIR benchmark demonstrates that RouterRetriever outperforms both MSMARCO-trained (+2.1 absolute nDCG@10) and multi-task trained (+3.2) models. This is achieved by employing our routing mechanism, which surpasses other routing techniques (+1.8 on average) commonly used in language modeling. Furthermore, the benefit generalizes well to other datasets, even in the absence of a specific expert on the dataset. To our knowledge, RouterRetriever is the first work to demonstrate the advantages of using multiple domain-specific expert embedding models with effective routing over a single, general-purpose embedding model in retrieval tasks.},
+  pdf={routerretriever-exploring-the-benefits-of-routing-over-multiple-expert-embedding-models.pdf},
+  preview={routerretriever-exploring-the-benefits-of-routing-over-multiple-expert-embedding-models.png}
+}
+
+@article{Muennighoff2024OLMoEOM,
+  title={OLMoE: Open Mixture-of-Experts Language Models},
+  author={Niklas Muennighoff and Luca Soldaini and Dirk Groeneveld and Kyle Lo and Jacob Daniel Morrison and Sewon Min and Weijia Shi and Pete Walsh and Oyvind Tafjord and Nathan Lambert and Yuling Gu and Shane Arora and Akshita Bhagia and Dustin Schwenk and David Wadden and Alexander Wettig and Binyuan Hui and Tim Dettmers and Douwe Kiela and Ali Farhadi and Noah A. Smith and Pang Wei Koh and Amanpreet Singh and Hanna Hajishirzi},
+  journal={ArXiv},
+  year={2024},
+  month={sep},
+  url={https://arxiv.org/abs/2409.02060},
+  bibtex_show={true},
+  arxiv={2409.02060},
+  abstract={We introduce OLMoE, a fully open, state-of-the-art language model leveraging sparse Mixture-of-Experts (MoE). OLMoE-1B-7B has 7 billion (B) parameters but uses only 1B per input token. We pretrain it on 5 trillion tokens and further adapt it to create OLMoE-1B-7B-Instruct. Our models outperform all available models with similar active parameters, even surpassing larger ones like Llama2-13B-Chat and DeepSeekMoE-16B. We present various experiments on MoE training, analyze routing in our model showing high specialization, and open-source all aspects of our work: model weights, training data, code, and logs.},
+  pdf={olmoe-open-mixture-of-experts-language-models.pdf},
+  preview={olmoe-open-mixture-of-experts-language-models.png}
+}
+
+@article{10.1145/3659096,
+title = {The Semantic Reader Project: Augmenting Scholarly Documents Through AI-Powered Interactive Reading Interfaces},
+author = {Lo, Kyle and Chang, Joseph Chee and Head, Andrew and Bragg, Jonathan and Zhang, Amy X. and Trier, Cassidy and Anastasiades, Chloe and August, Tal and Authur, Russell and Bragg, Danielle and Bransom, Erin and Cachola, Isabel and Candra, Stefan and Chandrasekhar, Yoganand and Chen, Yen-Sung and Cheng, Evie Yu-Yen and Chou, Yvonne and Downey, Doug and Evans, Rob and Fok, Raymond and Hu, Fangzhou and Huff, Regan and Kang, Dongyeop and Kim, Tae Soo and Kinney, Rodney and Kittur, Aniket and Kang, Hyeonsu B. and Klevak, Egor and Kuehl, Bailey and Langan, Michael J. and Latzke, Matt and Lochner, Jaron and MacMillan, Kelsey and Marsh, Eric and Murray, Tyler and Naik, Aakanksha and Nguyen, Ngoc-Uyen and Palani, Srishti and Park, Soya and Paulic, Caroline and Rachatasumrit, Napol and Rao, Smita and Sayre, Paul and Shen, Zejiang and Siangliulue, Pao and Soldaini, Luca and Tran, Huy and van Zuylen, Madeleine and Wang, Lucy Lu and Wilhelm, Christopher and Wu, Caroline and Yang, Jiangjiang and Zamarron, Angele and Hearst, Marti A. and Weld, Daniel S.},
+year = {2024},
+issue_date = {October 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {67},
+number = {10},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3659096},
+doi = {10.1145/3659096},
+abstract = {Scholarly publications are key to the transfer of knowledge from scholars to others. However, research papers are information-dense, and as the volume of the scientific literature grows, the greater the need for new technology to support scholars. In contrast to the process of finding papers, which has been transformed by Internet technology, the experience of reading research papers has changed little in decades. For instance, the PDF format for sharing papers remains widely used due to its portability but has significant downsides, inter alia, static content and poor accessibility for low-vision readers. This paper explores the question “Can recent advances in AI and HCI power intelligent, interactive, and accessible reading interfaces—even for legacy PDFs?” We describe the Semantic Reader Project, a collaborative effort across multiple institutions to explore automatic creation of dynamic reading interfaces for research papers. Through this project, we’ve developed a collection of novel reading interfaces and evaluated them with study participants and real-world users to show improved reading experiences for scholars. We’ve also released a production research paper reading interface that will continuously incorporate novel features from our research as they mature. We structure this paper around five key opportunities for AI assistance in scholarly reading —discovery, efficiency, comprehension, synthesis, and accessibility—and present an overview of our progress and discuss remaining open challenges.Augmenting scholarly documents through AI-powered interactive reading interfaces.},
+journal = {Communications of the ACM},
+month = sep,
+pages = {50–61},
+numpages = {12},
+  bibtex_show={true},
+  arxiv={2303.14334},
+  pdf={the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.pdf},
+  preview={the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.png}
+}
+
+@article{Lucy2024EvaluatingLM,
+  title={MathFish : Evaluating Language Model Math Reasoning via Grounding in Educational Curricula},
+  author={Li Lucy and Tal August and Rose E. Wang and Luca Soldaini and Courtney Allison and Kyle Lo},
+  journal={ArXiv},
+  year={2024},
+  month={aug},
+  url={https://arxiv.org/abs/2408.04226},
+  bibtex_show={true},
+  arxiv={2408.04226},
+  abstract={To ensure that math curriculum is grade-appropriate and aligns with critical skills or concepts in accordance with educational standards, pedagogical experts can spend months carefully reviewing published math problems. Drawing inspiration from this process, our work presents a novel angle for evaluating language models' (LMs) mathematical abilities, by investigating whether they can discern skills and concepts enabled by math content. We contribute two datasets: one consisting of 385 fine-grained descriptions of K-12 math skills and concepts, or standards, from Achieve the Core (ATC), and another of 9.9K math problems labeled with these standards (MathFish). We develop two tasks for evaluating LMs' abilities to assess math problems: (1) verifying whether a problem aligns with a given standard, and (2) tagging a problem with all aligned standards. Working with experienced teachers, we find that LMs struggle to tag and verify standards linked to problems, and instead predict labels that are close to ground truth, but differ in subtle ways. We also show that LMs often generate problems that do not fully align with standards described in prompts, suggesting the need for careful scrutiny on use cases involving LMs for generating curricular materials. Finally, we categorize problems in GSM8k using math standards, allowing us to better understand why some problems are more difficult to solve for models than others.},
+  pdf={evaluating-language-model-math-reasoning-via-grounding-in-educational-curricula.pdf},
+  preview={evaluating-language-model-math-reasoning-via-grounding-in-educational-curricula.png}
+}
+
+@inproceedings{xu-etal-2024-kiwi,
+    title = "{KIWI}: A Dataset of Knowledge-Intensive Writing Instructions for Answering Research Questions",
+    author = "Xu, Fangyuan  and
+      Lo, Kyle  and
+      Soldaini, Luca  and
+      Kuehl, Bailey  and
+      Choi, Eunsol  and
+      Wadden, David",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.770",
+    doi = "10.18653/v1/2024.findings-acl.770",
+    pages = "12969--12990",
+    abstract = "Large language models (LLMs) adapted to follow user instructions are now widely deployed as conversational agents. In this work, we examine one increasingly common instruction-following task: providing writing assistance to compose a long-form answer. To evaluate the capabilities of current LLMs on this task, we construct KIWI, a dataset of knowledge-intensive writing instructions in the scientific domain. Given a research question, an initial model-generated answer and a set of relevant papers, an expert annotator iteratively issues instructions for the model to revise and improve its answer. We collect 1,260 interaction turns from 234 interaction sessions with three state-of-the-art LLMs. Each turn includes a user instruction, a model response, and a human evaluation of the model response. Through a detailed analysis of the collected responses, we find that all models struggle to incorporate new information into an existing answer, and to perform precise and unambiguous edits. Further, we find that models struggle to judge whether their outputs successfully followed user instructions, with accuracy at least 10 points short of human agreement. Our findings indicate that KIWI will be a valuable resource to measure progress and improve LLMs{'} instruction-following capabilities for knowledge intensive writing tasks.",
+    acl={2024.findings-acl.770},
+    arxiv={2403.03866},
+    bibtex_show={true},
+    pdf={kiwi-a-dataset-of-knowledge-intensive-writing-instructions-for-answering-research-questions.pdf},
+    preview={kiwi-a-dataset-of-knowledge-intensive-writing-instructions-for-answering-research-questions.png}
+}
+
+@inproceedings{groeneveld-etal-2024-olmo,
+    title = "{OLM}o: Accelerating the Science of Language Models",
+    author = "Groeneveld, Dirk  and
+      Beltagy, Iz  and
+      Walsh, Evan  and
+      Bhagia, Akshita  and
+      Kinney, Rodney  and
+      Tafjord, Oyvind  and
+      Jha, Ananya  and
+      Ivison, Hamish  and
+      Magnusson, Ian  and
+      Wang, Yizhong  and
+      Arora, Shane  and
+      Atkinson, David  and
+      Authur, Russell  and
+      Chandu, Khyathi  and
+      Cohan, Arman  and
+      Dumas, Jennifer  and
+      Elazar, Yanai  and
+      Gu, Yuling  and
+      Hessel, Jack  and
+      Khot, Tushar  and
+      Merrill, William  and
+      Morrison, Jacob  and
+      Muennighoff, Niklas  and
+      Naik, Aakanksha  and
+      Nam, Crystal  and
+      Peters, Matthew  and
+      Pyatkin, Valentina  and
+      Ravichander, Abhilasha  and
+      Schwenk, Dustin  and
+      Shah, Saurabh  and
+      Smith, William  and
+      Strubell, Emma  and
+      Subramani, Nishant  and
+      Wortsman, Mitchell  and
+      Dasigi, Pradeep  and
+      Lambert, Nathan  and
+      Richardson, Kyle  and
+      Zettlemoyer, Luke  and
+      Dodge, Jesse  and
+      Lo, Kyle  and
+      Soldaini, Luca  and
+      Smith, Noah  and
+      Hajishirzi, Hannaneh",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "ACL",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.841",
+    doi = "10.18653/v1/2024.acl-long.841",
+    pages = "15789--15809",
+    abstract = "Language models (LMs) have become ubiquitous in both NLP research and in commercial product offerings. As their commercial importance has surged, the most powerful models have become closed off, gated behind proprietary interfaces, with important details of their training data, architectures, and development undisclosed. Given the importance of these details in scientifically studying these models, including their biases and potential risks, we believe it is essential for the research community to have access to powerful, truly open LMs. To this end, we have built OLMo, a competitive, truly Open Language Model, to enable the scientific study of language models. Unlike most prior efforts that have only released model weights and inference code, we release OLMo alongside open training data and training and evaluation code. We hope this release will empower the open research community and inspire a new wave of innovation.",
+    bibtex_show={true},
+    arxiv={2402.00838},
+    acl={2024.acl-long.841},
+    pdf={olmo-accelerating-the-science-of-language-models.pdf},
+    preview={olmo-accelerating-the-science-of-language-models.png},
+    award={Best Paper Award}
+}
+
+
+
+@inproceedings{soldaini-etal-2024-dolma,
+    title = "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+    author = "Soldaini, Luca  and
+      Kinney, Rodney  and
+      Bhagia, Akshita  and
+      Schwenk, Dustin  and
+      Atkinson, David  and
+      Authur, Russell  and
+      Bogin, Ben  and
+      Chandu, Khyathi  and
+      Dumas, Jennifer  and
+      Elazar, Yanai  and
+      Hofmann, Valentin  and
+      Jha, Ananya  and
+      Kumar, Sachin  and
+      Lucy, Li  and
+      Lyu, Xinxi  and
+      Lambert, Nathan  and
+      Magnusson, Ian  and
+      Morrison, Jacob  and
+      Muennighoff, Niklas  and
+      Naik, Aakanksha  and
+      Nam, Crystal  and
+      Peters, Matthew  and
+      Ravichander, Abhilasha  and
+      Richardson, Kyle  and
+      Shen, Zejiang  and
+      Strubell, Emma  and
+      Subramani, Nishant  and
+      Tafjord, Oyvind  and
+      Walsh, Evan  and
+      Zettlemoyer, Luke  and
+      Smith, Noah  and
+      Hajishirzi, Hannaneh  and
+      Beltagy, Iz  and
+      Groeneveld, Dirk  and
+      Dodge, Jesse  and
+      Lo, Kyle",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "ACL",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.840",
+    doi = "10.18653/v1/2024.acl-long.840",
+    pages = "15725--15788",
+    abstract = "Information about pretraining corpora used to train the current best-performing language models is seldom discussed: commercial models rarely detail their data, and even open models are often released without accompanying training data or recipes to reproduce them. As a result, it is challenging to conduct and advance scientific research on language modeling, such as understanding how training data impacts model capabilities and limitations. To facilitate scientific research on language model pretraining, we curate and release Dolma, a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials. We extensively document Dolma, including its design principles, details about its construction, and a summary of its contents. We present analyses and experimental results on intermediate states of Dolma to share what we have learned about important data curation practices. Finally, we open-source our data curation toolkit to enable reproduction of our work as well as support further research in large-scale data curation.",
+    bibtex_show={true},
+    arxiv={2402.00159},
+    acl={2024.acl-long.840},
+    pdf={dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.pdf},
+    preview={dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.png},
+    award={Best Paper Award}
+}
+
+@article{Karpinska2024OneTA,
+  title={One Thousand and One Pairs: A "novel" challenge for long-context language models},
+  author={Marzena Karpinska and Katherine Thai and Kyle Lo and Tanya Goyal and Mohit Iyyer},
+  journal={ArXiv},
+  year={2024},
+  month={jun},
+  url={https://arxiv.org/abs/2406.16264},
+  bibtex_show={true},
+  arxiv={2406.16264},
+  abstract={Synthetic long-context LLM benchmarks (e.g., "needle-in-the-haystack") test only surface-level retrieval capabilities, but how well can long-context LLMs retrieve, synthesize, and reason over information across book-length inputs? We address this question by creating NoCha, a dataset of 1,001 minimally different pairs of true and false claims about 67 recently-published English fictional books, written by human readers of those books. In contrast to existing long-context benchmarks, our annotators confirm that the largest share of pairs in NoCha require global reasoning over the entire book to verify. Our experiments show that while human readers easily perform this task, it is enormously challenging for all ten long-context LLMs that we evaluate: no open-weight model performs above random chance (despite their strong performance on synthetic benchmarks), while GPT-4o achieves the highest accuracy at 55.8%. Further analysis reveals that (1) on average, models perform much better on pairs that require only sentence-level retrieval vs. global reasoning; (2) model-generated explanations for their decisions are often inaccurate even for correctly-labeled claims; and (3) models perform substantially worse on speculative fiction books that contain extensive world-building. The methodology proposed in NoCha allows for the evolution of the benchmark dataset and the easy analysis of future models.},
+  pdf={one-thousand-and-one-pairs-a-novel-challenge-for-long-context-language-models.pdf},
+  preview={one-thousand-and-one-pairs-a-novel-challenge-for-long-context-language-models.png}
+}
+
+@article{Gadre2023DataCompIS,
+    title={DataComp-LM: In search of the next generation of training sets for language models}, 
+    author={Jeffrey Li and Alex Fang and Georgios Smyrnis and Maor Ivgi and Matt Jordan and Samir Gadre and Hritik Bansal and Etash Guha and Sedrick Keh and Kushal Arora and Saurabh Garg and Rui Xin and Niklas Muennighoff and Reinhard Heckel and Jean Mercat and Mayee Chen and Suchin Gururangan and Mitchell Wortsman and Alon Albalak and Yonatan Bitton and Marianna Nezhurina and Amro Abbas and Cheng-Yu Hsieh and Dhruba Ghosh and Josh Gardner and Maciej Kilian and Hanlin Zhang and Rulin Shao and Sarah Pratt and Sunny Sanyal and Gabriel Ilharco and Giannis Daras and Kalyani Marathe and Aaron Gokaslan and Jieyu Zhang and Khyathi Chandu and Thao Nguyen and Igor Vasiljevic and Sham Kakade and Shuran Song and Sujay Sanghavi and Fartash Faghri and Sewoong Oh and Luke Zettlemoyer and Kyle Lo and Alaaeldin El-Nouby and Hadi Pouransari and Alexander Toshev and Stephanie Wang and Dirk Groeneveld and Luca Soldaini and Pang Wei Koh and Jenia Jitsev and Thomas Kollar and Alexandros G. Dimakis and Yair Carmon and Achal Dave and Ludwig Schmidt and Vaishaal Shankar},
+    journal={ArXiv},
+    year={2024},
+    month={jun},
+    url={https://arxiv.org/abs/2406.11794}, 
+    bibtex_show={true},
+    arxiv={2406.11794},
+    abstract={We introduce DataComp for Language Models (DCLM), a testbed for controlled dataset experiments with the goal of improving language models. As part of DCLM, we provide a standardized corpus of 240T tokens extracted from Common Crawl, effective pretraining recipes based on the OpenLM framework, and a broad suite of 53 downstream evaluations. Participants in the DCLM benchmark can experiment with data curation strategies such as deduplication, filtering, and data mixing at model scales ranging from 412M to 7B parameters. As a baseline for DCLM, we conduct extensive experiments and find that model-based filtering is key to assembling a high-quality training set. The resulting dataset, DCLM-Baseline enables training a 7B parameter language model from scratch to 64% 5-shot accuracy on MMLU with 2.6T training tokens. Compared to MAP-Neo, the previous state-of-the-art in open-data language models, DCLM-Baseline represents a 6.6 percentage point improvement on MMLU while being trained with 40% less compute. Our baseline model is also comparable to Mistral-7B-v0.3 and Llama 3 8B on MMLU (63% & 66%), and performs similarly on an average of 53 natural language understanding tasks while being trained with 6.6x less compute than Llama 3 8B. Our results highlight the importance of dataset design for training language models and offer a starting point for further research on data curation.},
+    pdf={datacomp-lm-in-search-of-the-next-generation-of-training-sets-for-language-models.pdf},
+    preview={datacomp-lm-in-search-of-the-next-generation-of-training-sets-for-language-models.png}
+}
+
+
+
+@article{Wadden2024SciRIFFAR,
+  title={SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature},
+  author={David Wadden and Kejian Shi and Jacob Daniel Morrison and Aakanksha Naik and Shruti Singh and Nitzan Barzilay and Kyle Lo and Tom Hope and Luca Soldaini and Shannon Zejiang Shen and Doug Downey and Hanna Hajishirzi and Arman Cohan},
+  journal={ArXiv},
+  year={2024},
+  month={jun},
+  bibtex_show={true},
+  url={https://arxiv.org/abs/2406.07835},
+  arxiv={2406.07835},
+  abstract={We present SciRIFF (Scientific Resource for Instruction-Following and Finetuning), a dataset of 137K instruction-following demonstrations for 54 tasks covering five essential scientific literature understanding capabilities: information extraction, summarization, question answering, claim verification, and classification. SciRIFF demonstrations are notable for their long input contexts, detailed task specifications, and complex structured outputs. While instruction-following resources are available in specific domains such as clinical medicine and chemistry, SciRIFF is the first dataset focused on extracting and synthesizing information from research literature across a wide range of scientific fields. To demonstrate the utility of SciRIFF, we develop a sample-efficient strategy to adapt a general instruction-following model for science by performing additional finetuning on a mix of general-domain and SciRIFF demonstrations. In evaluations on nine held-out scientific tasks, our model -- called SciTulu -- improves over a strong LLM baseline by 28.1% and 6.5% at the 7B and 70B scales respectively, while maintaining general instruction-following performance within 2% of the baseline. We are optimistic that SciRIFF will facilitate the development and evaluation of LLMs to help researchers navigate the ever-growing body of scientific literature. We release our dataset, model checkpoints, and data processing and evaluation code to enable further research.},
+  pdf={sciriff-a-resource-to-enhance-language-model-instruction-following-over-scientific-literature.pdf},
+  preview={sciriff-a-resource-to-enhance-language-model-instruction-following-over-scientific-literature.png}
+}
+
 @article{Weller2024FollowIREA,
   title={FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions},
   author={Orion Weller and Benjamin Chang and Sean MacAvaney and Kyle Lo and Arman Cohan and Benjamin Van Durme and Dawn Lawrie and Luca Soldaini},
@@ -13,6 +275,29 @@
   abstract={Modern Language Models (LMs) are capable of following long and complex instructions that enable a large and diverse set of user requests. While Information Retrieval (IR) models use these LMs as the backbone of their architectures, virtually none of them allow users to provide detailed instructions alongside queries, thus limiting their ability to satisfy complex information needs. In this work, we study the use of instructions in IR systems. First, we introduce our dataset FollowIR, which contains a rigorous instruction evaluation benchmark as well as a training set for helping IR models learn to better follow real-world instructions. FollowIR repurposes detailed instructions -- also known as narratives -- developed for professional assessors to evaluate retrieval systems. In particular, we build our benchmark from three collections curated for shared tasks at the Text REtrieval Conference (TREC). These collections contains hundreds to thousands of labeled documents per query, making them suitable for our exploration. Through this process, we can measure how well IR models follow instructions, through a new pairwise evaluation framework. Our results indicate that existing retrieval models fail to correctly use instructions, using them for basic keywords and struggling to understand long-form information. However, we show that it is possible for IR models to learn to follow complex instructions: our new FollowIR-7B model has significant improvements after fine-tuning on our training set.},
   pdf={followir-evaluating-and-teaching-information-retrieval-models-to-follow-instructions.pdf},
   preview={followir-evaluating-and-teaching-information-retrieval-models-to-follow-instructions.png}
+}
+
+@inproceedings{10.1145/3613904.3642289,
+author = {August, Tal and Lo, Kyle and Smith, Noah A. and Reinecke, Katharina},
+title = {Know Your Audience: The benefits and pitfalls of generating plain language summaries beyond the "general" audience},
+year = {2024},
+month={may},
+isbn = {9798400703300},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3613904.3642289},
+doi = {10.1145/3613904.3642289},
+abstract = {Language models (LMs) show promise as tools for communicating science to the general public by simplifying and summarizing complex language. Because models can be prompted to generate text for a specific audience (e.g., college-educated adults), LMs might be used to create multiple versions of plain language summaries for people with different familiarities of scientific topics. However, it is not clear what the benefits and pitfalls of adaptive plain language are. When is simplifying necessary, what are the costs in doing so, and do these costs differ for readers with different background knowledge? Through three within-subjects studies in which we surface summaries for different envisioned audiences to participants of different backgrounds, we found that while simpler text led to the best reading experience for readers with little to no familiarity in a topic, high familiarity readers tended to ignore certain details in overly plain summaries (e.g., study limitations). Our work provides methods and guidance on ways of adapting plain language summaries beyond the single “general” audience.},
+booktitle = {CHI},
+articleno = {14},
+numpages = {26},
+keywords = {LLMs, Language complexity, science communication},
+location = {Honolulu, HI, USA},
+series = {CHI '24},
+bibtex_show={true},
+acm={10.1145/3613904.3642289},
+pdf={know-your-audience-the-benefits-and-pitfalls-of-generating-plain-language-summaries-beyond-the-general-audience.pdf},
+preview={know-your-audience-the-benefits-and-pitfalls-of-generating-plain-language-summaries-beyond-the-general-audience.png}
 }
 
 @article{Kim2024FABLESEF,
@@ -45,49 +330,6 @@ acm={10.1145/3665648},
 bibtex_show={true},
 pdf={accelerating-scientific-paper-skimming-with-augmented-intelligence-through-customizable-faceted-highlights.pdf},
 preview={accelerating-scientific-paper-skimming-with-augmented-intelligence-through-customizable-faceted-highlights.png}
-}
-
-@article{Xu2024KIWIAD,
-  title={KIWI: A Dataset of Knowledge-Intensive Writing Instructions for Answering Research Questions},
-  author={Fangyuan Xu and Kyle Lo and Luca Soldaini and Bailey Kuehl and Eunsol Choi and David Wadden},
-  journal={ArXiv},
-  year={2024},
-  month={mar},
-  url={https://arxiv.org/abs/2403.03866},
-  arxiv={2403.03866},
-  abstract={Large language models (LLMs) adapted to follow user instructions are now widely deployed as conversational agents. In this work, we examine one increasingly common instruction-following task: providing writing assistance to compose a long-form answer. To evaluate the capabilities of current LLMs on this task, we construct KIWI, a dataset of knowledge-intensive writing instructions in the scientific domain. Given a research question, an initial model-generated answer and a set of relevant papers, an expert annotator iteratively issues instructions for the model to revise and improve its answer. We collect 1,260 interaction turns from 234 interaction sessions with three state-of-the-art LLMs. Each turn includes a user instruction, a model response, and a human evaluation of the model response. Through a detailed analysis of the collected responses, we find that all models struggle to incorporate new information into an existing answer, and to perform precise and unambiguous edits. Further, we find that models struggle to judge whether their outputs successfully followed user instructions, with accuracy at least 10 points short of human agreement. Our findings indicate that KIWI will be a valuable resource to measure progress and improve LLMs' instruction-following capabilities for knowledge intensive writing tasks.},
-  bibtex_show={true},
-  pdf={kiwi-a-dataset-of-knowledge-intensive-writing-instructions-for-answering-research-questions.pdf},
-  preview={kiwi-a-dataset-of-knowledge-intensive-writing-instructions-for-answering-research-questions.png}
-}
-
-
-@article{Groeneveld2024OLMoAT,
-  title={OLMo: Accelerating the Science of Language Models},
-  author={Dirk Groeneveld and Iz Beltagy and Pete Walsh and Akshita Bhagia and Rodney Kinney and Oyvind Tafjord and Ananya Harsh Jha and Hamish Ivison and Ian Magnusson and Yizhong Wang and Shane Arora and David Atkinson and Russell Authur and Khyathi Raghavi Chandu and Arman Cohan and Jennifer Dumas and Yanai Elazar and Yuling Gu and Jack Hessel and Tushar Khot and William Merrill and Jacob Morrison and Niklas Muennighoff and Aakanksha Naik and Crystal Nam and Matthew E. Peters and Valentina Pyatkin and Abhilasha Ravichander and Dustin Schwenk and Saurabh Shah and Will Smith and Emma Strubell and Nishant Subramani and Mitchell Wortsman and Pradeep Dasigi and Nathan Lambert and Kyle Richardson and Luke Zettlemoyer and Jesse Dodge and Kyle Lo and Luca Soldaini and Noah A. Smith and Hannaneh Hajishirzi},
-  journal={ArXiv},
-  year={2024},
-  month={feb},
-  url={https://arxiv.org/abs/2402.00838},
-  abstract={Language models (LMs) have become ubiquitous in both NLP research and in commercial product offerings. As their commercial importance has surged, the most powerful models have become closed off, gated behind proprietary interfaces, with important details of their training data, architectures, and development undisclosed. Given the importance of these details in scientifically studying these models, including their biases and potential risks, we believe it is essential for the research community to have access to powerful, truly open LMs. To this end, this technical report details the first release of OLMo, a state-of-the-art, truly Open Language Model and its framework to build and study the science of language modeling. Unlike most prior efforts that have only released model weights and inference code, we release OLMo and the whole framework, including training data and training and evaluation code. We hope this release will empower and strengthen the open research community and inspire a new wave of innovation.},
-  bibtex_show={true},
-  arxiv={2402.00838},
-  pdf={olmo-accelerating-the-science-of-language-models.pdf},
-  preview={olmo-accelerating-the-science-of-language-models.png}
-}
-
-@article{Soldaini2024DolmaAO,
-  title={Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research},
-  author={Luca Soldaini and Rodney Kinney and Akshita Bhagia and Dustin Schwenk and David Atkinson and Russell Authur and Ben Bogin and Khyathi Chandu and Jennifer Dumas and Yanai Elazar and Valentin Hofmann and Ananya Harsh Jha and Sachin Kumar and Li Lucy and Xinxi Lyu and Nathan Lambert and Ian Magnusson and Jacob Morrison and Niklas Muennighoff and Aakanksha Naik and Crystal Nam and Matthew E. Peters and Abhilasha Ravichander and Kyle Richardson and Zejiang Shen and Emma Strubell and Nishant Subramani and Oyvind Tafjord and Pete Walsh and Luke Zettlemoyer and Noah A. Smith and Hannaneh Hajishirzi and Iz Beltagy and Dirk Groeneveld and Jesse Dodge and Kyle Lo},
-  journal={ArXiv},
-  year={2024},
-  month={jan},
-  url={https://arxiv.org/abs/2402.00159},
-  abstract={Language models have become a critical technology to tackling a wide range of natural language processing tasks, yet many details about how the best-performing language models were developed are not reported. In particular, information about their pretraining corpora is seldom discussed: commercial language models rarely provide any information about their data; even open models rarely release datasets they are trained on, or an exact recipe to reproduce them. As a result, it is challenging to conduct certain threads of language modeling research, such as understanding how training data impacts model capabilities and shapes their limitations. To facilitate open research on language model pretraining, we release Dolma, a three trillion tokens English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials. In addition, we open source our data curation toolkit to enable further experimentation and reproduction of our work. In this report, we document Dolma, including its design principles, details about its construction, and a summary of its contents. We interleave this report with analyses and experimental results from training language models on intermediate states of Dolma to share what we have learned about important data curation practices, including the role of content or quality filters, deduplication, and multi-source mixing. Dolma has been used to train OLMo, a state-of-the-art, open language model and framework designed to build and study the science of language modeling.},
-  bibtex_show={true},
-  arxiv={2402.00159},
-  pdf={dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.pdf},
-  preview={dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.png}
 }
 
 @article{Trienes2024InfoLossQACA,
@@ -165,7 +407,7 @@ preview={accelerating-scientific-paper-skimming-with-augmented-intelligence-thro
     editor = "Bouamor, Houda  and
       Pino, Juan  and
       Bali, Kalika",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    booktitle = "Findings of EMNLP",
     month = dec,
     year = "2023",
     address = "Singapore",
@@ -219,7 +461,7 @@ preview={accelerating-scientific-paper-skimming-with-augmented-intelligence-thro
     editor = "Bouamor, Houda  and
       Pino, Juan  and
       Bali, Kalika",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    booktitle = "Findings of EMNLP",
     month = dec,
     year = "2023",
     address = "Singapore",
@@ -309,7 +551,7 @@ preview={accelerating-scientific-paper-skimming-with-augmented-intelligence-thro
 @inproceedings{chen-etal-2023-layout,
     title = "Are Layout-Infused Language Models Robust to Layout Distribution Shifts? A Case Study with Scientific Documents",
     author = "Chen, Catherine  and Shen, Zejiang  and Klein, Dan  and Stanovsky, Gabriel  and Downey, Doug  and Lo, Kyle",
-    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    booktitle = "Findings of ACL",
     month = jul,
     year = "2023",
     address = "Toronto, Canada",
@@ -420,22 +662,6 @@ acm={10.1145/3589955},
 keywords = {augmented reading; plain language summaries; healthcare consumers},
 pdf={paper-plain-making-medical-research-papers-approachable-to-healthcare-consumers-with-natural-language-processing.pdf},
 preview={paper-plain-making-medical-research-papers-approachable-to-healthcare-consumers-with-natural-language-processing.png}
-}
-
-@article{Lo2023TheSR,
-  title={The Semantic Reader Project: Augmenting Scholarly Documents through AI-Powered Interactive Reading Interfaces},
-  author={Kyle Lo and Joseph Chee Chang and Andrew Head and Jonathan Bragg and Amy X. Zhang and Cassidy Trier and Chloe Anastasiades and Tal August and Russell Authur and Danielle Bragg and Erin Bransom and Isabel Cachola and Stefan Candra and Yoganand Chandrasekhar and Yen-Sung Chen and Evie (Yu-Yen) Cheng and Yvonne Chou and Doug Downey and Rob Evans and Raymond Fok and F.Q. Hu and Regan Huff and Dongyeop Kang and Tae Soo Kim and Rodney Michael Kinney and Aniket Kittur and Hyeonsu B Kang and Egor Klevak and Bailey Kuehl and Michael Langan and Matt Latzke and Jaron Lochner and Kelsey MacMillan and Eric Marsh and Tyler Murray and Aakanksha Naik and Ngoc-Uyen Nguyen and Srishti Palani and Soya Park and Caroline Paulic and Napol Rachatasumrit and Smita Rao and Paul L Sayre and Zejiang Shen and Pao Siangliulue and Luca Soldaini and Huy Tran and Madeleine van Zuylen and Lucy Lu Wang and Christopher Wilhelm and Caroline M Wu and Jiangjiang Yang and Angele Zamarron and Marti A. Hearst and Daniel S. Weld},
-  journal={ArXiv},
-  year={2023},
-  month={mar},
-  day={23},
-  volume={abs/2303.14334},
-  selected={true},
-  abstract={Scholarly publications are key to the transfer of knowledge from scholars to others. However, research papers are information-dense, and as the volume of the scientific literature grows, the need for new technology to support the reading process grows. In contrast to the process of finding papers, which has been transformed by Internet technology, the experience of reading research papers has changed little in decades. The PDF format for sharing research papers is widely used due to its portability, but it has significant downsides including: static content, poor accessibility for low-vision readers, and difficulty reading on mobile devices. This paper explores the question "Can recent advances in AI and HCI power intelligent, interactive, and accessible reading interfaces -- even for legacy PDFs?" We describe the Semantic Reader Project, a collaborative effort across multiple institutions to explore automatic creation of dynamic reading interfaces for research papers. Through this project, we've developed ten research prototype interfaces and conducted usability studies with more than 300 participants and real-world users showing improved reading experiences for scholars. We've also released a production reading interface for research papers that will incorporate the best features as they mature. We structure this paper around challenges scholars and the public face when reading research papers -- Discovery, Efficiency, Comprehension, Synthesis, and Accessibility -- and present an overview of our progress and remaining open challenges.},
-  bibtex_show={true},
-  arxiv={2303.14334},
-  pdf={the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.pdf},
-  preview={the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.png}
 }
 
 @inproceedings{10.1145/3581641.3584034,

@@ -27,9 +27,9 @@ I've had the pleasure of working with some amazing interns:
 * Niklas Muennighoff, PhD student, Stanford University
   * <a href="https://arxiv.org/abs/2409.02060">OLMoE: Open Mixture-of-Experts Language Models</a> (arXiv)
 * Lucy Li, PhD student, University of California Berkeley
-  * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (arXiv)
+  * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (EMNLP Findings 2024)
 * Rose Wang, PhD student, Stanford University
-  * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (arXiv)
+  * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (EMNLP Findings 2024)
 
 #### 2023
 * Orion Weller, PhD student, Johns Hopkins University
