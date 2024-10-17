@@ -11,7 +11,7 @@ category: work
 <!-- I curate and release large-scale, high-quality datasets and corpora to support open science in AI research. -->
 
 I am co-leading Data Research for [OLMo](https://allenai.org/olmo). We've released:
-* [Dolma](https://huggingface.co/datasets/allenai/dolma), the largest open dataset for language model pretraining to-date. Dolma won a best paper award at ACL 2024 2020 🏆!
+* [Dolma](https://huggingface.co/datasets/allenai/dolma), the largest open dataset for language model pretraining to-date. Dolma won a best paper award at ACL 2024 🏆!
 * [peS2o](https://huggingface.co/datasets/allenai/peS2o), a transformation of S2ORC optimized for pretraining language models of science. Dolma won a best paper award at ACL 2024 🏆!
 
 Prior to this, I co-led the curation of:
