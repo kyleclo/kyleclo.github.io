@@ -51,6 +51,9 @@ repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-s
 
 navbar_fixed: true
 footer_fixed: true
+search_enabled: true
+bib_search: true
+
 
 # Dimensions
 max_width: 800px
