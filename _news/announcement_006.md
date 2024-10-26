@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-12-12 00:00:01-0800
+date: 2024-05-01 00:00:01-0800
 inline: true
 ---
 
-Happy to be rounding out the year with a Best Paper Award 🏆 for the EMNLP 2023 System Demo track for [PaperMage](https://aclanthology.org/2023.emnlp-demo.45/)! Also presenting EMNLP 2023 Main Conference and Findings accepted papers on [Decontextualizing for Scientific Document Snippets](https://aclanthology.org/2023.emnlp-main.193/), [Tip-of-the-Tongue Retrieval](https://aclanthology.org/2023.findings-emnlp.367/), and [Evaluating Multidocument Summarization with Retrieved Documents](https://aclanthology.org/2023.findings-emnlp.549/). Excited to see all my co-authors in Singapore!
+omg attending back to back conferences. ICLR 2024 in Vienna 🇦🇹🥐 presenting [Booookscore](https://arxiv.org/abs/2310.00785), evaluating discourse coherency in book-length summarization. CHI 2024 in Hawaii 🇺🇸🍣 presenting two works on helping non-expert audiences understand research papers through AI: [Paper Plain](https://arxiv.org/abs/2203.00130), an augmented reading interface over medical papers, and [Know your Audience](https://arxiv.org/abs/2403.04979), a large-scale user study on benefits and pitfalls of plain language summarization.

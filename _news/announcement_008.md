@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2024-05-01 00:00:01-0800
+date: 2024-06-01 00:00:01-0800
 inline: true
 ---
 
-omg attending back to back conferences. ICLR 2024 in Vienna 🇦🇹🥐 presenting [Booookscore](https://arxiv.org/abs/2310.00785), evaluating discourse coherency in book-length summarization. CHI 2024 in Hawaii 🇺🇸🍣 presenting two works on helping non-expert audiences understand research papers through AI: [Paper Plain](https://arxiv.org/abs/2203.00130), an augmented reading interface over medical papers, and [Know your Audience](https://arxiv.org/abs/2403.04979), a large-scale user study on benefits and pitfalls of plain language summarization.
+Welcome Summer 2024 interns! Excited to be working with [Alex Wettig](https://twitter.com/_awettig), [Chaitanya Malaviya](https://twitter.com/cmalaviya11), [Lucy Li](https://twitter.com/lucy3_li), [Rose Wang](https://twitter.com/rose_e_wang), and [Vishakh Padmakumar](https://twitter.com/vishakh_pk)!

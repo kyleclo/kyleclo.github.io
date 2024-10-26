@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2024-08-14 00:00:01-0800
+date: 2024-09-03 00:00:01-0800
 inline: true
 ---
 
-So proud to see both our [OLMo](https://arxiv.org/abs/2402.00838) and [Dolma](https://arxiv.org/abs/2402.00159) papers win 🏆 Best Paper awards 🏆 at ACL 2024 🇹🇭 
+[OLMoE](https://arxiv.org/abs/2409.02060) is out! Our first mixture of experts model in the OLMo family 🎉 OLMoE has only 1B active params but matches perf of larger dense models 🫨 and comes released with: ✅ weights ✅ data ✅ code ✅ ckpts ✅ logs ✅ detailed paper! Download the weights [here](https://huggingface.co/collections/allenai/olmoe-66cf678c047657a30c8cd3da) and read the paper [here](https://arxiv.org/abs/2409.02060)!

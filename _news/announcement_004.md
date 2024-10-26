@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-04-30 00:00:01-0800
+date: 2023-12-12 00:00:01-0800
 inline: true
 ---
 
-Having a pretty good April :) Best paper award at CHI 23 ([CiteSee](https://dl.acm.org/doi/10.1145/3544548.3580847)) and Outstanding paper award at EACL 23 ([LongEval](https://aclanthology.org/2023.eacl-main.121/)). Thanks and congrats to all my co-authors!
+Happy to be rounding out the year with a Best Paper Award 🏆 for the EMNLP 2023 System Demo track for [PaperMage](https://aclanthology.org/2023.emnlp-demo.45/)! Also presenting EMNLP 2023 Main Conference and Findings accepted papers on [Decontextualizing for Scientific Document Snippets](https://aclanthology.org/2023.emnlp-main.193/), [Tip-of-the-Tongue Retrieval](https://aclanthology.org/2023.findings-emnlp.367/), and [Evaluating Multidocument Summarization with Retrieved Documents](https://aclanthology.org/2023.findings-emnlp.549/). Excited to see all my co-authors in Singapore!
