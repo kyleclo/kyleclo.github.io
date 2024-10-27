@@ -1,0 +1,84 @@
+TY  - JOUR
+AU  - Voorhees, Ellen
+AU  - Alam, Tasmeer
+AU  - Bedrick, Steven
+AU  - Demner-Fushman, Dina
+AU  - Hersh, William R
+AU  - Lo, Kyle
+AU  - Roberts, Kirk
+AU  - Soboroff, Ian
+AU  - Wang, Lucy Lu
+TI  - TREC-COVID: Constructing a Pandemic Information Retrieval Test Collection
+T2  - SIGIR Forum
+VL  - 54
+IS  - 1
+PY  - 2021
+DA  - 2021/2
+PB  - Association for Computing Machinery
+CY  - New York, NY, USA
+AB  - TREC-COVID is a community evaluation designed to build a test collection
+      that captures the information needs of biomedical researchers using the
+      scientific literature during a pandemic. One of the key characteristics of
+      pandemic search is the accelerated rate of change: the topics of interest
+      evolve as the pandemic progresses and the scientific literature in the
+      area explodes. The COVID-19 pandemic provides an opportunity to capture
+      this progression as it happens. TREC-COVID, in creating a test collection
+      around COVID-19 literature, is building infrastructure to support new
+      research and technologies in pandemic search.
+SN  - 0163-5840
+DO  - 10.1145/3451964.3451965
+UR  - https://doi.org/10.1145/3451964.3451965
+UR  - http://dx.doi.org/10.1145/3451964.3451965
+UR  - http://arxiv.org/abs/2005.04474
+ER  - 
+
+TY  - CPAPER
+AU  - Wang, Lucy Lu
+AU  - Lo, Kyle
+AU  - Chandrasekhar, Yoganand
+AU  - Reas, Russell
+AU  - Yang, Jiangjiang
+AU  - Burdick, Doug
+AU  - Eide, Darrin
+AU  - Funk, Kathryn
+AU  - Katsis, Yannis
+AU  - Kinney, Rodney Michael
+AU  - Li, Yunyao
+AU  - Liu, Ziyang
+AU  - Merrill, William
+AU  - Mooney, Paul
+AU  - Murdick, Dewey A
+AU  - Rishi, Devvret
+AU  - Sheehan, Jerry
+AU  - Shen, Zhihong
+AU  - Stilson, Brandon
+AU  - Wade, Alex D
+AU  - Wang, Kuansan
+AU  - Wang, Nancy Xin Ru
+AU  - Wilhelm, Christopher
+AU  - Xie, Boya
+AU  - Raymond, Douglas M
+AU  - Weld, Daniel S
+AU  - Etzioni, Oren
+AU  - Kohlmeier, Sebastian
+TI  - CORD-19: The COVID-19 Open Research Dataset
+T2  - NLP for COVID-19 Workshop
+PY  - 2020
+DA  - 2020/7
+PB  - Association for Computational Linguistics
+AB  - The COVID-19 Open Research Dataset (CORD-19) is a growing resource of
+      scientific papers on COVID-19 and related historical coronavirus research.
+      CORD-19 is designed to facilitate the development of text mining and
+      information retrieval systems over its rich collection of metadata and
+      structured full text papers. Since its release, CORD-19 has been
+      downloaded over 200K times and has served as the basis of many COVID-19
+      text mining and discovery systems. In this article, we describe the
+      mechanics of dataset construction, highlighting challenges and key design
+      decisions, provide an overview of how CORD-19 has been used, and describe
+      several shared tasks built around the dataset. We hope this resource will
+      continue to bring together the computing community, biomedical experts,
+      and policy makers in the search for effective treatments and management
+      policies for COVID-19.
+C1  - Online
+UR  - https://aclanthology.org/2020.nlpcovid19-acl.1
+ER  - 

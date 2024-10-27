@@ -1,0 +1,224 @@
+TY  - JOUR
+AU  - Groeneveld, Dirk
+AU  - Beltagy, Iz
+AU  - Walsh, Pete
+AU  - Bhagia, Akshita
+AU  - Kinney, Rodney
+AU  - Tafjord, Oyvind
+AU  - Jha, Ananya Harsh
+AU  - Ivison, Hamish
+AU  - Magnusson, Ian
+AU  - Wang, Yizhong
+AU  - Arora, Shane
+AU  - Atkinson, David
+AU  - Authur, Russell
+AU  - Chandu, Khyathi Raghavi
+AU  - Cohan, Arman
+AU  - Dumas, Jennifer
+AU  - Elazar, Yanai
+AU  - Gu, Yuling
+AU  - Hessel, Jack
+AU  - Khot, Tushar
+AU  - Merrill, William
+AU  - Morrison, Jacob
+AU  - Muennighoff, Niklas
+AU  - Naik, Aakanksha
+AU  - Nam, Crystal
+AU  - Peters, Matthew E
+AU  - Pyatkin, Valentina
+AU  - Ravichander, Abhilasha
+AU  - Schwenk, Dustin
+AU  - Shah, Saurabh
+AU  - Smith, Will
+AU  - Strubell, Emma
+AU  - Subramani, Nishant
+AU  - Wortsman, Mitchell
+AU  - Dasigi, Pradeep
+AU  - Lambert, Nathan
+AU  - Richardson, Kyle
+AU  - Zettlemoyer, Luke
+AU  - Dodge, Jesse
+AU  - Lo, Kyle
+AU  - Soldaini, Luca
+AU  - Smith, Noah A
+AU  - Hajishirzi, Hannaneh
+TI  - OLMo: Accelerating the Science of Language Models
+T2  - ArXiv
+PY  - 2024
+DA  - 2024/2
+AB  - Language models (LMs) have become ubiquitous in both NLP research and in
+      commercial product offerings. As their commercial importance has surged,
+      the most powerful models have become closed off, gated behind proprietary
+      interfaces, with important details of their training data, architectures,
+      and development undisclosed. Given the importance of these details in
+      scientifically studying these models, including their biases and potential
+      risks, we believe it is essential for the research community to have
+      access to powerful, truly open LMs. To this end, this technical report
+      details the first release of OLMo, a state-of-the-art, truly Open Language
+      Model and its framework to build and study the science of language
+      modeling. Unlike most prior efforts that have only released model weights
+      and inference code, we release OLMo and the whole framework, including
+      training data and training and evaluation code. We hope this release will
+      empower and strengthen the open research community and inspire a new wave
+      of innovation.
+UR  - http://arxiv.org/abs/2402.00838
+ER  - 
+
+TY  - JOUR
+AU  - Soldaini, Luca
+AU  - Kinney, Rodney
+AU  - Bhagia, Akshita
+AU  - Schwenk, Dustin
+AU  - Atkinson, David
+AU  - Authur, Russell
+AU  - Bogin, Ben
+AU  - Chandu, Khyathi
+AU  - Dumas, Jennifer
+AU  - Elazar, Yanai
+AU  - Hofmann, Valentin
+AU  - Jha, Ananya Harsh
+AU  - Kumar, Sachin
+AU  - Lucy, Li
+AU  - Lyu, Xinxi
+AU  - Lambert, Nathan
+AU  - Magnusson, Ian
+AU  - Morrison, Jacob
+AU  - Muennighoff, Niklas
+AU  - Naik, Aakanksha
+AU  - Nam, Crystal
+AU  - Peters, Matthew E
+AU  - Ravichander, Abhilasha
+AU  - Richardson, Kyle
+AU  - Shen, Zejiang
+AU  - Strubell, Emma
+AU  - Subramani, Nishant
+AU  - Tafjord, Oyvind
+AU  - Walsh, Pete
+AU  - Zettlemoyer, Luke
+AU  - Smith, Noah A
+AU  - Hajishirzi, Hannaneh
+AU  - Beltagy, Iz
+AU  - Groeneveld, Dirk
+AU  - Dodge, Jesse
+AU  - Lo, Kyle
+TI  - Dolma: an Open Corpus of Three Trillion Tokens for Language Model
+      Pretraining Research
+T2  - ArXiv
+PY  - 2024
+DA  - 2024/1
+AB  - Language models have become a critical technology to tackling a wide range
+      of natural language processing tasks, yet many details about how the
+      best-performing language models were developed are not reported. In
+      particular, information about their pretraining corpora is seldom
+      discussed: commercial language models rarely provide any information about
+      their data; even open models rarely release datasets they are trained on,
+      or an exact recipe to reproduce them. As a result, it is challenging to
+      conduct certain threads of language modeling research, such as
+      understanding how training data impacts model capabilities and shapes
+      their limitations. To facilitate open research on language model
+      pretraining, we release Dolma, a three trillion tokens English corpus,
+      built from a diverse mixture of web content, scientific papers, code,
+      public-domain books, social media, and encyclopedic materials. In
+      addition, we open source our data curation toolkit to enable further
+      experimentation and reproduction of our work. In this report, we document
+      Dolma, including its design principles, details about its construction,
+      and a summary of its contents. We interleave this report with analyses and
+      experimental results from training language models on intermediate states
+      of Dolma to share what we have learned about important data curation
+      practices, including the role of content or quality filters,
+      deduplication, and multi-source mixing. Dolma has been used to train OLMo,
+      a state-of-the-art, open language model and framework designed to build
+      and study the science of language modeling.
+UR  - http://arxiv.org/abs/2402.00159
+ER  - 
+
+TY  - CPAPER
+AU  - Lo, Kyle
+AU  - Wang, Lucy Lu
+AU  - Neumann, Mark
+AU  - Kinney, Rodney
+AU  - Weld, Daniel
+TI  - S2ORC: The Semantic Scholar Open Research Corpus
+T2  - ACL
+SP  - 4969-4983
+PY  - 2020
+DA  - 2020/7
+PB  - Association for Computational Linguistics
+AB  - We introduce S2ORC, a large corpus of 81.1M English-language academic
+      papers spanning many academic disciplines. The corpus consists of rich
+      metadata, paper abstracts, resolved bibliographic references, as well as
+      structured full text for 8.1M open access papers. Full text is annotated
+      with automatically-detected inline mentions of citations, figures, and
+      tables, each linked to their corresponding paper objects. In S2ORC, we
+      aggregate papers from hundreds of academic publishers and digital archives
+      into a unified source, and create the largest publicly-available
+      collection of machine-readable academic text to date. We hope this
+      resource will facilitate research and development of tools and tasks for
+      text mining over academic text.
+DO  - 10.18653/v1/2020.acl-main.447
+C1  - Online
+UR  - https://aclanthology.org/2020.acl-main.447
+UR  - http://dx.doi.org/10.18653/v1/2020.acl-main.447
+ER  - 
+
+TY  - CPAPER
+AU  - Gururangan, Suchin
+AU  - Marasović, Ana
+AU  - Swayamdipta, Swabha
+AU  - Lo, Kyle
+AU  - Beltagy, Iz
+AU  - Downey, Doug
+AU  - Smith, Noah A
+TI  - Don't Stop Pretraining: Adapt Language Models to Domains and Tasks
+T2  - ACL
+SP  - 8342-8360
+PY  - 2020
+DA  - 2020/7
+PB  - Association for Computational Linguistics
+AB  - Language models pretrained on text from a wide variety of sources form the
+      foundation of today's NLP. In light of the success of these broad-coverage
+      models, we investigate whether it is still helpful to tailor a pretrained
+      model to the domain of a target task. We present a study across four
+      domains (biomedical and computer science publications, news, and reviews)
+      and eight classification tasks, showing that a second phase of pretraining
+      in-domain (domain-adaptive pretraining) leads to performance gains, under
+      both high- and low-resource settings. Moreover, adapting to the task's
+      unlabeled data (task-adaptive pretraining) improves performance even after
+      domain-adaptive pretraining. Finally, we show that adapting to a task
+      corpus augmented using simple data selection strategies is an effective
+      alternative, especially when resources for domain-adaptive pretraining
+      might be unavailable. Overall, we consistently find that multi-phase
+      adaptive pretraining offers large gains in task performance.
+DO  - 10.18653/v1/2020.acl-main.740
+C1  - Online
+UR  - https://aclanthology.org/2020.acl-main.740
+UR  - http://dx.doi.org/10.18653/v1/2020.acl-main.740
+ER  - 
+
+TY  - CPAPER
+AU  - Beltagy, Iz
+AU  - Lo, Kyle
+AU  - Cohan, Arman
+TI  - SciBERT: A Pretrained Language Model for Scientific Text
+T2  - EMNLP
+SP  - 3615-3620
+PY  - 2019
+DA  - 2019/11
+PB  - Association for Computational Linguistics
+AB  - Obtaining large-scale annotated data for NLP tasks in the scientific
+      domain is challenging and expensive. We release SciBERT, a pretrained
+      language model based on BERT (Devlin et. al., 2018) to address the lack of
+      high-quality, large-scale labeled scientific data. SciBERT leverages
+      unsupervised pretraining on a large multi-domain corpus of scientific
+      publications to improve performance on downstream scientific NLP tasks. We
+      evaluate on a suite of tasks including sequence tagging, sentence
+      classification and dependency parsing, with datasets from a variety of
+      scientific domains. We demonstrate statistically significant improvements
+      over BERT and achieve new state-of-the-art results on several of these
+      tasks. The code and pretrained models are available at
+      https://github.com/allenai/scibert/.
+DO  - 10.18653/v1/D19-1371
+C1  - Hong Kong, China
+UR  - https://aclanthology.org/D19-1371
+UR  - http://dx.doi.org/10.18653/v1/D19-1371
+ER  - 
