@@ -205,9 +205,43 @@
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
+      
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
+      {%- if entry.openreview %}
+        <a href="https://openreview.net/forum?id={{ entry.openreview }}" class="btn btn-sm z-depth-0"
+          role="button">OpenReview</a>
+        {%- endif %}
+      {%- if entry.acl %}
+        <a href="https://aclanthology.org/{{ entry.acl }}" class="btn btn-sm z-depth-0" role="button">ACL</a>
+      {%- endif %}
+      {%- if entry.nature %}
+        <a href="https://www.nature.com/articles/{{ entry.nature }}" class="btn btn-sm z-depth-0" role="button">Nature</a>
+      {%- endif %}
+      {%- if entry.acm %}
+        <a href="https://dl.acm.org/doi/abs/{{ entry.acm }}" class="btn btn-sm z-depth-0" role="button">ACM</a>
+      {%- endif %}
+      {%- if entry.aaai %}
+        <a href="https://ojs.aaai.org/index.php/{{ entry.aaai }}" class="btn btn-sm z-depth-0" role="button">AAAI</a>
+      {%- endif %}
+      {%- if entry.oup %}
+        <a href="https://academic.oup.com/bib/article/{{ entry.oup }}" class="btn btn-sm z-depth-0" role="button">Oxford
+        University Press</a>
+      {%- endif %}
+      {%- if entry.sciencedirect %}
+        <a href="https://www.sciencedirect.com/science/article/pii/{{ entry.sciencedirect }}" class="btn btn-sm z-depth-0"
+          role="button">Science Direct</a>
+      {%- endif %}
+      {%- if entry.pmc %}
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{{ entry.pmc }}" class="btn btn-sm z-depth-0"
+          role="button">PubMed Central</a>
+      {%- endif %}
+      {%- if entry.jama %}
+        <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/{{ entry.jama }}"
+          class="btn btn-sm z-depth-0" role="button">JAMA</a>
+      {%- endif %}
+
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
