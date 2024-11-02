@@ -38,7 +38,15 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix">
+      <h2>research</h2>
+      {{ content }}
+    </div>
+
+    {% if page.personal -%}
+    <!-- Personal -->
+    {%- include personal.liquid %}
+    {%- endif %}
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
