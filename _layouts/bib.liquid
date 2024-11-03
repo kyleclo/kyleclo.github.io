@@ -399,6 +399,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
+        {% comment %} {{- entry.bibtex | allowBibtexFields -}} {% endcomment %}
         {% endhighlight %}
       </div>
     {% endif %}
