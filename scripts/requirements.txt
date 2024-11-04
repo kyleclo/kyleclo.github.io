@@ -1,3 +1,4 @@
 python-slugify
 requests
 git+ssh://git@github.com/allenai/mmda.git
+bibtexparser
