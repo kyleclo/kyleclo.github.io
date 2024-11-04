@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kyleclo.github.io/sitemap.xml
+Sitemap: kyleclo.com/sitemap.xml
