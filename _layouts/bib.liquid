@@ -186,9 +186,6 @@
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
-        {% comment %} <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
-        </a> {% endcomment %}
         <div>🏆 <strong>{{entry.award}}</strong> 🏆</div>
       {% endif %}
       {% if entry.abstract %}
@@ -389,7 +386,6 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% comment %} {{- entry.bibtex | allowBibtexFields -}} {% endcomment %}
         {% endhighlight %}
       </div>
     {% endif %}
