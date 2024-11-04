@@ -58,10 +58,7 @@
         {% assign author_array_limit = site.max_author_limit %}
       {% endif %}
 
-      <!-- loops over authors -->
       {%- for author in entry.author_array limit: author_array_limit -%}
-
-        <!-- figures out if this author is myself -->
         {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
@@ -70,8 +67,6 @@
             {% assign author_is_self = true %}
           {% endif %}
         {%- endif -%}
-
-        <!-- figures out if this author is a designated coauthor -->
         {% assign coauthor_url = null %}
         {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
         {% if site.data.coauthors[clean_last_name] %}
@@ -83,13 +78,10 @@
           {% endfor %}
         {%- endif -%}
 
-        <!-- handles whitespace formatting which needed for first & last author names. -->
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false %},&nbsp;{% endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
-
-        <!-- handles printing of author names w/ correct formatting -->
         {%- if author_is_self -%}
           <em>
             {{- author.first }}
@@ -205,7 +197,6 @@
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
-      
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
@@ -241,7 +232,6 @@
         <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/{{ entry.jama }}"
           class="btn btn-sm z-depth-0" role="button">JAMA</a>
       {%- endif %}
-
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
