@@ -2,3 +2,12 @@ python-slugify
 requests
 git+ssh://git@github.com/allenai/mmda.git
 bibtexparser
+scholarly
+
+# dev
+black
+isort
+pyright
+ruff
+mypy
+flake8
