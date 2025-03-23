@@ -30,7 +30,7 @@ from tqdm import tqdm
 
 TODAY = datetime.today().strftime("%Y-%m-%d")
 MY_SCHOLAR_ID = "VJS12uMAAAAJ"
-# SQLite DB file to store publications
+# SQLite DB file to store papers
 DB_FILE = f"_bibliography/gscholar_export.db"
 
 
@@ -54,30 +54,59 @@ def hash_title(title):
     return hashlib.md5(title.encode("utf-8")).hexdigest()
 
 
-def publication_exists(conn, pub_id):
+def is_paper_exists(conn, paper_id) -> bool:
     """Check if a publication with the given id already exists."""
     cur = conn.cursor()
-    cur.execute("SELECT 1 FROM publications WHERE id = ?", (pub_id,))
+    cur.execute("SELECT 1 FROM publications WHERE id = ?", (paper_id,))
     return cur.fetchone() is not None
 
 
-def insert_publication(conn, pub):
-    """Insert publication data into the DB."""
-    title = pub.get("bib", {}).get("title", "")
+def insert_paper(conn, paper):
+    """Insert paper data into the DB."""
+    title = paper.get("bib", {}).get("title", "")
     if not title:
-        print("Warning: publication without a title encountered. Skipping.")
+        print("Warning: paper without a title encountered. Skipping.")
         return
 
-    pub_id = hash_title(title)
+    paper_id = hash_title(title)
     date_added = TODAY
-    full_json = json.dumps(pub)
+    full_json = json.dumps(paper)
 
     insert_query = """
     INSERT OR IGNORE INTO publications (id, title, date_added, full_json, validated)
     VALUES (?, ?, ?, ?, ?)
     """
-    conn.execute(insert_query, (pub_id, title, date_added, full_json, 0))
+    conn.execute(insert_query, (paper_id, title, date_added, full_json, 0))
     conn.commit()
+
+
+def clean_rows(conn, visited_paper_ids):
+    """Remove rows from the DB if their publication ID is not in visited_paper_ids,
+    and log which papers were removed."""
+    cur = conn.cursor()
+
+    removed_papers = []
+    if visited_paper_ids:
+        placeholders = ",".join("?" for _ in visited_paper_ids)
+        # Select rows that will be deleted so we can log them.
+        select_query = (
+            f"SELECT id, title FROM publications WHERE id NOT IN ({placeholders})"
+        )
+        cur.execute(select_query, tuple(visited_paper_ids))
+        removed_papers = cur.fetchall()
+
+        delete_query = f"DELETE FROM publications WHERE id NOT IN ({placeholders})"
+        conn.execute(delete_query, tuple(visited_paper_ids))
+    else:
+        # If no papers were scraped, remove all rows.
+        cur.execute("SELECT id, title FROM publications")
+        removed_papers = cur.fetchall()
+        conn.execute("DELETE FROM publications")
+    conn.commit()
+
+    if removed_papers:
+        for paper in removed_papers:
+            print(f"Removed paper: {paper[0]} - {paper[1]}")
 
 
 if __name__ == "__main__":
@@ -91,27 +120,34 @@ if __name__ == "__main__":
     # Fetch author using ID
     author = scholarly.search_author_id(MY_SCHOLAR_ID)
     author = scholarly.fill(author)
-    print(f"Processing publications for: {author['name']}")
-    print(f"Total publications found: {len(author['publications'])}")
+    print(f"Processing papers for: {author['name']}")
+    print(f"Total papers found: {len(author['publications'])}")
+
+    # Set to store publication IDs from the website
+    scraped_paper_ids = set()
 
     # Process each publication and insert into DB as it is scraped
-    for i, pub in enumerate(tqdm(author["publications"], desc="Publications")):
+    for i, paper in enumerate(tqdm(author["publications"])):
         # Extract title from summary and compute unique hash
-        title = pub.get("bib", {}).get("title", "")
+        title = paper.get("bib", {}).get("title", "")
         if not title:
-            print(f"Publication {i + 1} is missing a title. Skipping.")
+            print(f"Paper {i + 1} is missing a title. Skipping.")
             continue
 
-        pub_id = hash_title(title)
-        if publication_exists(conn, pub_id):
-            print(f"Skipping publication {i + 1} (already exists): {title}")
+        paper_id = hash_title(title)
+        scraped_paper_ids.add(paper_id)
+        if is_paper_exists(conn, paper_id):
+            print(f"Skipping paper {i + 1} (already exists): {title}")
             continue
 
         # Delay to avoid rate-limiting
         time.sleep(1)
-        pub_filled = scholarly.fill(pub)
-        print(f"Processing publication {i + 1}: {pub_filled['bib']['title']}")
-        insert_publication(conn, pub_filled)
+        paper_filled = scholarly.fill(paper)
+        print(f"Inserting paper {i + 1}: {paper_filled['bib']['title']}")
+        insert_paper(conn, paper_filled)
+
+    # After scraping, remove papers that are no longer present on the website.
+    clean_rows(conn, scraped_paper_ids)
 
     conn.close()
-    print(f"Scraping complete. {i + 1} publications have been saved to the database.")
+    print("Scraping complete. Database has been updated.")
