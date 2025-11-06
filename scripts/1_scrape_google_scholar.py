@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "scholarly",
+#     "tqdm",
+# ]
+# ///
 """
 Scrape Google Scholar for a given author and save to a local SQLite DB.
 
@@ -5,7 +12,7 @@ The script writes to the DB as it scrapes. If interrupted, restarting will skip
 adding papers that already exist (based on a unique hash of the title).
 
 Call:
-    python scripts/scrape_google_scholar.py
+    uv run scripts/1_scrape_google_scholar.py
 
 Local testing of DB:
 
@@ -24,6 +31,7 @@ import os
 import sqlite3
 import time
 from datetime import datetime
+from difflib import SequenceMatcher
 
 from scholarly import scholarly
 from tqdm import tqdm
@@ -31,10 +39,10 @@ from tqdm import tqdm
 TODAY = datetime.today().strftime("%Y-%m-%d")
 MY_SCHOLAR_ID = "VJS12uMAAAAJ"
 # SQLite DB file to store papers
-DB_FILE = f"_bibliography/gscholar_export.db"
+DB_FILE = os.path.join(os.path.dirname(__file__), "../_bibliography/gscholar_export.db")
 
 
-def create_db_table(conn):
+def create_db_table(conn): 
     """Create publications table if it does not exist."""
     create_table_query = """
     CREATE TABLE IF NOT EXISTS publications (
@@ -80,9 +88,34 @@ def insert_paper(conn, paper):
     conn.commit()
 
 
-def clean_rows(conn, visited_paper_ids):
+def title_similarity(title1, title2):
+    """Calculate similarity ratio between two titles (0.0 to 1.0)."""
+    # Normalize titles: lowercase and strip whitespace
+    t1 = title1.lower().strip()
+    t2 = title2.lower().strip()
+    return SequenceMatcher(None, t1, t2).ratio()
+
+
+def find_similar_title(removed_title, current_titles, threshold=0.7):
+    """Find the most similar title from current_titles.
+    Returns (best_match, similarity_score) or (None, 0.0) if none found."""
+    best_match = None
+    best_score = 0.0
+
+    for title in current_titles:
+        score = title_similarity(removed_title, title)
+        if score > best_score:
+            best_score = score
+            best_match = title
+
+    if best_score >= threshold:
+        return best_match, best_score
+    return None, 0.0
+
+
+def clean_rows(conn, visited_paper_ids, current_titles):
     """Remove rows from the DB if their publication ID is not in visited_paper_ids,
-    and log which papers were removed."""
+    check for similar papers, and log which papers were removed."""
     cur = conn.cursor()
 
     removed_papers = []
@@ -105,8 +138,23 @@ def clean_rows(conn, visited_paper_ids):
     conn.commit()
 
     if removed_papers:
-        for paper in removed_papers:
-            print(f"Removed paper: {paper[0]} - {paper[1]}")
+        print("\n" + "=" * 80)
+        print("PAPERS REMOVED FROM DATABASE")
+        print("=" * 80)
+        for paper_id, removed_title in removed_papers:
+            similar_title, score = find_similar_title(removed_title, current_titles)
+
+            print(f"\n❌ Removed: {removed_title}")
+            print(f"   ID: {paper_id}")
+
+            if similar_title:
+                print(f"   ⚠️  SIMILAR PAPER FOUND (similarity: {score:.1%}):")
+                print(f"   ✓  Current: {similar_title}")
+                print(f"   → Likely a duplicate/merge on Google Scholar")
+            else:
+                print(f"   ⚠️  NO SIMILAR PAPER FOUND")
+                print(f"   → This paper may have been genuinely removed from your profile")
+        print("=" * 80 + "\n")
 
 
 if __name__ == "__main__":
@@ -125,6 +173,8 @@ if __name__ == "__main__":
 
     # Set to store publication IDs from the website
     scraped_paper_ids = set()
+    # List to store current paper titles for similarity checking
+    current_titles = []
 
     # Process each publication and insert into DB as it is scraped
     for i, paper in enumerate(tqdm(author["publications"])):
@@ -136,6 +186,8 @@ if __name__ == "__main__":
 
         paper_id = hash_title(title)
         scraped_paper_ids.add(paper_id)
+        current_titles.append(title)
+
         if is_paper_exists(conn, paper_id):
             print(f"Skipping paper {i + 1} (already exists): {title}")
             continue
@@ -147,7 +199,7 @@ if __name__ == "__main__":
         insert_paper(conn, paper_filled)
 
     # After scraping, remove papers that are no longer present on the website.
-    clean_rows(conn, scraped_paper_ids)
+    clean_rows(conn, scraped_paper_ids, current_titles)
 
     conn.close()
     print("Scraping complete. Database has been updated.")

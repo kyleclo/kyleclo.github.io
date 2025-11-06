@@ -1,8 +1,14 @@
 python-slugify
 requests
-git+ssh://git@github.com/allenai/mmda.git
+git+ssh://git@github.com/allenai/papermage.git
 bibtexparser
 scholarly
+
+# lm stuff
+litellm
+
+# annotate
+flask
 
 # dev
 black
@@ -11,3 +17,6 @@ pyright
 ruff
 mypy
 flake8
+
+# data
+scipy
