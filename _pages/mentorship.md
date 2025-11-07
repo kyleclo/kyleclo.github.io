@@ -39,6 +39,8 @@ I've had the pleasure of working with some amazing interns:
   * <a href="https://aclanthology.org/2025.naacl-long.352/">DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students' Hand-Drawn Math Images</a> (NAACL 2025) 🏆 Outsanding Paper Award
 * Rose Wang, PhD student, Stanford University
   * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (EMNLP Findings 2024)
+* Vishakh Padmakumar, PhD student, New York University
+  * <a href="https://arxiv.org/abs/2507.19521">Intent-Aware Schema Generation And Refinement For Literature Review Tables</a> (EMNLP Findings 2025)
 
 #### 2023
 * Orion Weller, PhD student, Johns Hopkins University

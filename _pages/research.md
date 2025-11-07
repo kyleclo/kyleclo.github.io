@@ -3,7 +3,7 @@ layout: page
 title: research
 permalink: /research/
 # description: Research threads!
-nav: true
+nav: false  # Temporarily hidden until page is cleaned up
 nav_order: 1
 # display_categories: [work, fun]
 horizontal: false
