@@ -11,23 +11,32 @@ nav_order: 3
 Interested in working with me? Apply to join our team as a [**Research Intern**](#research-internship) or [**Predoctoral Researcher**](#predoctoral-research)!
 
 
-As an intern or predoctoral researcher, you'll work directly with me and other full-time researchers on a research project tailored to your interests. We aim for high-impact research publications at top-tier computer science venues, and we make all project artifacts open and publicly accessible, including code, models and data.
+As an intern or predoctoral researcher, you'll work directly with me and other full-time researchers on a research project tailored to your interests. We aim for high-impact research publications at top-tier computer science venues, and we make all project artifacts open and accessible, including code, models and data.
 
 See [**FAQs**](#faqs) for more info about working with me.
 
 ### Research Internship
 
-<a href="https://job-boards.greenhouse.io/thealleninstitute/jobs/6322728">⭐ **Apply Here** ⭐</a>!
+<a href="https://job-boards.greenhouse.io/thealleninstitute/jobs/7376971">⭐ **Apply Here** ⭐</a>!
 
 I've had the pleasure of working with some amazing interns:
 
+#### 2025
+* Mayee Chen, PhD student, Stanford University
+* Yapei Chang, PhD student, University of Massachusetts Amherst
+* Amanda Bertsch, PhD student, Carnegie Mellon University
+* Alexis Ross, PhD student, Massachusetts Institute of Technology
+
 #### 2024
 * Chaitanya Malaviya, PhD student, University of Pennsylvania
+  * <a href="https://arxiv.org/abs/2411.07237">Contextualized Evaluations: Judging Language Model Responses to Underspecified Queries</a> (TACL 2025)
 * Alexander Wettig, PhD student, Princeton University
+  * <a href="https://openreview.net/forum?id=boSqwdvJVC">Organize the Web: Constructing Domains Enhances Pre-Training Data Curation</a> (ICML 2025)
 * Niklas Muennighoff, PhD student, Stanford University
-  * <a href="https://arxiv.org/abs/2409.02060">OLMoE: Open Mixture-of-Experts Language Models</a> (arXiv)
+  * <a href="https://arxiv.org/abs/2409.02060">OLMoE: Open Mixture-of-Experts Language Models</a> (NeurIPS 2024)
 * Lucy Li, PhD student, University of California Berkeley
   * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (EMNLP Findings 2024)
+  * <a href="https://aclanthology.org/2025.naacl-long.352/">DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students' Hand-Drawn Math Images</a> (NAACL 2025) 🏆 Outsanding Paper Award
 * Rose Wang, PhD student, Stanford University
   * <a href="https://arxiv.org/abs/2408.04226">MathFish: Evaluating Language Model Math Reasoning via Grounding in Educational Curricula</a> (EMNLP Findings 2024)
 
@@ -79,8 +88,10 @@ I've had the pleasure of working with some amazing interns:
 
 <!-- <a href="https://boards.greenhouse.io/thealleninstitute/jobs/5358681">⭐ **Apply Here** ⭐</a>! -->
 
-My former predoc researchers:
+My current and former predoc researchers:
 
+* David Heineman
+  * <a href="https://arxiv.org/abs/2508.13144">Signal and Noise: A Framework for Reducing Uncertainty in Language Model Evaluation</a> (NeurIPS 2025 Datasets and Benchmarks)
 * Benjamin Newman → PhD student at University of Washington (2023)
   * <a href="https://aclanthology.org/2023.emnlp-main.193/">A Question Answering Framework for Decontextualizing User-facing Snippets from Scientific Documents</a> (EMNLP 2023)
 * Zejiang Shen → PhD student at MIT (2022)
@@ -94,6 +105,8 @@ My former predoc researchers:
 
 ### FAQs
 
+⚠️ **For 2025/2026 applicants** ⚠️ I'm specifically looking for candidates who are available for extended internships (20+ weeks) and excited to contribute to the [OLMo project](https://allenai.org/olmo). 
+
 For interns:
 
 * **Who?** 
@@ -103,10 +116,10 @@ For interns:
     * ❌ Non-students,
     * ✅ Domestic and international applicants welcome.
   * **Experience?** 
-    * Most interns are PhD students, but we've also hired exceptional Master's and undergraduate students,
-    * I tend to hire students with aligned interests as me and a track record of research contributions, whether that's writing papers (published or preprints) or open-source contributions. Your total publication count or university affiliation doesn't matter; I look more for a good collaboration fit and quality of work. 
-* **When?** All research internships are paid, full-time positions for 3-6 months. Start times are flexible, though I typically recommend May or June for summer internships as there is usually a large, fun cohort at the office. 
-* **Where?** Internships are typically in-person at the AI2 office in Seattle, though I've also hired remote interns before. 
+    * Most interns are PhD students, but we've also (on rare occasion) hired exceptional Master's and undergraduate students,
+    * I tend to hire students with aligned interests as me and a track record of research contributions, whether that's writing papers (published or preprints) or open-source contributions. Your total publication count or university affiliation doesn't matter; I look more for a good collaboration fit and quality of work. Engineering skills are a must and just as important as research skills.
+* **When?** All research internships are paid, full-time positions for 12 weeks, though we have also done extended internships on part-time basis. Start times are flexible, though I typically recommend starting in May or June for summer internships as there is usually a large, fun cohort at the office. 
+* **Where?** Internships are typically in-person at the AI2 office in Seattle. I've also hired remote interns before, but only on rare exception.
 * **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
 
 For predocs:
@@ -123,3 +136,6 @@ For predocs:
 * **When?** All predoctoral research positions are paid, full-time positions for 1-3 years. Start times are flexible. Contracts must be renewed each year. 
 * **Where?** All predoctoral research positions must be in-person at the AI2 office in Seattle at least part of the week.
 * **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
+
+Advice for all applicants:
+  * We read all your appication short answer responses. Since we get a lot of applicants, I encourage you to be thoughtful & creative. Avoid sounding too generic.
