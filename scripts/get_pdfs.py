@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "requests",
+#     "python-slugify",
+# ]
+# ///
 """
 
 Get PDFs for all papers in `papers.bib`

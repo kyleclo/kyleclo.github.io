@@ -58,9 +58,10 @@ if __name__ == '__main__':
     for bib_chunk in bib_chunks:
         assert 'year' in bib_chunk
         assert 'month' in bib_chunk
-        month_line = [line.lower() for line in bib_chunk.split('\n') if 'month' in line][0]
+        # Use regex to find actual field lines, not just any line containing "year" or "month"
+        month_line = [line.lower() for line in bib_chunk.split('\n') if re.match(r'\s*month\s*=', line.lower())][0]
         month_score = [score for month, score in month_to_score.items() if month in month_line][0]
-        year_line = [line.lower() for line in bib_chunk.split('\n') if 'year' in line][0]
+        year_line = [line.lower() for line in bib_chunk.split('\n') if re.match(r'\s*year\s*=', line.lower())][0]
         year_score = get_year(year_line=year_line)
         score = year_score * 100 + month_score
         bib_chunks_with_scores.append((bib_chunk, score))
