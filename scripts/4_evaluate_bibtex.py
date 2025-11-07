@@ -405,6 +405,60 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
             font-size: 14px;
         }}
     </style>
+    <script>
+        async function savePaper(matchIdx, gtId) {{
+            // Collect all editable field values for this paper
+            const fields = {{}};
+            const matchDiv = document.getElementById(`match-${{matchIdx}}`);
+            const editableCells = matchDiv.querySelectorAll('[contenteditable="true"]');
+
+            editableCells.forEach(cell => {{
+                const field = cell.dataset.field;
+                let value = cell.textContent.trim();
+                // Remove "(missing)" placeholder if present
+                if (value === '(missing)' || value === '') {{
+                    value = '';
+                }}
+                fields[field] = value;
+            }});
+
+            // Get entry type from the fields
+            const entryType = fields.journal && fields.journal.toLowerCase().includes('arxiv')
+                ? 'article'
+                : fields.booktitle ? 'inproceedings' : 'article';
+
+            const data = {{
+                citation_key: gtId,
+                entry_type: entryType,
+                fields: fields
+            }};
+
+            try {{
+                const response = await fetch('http://localhost:5000/update_bibtex', {{
+                    method: 'POST',
+                    headers: {{
+                        'Content-Type': 'application/json',
+                    }},
+                    body: JSON.stringify(data)
+                }});
+
+                const result = await response.json();
+
+                if (response.ok) {{
+                    const statusSpan = document.getElementById(`save-status-${{matchIdx}}`);
+                    statusSpan.style.display = 'inline';
+                    statusSpan.textContent = '✓ Saved!';
+                    setTimeout(() => {{
+                        statusSpan.style.display = 'none';
+                    }}, 3000);
+                }} else {{
+                    alert('Error saving: ' + result.error);
+                }}
+            }} catch (error) {{
+                alert('Error: Make sure the BibTeX server is running\\n\\nRun: uv run 5_bibtex_server.py\\n\\nError details: ' + error);
+            }}
+        }}
+    </script>
 </head>
 <body>
     <div class="container">
@@ -479,26 +533,34 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
         score_result = score_entry(gen, gt, similarity_threshold)
         field_scores = score_result["field_scores"]
 
+        # Get the citation key from ground truth
+        gt_id = gt.get('ID', '')
+
         html += f"""
-        <div class="match">
+        <div class="match" id="match-{match_idx}">
             <div class="paper-title">{gen.get('title', 'Untitled')}</div>
             <span class="similarity">{match['similarity']:.1%} title match</span>
             <div style="margin: 10px 0;">
                 <strong>Score:</strong> {score_result['points']}/{score_result['total_fields']} fields
                 ({score_result['score'] * 100:.1f}%)
+                <button onclick="savePaper('{match_idx}', '{gt_id}')" style="margin-left: 20px; padding: 5px 15px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                    💾 Save to Ground Truth
+                </button>
+                <span id="save-status-{match_idx}" style="margin-left: 10px; color: green; display: none;">✓ Saved!</span>
             </div>
             <table class="field-table" style="margin-top: 15px;">
                 <tr>
                     <th style="width: 150px;">Field</th>
-                    <th>Generated</th>
+                    <th>Generated (editable)</th>
                     <th>Ground Truth</th>
                     <th style="width: 80px;">Match</th>
                 </tr>
 """
 
-        # Show all required fields in stable order
+        # Show all fields in stable order (always show both booktitle and journal for easier editing)
         field_order = ["title", "author", "year", "month", "booktitle", "journal", "volume", "doi", "url", "bibtex_show", "abstract", "pdf", "preview", "arxiv"]
-        ordered_fields = [f for f in field_order if f in required_fields]
+        # Display all fields in field_order, not just required ones
+        ordered_fields = field_order
 
         for field in ordered_fields:
             gen_val = gen.get(field, "").strip()
@@ -506,9 +568,19 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
 
             # Calculate similarity
             if field in field_scores:
+                # Field is required for this entry type, use pre-calculated score
                 similarity = field_scores[field]
             else:
-                similarity = 0.0 if (gen_val or gt_val) else 1.0
+                # Field is not required for this entry type
+                # But we still want to show if values match for easier editing
+                if not gen_val and not gt_val:
+                    similarity = 1.0  # Both empty - perfect match
+                elif gen_val and gt_val:
+                    # Both have values - calculate similarity
+                    similarity = field_similarity(gen_val, gt_val)
+                else:
+                    # One has value, one doesn't - mismatch
+                    similarity = 0.0
 
             # Color code based on match
             if similarity >= similarity_threshold:
@@ -524,14 +596,24 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
                 match_icon = "✗"
                 match_color = "#dc3545"
 
-            # Handle missing values
-            gen_display = gen_val if gen_val else "<em>(missing)</em>"
+            # Handle missing values for display only
             gt_display = gt_val if gt_val else "<em>(missing)</em>"
+
+            # For generated column, make it editable
+            # Escape HTML entities in the value
+            import html as html_module
+            gen_val_escaped = html_module.escape(gen_val) if gen_val else ""
 
             html += f"""
                 <tr {row_class}>
                     <td><strong>{field}</strong></td>
-                    <td style="font-family: monospace; font-size: 12px; max-width: 400px; overflow: hidden; text-overflow: ellipsis;">{gen_display}</td>
+                    <td contenteditable="true"
+                        id="field-{match_idx}-{field}"
+                        data-field="{field}"
+                        data-match="{match_idx}"
+                        style="font-family: monospace; font-size: 12px; max-width: 400px; padding: 8px; border: 1px solid #ddd; cursor: text;"
+                        onfocus="this.style.outline='2px solid #007bff'"
+                        onblur="this.style.outline='none'">{gen_val_escaped if gen_val_escaped else '<em style="color: #999;">(missing)</em>'}</td>
                     <td style="font-family: monospace; font-size: 12px; max-width: 400px; overflow: hidden; text-overflow: ellipsis;">{gt_display}</td>
                     <td style="color: {match_color}; font-weight: bold; text-align: center;">{match_icon}</td>
                 </tr>
@@ -551,19 +633,44 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
 
     for entry_idx, entry in enumerate(unmatched_generated[:20]):  # Show first 20
         paper_id = f"generated-only-{entry_idx}"
-        required_fields = get_required_fields(entry)
-        ordered_fields = [f for f in field_order if f in required_fields]
+        # Show all fields for easier editing
+        ordered_fields = field_order
+
+        # Generate a citation key for this new entry
+        # Use simple slug from title for new entries
+        title = entry.get('title', 'Untitled')
+        author = entry.get('author', '')
+        year = entry.get('year', '')
+
+        # Generate key: FirstAuthorLastName + Year + FirstTitleWords
+        first_author = author.split(' and ')[0].strip() if author else 'Unknown'
+        last_name = first_author.split()[-1] if first_author else 'Unknown'
+        last_name = re.sub(r'[^a-zA-Z]', '', last_name)
+
+        title_words = title.split()[:3]
+        title_part = ''.join([w.capitalize() for w in title_words if w.lower() not in ['a', 'an', 'the']])
+        title_part = re.sub(r'[^a-zA-Z]', '', title_part)
+
+        citation_key = f"{last_name}{year}{title_part}"
 
         html += f"""
-        <div class="match">
+        <div class="match" id="match-gen-{entry_idx}">
             <div class="paper-title">{entry.get('title', 'Untitled')}</div>
+            <div style="margin: 10px 0;">
+                <strong>New Paper</strong>
+                <button onclick="savePaper('gen-{entry_idx}', '{citation_key}')" style="margin-left: 20px; padding: 5px 15px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                    ➕ Add to Ground Truth
+                </button>
+                <span id="save-status-gen-{entry_idx}" style="margin-left: 10px; color: green; display: none;">✓ Saved!</span>
+            </div>
             <table class="field-table">
-                <tr><th>Field</th><th>Generated</th><th>Ground Truth</th><th>Match</th></tr>
+                <tr><th>Field</th><th>Generated (editable)</th><th>Ground Truth</th><th>Match</th></tr>
 """
 
+        import html as html_module
         for field in ordered_fields:
             gen_val = entry.get(field, "").strip()
-            gen_display = gen_val if gen_val else "<em>(missing)</em>"
+            gen_val_escaped = html_module.escape(gen_val) if gen_val else ""
             gt_display = "<em>(missing)</em>"
 
             row_class = 'style="background: #fff3cd;"'  # Yellow for missing ground truth
@@ -573,7 +680,13 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
             html += f"""
                 <tr {row_class}>
                     <td><strong>{field}</strong></td>
-                    <td style="font-family: monospace; font-size: 12px; max-width: 400px; overflow: hidden; text-overflow: ellipsis;">{gen_display}</td>
+                    <td contenteditable="true"
+                        id="field-gen-{entry_idx}-{field}"
+                        data-field="{field}"
+                        data-match="gen-{entry_idx}"
+                        style="font-family: monospace; font-size: 12px; max-width: 400px; padding: 8px; border: 1px solid #ddd; cursor: text;"
+                        onfocus="this.style.outline='2px solid #007bff'"
+                        onblur="this.style.outline='none'">{gen_val_escaped if gen_val_escaped else '<em style="color: #999;">(missing)</em>'}</td>
                     <td style="font-family: monospace; font-size: 12px; max-width: 400px; overflow: hidden; text-overflow: ellipsis;">{gt_display}</td>
                     <td style="color: {match_color}; font-weight: bold; text-align: center;">{match_icon}</td>
                 </tr>
@@ -594,8 +707,8 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
 
     for entry_idx, entry in enumerate(unmatched_ground_truth[:20]):  # Show first 20
         paper_id = f"gt-only-{entry_idx}"
-        required_fields = get_required_fields(entry)
-        ordered_fields = [f for f in field_order if f in required_fields]
+        # Show all fields for consistency
+        ordered_fields = field_order
 
         html += f"""
         <div class="match">

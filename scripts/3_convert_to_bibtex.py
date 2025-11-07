@@ -4,6 +4,7 @@
 #     "bibtexparser",
 #     "litellm",
 #     "tqdm",
+#     "python-slugify",
 # ]
 # ///
 """
@@ -107,18 +108,13 @@ def extract_arxiv_id(venue_or_url):
 
 
 def slugify_title(title):
-    """Convert title to slug for PDF/preview filenames."""
-    # Convert to lowercase
-    slug = title.lower()
-    # Remove special characters and replace spaces with hyphens
-    slug = re.sub(r'[^\w\s-]', '', slug)
-    slug = re.sub(r'[-\s]+', '-', slug)
-    # Trim hyphens from start/end
-    slug = slug.strip('-')
-    # Limit length to reasonable filename size
-    if len(slug) > 80:
-        slug = slug[:80].rsplit('-', 1)[0]  # Cut at word boundary
-    return slug
+    """Convert title to slug for PDF/preview filenames.
+
+    Uses python-slugify to match the behavior of get_pdfs.py.
+    """
+    from slugify import slugify as _slugify
+    # Match the behavior in get_pdfs.py - remove apostrophes
+    return _slugify(title, replacements=[("'", "")])
 
 
 def convert_to_bibtex_rules(papers):
@@ -195,7 +191,7 @@ def convert_to_bibtex_rules(papers):
                 # Note: volume is hard to extract from Google Scholar data for journals
 
         # Add site-specific fields per BIB.md
-        entry["bibtex_show"] = "{true}"
+        entry["bibtex_show"] = "true"
 
         # Extract abstract
         abstract = bib.get("abstract", "")
@@ -350,7 +346,7 @@ Return ONLY the {len(papers_json)} BibTeX entries (one per paper, in order), no 
                             bib = paper_data.get("bib", {})
 
                             # Add site-specific fields per BIB.md
-                            entry["bibtex_show"] = "{true}"
+                            entry["bibtex_show"] = "true"
 
                             # Extract abstract
                             abstract = bib.get("abstract", "")
