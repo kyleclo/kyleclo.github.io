@@ -78,13 +78,40 @@ These fields are **required for all papers**:
 }
 ```
 
+## Site-Specific Fields (Required for Website Rendering)
+
+These fields are **required for all papers** to properly render on the Jekyll website:
+
+- `bibtex_show={true}` - Enables BibTeX display in the paper list
+- `abstract` - Full paper abstract
+- `pdf` - PDF filename (e.g., `paper-title-slugified.pdf`)
+- `preview` - Preview image filename (e.g., `paper-title-slugified.png`)
+- `arxiv` - ArXiv ID for preprints (e.g., `2405.12345`)
+
+**Example:**
+```bibtex
+@article{Lo2024ExampleArxiv,
+  title = {Example ArXiv Preprint},
+  author = {Kyle Lo and Jane Doe},
+  journal = {ArXiv},
+  volume = {2405.12345},
+  month = may,
+  year = {2024},
+  url = {https://arxiv.org/abs/2405.12345},
+  bibtex_show={true},
+  arxiv={2405.12345},
+  abstract={This is the full abstract text...},
+  pdf={example-arxiv-preprint.pdf},
+  preview={example-arxiv-preprint.png}
+}
+```
+
 ## Fields to Exclude
 
 The following fields should **not** be generated or scored:
 
 - `pages` - Not required
 - `publisher` - Not required
-- `abstract` - Too long, not needed for bibliography
 - `number` - Not required
 - `address` - Not required
 - `editor` - Not required
@@ -107,7 +134,8 @@ Months should use BibTeX abbreviations (no quotes):
 When evaluating generated BibTeX against ground truth:
 
 1. **Universal fields** (5 fields): title, author, url, month, year
-2. **Entry-type specific fields**:
+2. **Site-specific fields** (5 fields): bibtex_show, abstract, pdf, preview, arxiv (if applicable)
+3. **Entry-type specific fields**:
    - Conference: +1 for booktitle, +1 for doi (if present in ground truth)
    - Journal: +3 for journal, volume, doi
    - ArXiv: +2 for journal, volume
