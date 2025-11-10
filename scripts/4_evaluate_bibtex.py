@@ -422,15 +422,27 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
                 fields[field] = value;
             }});
 
+            // Collect ground truth exclusive fields that should be removed
+            const fieldsToRemove = [];
+            const exclusiveCheckboxes = matchDiv.querySelectorAll('.gt-exclusive-checkbox');
+            exclusiveCheckboxes.forEach(checkbox => {{
+                if (!checkbox.checked) {{
+                    // Unchecked means remove this field
+                    fieldsToRemove.push(checkbox.dataset.field);
+                }}
+            }});
+
             // Get entry type from the fields
-            const entryType = fields.journal && fields.journal.toLowerCase().includes('arxiv')
+            // If journal has value → @article, if booktitle has value → @inproceedings
+            const entryType = fields.journal && fields.journal.trim()
                 ? 'article'
-                : fields.booktitle ? 'inproceedings' : 'article';
+                : fields.booktitle && fields.booktitle.trim() ? 'inproceedings' : 'article';
 
             const data = {{
                 citation_key: gtId,
                 entry_type: entryType,
-                fields: fields
+                fields: fields,
+                fields_to_remove: fieldsToRemove
             }};
 
             try {{
@@ -616,6 +628,36 @@ def generate_evaluation_report(matches, unmatched_generated, unmatched_ground_tr
                         onblur="this.style.outline='none'">{gen_val_escaped if gen_val_escaped else '<em style="color: #999;">(missing)</em>'}</td>
                     <td style="font-family: monospace; font-size: 12px; max-width: 400px; overflow: hidden; text-overflow: ellipsis;">{gt_display}</td>
                     <td style="color: {match_color}; font-weight: bold; text-align: center;">{match_icon}</td>
+                </tr>
+"""
+
+        # Show ground truth exclusive fields (fields in GT but not in field_order or not shown)
+        gt_exclusive_fields = [f for f in gt.keys() if f not in field_order and f not in ['ID', 'ENTRYTYPE']]
+        if gt_exclusive_fields:
+            html += """
+                <tr style="background: #e7f3ff; border-top: 2px solid #007bff;">
+                    <td colspan="4" style="padding: 10px; font-weight: bold; color: #007bff;">
+                        ⚙️ Ground Truth Exclusive Fields (check to keep, uncheck to remove)
+                    </td>
+                </tr>
+"""
+            for field in sorted(gt_exclusive_fields):
+                gt_val = gt.get(field, "").strip()
+                import html as html_module
+                gt_val_escaped = html_module.escape(gt_val) if gt_val else ""
+
+                html += f"""
+                <tr style="background: #f0f8ff;">
+                    <td><strong>{field}</strong></td>
+                    <td style="font-family: monospace; font-size: 12px; color: #666;">
+                        <em>(not in generated)</em>
+                    </td>
+                    <td style="font-family: monospace; font-size: 12px;">{gt_val_escaped}</td>
+                    <td style="text-align: center;">
+                        <input type="checkbox" class="gt-exclusive-checkbox" data-field="{field}" checked
+                               style="width: 18px; height: 18px; cursor: pointer;"
+                               title="Uncheck to remove this field from ground truth">
+                    </td>
                 </tr>
 """
 
