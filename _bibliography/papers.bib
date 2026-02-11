@@ -1,6 +1,21 @@
 ---
 ---
 
+@article{Asai2026OpenScholar,
+  abstract    = {Scientific progress depends on researchers' ability to synthesize the growing body of literature. Can large language models (LMs) assist scientists in this task? We introduce OpenScholar, a specialized retrieval-augmented LM that answers scientific queries by identifying relevant passages from 45 million open-access papers and synthesizing citation-backed responses. To evaluate OpenScholar, we develop ScholarQABench, the first large-scale multi-domain benchmark for literature search, comprising 2,967 expert-written queries and 208 long-form answers across computer science, physics, neuroscience, and biomedicine. On ScholarQABench, OpenScholar-8B outperforms GPT-4o by 5% and PaperQA2 by 7% in correctness, despite being a smaller, open model. While GPT4o hallucinates citations 78 to 90% of the time, OpenScholar achieves citation accuracy on par with human experts. OpenScholar's datastore, retriever, and self-feedback inference loop also improves off-the-shelf LMs: for instance, OpenScholar-GPT4o improves GPT-4o's correctness by 12%. In human evaluations, experts preferred OpenScholar-8B and OpenScholar-GPT4o responses over expert-written ones 51% and 70% of the time, respectively, compared to GPT4o's 32%. We open-source all of our code, models, datastore, data and a public demo.},
+  arxiv       = {2411.14199},
+  author      = {Akari Asai and Jacqueline He and Rulin Shao and Weijia Shi and Amanpreet Singh and Joseph Chee Chang and Kyle Lo and Luca Soldaini and Sergey Feldman and Mike D'Arcy and David Wadden and Matt Latzke and Jenna Sparks and Jena D Hwang and Varsha Kishore and Minyang Tian and Pan Ji and Shengyan Liu and Hao Tong and Bohao Wu and Yanyu Xiong and Luke Zettlemoyer and Graham Neubig and Daniel S Weld and Doug Downey and Wen-tau Yih and Pang Wei Koh and Hannaneh Hajishirzi},
+  bibtex_show = {true},
+  doi         = {10.1038/s41586-025-10072-4},
+  journal     = {Nature},
+  month       = {Feb},
+  pdf         = {openscholar-synthesizing-scientific-literature-with-retrieval-augmented-lms.pdf},
+  preview     = {openscholar-synthesizing-scientific-literature-with-retrieval-augmented-lms.png},
+  title       = {Synthesizing scientific literature with retrieval-augmented language models},
+  url         = {https://www.nature.com/articles/s41586-025-10072-4},
+  year        = {2026}
+}
+
 @inproceedings{Heineman2025SignalAndNoise,
   abstract    = {Developing large language models is expensive and involves making decisions with small experiments, typically by evaluating on large, multi-task evaluation suites. In this work, we analyze specific properties which make a benchmark more reliable for such decisions, and interventions to design higher-quality evaluation benchmarks. We introduce two key metrics that show differences in current benchmarks: signal, a benchmark's ability to separate better models from worse models, and noise, a benchmark's sensitivity to random variability between training steps. We demonstrate that benchmarks with a better signal-to-noise ratio are more reliable when making decisions at small scale, and those with less noise have lower scaling law prediction error. These results suggest that improving signal or noise will lead to more useful benchmarks, so we introduce three interventions designed to directly affect signal or noise. For example, we propose that switching to a metric that has better signal and noise (e.g., perplexity rather than accuracy) leads to better reliability and improved scaling law error. We also find that filtering noisy subtasks, to improve an aggregate signal-to-noise ratio, leads to more reliable multi-task evaluations. We also find that averaging the output of a model's intermediate checkpoints to reduce noise leads to consistent improvements. We conclude by recommending that those creating new benchmarks, or selecting which existing benchmarks to use, aim for high signal and low noise. We use 30 benchmarks for these experiments, and 375 open-weight language models from 60M to 32B parameters, resulting in a new, publicly …},
   arxiv       = {2508.13144},
@@ -27,6 +42,21 @@
   title       = {FlexOlmo: Open Language Models for Flexible Data Use},
   url         = {https://openreview.net/forum?id=1rUj9ZN6Bz},
   year        = {2025}
+}
+
+@article{Olmo2025Olmo3,
+  abstract    = {We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data point, and dependency used to build it. Our flagship model, Olmo 3 Think 32B, is the strongest fully-open thinking model released to-date.},
+  arxiv       = {2512.13961},
+  author      = {Team Olmo and Allyson Ettinger and Amanda Bertsch and Bailey Kuehl and David Graham and David Heineman and Dirk Groeneveld and Faeze Brahman and Finbarr Timbers and Hamish Ivison and Jacob Morrison and Jake Poznanski and Kyle Lo and Luca Soldaini and Matt Jordan and Mayee Chen and Michael Noukhovitch and Nathan Lambert and Pete Walsh and Pradeep Dasigi and Robert Berry and Saumya Malik and Saurabh Shah and Scott Geng and Shane Arora and Shashank Gupta and Taira Anderson and Teng Xiao and Tyler Murray and Tyler Romero and Victoria Graf and Akari Asai and Akshita Bhagia and Alexander Wettig and Alisa Liu and Aman Rangapur and Chloe Anastasiades and Costa Huang and Dustin Schwenk and Harsh Trivedi and Ian Magnusson and Jaron Lochner and Jiacheng Liu and Lester James V Miranda and Maarten Sap and Malia Morgan and Michael Schmitz and Michal Guerquin and Michael Wilson and Regan Huff and Ronan Le Bras and Rui Xin and Rulin Shao and Sam Skjonsberg and Shannon Zejiang Shen and Shuyue Stella Li and Tucker Wilde and Valentina Pyatkin and Will Merrill and Yapei Chang and Yuling Gu and Zhiyuan Zeng and Ashish Sabharwal and Luke Zettlemoyer and Pang Wei Koh and Ali Farhadi and Noah A Smith and Hannaneh Hajishirzi},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {Dec},
+  pdf         = {olmo-3.pdf},
+  preview     = {olmo-3.png},
+  title       = {Olmo 3},
+  url         = {https://arxiv.org/abs/2512.13961},
+  volume      = {2512.13961},
+  year        = {2025},
 }
 
 @inproceedings{Hofmann2025FluidLanguageModel,
@@ -83,7 +113,7 @@
   pdf         = {contextualized-evaluations-judging-language-model-responses-to-underspecified-queries.pdf},
   preview     = {contextualized-evaluations-judging-language-model-responses-to-underspecified-queries.png},
   title       = {Contextualized evaluations: Judging language model responses to underspecified queries},
-  url         = {https://arxiv.org/abs/2411.07237},
+  url         = {https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.24/132120/},
   volume      = {13},
   year        = {2025}
 }
@@ -100,6 +130,35 @@
   title       = {Organize the Web: Constructing Domains Enhances Pre-Training Data Curation},
   url         = {https://openreview.net/forum?id=boSqwdvJVC},
   year        = {2025}
+}
+
+@inproceedings{Wu2025HumanaiCollaborationHow,
+  abstract     = {The continuous, rapid development of general-purpose models like LLMs suggests the theoretical possibility of AI performing any human task. Yet, despite the potential and promise, these models are far from perfect, excelling at certain tasks while struggling with others. The tension between what is possible and a model’s limitations raises the general research question that has attracted attention from various disciplines: What is the best way to use AI to maximize its benefits? In this tutorial, we will review recent developments related to human-AI teaming and collaboration. To the best of our knowledge, our tutorial will be the first to provide a more integrated view from NLP, HCI, Computational Social Science, and Learning Science, etc., and highlight how different communities have identified the goals and societal impacts of such collaborations, both positive and negative. We will further discuss how to …},
+  author       = {Sherry Wu and Diyi Yang and Joseph Z Chang and Marti A Hearst and Kyle Lo},
+  bibtex_show  = {true},
+  booktitle    = {ACL},
+  month        = {Jul},
+  needs_review = {true},
+  pdf          = {human-ai-collaboration-how-ais-augment-human-teammates.pdf},
+  preview      = {human-ai-collaboration-how-ais-augment-human-teammates.png},
+  title        = {Human-AI Collaboration: How AIs Augment Human Teammates},
+  url          = {https://aclanthology.org/2025.acl-tutorials.4/},
+  year         = {2025},
+}
+
+@article{Padmakumar2025SettingTable,
+  abstract    = {Setting The Table with Intent: Intent-aware Schema Generation and Editing for Literature Review Tables},
+  arxiv       = {2507.19521},
+  author      = {Vishakh Padmakumar and Joseph Chee Chang and Kyle Lo and Doug Downey and Aakanksha Naik},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {Jul},
+  pdf         = {setting-the-table-with-intent-intent-aware-schema-generation-and-editing-for-literature-review-tables.pdf},
+  preview     = {setting-the-table-with-intent-intent-aware-schema-generation-and-editing-for-literature-review-tables.png},
+  title       = {Setting The Table with Intent: Intent-aware Schema Generation and Editing for Literature Review Tables},
+  url         = {https://ui.adsabs.harvard.edu/abs/2025arXiv250719521P/abstract},
+  volume      = {2507.19521},
+  year        = {2025},
 }
 
 @inproceedings{Deitke2025MolmoAndPixmo,
@@ -184,18 +243,19 @@
   year        = {2025}
 }
 
-@article{Asai2024OpenscholarSynthesizingScientific,
-  abstract    = {Scientific progress depends on researchers' ability to synthesize the growing body of literature. Can large language models (LMs) assist scientists in this task? We introduce OpenScholar, a specialized retrieval-augmented LM that answers scientific queries by identifying relevant passages from 45 million open-access papers and synthesizing citation-backed responses. To evaluate OpenScholar, we develop ScholarQABench, the first large-scale multi-domain benchmark for literature search, comprising 2,967 expert-written queries and 208 long-form answers across computer science, physics, neuroscience, and biomedicine. On ScholarQABench, OpenScholar-8B outperforms GPT-4o by 5% and PaperQA2 by 7% in correctness, despite being a smaller, open model. While GPT4o hallucinates citations 78 to 90% of the time, OpenScholar achieves citation accuracy on par with human experts. OpenScholar's datastore, retriever, and self-feedback inference loop also improves off-the-shelf LMs: for instance, OpenScholar-GPT4o improves GPT-4o's correctness by 12%. In human evaluations, experts preferred OpenScholar-8B and OpenScholar-GPT4o responses over expert-written ones 51% and 70% of the time, respectively, compared to GPT4o's 32%. We open-source all of our code, models, datastore, data and a public demo.},
-  arxiv       = {2411.14199},
-  author      = {Akari Asai and Jacqueline He and Rulin Shao and Weijia Shi and Amanpreet Singh and Joseph Chee Chang and Kyle Lo and Luca Soldaini and Sergey Feldman and Mike D'arcy and David Wadden and Matt Latzke and Minyang Tian and Pan Ji and Shengyan Liu and Hao Tong and Bohao Wu and Yanyu Xiong and Luke Zettlemoyer and Graham Neubig and Dan Weld and Doug Downey and Wen-tau Yih and Pang Wei Koh and Hannaneh Hajishirzi},
+@article{Jiang2025AutomaticDetectionOf,
+  abstract    = {The field of Computer science (CS) has rapidly evolved over the past few decades, providing computational tools and methodologies to various fields and forming new interdisciplinary communities. This growth in CS has significantly impacted institutional practices and relevant research communities. Therefore, it is crucial to explore what specific research values, known as basic and fundamental beliefs that guide or motivate research attitudes or actions, CS-related research communities promote. Prior research has manually analyzed research values from a small sample of machine learning papers. No prior work has studied the automatic detection of research values in CS from large-scale scientific texts across different research subfields. This paper introduces a detailed annotation scheme featuring ten research values that guide CS-related research. Based on the scheme, we build value classifiers to scale up the analysis and present a systematic study over 226,600 paper abstracts from 32 CS-related subfields and 86 popular publishing venues over ten years.},
+  arxiv       = {2502.16390},
+  author      = {Hang Jiang and Tal August and Luca Soldaini and Kyle Lo and Maria Antoniak},
   bibtex_show = {true},
   journal     = {ArXiv},
-  month       = {Nov},
-  pdf         = {openscholar-synthesizing-scientific-literature-with-retrieval-augmented-lms.pdf},
-  preview     = {openscholar-synthesizing-scientific-literature-with-retrieval-augmented-lms.png},
-  title       = {OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs},
-  url         = {https://arxiv.org/abs/2411.14199},
-  year        = {2024}
+  month       = {Feb},
+  pdf         = {automatic-detection-of-research-values-from-scientific-abstracts-across-computer-science-subfields.pdf},
+  preview     = {automatic-detection-of-research-values-from-scientific-abstracts-across-computer-science-subfields.png},
+  title       = {Automatic detection of research values from scientific abstracts across computer science subfields},
+  url         = {https://arxiv.org/abs/2502.16390},
+  volume      = {2502.16390},
+  year        = {2025},
 }
 
 @inproceedings{Newman2024ArxivdigestablesSynthesizingScientific,
@@ -412,6 +472,7 @@
   url         = {https://aclanthology.org/2024.findings-acl.770},
   year        = {2024}
 }
+
 @article{Gadre2023DataCompIS,
   abstract    = {We introduce DataComp for Language Models (DCLM), a testbed for controlled dataset experiments with the goal of improving language models. As part of DCLM, we provide a standardized corpus of 240T tokens extracted from Common Crawl, effective pretraining recipes based on the OpenLM framework, and a broad suite of 53 downstream evaluations. Participants in the DCLM benchmark can experiment with data curation strategies such as deduplication, filtering, and data mixing at model scales ranging from 412M to 7B parameters. As a baseline for DCLM, we conduct extensive experiments and find that model-based filtering is key to assembling a high-quality training set. The resulting dataset, DCLM-Baseline enables training a 7B parameter language model from scratch to 64% 5-shot accuracy on MMLU with 2.6T training tokens. Compared to MAP-Neo, the previous state-of-the-art in open-data language models, DCLM-Baseline represents a 6.6 percentage point improvement on MMLU while being trained with 40% less compute. Our baseline model is also comparable to Mistral-7B-v0.3 and Llama 3 8B on MMLU (63% & 66%), and performs similarly on an average of 53 natural language understanding tasks while being trained with 6.6x less compute than Llama 3 8B. Our results highlight the importance of dataset design for training language models and offer a starting point for further research on data curation.},
   arxiv       = {2406.11794},
@@ -452,6 +513,21 @@
   title       = {SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature},
   url         = {https://arxiv.org/abs/2406.07835},
   year        = {2024}
+}
+
+@article{Longpre2024ResponsibleFoundation,
+  abstract    = {Foundation model development attracts a rapidly expanding body of contributors, scientists, and applications. To help shape responsible development practices, we introduce the Foundation Model Development Cheatsheet: a growing collection of 250+ tools and resources spanning text, vision, and speech modalities. We draw on a large body of prior work to survey resources (e.g. software, documentation, frameworks, guides, and practical tools) that support informed data selection, processing, and understanding, precise and limitation-aware artifact documentation, efficient model training, advance awareness of the environmental impact from training, careful model evaluation of capabilities, risks, and claims, as well as responsible model release, licensing and deployment practices. We hope this curated collection of resources helps guide more responsible development. The process of curating this list, enabled us to review the AI development ecosystem, revealing what tools are critically missing, misused, or over-used in existing practices. We find that (i) tools for data sourcing, model evaluation, and monitoring are critically under-serving ethical and real-world needs, (ii) evaluations for model safety, capabilities, and environmental impact all lack reproducibility and transparency, (iii) text and particularly English-centric analyses continue to dominate over multilingual and multi-modal analyses, and (iv) evaluation of systems, rather than just models, is needed so that capabilities and impact are assessed in context.},
+  arxiv       = {2406.16746},
+  author      = {Shayne Longpre and Stella Biderman and Alon Albalak and Hailey Schoelkopf and Daniel McDuff and Sayash Kapoor and Kevin Klyman and Kyle Lo and Gabriel Ilharco and Nay San and Maribeth Rauh and Aviya Skowron and Bertie Vidgen and Laura Weidinger and Arvind Narayanan and Victor Sanh and David Adelani and Percy Liang and Rishi Bommasani and Peter Henderson and Sasha Luccioni and Yacine Jernite and Luca Soldaini},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {Jun},
+  pdf         = {the-responsible-foundation-model-development-cheatsheet-a-review-of-tools-resources.pdf},
+  preview     = {the-responsible-foundation-model-development-cheatsheet-a-review-of-tools-resources.png},
+  title       = {The responsible foundation model development cheatsheet: A review of tools & resources},
+  url         = {https://arxiv.org/abs/2406.16746},
+  volume      = {2406.16746},
+  year        = {2024},
 }
 
 @inproceedings{10.1145/3613904.3642289,
@@ -938,6 +1014,18 @@
   title       = {The Semantic Scholar Open Data Platform},
   volume      = {abs/2301.10140},
   year        = {2023}
+}
+
+@article{Soldaini2023Pes2opretrainingEfficiently,
+  author       = {Luca Soldaini and Kyle Lo},
+  bibtex_show  = {true},
+  journal      = {Allen Institute for AI, Tech. Rep},
+  needs_review = {true},
+  pdf          = {pes2o-pretraining-efficiently-on-s2orc-dataset.pdf},
+  preview      = {pes2o-pretraining-efficiently-on-s2orc-dataset.png},
+  title        = {peS2o (Pretraining Efficiently on S2ORC) Dataset},
+  url          = {https://scholar.google.com/scholar?cluster=2312374705071487035&hl=en&oi=scholarr},
+  year         = {2023},
 }
 
 @inproceedings{wadden-etal-2022-scifact,
@@ -1447,6 +1535,19 @@
   year        = {2021}
 }
 
+@article{Firouzi2021HarnessingPower,
+  abstract     = {As COVID-19 hounds the world, the common cause of finding a swift solution to manage the pandemic has brought together researchers, institutions, governments, and society at large. The Internet of Things (IoT), artificial intelligence (AI)—including machine learning (ML) and Big Data analytics—as well as Robotics and Blockchain, are the four decisive areas of technological innovation that have been ingenuity harnessed to fight this pandemic and future ones. While these highly interrelated smart and connected health technologies cannot resolve the pandemic overnight and may not be the only answer to the crisis, they can provide greater insight into the disease and support frontline efforts to prevent and control the pandemic. This article provides a blend of discussions on the contribution of these digital technologies, propose several complementary and multidisciplinary techniques to combat COVID-19, offer …},
+  author       = {Farshad Firouzi and Bahar Farahani and Mahmoud Daneshmand and Kathy Grise and Jaeseung Song and Roberto Saracco and Lucy Lu Wang and Kyle Lo and Plamen Angelov and Eduardo Soares and Po-Shen Loh and Zeynab Talebpour and Reza Moradi and Mohsen Goodarzi and Haleh Ashraf and Mohammad Talebpour and Alireza Talebpour and Luca Romeo and Rupam Das and Hadi Heidari and Dana Pasquale and James Moody and Chris Woods and Erich S Huang and Payam Barnaghi and Majid Sarrafzadeh and Ron Li and Kristen L Beck and Olexandr Isayev and Nakmyoung Sung and Alan Luo},
+  bibtex_show  = {true},
+  journal      = {IEEE Internet of Things Journal},
+  needs_review = {true},
+  pdf          = {harnessing-the-power-of-smart-and-connected-health-to-tackle-covid-19-iot-ai-robotics-and-blockchain-for-a-better-world.pdf},
+  preview      = {harnessing-the-power-of-smart-and-connected-health-to-tackle-covid-19-iot-ai-robotics-and-blockchain-for-a-better-world.png},
+  title        = {Harnessing the power of smart and connected health to tackle COVID-19: IoT, AI, robotics, and blockchain for a better world},
+  url          = {https://ieeexplore.ieee.org/abstract/document/9406879/},
+  year         = {2021},
+}
+
 @article{10.1093/bib/bbaa296,
   abstract    = {{More than 50 000 papers have been published about COVID-19 since the beginning of 2020 and several hundred new papers continue to be published every day. This incredible rate of scientific productivity leads to information overload, making it difficult for researchers, clinicians and public health officials to keep up with the latest findings. Automated text mining techniques for searching, reading and summarizing papers are helpful for addressing information overload. In this review, we describe the many resources that have been introduced to support text mining applications over the COVID-19 literature; specifically, we discuss the corpora, modeling resources, systems and shared tasks that have been introduced for COVID-19. We compile a list of 39 systems that provide functionality such as search, discovery, visualization and summarization over the COVID-19 literature. For each system, we provide a qualitative description and assessment of the system’s performance, unique data or user interface features and modeling decisions. Many systems focus on search and discovery, though several systems provide novel features, such as the ability to summarize findings over multiple documents or linking between scientific articles and clinical trials. We also describe the public corpora, models and shared tasks that have been introduced to help reduce repeated effort among community members; some of these resources (especially shared tasks) can provide a basis for comparing the performance of different systems. Finally, we summarize promising results and open challenges for text mining the COVID-19 literature.}},
   author      = {Wang, Lucy Lu and Lo, Kyle},
@@ -1666,6 +1767,19 @@
   year        = {2020}
 }
 
+@inproceedings{Goodwin2020OverviewOf,
+  abstract     = {1 OBJECTIVEIn response to the COVID-19 pandemic, we organized a new track for TAC 2020: Epidemic Question Answering (EPIC-QA). This track challenges teams to develop systems capable of automatically answering ad-hoc questions about the disease COVID-19, its causal virus SARS-CoV-2, related coronaviruses, and the recommended response to the pandemic. While COVID-19 has been an impetus for a large body of emergent scientific research and inquiry, the response to COVID-19 raises questions for consumers. The rapid increase in coronavirus literature and evolving guidelines on community response creates a challenging burden not only for the scientific and medical communities but also the general public to stay up-to-date on the latest developments. Consequently, the goal of the track is to evaluate systems on their ability to provide timely and accurate expert-level answers as expected by the scientific and medical communities as well as answers in consumer-friendly language for the general public.While there is overlap in the types of questions asked by different stakeholders, the answers to such questions should vary based on the background knowledge of the user. For example, consider the simple question from the general health domain illustrated in Figure 1, How does Tylenol work? In the eyes of an expert, an answer should indicate that the exact mechanism is unknown, but may elaborate on the pathways involved.[6] By contrast, for a consumer, this information would be unhelpful; instead, a more appropriate answer would provide a general overview of how the class of drugs works rather than the exact …},
+  author       = {TRAVIS R Goodwin and Dina Demner-Fushman and Kyle Lo and Lucy Lu Wang and WILLIAM R Hersh and HT Dang and Ian M Soboroff},
+  bibtex_show  = {true},
+  booktitle    = {Text Analysis Conference},
+  needs_review = {true},
+  pdf          = {overview-of-the-2020-epidemic-question-answering-track.pdf},
+  preview      = {overview-of-the-2020-epidemic-question-answering-track.png},
+  title        = {Overview of the 2020 epidemic question answering track},
+  url          = {https://tac.nist.gov/publications/2020/additional.papers/TAC2020.EPIC-QA.overview.notebook.pdf},
+  year         = {2020},
+}
+
 @inproceedings{beltagy-etal-2019-scibert,
   abstract    = {Obtaining large-scale annotated data for NLP tasks in the scientific domain is challenging and expensive. We release SciBERT, a pretrained language model based on BERT (Devlin et. al., 2018) to address the lack of high-quality, large-scale labeled scientific data. SciBERT leverages unsupervised pretraining on a large multi-domain corpus of scientific publications to improve performance on downstream scientific NLP tasks. We evaluate on a suite of tasks including sequence tagging, sentence classification and dependency parsing, with datasets from a variety of scientific domains. We demonstrate statistically significant improvements over BERT and achieve new state-of-the-art results on several of these tasks. The code and pretrained models are available at https://github.com/allenai/scibert/.},
   acl         = {D19-1371},
@@ -1789,5 +1903,20 @@
   title       = {Construction of the Literature Graph in Semantic Scholar},
   url         = {https://aclanthology.org/N18-3011},
   year        = {2018}
+}
+
+@article{Feldman2018CitationCountAnalysis,
+  abstract    = {We explore the degree to which papers prepublished on arXiv garner more citations, in an attempt to paint a sharper picture of fairness issues related to prepublishing. A paper's citation count is estimated using a negative-binomial generalized linear model (GLM) while observing a binary variable which indicates whether the paper has been prepublished. We control for author influence (via the authors' h-index at the time of paper writing), publication venue, and overall time that paper has been available on arXiv. Our analysis only includes papers that were eventually accepted for publication at top-tier CS conferences, and were posted on arXiv either before or after the acceptance notification. We observe that papers submitted to arXiv before acceptance have, on average, 65\% more citations in the following year compared to papers submitted after. We note that this finding is not causal, and discuss possible next steps.},
+  arxiv       = {1805.05238},
+  author      = {Sergey Feldman and Kyle Lo and Waleed Ammar},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {May},
+  pdf         = {citation-count-analysis-for-papers-with-preprints.pdf},
+  preview     = {citation-count-analysis-for-papers-with-preprints.png},
+  title       = {Citation count analysis for papers with preprints},
+  url         = {https://arxiv.org/abs/1805.05238},
+  volume      = {1805.05238},
+  year        = {2018},
 }
 
