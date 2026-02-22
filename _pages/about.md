@@ -22,7 +22,7 @@ social: true # includes social icons at the bottom of the page
 I'm a research scientist at the [Allen Institute for AI](https://allenai.org/) where I co-lead the [OLMo](https://allenai.org/olmo) project on open language modeling.
 
 <!-- for scientific research assistance  -->
-My current research focuses on large-scale pretraining of language models, with an emphasis on data curation and efficient experimentation. I’m also interested in methods for specializing language models to domains. I'm interested in AI for science and education, and graviate towards human-AI interaction problems like sensemaking over large collections or augmented reading interfaces. Finally, I also like building useful artifacts that support research, like open corpora and OCR tools.
+My current research focuses on large-scale pretraining of language models, with an emphasis on data curation, data mixing, benchmark validity, efficient experimentation, and generalization across model scales. I also like building useful data and software artifacts that support research, like large-scale corpora and OCR tools. Previously, I’ve worked on specializing language models to domains, human-AI interaction for sensemaking over large collections, and augmented reading interfaces.
 
 <!-- * [Open recipes for developing language models](/projects/1_project) -->
 <!-- * [Adapting language models to specialized texts](/projects/2_project) -->
