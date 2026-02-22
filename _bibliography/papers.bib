@@ -16,12 +16,60 @@
   year        = {2026}
 }
 
+@article{Whrl2026HumancentricFramework,
+  abstract    = {In the current Large Language Model (LLM) ecosystem, creators have little agency over how their data is used, and LLM users may find themselves unknowingly plagiarizing existing sources. Attribution of LLM-generated text to LLM input data could help with these challenges, but so far we have more questions than answers: what elements of LLM outputs require attribution, what goals should it serve, how should it be implemented? We contribute a human-centric data attribution framework, which situates the attribution problem within the broader data economy. Specific use cases for attribution, such as creative writing assistance or fact-checking, can be specified via a set of parameters (including stakeholder objectives and implementation criteria). These criteria are up for negotiation by the relevant stakeholder groups: creators, LLM users, and their intermediaries (publishers, platforms, AI companies). The outcome of domain-specific negotiations can be implemented and tested for whether the stakeholder goals are achieved. The proposed approach provides a bridge between methodological NLP work on data attribution, governance work on policy interventions, and economic analysis of creator incentives for a sustainable equilibrium in the data economy.},
+  arxiv       = {2602.10995},
+  author      = {Amelie Wührl and Mattes Ruckdeschel and Kyle Lo and Anna Rogers},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {Feb},
+  pdf         = {a-human-centric-framework-for-data-attribution-in-large-language-models.pdf},
+  preview     = {a-human-centric-framework-for-data-attribution-in-large-language-models.png},
+  title       = {A Human-Centric Framework for Data Attribution in Large Language Models},
+  url         = {https://arxiv.org/abs/2602.10995},
+  volume      = {2602.10995},
+  year        = {2026},
+}
+
+@article{Chang2026How2everythingMining,
+  abstract    = {Generating step-by-step "how-to" procedures is a key LLM capability: how-to advice is commonly requested in chatbots, and step-by-step planning is critical for reasoning over complex tasks. Yet, measuring and improving procedural validity at scale on real-world tasks remains challenging and understudied. To address this, we introduce How2Everything, a scalable framework to evaluate and improve goal-conditioned procedure generation. Our framework includes How2Mine, which mines 351K procedures from 980K web pages across 14 topics and readily scales to larger corpora. From this pool we build How2Bench, a 7K-example evaluation set balanced across topics. To reliably score model outputs, we develop How2Score, an evaluation protocol that uses an LLM judge to detect whether a generation contains any critical failure that would prevent achieving the goal. For low-cost, reproducible evaluation, we distill a frontier model into an open 8B model, achieving 80.5% agreement with human annotators. How2Bench reveals clear scaling trends across model sizes and training stages, providing signal early in pretraining. Finally, RL using How2Score as a reward improves performance on How2Bench by >10 points across three models without systematic regressions on standard benchmarks, with gains robust to superficial source-document memorization or format compliance. Taken together, How2Everything shows how pretraining web data can support a closed loop of capability evaluation and improvement at scale.},
+  arxiv       = {2602.08808},
+  author      = {Yapei Chang and Kyle Lo and Mohit Iyyer and Luca Soldaini},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {Feb},
+  pdf         = {how2everything-mining-the-web-for-how-to-procedures-to-evaluate-and-improve-llms.pdf},
+  preview     = {how2everything-mining-the-web-for-how-to-procedures-to-evaluate-and-improve-llms.png},
+  selected    = {true},
+  title       = {How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs},
+  url         = {https://arxiv.org/abs/2602.08808},
+  volume      = {2602.08808},
+  year        = {2026},
+}
+
+@article{Chen2026OlmixFramework,
+  abstract    = {Data mixing -- determining the ratios of data from different domains -- is a first-order concern for training language models (LMs). While existing mixing methods show promise, they fall short when applied during real-world LM development. We present Olmix, a framework that addresses two such challenges. First, the configuration space for developing a mixing method is not well understood -- design choices across existing methods lack justification or consensus and overlook practical issues like data constraints. We conduct a comprehensive empirical study of this space, identifying which design choices lead to a strong mixing method. Second, in practice, the domain set evolves throughout LM development as datasets are added, removed, partitioned, and revised -- a problem setting largely unaddressed by existing works, which assume fixed domains. We study how to efficiently recompute the mixture after the domain set is updated, leveraging information from past mixtures. We introduce mixture reuse, a mechanism that reuses existing ratios and recomputes ratios only for domains affected by the update. Over a sequence of five domain-set updates mirroring real-world LM development, mixture reuse matches the performance of fully recomputing the mix after each update with 74% less compute and improves over training without mixing by 11.6% on downstream tasks.},
+  arxiv       = {2602.12237},
+  author      = {Mayee F Chen and Tyler Murray and David Heineman and Matt Jordan and Hannaneh Hajishirzi and Christopher Ré and Luca Soldaini and Kyle Lo},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {Feb},
+  pdf         = {olmix-a-framework-for-data-mixing-throughout-lm-development.pdf},
+  preview     = {olmix-a-framework-for-data-mixing-throughout-lm-development.png},
+  selected    = {true},
+  title       = {Olmix: A Framework for Data Mixing Throughout LM Development},
+  url         = {https://arxiv.org/abs/2602.12237},
+  volume      = {2602.12237},
+  year        = {2026},
+}
+
 @inproceedings{Heineman2025SignalAndNoise,
   abstract    = {Developing large language models is expensive and involves making decisions with small experiments, typically by evaluating on large, multi-task evaluation suites. In this work, we analyze specific properties which make a benchmark more reliable for such decisions, and interventions to design higher-quality evaluation benchmarks. We introduce two key metrics that show differences in current benchmarks: signal, a benchmark's ability to separate better models from worse models, and noise, a benchmark's sensitivity to random variability between training steps. We demonstrate that benchmarks with a better signal-to-noise ratio are more reliable when making decisions at small scale, and those with less noise have lower scaling law prediction error. These results suggest that improving signal or noise will lead to more useful benchmarks, so we introduce three interventions designed to directly affect signal or noise. For example, we propose that switching to a metric that has better signal and noise (e.g., perplexity rather than accuracy) leads to better reliability and improved scaling law error. We also find that filtering noisy subtasks, to improve an aggregate signal-to-noise ratio, leads to more reliable multi-task evaluations. We also find that averaging the output of a model's intermediate checkpoints to reduce noise leads to consistent improvements. We conclude by recommending that those creating new benchmarks, or selecting which existing benchmarks to use, aim for high signal and low noise. We use 30 benchmarks for these experiments, and 375 open-weight language models from 60M to 32B parameters, resulting in a new, publicly …},
   arxiv       = {2508.13144},
   author      = {David Heineman and Valentin Hofmann and Ian Magnusson and Yuling Gu and Noah A Smith and Hannaneh Hajishirzi and Kyle Lo and Jesse Dodge},
   bibtex_show = {true},
   booktitle   = {NeurIPS (Datasets and Benchmarks)},
+  selected    = {true},
   month       = {Dec},
   pdf         = {signal-and-noise-a-framework-for-reducing-uncertainty-in-language-model-evaluation.pdf},
   preview     = {signal-and-noise-a-framework-for-reducing-uncertainty-in-language-model-evaluation.png},
@@ -52,7 +100,10 @@
   journal     = {ArXiv},
   month       = {Dec},
   pdf         = {olmo-3.pdf},
+  selected    = {true},
   preview     = {olmo-3.png},
+  cv_authors_after  = {Team Olmo},
+  cv_authors_before = {Team Olmo},
   title       = {Olmo 3},
   url         = {https://arxiv.org/abs/2512.13961},
   volume      = {2512.13961},
@@ -95,6 +146,7 @@
   journal     = {ArXiv},
   month       = {Oct},
   pdf         = {olmocr-2-unit-test-rewards-for-document-ocr.pdf},
+  selected    = {true},
   preview     = {olmocr-2-unit-test-rewards-for-document-ocr.png},
   title       = {olmOCR 2: Unit Test Rewards for Document OCR},
   url         = {https://arxiv.org/abs/2510.19817},
@@ -109,6 +161,7 @@
   bibtex_show = {true},
   doi         = {10.1162/TACL.a.24},
   journal     = {Transactions of ACL (TACL)},
+  selected    = {true},
   month       = {Jul},
   pdf         = {contextualized-evaluations-judging-language-model-responses-to-underspecified-queries.pdf},
   preview     = {contextualized-evaluations-judging-language-model-responses-to-underspecified-queries.png},
@@ -126,6 +179,7 @@
   booktitle   = {ICML},
   month       = {Jul},
   pdf         = {organize-the-web-constructing-domains-enhances-pre-training-data-curation.pdf},
+  selected    = {true},
   preview     = {organize-the-web-constructing-domains-enhances-pre-training-data-curation.png},
   title       = {Organize the Web: Constructing Domains Enhances Pre-Training Data Curation},
   url         = {https://openreview.net/forum?id=boSqwdvJVC},
@@ -236,6 +290,7 @@
   journal     = {ArXiv},
   month       = {Feb},
   pdf         = {olmocr-unlocking-trillions-of-tokens-in-pdfs-with-vision-language-models.pdf},
+  selected    = {true},
   preview     = {olmocr-unlocking-trillions-of-tokens-in-pdfs-with-vision-language-models.png},
   title       = {olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language Models},
   url         = {https://arxiv.org/abs/2502.18443},
@@ -280,7 +335,10 @@
   booktitle   = {COLM},
   month       = {Oct},
   pdf         = {2-olmo-2-furious.pdf},
+  selected    = {true},
   preview     = {2-olmo-2-furious.png},
+  cv_authors_after  = {Team OLMo},
+  cv_authors_before = {Team OLMo},
   title       = {2 OLMo 2 Furious},
   url         = {https://arxiv.org/abs/2501.00656},
   year        = {2024}
@@ -303,6 +361,9 @@
   pdf         = {the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.pdf},
   preview     = {the-semantic-reader-project-augmenting-scholarly-documents-through-ai-powered-interactive-reading-interfaces.png},
   publisher   = {Association for Computing Machinery},
+  selected    = {true},
+  cv_authors_after  = {Cassidy Trier},
+  cv_authors_before = {Marti Hearst},
   title       = {The Semantic Reader Project: Augmenting Scholarly Documents Through AI-Powered Interactive Reading Interfaces},
   url         = {https://doi.org/10.1145/3659096},
   volume      = {67},
@@ -369,6 +430,9 @@
   pdf         = {olmo-accelerating-the-science-of-language-models.pdf},
   preview     = {olmo-accelerating-the-science-of-language-models.png},
   publisher   = {Association for Computational Linguistics},
+  cv_authors_after  = {Oyvind Tafjord},
+  cv_authors_before = {Pradeep Dasigi},
+  selected    = {true},
   title       = {{OLM}o: Accelerating the Science of Language Models},
   url         = {https://aclanthology.org/2024.acl-long.841},
   year        = {2024}
@@ -441,6 +505,9 @@
   pdf         = {dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.pdf},
   preview     = {dolma-an-open-corpus-of-three-trillion-tokens-for-language-model-pretraining-research.png},
   publisher   = {Association for Computational Linguistics},
+  cv_authors_after  = {Dustin Schwenk},
+  cv_authors_before = {Noah Smith},
+  selected    = {true},
   title       = {Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research},
   url         = {https://aclanthology.org/2024.acl-long.840},
   year        = {2024}
@@ -879,6 +946,7 @@
   pdf         = {longeval-guidelines-for-human-evaluation-of-faithfulness-in-long-form-summarization.pdf},
   preview     = {longeval-guidelines-for-human-evaluation-of-faithfulness-in-long-form-summarization.png},
   publisher   = {Association for Computational Linguistics},
+  selected    = {true},
   title       = {{L}ong{E}val: Guidelines for Human Evaluation of Faithfulness in Long-form Summarization},
   url         = {https://aclanthology.org/2023.eacl-main.121},
   year        = {2023}
@@ -1076,7 +1144,6 @@
   openreview  = {z1d8fUiS8Cr},
   pdf         = {multi-lexsum-real-world-summaries-of-civil-rights-lawsuits-at-multiple-granularities.pdf},
   preview     = {multi-lexsum-real-world-summaries-of-civil-rights-lawsuits-at-multiple-granularities.png},
-  selected    = {true},
   title       = {Multi-LexSum: Real-world Summaries of Civil Rights Lawsuits at Multiple Granularities},
   url         = {https://openreview.net/forum?id=z1d8fUiS8Cr},
   year        = {2022}
@@ -1252,7 +1319,6 @@
   pdf         = {vila-improving-structured-content-extraction-from-scientific-pdfs-using-visual-layout-groups.pdf},
   preview     = {vila-improving-structured-content-extraction-from-scientific-pdfs-using-visual-layout-groups.png},
   publisher   = {MIT Press},
-  selected    = {true},
   title       = {{VILA}: Improving Structured Content Extraction from Scientific {PDF}s Using Visual Layout Groups},
   url         = {https://aclanthology.org/2022.tacl-1.22},
   volume      = {10},
@@ -1326,6 +1392,7 @@
   volume      = {43},
   year        = {2022}
 }
+
 
 @inproceedings{NEURIPS2021_8493eeac,
   abstract    = {Few-shot NLP research is highly active, yet conducted in disjoint research threads with evaluation suites that lack challenging-yet-realistic testing setups and fail to employ careful experimental design. Consequently, the community does not know which techniques perform best or even if they outperform simple baselines. In response, we formulate the FLEX Principles, a set of requirements and best practices for unified, rigorous, valid, and cost-sensitive few-shot NLP evaluation. These principles include Sample Size Design, a novel approach to benchmark design that optimizes statistical accuracy and precision while keeping evaluation costs manageable. Following the principles, we release the FLEX benchmark, which includes four few-shot transfer settings, zero-shot evaluation, and a public leaderboard that covers diverse NLP tasks. In addition, we present UniFew, a prompt-based model for few-shot learning that unifies pretraining and finetuning prompt formats, eschewing complex machinery of recent prompt-based approaches in adapting downstream task formats to language model pretraining objectives. We demonstrate that despite simplicity, UniFew achieves results competitive with both popular meta-learning and prompt-based approaches.},
@@ -1417,7 +1484,6 @@
   pdf         = {a-dataset-of-information-seeking-questions-and-answers-anchored-in-research-papers.pdf},
   preview     = {a-dataset-of-information-seeking-questions-and-answers-anchored-in-research-papers.png},
   publisher   = {Association for Computational Linguistics},
-  selected    = {true},
   title       = {A Dataset of Information-Seeking Questions and Answers Anchored in Research Papers},
   url         = {https://aclanthology.org/2021.naacl-main.365},
   year        = {2021}
@@ -1459,7 +1525,6 @@
   pdf         = {augmenting-scientific-papers-with-just-in-time-position-sensitive-definitions-of-terms-and-symbols.pdf},
   preview     = {augmenting-scientific-papers-with-just-in-time-position-sensitive-definitions-of-terms-and-symbols.png},
   publisher   = {Association for Computing Machinery},
-  selected    = {true},
   series      = {CHI '21},
   title       = {Augmenting Scientific Papers with Just-in-Time, Position-Sensitive Definitions of Terms and Symbols},
   url         = {https://doi.org/10.1145/3411764.3445648},
@@ -1800,6 +1865,7 @@
   url         = {https://aclanthology.org/D19-1371},
   year        = {2019}
 }
+
 
 @article{10.1001/jamanetworkopen.2019.6700,
   abstract    = {{Analyses of female representation in clinical studies have been limited in scope and scale.To perform a large-scale analysis of global enrollment sex bias in clinical studies.In this cross-sectional study, clinical studies from published articles from PubMed from 1966 to 2018 and records from Aggregate Analysis of ClinicalTrials.gov from 1999 to 2018 were identified. Global disease prevalence was determined for male and female patients in 11 disease categories from the Global Burden of Disease database: cardiovascular, diabetes, digestive, hepatitis (types A, B, C, and E), HIV/AIDS, kidney (chronic), mental, musculoskeletal, neoplasms, neurological, and respiratory (chronic). Machine reading algorithms were developed that extracted sex data from tables in articles and records on December 31, 2018, at an artificial intelligence research institute. Male and female participants in 43 135 articles (792 004 915 participants) and 13 165 records (12 977 103 participants) were included.Sex bias was defined as the difference between the fraction of female participants in study participants minus prevalence fraction of female participants for each disease category. A total of 1000 bootstrap estimates of sex bias were computed by resampling individual studies with replacement. Sex bias was reported as mean and 95\\% bootstrap confidence intervals from articles and records in each disease category over time (before or during 1993 to 2018), with studies or participants as the measurement unit.There were 792 004 915 participants, including 390 470 834 female participants (49\\%), in articles and 12 977 103 participants, including 6 351 619 female participants (49\\%), in records. With studies as measurement unit, substantial female underrepresentation (sex bias ≤ −0.05) was observed in 7 of 11 disease categories, especially HIV/AIDS (mean for articles, −0.17 [95\\% CI, −0.18 to −0.16]), chronic kidney diseases (mean, −0.17 [95\\% CI, −0.17 to −0.16]), and cardiovascular diseases (mean, −0.14 [95\\% CI, −0.14 to −0.13]). Sex bias in articles for all categories combined was unchanged over time with studies as measurement unit (range, −0.15 [95\\% CI, −0.16 to −0.13] to −0.10 [95\\% CI, −0.14 to −0.06]), but improved from before or during 1993 (mean, −0.11 [95\\% CI, −0.16 to −0.05]) to 2014 to 2018 (mean, −0.05 [95\\% CI, −0.09 to −0.02]) with participants as the measurement unit. Larger study size was associated with greater female representation.Automated extraction of the number of participants in clinical reports provides an effective alternative to manual analysis of demographic bias. Despite legal and policy initiatives to increase female representation, sex bias against female participants in clinical studies persists. Studies with more participants have greater female representation. Differences between sex bias estimates with studies vs participants as measurement unit, and between articles vs records, suggest that sex bias with both measures and data sources should be reported.}},
