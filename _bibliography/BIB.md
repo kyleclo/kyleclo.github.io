@@ -1,145 +1,324 @@
-# BibTeX Field Requirements
+# Bibliography Rules for `papers.bib`
 
-This document specifies the required BibTeX fields for papers on the website.
+This document is the authoritative reference for formatting entries in `_bibliography/papers.bib`. Claude Code must read this file before editing `papers.bib`.
 
-## Universal Fields (All Papers)
+---
 
-These fields are **required for all papers**:
+## Entry Types
 
-- `title` - Paper title
-- `author` - Authors in "Name1 and Name2 and Name3" format
-- `url` - Link to paper (DOI URL, arXiv URL, or paper website)
-- `month` - Publication month (jan, feb, mar, etc.)
-- `year` - Publication year
+| Type | When to use |
+|---|---|
+| `@inproceedings` | Conference papers, workshop papers, system demos, tutorials. Use when the venue has "proceedings", "conference", "workshop", "symposium", or "tutorial" in its name. |
+| `@article` | Journal papers and ArXiv preprints. |
 
-## Entry Type Specific Fields
+---
 
-### Conference Papers (`@inproceedings`)
+## Citation Key Format
 
-**Required:**
-- `booktitle` - Name of the conference (e.g., "Proceedings of ACL 2024")
+All citation keys follow `{FirstAuthorLastName}{Year}{TitleWords}`:
 
-**Optional:**
-- `doi` - Digital Object Identifier (common for ACM conferences)
+- **FirstAuthorLastName**: Last name of the first author, capitalized (e.g., `Lo`, `Groeneveld`). For team papers like "Team OLMo", use the team name (e.g., `Olmo`).
+- **Year**: 4-digit publication year.
+- **TitleWords**: First 2–3 meaningful words from the title in CamelCase. Skip articles ("a", "an", "the") and short prepositions. Capitalize each word.
 
-**Example:**
-```bibtex
-@inproceedings{Lo2024ExamplePaper,
-  title = {Example Conference Paper},
-  author = {Kyle Lo and Jane Doe},
-  booktitle = {Proceedings of ACL 2024},
-  month = aug,
-  year = {2024},
-  url = {https://aclanthology.org/2024.acl-long.123},
-  doi = {10.18653/v1/2024.acl-long.123}
-}
-```
+Examples:
+- `Lo2024ScalableData`
+- `Groeneveld2024OlmoAccelerating`
+- `Soldaini2024DolmaOpen`
 
-### Journal Papers (`@article`)
+---
 
-**Required:**
-- `journal` - Name of the journal
-- `volume` - Volume number
-- `doi` - Digital Object Identifier
+## Required Fields (All Entries)
 
-**Example:**
-```bibtex
-@article{Lo2024ExampleJournal,
-  title = {Example Journal Paper},
-  author = {Kyle Lo and Jane Doe},
-  journal = {Nature Machine Intelligence},
-  volume = {6},
-  month = mar,
-  year = {2024},
-  url = {https://doi.org/10.1038/s42256-024-00000-0},
-  doi = {10.1038/s42256-024-00000-0}
-}
-```
+Every entry **must** have these fields:
 
-### ArXiv Preprints (`@article`)
+| Field | Description |
+|---|---|
+| `abstract` | Full paper abstract. |
+| `author` | Authors in `{Name1 and Name2 and Name3}` format. |
+| `bibtex_show` | Always `{true}`. |
+| `month` | 3-letter capitalized abbreviation (see Month Format). |
+| `pdf` | Slugified title + `.pdf` (e.g., `scalable-data-curation.pdf`). |
+| `preview` | Slugified title + `.png` (e.g., `scalable-data-curation.png`). |
+| `title` | Paper title. |
+| `url` | Link to paper (DOI URL, ArXiv URL, or venue page). |
+| `year` | 4-digit publication year. |
 
-**Required:**
-- `journal` - Must be "ArXiv" (case-insensitive)
-- `volume` - ArXiv ID (e.g., "2024.12345")
+---
 
-**Optional:**
-- `doi` - Typically not present for preprints
+## Entry-Type-Specific Fields
 
-**Example:**
-```bibtex
-@article{Lo2024ExampleArxiv,
-  title = {Example ArXiv Preprint},
-  author = {Kyle Lo and Jane Doe},
-  journal = {ArXiv},
-  volume = {2405.12345},
-  month = may,
-  year = {2024},
-  url = {https://arxiv.org/abs/2405.12345}
-}
-```
+### `@inproceedings` (Conference/Workshop Papers)
 
-## Site-Specific Fields (Required for Website Rendering)
+| Field | Required? | Description |
+|---|---|---|
+| `booktitle` | Yes | Short-form venue name (see Venue Standardization). |
+| `doi` | Optional | DOI when available. |
+| `arxiv` | Optional | ArXiv ID if the paper had a preprint (e.g., `2405.12345`). |
 
-These fields are **required for all papers** to properly render on the Jekyll website:
+### `@article` (Journal Papers)
 
-- `bibtex_show={true}` - Enables BibTeX display in the paper list
-- `abstract` - Full paper abstract
-- `pdf` - PDF filename (e.g., `paper-title-slugified.pdf`)
-- `preview` - Preview image filename (e.g., `paper-title-slugified.png`)
-- `arxiv` - ArXiv ID for preprints (e.g., `2405.12345`)
+| Field | Required? | Description |
+|---|---|---|
+| `journal` | Yes | Full journal name (see Venue Standardization). |
+| `volume` | Yes | Volume number. |
+| `doi` | Yes | DOI. |
+| `arxiv` | Optional | ArXiv ID if the paper had a preprint. |
 
-**Example:**
-```bibtex
-@article{Lo2024ExampleArxiv,
-  title = {Example ArXiv Preprint},
-  author = {Kyle Lo and Jane Doe},
-  journal = {ArXiv},
-  volume = {2405.12345},
-  month = may,
-  year = {2024},
-  url = {https://arxiv.org/abs/2405.12345},
-  bibtex_show={true},
-  arxiv={2405.12345},
-  abstract={This is the full abstract text...},
-  pdf={example-arxiv-preprint.pdf},
-  preview={example-arxiv-preprint.png}
-}
-```
+### `@article` (ArXiv Preprints)
 
-## Fields to Exclude
+| Field | Required? | Description |
+|---|---|---|
+| `journal` | Yes | Always `{ArXiv}` (capital A, capital X). |
+| `volume` | Yes | ArXiv ID (e.g., `{2405.12345}`). |
+| `arxiv` | Optional | Same ArXiv ID (e.g., `{2405.12345}`). Include when available. |
 
-The following fields should **not** be generated or scored:
+---
 
-- `pages` - Not required
-- `publisher` - Not required
-- `number` - Not required
-- `address` - Not required
-- `editor` - Not required
-- `organization` - Not required
+## Preprint → Camera-Ready Transition
 
-## Entry Type Selection Rules
+When a preprint gets accepted at a venue, update the **existing** entry in place. Do NOT create a second entry.
 
-1. If venue contains "proceedings", "conference", "workshop", "symposium" → `@inproceedings`
-2. If venue contains "arxiv" (case-insensitive) → `@article` with journal="ArXiv"
-3. If venue contains "journal", "transactions", or is from a known journal → `@article`
-4. Default fallback → `@article`
+1. Change entry type if needed (e.g., `@article` → `@inproceedings`).
+2. Update: `booktitle`/`journal`, `month`, `year`, `url`, `doi`, `title`, `author`, `abstract` to match the published version.
+3. Keep the `arxiv = {YYMM.NNNNN}` field to preserve the preprint link.
+4. Remove `volume` if it was only the ArXiv ID.
+5. Re-download PDF from published source and regenerate thumbnail. Update `pdf` and `preview` filenames if the title changed.
+
+---
+
+## Venue Standardization
+
+### Main Conferences (short form for `booktitle`)
+
+`ACL`, `EMNLP`, `NAACL`, `EACL`, `COLING`, `NeurIPS`, `ICML`, `ICLR`, `COLM`, `CHI`, `CVPR`, `ICCV`, `ECCV`, `SIGIR`, `KDD`, `AAAI`, `IJCAI`, `IUI`, `FAccT`, `CIKM`, `WWW`
+
+### Conference Tracks
+
+- `NeurIPS (Datasets and Benchmarks)`
+- `Findings of ACL`, `Findings of EMNLP`, `Findings of NAACL`
+
+### Workshops
+
+Format: `{Workshop Name} Workshop` or `{Workshop Name} Workshop at {Conference}`
+
+Examples:
+- `Scholarly Document Processing (SDP) Workshop`
+- `NLP for COVID-19 Workshop`
+- `BioNLP Workshop`
+- `Intelligent and Interactive Writing Assistants (In2Writing) Workshop`
+
+Workshops use `@inproceedings` with `booktitle`.
+
+### System Demonstrations
+
+Format: `{Conference} System Demonstrations`
+
+Example: `EMNLP System Demonstrations`
+
+### Tutorials
+
+Tutorials at conferences use `@inproceedings` with the conference as `booktitle` (e.g., `booktitle = {ACL}`).
+
+### Journals (full name for `journal`)
+
+- `Nature`
+- `Communications of the ACM`
+- `Transactions of ACL (TACL)`
+- `ACM Transactions on Interactive Intelligent Systems`
+- `ACM Transactions of Computer-Human Interaction (TOCHI)`
+- `Scientific Data`
+- `Journal of Biomedical Informatics`
+- `Journal of the American Medical Informatics Association`
+- `Briefings in Bioinformatics`
+- `SIGIR Forum`
+- `AI Magazine`
+- `Frontiers in Research Metrics and Analytics`
+- `IEEE Internet of Things Journal`
+
+### ArXiv
+
+Always: `journal = {ArXiv}` — capital A, capital X.
+
+---
 
 ## Month Format
 
-Months should use BibTeX abbreviations (no quotes):
-- `jan`, `feb`, `mar`, `apr`, `may`, `jun`, `jul`, `aug`, `sep`, `oct`, `nov`, `dec`
+Use 3-letter capitalized abbreviations:
 
-## Scoring Criteria
+`Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`
 
-When evaluating generated BibTeX against ground truth:
+---
 
-1. **Universal fields** (5 fields): title, author, url, month, year
-2. **Site-specific fields** (5 fields): bibtex_show, abstract, pdf, preview, arxiv (if applicable)
-3. **Entry-type specific fields**:
-   - Conference: +1 for booktitle, +1 for doi (if present in ground truth)
-   - Journal: +3 for journal, volume, doi
-   - ArXiv: +2 for journal, volume
+## Optional Fields
 
-**Score = (matching fields) / (total required fields in ground truth)**
+| Field | Description |
+|---|---|
+| `selected` | `{true}` — marks paper for selected works on CV/website. |
+| `award` | Award text, e.g., `{Best Paper Award}`, `{Outstanding Paper Award}`, `{Best Paper Honorable Mention}`. |
+| `cv_authors_after` | Truncate author list on CV after this author name. |
+| `cv_authors_before` | Truncate author list on CV before this author name. |
+| `arxiv` | ArXiv ID (e.g., `2405.12345`). Keep on published papers that had preprints. |
+| `doi` | Digital Object Identifier. |
+| `needs_review` | `{true}` — flags entries needing manual review. |
 
-Similarity threshold for matching: 85%
+---
+
+## Fields to NOT Include
+
+Do not add these fields to entries:
+
+`pages`, `publisher`, `number`, `address`, `editor`, `organization`, `isbn`, `issn`, `numpages`, `articleno`, `series`, `location`, `keywords`, `issue_date`, `day`, `eprint`, `acl`, `acm`, `openreview`, `nature`, `sciencedirect`, `oup`, `pmc`, `jama`, `aaai`
+
+Note: Some legacy entries still have these fields. They can be cleaned up over time but are not breaking.
+
+---
+
+## Field Ordering
+
+Fields within an entry should be in alphabetical order:
+
+`abstract`, `arxiv`, `author`, `award`, `bibtex_show`, `booktitle`, `cv_authors_after`, `cv_authors_before`, `doi`, `journal`, `month`, `needs_review`, `pdf`, `preview`, `selected`, `title`, `url`, `volume`, `year`
+
+---
+
+## Entry Sorting
+
+Entries in `papers.bib` are sorted in **reverse chronological order** (newest first):
+1. By `year` (descending)
+2. By `month` (descending within the same year)
+
+---
+
+## Pinned Entries
+
+Some entries don't fit standard categories. These must be preserved exactly as documented here. If you encounter one of these entries, use the exact format below — do not modify their fields or structure to match general rules.
+
+### peS2o Dataset (Technical Report)
+
+```bibtex
+@article{Soldaini2023PeS2oPretraining,
+  author       = {Luca Soldaini and Kyle Lo},
+  bibtex_show  = {true},
+  journal      = {Allen Institute for AI, Tech. Rep},
+  needs_review = {true},
+  pdf          = {pes2o-pretraining-efficiently-on-s2orc-dataset.pdf},
+  preview      = {pes2o-pretraining-efficiently-on-s2orc-dataset.png},
+  title        = {peS2o (Pretraining Efficiently on S2ORC) Dataset},
+  url          = {https://scholar.google.com/scholar?cluster=2312374705071487035&hl=en&oi=scholarr},
+  year         = {2023},
+}
+```
+
+### CORD-19 Dataset (Workshop paper at NLP for COVID-19)
+
+```bibtex
+@inproceedings{Wang2020CordNineteen,
+  abstract    = {...},
+  author      = {Lucy Lu Wang and Kyle Lo and ...},
+  bibtex_show = {true},
+  booktitle   = {NLP for COVID-19 Workshop},
+  month       = {Jul},
+  pdf         = {cord-19-the-covid-19-open-research-dataset.pdf},
+  preview     = {cord-19-the-covid-19-open-research-dataset.png},
+  title       = {{CORD-19}: The {COVID-19} Open Research Dataset},
+  url         = {https://aclanthology.org/2020.nlpcovid19-acl.1},
+  year        = {2020}
+}
+```
+
+### Epidemic QA (Text Analysis Conference)
+
+```bibtex
+@inproceedings{Goodwin2020OverviewEpidemic,
+  abstract     = {...},
+  author       = {Travis R Goodwin and Dina Demner-Fushman and Kyle Lo and Lucy Lu Wang and William R Hersh and HT Dang and Ian M Soboroff},
+  bibtex_show  = {true},
+  booktitle    = {Text Analysis Conference},
+  needs_review = {true},
+  pdf          = {overview-of-the-2020-epidemic-question-answering-track.pdf},
+  preview      = {overview-of-the-2020-epidemic-question-answering-track.png},
+  title        = {Overview of the 2020 epidemic question answering track},
+  url          = {https://tac.nist.gov/publications/2020/additional.papers/TAC2020.EPIC-QA.overview.notebook.pdf},
+  year         = {2020},
+}
+```
+
+### IoT COVID-19 Paper (needs review)
+
+```bibtex
+@article{Firouzi2021HarnessingPower,
+  abstract     = {...},
+  author       = {Farshad Firouzi and Bahar Farahani and ...},
+  bibtex_show  = {true},
+  journal      = {IEEE Internet of Things Journal},
+  needs_review = {true},
+  pdf          = {harnessing-the-power-of-smart-and-connected-health-to-tackle-covid-19-iot-ai-robotics-and-blockchain-for-a-better-world.pdf},
+  preview      = {harnessing-the-power-of-smart-and-connected-health-to-tackle-covid-19-iot-ai-robotics-and-blockchain-for-a-better-world.png},
+  title        = {Harnessing the power of smart and connected health to tackle COVID-19: IoT, AI, robotics, and blockchain for a better world},
+  url          = {https://ieeexplore.ieee.org/abstract/document/9406879/},
+  year         = {2021},
+}
+```
+
+---
+
+## Complete Example: New ArXiv Preprint
+
+```bibtex
+@article{Lo2025ExamplePreprint,
+  abstract    = {We present a new method for...},
+  arxiv       = {2501.12345},
+  author      = {Kyle Lo and Jane Doe and John Smith},
+  bibtex_show = {true},
+  journal     = {ArXiv},
+  month       = {Jan},
+  pdf         = {example-preprint-title.pdf},
+  preview     = {example-preprint-title.png},
+  title       = {Example Preprint Title},
+  url         = {https://arxiv.org/abs/2501.12345},
+  volume      = {2501.12345},
+  year        = {2025},
+}
+```
+
+## Complete Example: Published Conference Paper
+
+```bibtex
+@inproceedings{Lo2025ExampleConference,
+  abstract    = {We present a new method for...},
+  arxiv       = {2501.12345},
+  author      = {Kyle Lo and Jane Doe and John Smith},
+  award       = {Best Paper Award},
+  bibtex_show = {true},
+  booktitle   = {ACL},
+  doi         = {10.18653/v1/2025.acl-long.123},
+  month       = {Jul},
+  pdf         = {example-conference-paper.pdf},
+  preview     = {example-conference-paper.png},
+  selected    = {true},
+  title       = {Example Conference Paper},
+  url         = {https://aclanthology.org/2025.acl-long.123},
+  year        = {2025},
+}
+```
+
+## Complete Example: Published Journal Paper
+
+```bibtex
+@article{Lo2025ExampleJournal,
+  abstract    = {We present a new method for...},
+  arxiv       = {2501.12345},
+  author      = {Kyle Lo and Jane Doe and John Smith},
+  bibtex_show = {true},
+  doi         = {10.1038/s41586-025-00000-0},
+  journal     = {Nature},
+  month       = {Feb},
+  pdf         = {example-journal-paper.pdf},
+  preview     = {example-journal-paper.png},
+  title       = {Example Journal Paper},
+  url         = {https://www.nature.com/articles/s41586-025-00000-0},
+  volume      = {620},
+  year        = {2025},
+}
+```
