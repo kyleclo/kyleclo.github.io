@@ -832,6 +832,59 @@ footer.sticky-bottom {
   }
 }
 
+// Publication Tags
+
+.tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+
+  .tag-filter-btn {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    border: 1px solid var(--global-divider-color);
+    color: var(--global-text-color-light);
+    background: transparent;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.publications ol.bibliography li .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+
+  .tag-btn {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--global-code-bg-color);
+    color: var(--global-text-color-light);
+    text-decoration: none;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
@@ -1299,8 +1352,3 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
-// highlight-search-term
-::highlight(search) {
-  background-color: var(--global-theme-color);
-  color: var(--global-text-color);
-}

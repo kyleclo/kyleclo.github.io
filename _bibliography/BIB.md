@@ -155,12 +155,42 @@ Use 3-letter capitalized abbreviations:
 | Field | Description |
 |---|---|
 | `selected` | `{true}` — marks paper for selected works on CV/website. |
+| `tags` | Comma-separated research-area tags (see Tag Vocabulary below). Every entry must have 1–3 tags. |
 | `award` | Award text, e.g., `{Best Paper Award}`, `{Outstanding Paper Award}`, `{Best Paper Honorable Mention}`. |
 | `cv_authors_after` | Truncate author list on CV after this author name. |
 | `cv_authors_before` | Truncate author list on CV before this author name. |
 | `arxiv` | ArXiv ID (e.g., `2405.12345`). Keep on published papers that had preprints. |
 | `doi` | Digital Object Identifier. |
 | `needs_review` | `{true}` — flags entries needing manual review. |
+
+---
+
+## Tag Vocabulary
+
+Every entry must have 1–3 tags from this fixed vocabulary. Tags are pipe-separated in the `tags` field, e.g., `tags = {Scaling Data Curation | Training Language Models}`.
+
+| Tag | Description |
+|---|---|
+| `Training Language Models` | LM pretraining, architecture, training recipes (OLMo, OLMoE, FlexOlmo, etc.) |
+| `Scaling Data Curation` | Training data, corpora, data mixing, filtering (Dolma, DCLM, Olmix, etc.) |
+| `Fundamentals of LM Evaluation` | Benchmarks, metrics, evaluation methodology (Paloma, Signal & Noise, Fluid, etc.) |
+| `AI for Science` | NLP for scientific documents, citation analysis, literature graphs (S2ORC, SciBERT, PaperMage, TLDR, etc.) |
+| `Retrieval-Augmented LMs` | Search, retrieval models, claim verification (SciFact, RouterRetriever, FollowIR, etc.) |
+| `AI-powered Reading Interfaces` | Augmented reading, paper UIs (Semantic Reader, ScholarPhi, CiteSee, Scim, etc.) |
+| `Summarization` | Document summarization, text simplification (BooookScore, FABLES, Multi-LexSum, InfoLossQA, etc.) |
+| `Long Context` | Long-document understanding, book-length tasks (BooookScore, NoCha, LongEval, etc.) |
+| `OCR` | Document processing, PDF extraction (olmOCR, VILA, etc.) |
+| `Responsible AI` | Data governance, responsible development, bias (FAccT, ROOTS, etc.) |
+| `Explainable AI` | AI explanations, advice taking, interpretability (LIMEADE, etc.) |
+| `Mixture of Experts` | MoE architectures (OLMoE, FlexOlmo, etc.) |
+| `Vision-Language` | VLMs, multimodal models (Molmo, olmOCR, DrawEduMath, etc.) |
+| `AI for Education` | Educational applications, math reasoning in curricula (MathFish, DrawEduMath, etc.) |
+| `AI for Biomedicine` | Clinical text, biomedical ontologies, COVID-19, pandemic NLP (CORD-19, TREC-COVID, Feldman2019, etc.) |
+| `Domain Adaptation, Specialization, Generalization` | Domain-specific pretraining, transfer learning (Don't Stop Pretraining, SciBERT, etc.) |
+| `Science of Science` | Metascience, research practices, open science, citation analysis (Rise of Open Science, Citation Count Analysis, etc.) |
+| `Structured Information Extraction` | Relation extraction, literature graphs, table extraction, definition detection (MultiCite, PaperMage, SciRIFF, etc.) |
+| `Simplification` | Text simplification, making complex text accessible (Paper Plain, InfoLossQA, etc.) |
+| `Workshops and Tutorials` | Workshop overviews, shared tasks, tutorials (SDP, SciVer, etc.) |
 
 ---
 
@@ -178,7 +208,7 @@ Note: Some legacy entries still have these fields. They can be cleaned up over t
 
 Fields within an entry should be in alphabetical order:
 
-`abstract`, `arxiv`, `author`, `award`, `bibtex_show`, `booktitle`, `cv_authors_after`, `cv_authors_before`, `doi`, `journal`, `month`, `needs_review`, `pdf`, `preview`, `selected`, `title`, `url`, `volume`, `year`
+`abstract`, `arxiv`, `author`, `award`, `bibtex_show`, `booktitle`, `cv_authors_after`, `cv_authors_before`, `doi`, `journal`, `month`, `needs_review`, `pdf`, `preview`, `selected`, `tags`, `title`, `url`, `volume`, `year`
 
 ---
 
@@ -275,6 +305,7 @@ Some entries don't fit standard categories. These must be preserved exactly as d
   month       = {Jan},
   pdf         = {example-preprint-title.pdf},
   preview     = {example-preprint-title.png},
+  tags        = {Scaling Data Curation | Training Language Models},
   title       = {Example Preprint Title},
   url         = {https://arxiv.org/abs/2501.12345},
   volume      = {2501.12345},
@@ -297,6 +328,7 @@ Some entries don't fit standard categories. These must be preserved exactly as d
   pdf         = {example-conference-paper.pdf},
   preview     = {example-conference-paper.png},
   selected    = {true},
+  tags        = {AI for Science, Evaluation},
   title       = {Example Conference Paper},
   url         = {https://aclanthology.org/2025.acl-long.123},
   year        = {2025},
@@ -316,6 +348,7 @@ Some entries don't fit standard categories. These must be preserved exactly as d
   month       = {Feb},
   pdf         = {example-journal-paper.pdf},
   preview     = {example-journal-paper.png},
+  tags        = {AI for Science},
   title       = {Example Journal Paper},
   url         = {https://www.nature.com/articles/s41586-025-00000-0},
   volume      = {620},

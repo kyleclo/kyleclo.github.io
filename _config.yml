@@ -395,6 +395,7 @@ filtered_bibtex_keywords:
     series,
     slides,
     supp,
+    tags,
     video,
     website
   ]
