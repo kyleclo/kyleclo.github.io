@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Determine "new" tags from the K most recent papers
   const filtersDiv = document.querySelector(".tag-filters");
-  const recentK = parseInt(filtersDiv?.dataset.recentK || "10", 10);
+  const recentK = parseInt((filtersDiv && filtersDiv.dataset.recentK) || "10", 10);
   const allPapers = document.querySelectorAll(".bibliography > li");
   const newTags = new Set();
   for (let i = 0; i < Math.min(recentK, allPapers.length); i++) {
