@@ -1,8 +1,8 @@
 {% if site.bib_search %}
   <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
   <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
-  <div class="tag-filters">
-    {% assign all_tags = "Training Language Models|Scaling Data Curation|Fundamentals of LM Evaluation|AI for Science|Retrieval-Augmented LMs|AI-powered Reading Interfaces|Summarization|Long Context|OCR|Responsible AI|Explainable AI|Mixture of Experts|Vision-Language|AI for Education|AI for Biomedicine|Domain Adaptation, Specialization, Generalization|Science of Science|Simplification|Structured Information Extraction|Workshops and Tutorials" | split: "|" %}
+  <div class="tag-filters" data-recent-k="{{ site.bib_search_recent_k | default: 10 }}">
+    {% assign all_tags = "Training Language Models|Scaling Data Curation|Fundamentals of LM Evaluation|AI for Science|Retrieval-Augmented LMs|AI-powered Reading Interfaces|Summarization, Simplification, Information Extraction|Long Context|OCR|Responsible AI|Explainable AI|Mixture of Experts|Vision-Language|AI for Education|AI for Biomedicine|Domain Adaptation, Specialization, Generalization|Science of Science|Workshops and Tutorials" | split: "|" %}
     {% for tag in all_tags %}
       <a href="#{{ tag | replace: ' ', '%20' }}" class="tag-filter-btn">{{ tag }}</a>
     {% endfor %}
