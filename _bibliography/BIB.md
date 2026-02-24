@@ -53,7 +53,7 @@ Every entry **must** have these fields:
 | Field | Required? | Description |
 |---|---|---|
 | `booktitle` | Yes | Short-form venue name (see Venue Standardization). |
-| `doi` | Optional | DOI when available. |
+| `doi` | Optional | DOI when available (see DOI Availability below). |
 | `arxiv` | Optional | ArXiv ID if the paper had a preprint (e.g., `2405.12345`). |
 
 ### `@article` (Journal Papers)
@@ -72,6 +72,28 @@ Every entry **must** have these fields:
 | `journal` | Yes | Always `{ArXiv}` (capital A, capital X). |
 | `volume` | Yes | ArXiv ID (e.g., `{2405.12345}`). |
 | `arxiv` | Optional | Same ArXiv ID (e.g., `{2405.12345}`). Include when available. |
+
+---
+
+## DOI Availability
+
+Not all venues assign DOIs. Only include publisher-assigned DOIs; do not use ACM Digital Library virtual DOIs (`10.5555/...`).
+
+**Venues that assign DOIs:**
+- ACL Anthology venues: ACL, EMNLP, NAACL, EACL, COLING, Findings, System Demos, and ACL-hosted workshops (DOI prefix `10.18653/v1/`)
+- ACM venues: CHI, IUI, FAccT, CIKM, KDD, WWW, and ACM journals (`10.1145/`)
+- AAAI (`10.1609/`)
+- CVPR, ICCV, ECCV via IEEE (`10.1109/`)
+- Journals: Nature, IEEE, Elsevier, OUP, JAMA, etc.
+
+**Venues that do NOT assign DOIs:**
+- COLM (OpenReview only)
+- ICLR (OpenReview only)
+- ICML / PMLR
+- NeurIPS (may appear in ACM DL later, but only as virtual DOIs — skip these)
+- Text Analysis Conference (TAC)
+
+For venues without DOIs, use the `openreview` field or proceedings URL instead.
 
 ---
 
