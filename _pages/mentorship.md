@@ -23,8 +23,13 @@ I've had the pleasure of working with some amazing interns:
 
 #### 2025
 * Mayee Chen, PhD student, Stanford University
+  * <a href="https://arxiv.org/abs/2602.12237">Olmix: A Framework for Data Mixing Throughout LM Development</a> (arXiv)
+  * <a href="https://arxiv.org/abs/2512.13961">OLMo 3</a> (arXiv)
 * Yapei Chang, PhD student, University of Massachusetts Amherst
+  * <a href="https://arxiv.org/abs/2602.08808">How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs</a> (arXiv)
+  * <a href="https://arxiv.org/abs/2512.13961">OLMo 3</a> (arXiv)
 * Amanda Bertsch, PhD student, Carnegie Mellon University
+  * <a href="https://arxiv.org/abs/2512.13961">OLMo 3</a> (arXiv)
 * Alexis Ross, PhD student, Massachusetts Institute of Technology
 
 #### 2024
@@ -32,6 +37,7 @@ I've had the pleasure of working with some amazing interns:
   * <a href="https://arxiv.org/abs/2411.07237">Contextualized Evaluations: Judging Language Model Responses to Underspecified Queries</a> (TACL 2025)
 * Alexander Wettig, PhD student, Princeton University
   * <a href="https://openreview.net/forum?id=boSqwdvJVC">Organize the Web: Constructing Domains Enhances Pre-Training Data Curation</a> (ICML 2025)
+  * <a href="https://arxiv.org/abs/2512.13961">OLMo 3</a> (arXiv)
 * Niklas Muennighoff, PhD student, Stanford University
   * <a href="https://arxiv.org/abs/2409.02060">OLMoE: Open Mixture-of-Experts Language Models</a> (NeurIPS 2024)
 * Lucy Li, PhD student, University of California Berkeley
@@ -46,12 +52,13 @@ I've had the pleasure of working with some amazing interns:
 * Orion Weller, PhD student, Johns Hopkins University
   * <a href="https://aclanthology.org/2024.findings-eacl.134/">When do Generative Query and Document Expansions Fail? A Comprehensive Study Across Methods, Retrievers, and Datasets</a> (EACL Findings 2024)
 * Hyunji Lee, MS ▸ incoming PhD student, KAIST
-  * <a href="https://arxiv.org/abs/2409.02685">RouterRetriever: Exploring the Benefits of Routing over Multiple Expert Embedding Models</a> (arXiv)
+  * <a href="https://arxiv.org/abs/2409.02685">RouterRetriever: Exploring the Benefits of Routing over Multiple Expert Embedding Models</a> (AAAI 2025)
   * <a href="https://arxiv.org/abs/2309.08541">Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders</a> (arXiv)
 * Fangyuan Xu, PhD student, University of Texas at Austin
   * <a href="https://aclanthology.org/2024.findings-acl.770/">KIWI: A Dataset of Knowledge-Intensive Writing Instructions for Answering Research Questions</a> (ACL Findings 2024)
 * Hang Jiang, PhD student, MIT
-  
+  * <a href="https://arxiv.org/abs/2502.16390">Automatic Detection of Research Values from Scientific Abstracts across Computer Science Subfields</a> (arXiv)
+
 #### 2022
 * John Giorgi, PhD student, University of Toronto
   * <a href="https://aclanthology.org/2023.findings-emnlp.549/">Towards multi-document summarization in the open-domain</a> (EMNLP Findings 2023)
