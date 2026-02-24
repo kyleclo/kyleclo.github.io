@@ -52,7 +52,7 @@ footer_fixed: true
 search_enabled: false
 socials_in_search: true
 bib_search: true
-bib_search_recent_k: 5  # number of most recent papers used to determine "New!" tags
+bib_search_recent_k: 5 # number of most recent papers used to determine "New!" tags
 
 # Dimensions
 max_width: 930px
@@ -352,7 +352,7 @@ enable_publication_badges:
 allowed_bibtex_fields: [title, author, journal, volume, year, booktitle, url, doi]
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: 
+filtered_bibtex_keywords:
   [
     abbr,
     abstract,
@@ -398,7 +398,7 @@ filtered_bibtex_keywords:
     supp,
     tags,
     video,
-    website
+    website,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)

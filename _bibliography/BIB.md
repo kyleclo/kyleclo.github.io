@@ -6,10 +6,10 @@ This document is the authoritative reference for formatting entries in `_bibliog
 
 ## Entry Types
 
-| Type | When to use |
-|---|---|
+| Type             | When to use                                                                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `@inproceedings` | Conference papers, workshop papers, system demos, tutorials. Use when the venue has "proceedings", "conference", "workshop", "symposium", or "tutorial" in its name. |
-| `@article` | Journal papers and ArXiv preprints. |
+| `@article`       | Journal papers and ArXiv preprints.                                                                                                                                  |
 
 ---
 
@@ -22,6 +22,7 @@ All citation keys follow `{FirstAuthorLastName}{Year}{TitleWords}`:
 - **TitleWords**: First 2–3 meaningful words from the title in CamelCase. Skip articles ("a", "an", "the") and short prepositions. Capitalize each word.
 
 Examples:
+
 - `Lo2024ScalableData`
 - `Groeneveld2024OlmoAccelerating`
 - `Soldaini2024DolmaOpen`
@@ -32,17 +33,17 @@ Examples:
 
 Every entry **must** have these fields:
 
-| Field | Description |
-|---|---|
-| `abstract` | Full paper abstract. |
-| `author` | Authors in `{Name1 and Name2 and Name3}` format. |
-| `bibtex_show` | Always `{true}`. |
-| `month` | 3-letter capitalized abbreviation (see Month Format). |
-| `pdf` | Slugified title + `.pdf` (e.g., `scalable-data-curation.pdf`). |
-| `preview` | Slugified title + `.png` (e.g., `scalable-data-curation.png`). |
-| `title` | Paper title. |
-| `url` | Link to paper (DOI URL, ArXiv URL, or venue page). |
-| `year` | 4-digit publication year. |
+| Field         | Description                                                    |
+| ------------- | -------------------------------------------------------------- |
+| `abstract`    | Full paper abstract.                                           |
+| `author`      | Authors in `{Name1 and Name2 and Name3}` format.               |
+| `bibtex_show` | Always `{true}`.                                               |
+| `month`       | 3-letter capitalized abbreviation (see Month Format).          |
+| `pdf`         | Slugified title + `.pdf` (e.g., `scalable-data-curation.pdf`). |
+| `preview`     | Slugified title + `.png` (e.g., `scalable-data-curation.png`). |
+| `title`       | Paper title.                                                   |
+| `url`         | Link to paper (DOI URL, ArXiv URL, or venue page).             |
+| `year`        | 4-digit publication year.                                      |
 
 ---
 
@@ -50,28 +51,28 @@ Every entry **must** have these fields:
 
 ### `@inproceedings` (Conference/Workshop Papers)
 
-| Field | Required? | Description |
-|---|---|---|
-| `booktitle` | Yes | Short-form venue name (see Venue Standardization). |
-| `doi` | Optional | DOI when available (see DOI Availability below). |
-| `arxiv` | Optional | ArXiv ID if the paper had a preprint (e.g., `2405.12345`). |
+| Field       | Required? | Description                                                |
+| ----------- | --------- | ---------------------------------------------------------- |
+| `booktitle` | Yes       | Short-form venue name (see Venue Standardization).         |
+| `doi`       | Optional  | DOI when available (see DOI Availability below).           |
+| `arxiv`     | Optional  | ArXiv ID if the paper had a preprint (e.g., `2405.12345`). |
 
 ### `@article` (Journal Papers)
 
-| Field | Required? | Description |
-|---|---|---|
-| `journal` | Yes | Full journal name (see Venue Standardization). |
-| `volume` | Yes | Volume number. |
-| `doi` | Yes | DOI. |
-| `arxiv` | Optional | ArXiv ID if the paper had a preprint. |
+| Field     | Required? | Description                                    |
+| --------- | --------- | ---------------------------------------------- |
+| `journal` | Yes       | Full journal name (see Venue Standardization). |
+| `volume`  | Yes       | Volume number.                                 |
+| `doi`     | Yes       | DOI.                                           |
+| `arxiv`   | Optional  | ArXiv ID if the paper had a preprint.          |
 
 ### `@article` (ArXiv Preprints)
 
-| Field | Required? | Description |
-|---|---|---|
-| `journal` | Yes | Always `{ArXiv}` (capital A, capital X). |
-| `volume` | Yes | ArXiv ID (e.g., `{2405.12345}`). |
-| `arxiv` | Optional | Same ArXiv ID (e.g., `{2405.12345}`). Include when available. |
+| Field     | Required? | Description                                                   |
+| --------- | --------- | ------------------------------------------------------------- |
+| `journal` | Yes       | Always `{ArXiv}` (capital A, capital X).                      |
+| `volume`  | Yes       | ArXiv ID (e.g., `{2405.12345}`).                              |
+| `arxiv`   | Optional  | Same ArXiv ID (e.g., `{2405.12345}`). Include when available. |
 
 ---
 
@@ -80,6 +81,7 @@ Every entry **must** have these fields:
 Not all venues assign DOIs. Only include publisher-assigned DOIs; do not use ACM Digital Library virtual DOIs (`10.5555/...`).
 
 **Venues that assign DOIs:**
+
 - ACL Anthology venues: ACL, EMNLP, NAACL, EACL, COLING, Findings, System Demos, and ACL-hosted workshops (DOI prefix `10.18653/v1/`)
 - ACM venues: CHI, IUI, FAccT, CIKM, KDD, WWW, and ACM journals (`10.1145/`)
 - AAAI (`10.1609/`)
@@ -87,6 +89,7 @@ Not all venues assign DOIs. Only include publisher-assigned DOIs; do not use ACM
 - Journals: Nature, IEEE, Elsevier, OUP, JAMA, etc.
 
 **Venues that do NOT assign DOIs:**
+
 - COLM (OpenReview only)
 - ICLR (OpenReview only)
 - ICML / PMLR
@@ -125,6 +128,7 @@ When a preprint gets accepted at a venue, update the **existing** entry in place
 Format: `{Workshop Name} Workshop` or `{Workshop Name} Workshop at {Conference}`
 
 Examples:
+
 - `Scholarly Document Processing (SDP) Workshop`
 - `NLP for COVID-19 Workshop`
 - `BioNLP Workshop`
@@ -174,16 +178,16 @@ Use 3-letter capitalized abbreviations:
 
 ## Optional Fields
 
-| Field | Description |
-|---|---|
-| `selected` | `{true}` — marks paper for selected works on CV/website. |
-| `tags` | Comma-separated research-area tags (see Tag Vocabulary below). Every entry must have 1–3 tags. |
-| `award` | Award text, e.g., `{Best Paper Award}`, `{Outstanding Paper Award}`, `{Best Paper Honorable Mention}`. |
-| `cv_authors_after` | Truncate author list on CV after this author name. |
-| `cv_authors_before` | Truncate author list on CV before this author name. |
-| `arxiv` | ArXiv ID (e.g., `2405.12345`). Keep on published papers that had preprints. |
-| `doi` | Digital Object Identifier. |
-| `needs_review` | `{true}` — flags entries needing manual review. |
+| Field               | Description                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------ |
+| `selected`          | `{true}` — marks paper for selected works on CV/website.                                               |
+| `tags`              | Comma-separated research-area tags (see Tag Vocabulary below). Every entry must have 1–3 tags.         |
+| `award`             | Award text, e.g., `{Best Paper Award}`, `{Outstanding Paper Award}`, `{Best Paper Honorable Mention}`. |
+| `cv_authors_after`  | Truncate author list on CV after this author name.                                                     |
+| `cv_authors_before` | Truncate author list on CV before this author name.                                                    |
+| `arxiv`             | ArXiv ID (e.g., `2405.12345`). Keep on published papers that had preprints.                            |
+| `doi`               | Digital Object Identifier.                                                                             |
+| `needs_review`      | `{true}` — flags entries needing manual review.                                                        |
 
 ---
 
@@ -191,26 +195,26 @@ Use 3-letter capitalized abbreviations:
 
 Every entry must have 1–3 tags from this fixed vocabulary. Tags are pipe-separated in the `tags` field, e.g., `tags = {Scaling Data Curation | Training Language Models}`.
 
-| Tag | Description |
-|---|---|
-| `Training Language Models` | LM pretraining, architecture, training recipes (OLMo, OLMoE, FlexOlmo, etc.) |
-| `Scaling Data Curation` | Training data, corpora, data mixing, filtering (Dolma, DCLM, Olmix, etc.) |
-| `Fundamentals of LM Evaluation` | Benchmarks, metrics, evaluation methodology (Paloma, Signal & Noise, Fluid, etc.) |
-| `AI for Science` | NLP for scientific documents, citation analysis, literature graphs (S2ORC, SciBERT, PaperMage, TLDR, etc.) |
-| `Retrieval-Augmented LMs` | Search, retrieval models, claim verification (SciFact, RouterRetriever, FollowIR, etc.) |
-| `AI-powered Reading Interfaces` | Augmented reading, paper UIs (Semantic Reader, ScholarPhi, CiteSee, Scim, etc.) |
+| Tag                                                     | Description                                                                                                                                                                           |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Training Language Models`                              | LM pretraining, architecture, training recipes (OLMo, OLMoE, FlexOlmo, etc.)                                                                                                          |
+| `Scaling Data Curation`                                 | Training data, corpora, data mixing, filtering (Dolma, DCLM, Olmix, etc.)                                                                                                             |
+| `Fundamentals of LM Evaluation`                         | Benchmarks, metrics, evaluation methodology (Paloma, Signal & Noise, Fluid, etc.)                                                                                                     |
+| `AI for Science`                                        | NLP for scientific documents, citation analysis, literature graphs (S2ORC, SciBERT, PaperMage, TLDR, etc.)                                                                            |
+| `Retrieval-Augmented LMs`                               | Search, retrieval models, claim verification (SciFact, RouterRetriever, FollowIR, etc.)                                                                                               |
+| `AI-powered Reading Interfaces`                         | Augmented reading, paper UIs (Semantic Reader, ScholarPhi, CiteSee, Scim, etc.)                                                                                                       |
 | `Summarization, Simplification, Information Extraction` | Summarization, text simplification, relation extraction, table extraction, definition detection (BooookScore, FABLES, Multi-LexSum, Paper Plain, MultiCite, PaperMage, SciRIFF, etc.) |
-| `Long Context` | Long-document understanding, book-length tasks (BooookScore, NoCha, LongEval, etc.) |
-| `OCR` | Document processing, PDF extraction (olmOCR, VILA, etc.) |
-| `Responsible AI` | Data governance, responsible development, bias (FAccT, ROOTS, etc.) |
-| `Explainable AI` | AI explanations, advice taking, interpretability (LIMEADE, etc.) |
-| `Mixture of Experts` | MoE architectures (OLMoE, FlexOlmo, etc.) |
-| `Vision-Language` | VLMs, multimodal models (Molmo, olmOCR, DrawEduMath, etc.) |
-| `AI for Education` | Educational applications, math reasoning in curricula (MathFish, DrawEduMath, etc.) |
-| `AI for Biomedicine` | Clinical text, biomedical ontologies, COVID-19, pandemic NLP (CORD-19, TREC-COVID, Feldman2019, etc.) |
-| `Domain Adaptation, Specialization, Generalization` | Domain-specific pretraining, transfer learning (Don't Stop Pretraining, SciBERT, etc.) |
-| `Science of Science` | Metascience, research practices, open science, citation analysis (Rise of Open Science, Citation Count Analysis, etc.) |
-| `Workshops and Tutorials` | Workshop overviews, shared tasks, tutorials (SDP, SciVer, etc.) |
+| `Long Context`                                          | Long-document understanding, book-length tasks (BooookScore, NoCha, LongEval, etc.)                                                                                                   |
+| `OCR`                                                   | Document processing, PDF extraction (olmOCR, VILA, etc.)                                                                                                                              |
+| `Responsible AI`                                        | Data governance, responsible development, bias (FAccT, ROOTS, etc.)                                                                                                                   |
+| `Explainable AI`                                        | AI explanations, advice taking, interpretability (LIMEADE, etc.)                                                                                                                      |
+| `Mixture of Experts`                                    | MoE architectures (OLMoE, FlexOlmo, etc.)                                                                                                                                             |
+| `Vision-Language`                                       | VLMs, multimodal models (Molmo, olmOCR, DrawEduMath, etc.)                                                                                                                            |
+| `AI for Education`                                      | Educational applications, math reasoning in curricula (MathFish, DrawEduMath, etc.)                                                                                                   |
+| `AI for Biomedicine`                                    | Clinical text, biomedical ontologies, COVID-19, pandemic NLP (CORD-19, TREC-COVID, Feldman2019, etc.)                                                                                 |
+| `Domain Adaptation, Specialization, Generalization`     | Domain-specific pretraining, transfer learning (Don't Stop Pretraining, SciBERT, etc.)                                                                                                |
+| `Science of Science`                                    | Metascience, research practices, open science, citation analysis (Rise of Open Science, Citation Count Analysis, etc.)                                                                |
+| `Workshops and Tutorials`                               | Workshop overviews, shared tasks, tutorials (SDP, SciVer, etc.)                                                                                                                       |
 
 ---
 
@@ -224,17 +228,17 @@ Do not add these fields to entries:
 
 These fields store alternate identifiers that enable linking to specific publisher pages. They are optional but should be preserved when present:
 
-| Field | Description |
-|---|---|
-| `acl` | ACL Anthology ID (e.g., `2024.acl-long.841`) |
-| `acm` | ACM Digital Library ID (e.g., `10.1145/3544548.3580847`) |
-| `openreview` | OpenReview ID (e.g., `z1d8fUiS8Cr`) |
-| `nature` | Nature article ID (e.g., `s41597-022-01533-w`) |
-| `sciencedirect` | ScienceDirect article ID |
-| `oup` | Oxford University Press article path |
-| `pmc` | PubMed Central ID (e.g., `PMC8025972`) |
-| `jama` | JAMA Network article ID |
-| `aaai` | AAAI article path |
+| Field           | Description                                              |
+| --------------- | -------------------------------------------------------- |
+| `acl`           | ACL Anthology ID (e.g., `2024.acl-long.841`)             |
+| `acm`           | ACM Digital Library ID (e.g., `10.1145/3544548.3580847`) |
+| `openreview`    | OpenReview ID (e.g., `z1d8fUiS8Cr`)                      |
+| `nature`        | Nature article ID (e.g., `s41597-022-01533-w`)           |
+| `sciencedirect` | ScienceDirect article ID                                 |
+| `oup`           | Oxford University Press article path                     |
+| `pmc`           | PubMed Central ID (e.g., `PMC8025972`)                   |
+| `jama`          | JAMA Network article ID                                  |
+| `aaai`          | AAAI article path                                        |
 
 ---
 
@@ -249,6 +253,7 @@ Fields within an entry should be in alphabetical order:
 ## Entry Sorting
 
 Entries in `papers.bib` are sorted in **reverse chronological order** (newest first):
+
 1. By `year` (descending)
 2. By `month` (descending within the same year)
 

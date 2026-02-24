@@ -22,6 +22,7 @@ social: true # includes social icons at the bottom of the page
 I'm a research scientist at the [Allen Institute for AI](https://allenai.org/) where I co-lead the [OLMo](https://allenai.org/olmo) project on open language modeling.
 
 <!-- for scientific research assistance  -->
+
 My current research focuses on large-scale pretraining of language models, with an emphasis on data curation, data mixing, benchmark validity, efficient experimentation, and generalization across model scales. I also like building useful data and software artifacts that support research, like large-scale corpora and OCR tools. Previously, I’ve worked on specializing language models to domains, human-AI interaction for sensemaking over large collections, and augmented reading interfaces.
 
 <!-- * [Open recipes for developing language models](/projects/1_project) -->
@@ -33,7 +34,6 @@ My current research focuses on large-scale pretraining of language models, with 
 
 <!-- Reading long, technical documents is hard, even for experienced scholars. How can AI assistance help? -->
  <!-- we make them more accessible by automatically transforming papers into dynamic web documents with helpful interactive features?  -->
-
 
 <!-- I've also worked as a statistician / data scientist in Seattle and an applied probability researcher at [Academia Sinica](https://www.sinica.edu.tw/en) in Taiwan.  I graduated in 2015 with an MS in [Statistics from the University of Washington](https://www.stat.washington.edu/). -->
 

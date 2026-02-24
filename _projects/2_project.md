@@ -9,7 +9,6 @@ category: work
 
 <!-- How do we adapt language models trained on broad web crawls to perform well on specialized texts, like scientific articles? -->
 
-
 I was a developer of [SciBERT](https://aclanthology.org/D19-1371), one of the first pretrained language models for scientific text.
 Our follow-on work on domain adaptation via [continued pretraining](https://aclanthology.org/2020.acl-main.740/) won an honorable mention for best paper at ACL 2020 🏆.
 
