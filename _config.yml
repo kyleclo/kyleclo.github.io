@@ -52,6 +52,7 @@ footer_fixed: true
 search_enabled: false
 socials_in_search: true
 bib_search: true
+bib_search_recent_k: 5  # number of most recent papers used to determine "New!" tags
 
 # Dimensions
 max_width: 930px

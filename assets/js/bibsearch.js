@@ -8,11 +8,44 @@ document.addEventListener("DOMContentLoaded", function () {
     tagCounts[tag] = (tagCounts[tag] || 0) + 1;
   });
 
-  // Append counts to filter buttons
-  document.querySelectorAll(".tag-filter-btn").forEach((btn) => {
+  // Determine "new" tags from the K most recent papers
+  const filtersDiv = document.querySelector(".tag-filters");
+  const recentK = parseInt(filtersDiv?.dataset.recentK || "10", 10);
+  const allPapers = document.querySelectorAll(".bibliography > li");
+  const newTags = new Set();
+  for (let i = 0; i < Math.min(recentK, allPapers.length); i++) {
+    allPapers[i].querySelectorAll(".tag-btn").forEach((el) => {
+      newTags.add(el.textContent.trim().toLowerCase());
+    });
+    // Add "New!" stamp over the paper thumbnail
+    const abbrDiv = allPapers[i].querySelector(".abbr");
+    if (abbrDiv) {
+      abbrDiv.style.position = "relative";
+      const badge = document.createElement("span");
+      badge.className = "paper-new-badge";
+      badge.textContent = "New!";
+      abbrDiv.appendChild(badge);
+    }
+  }
+
+  // Sort filter buttons: "new" tags first, then the rest; append counts and "New!" badge
+  const buttons = Array.from(document.querySelectorAll(".tag-filter-btn"));
+  buttons.sort((a, b) => {
+    const aNew = newTags.has(a.textContent.trim().toLowerCase()) ? 0 : 1;
+    const bNew = newTags.has(b.textContent.trim().toLowerCase()) ? 0 : 1;
+    return aNew - bNew;
+  });
+  buttons.forEach((btn) => {
     const tag = btn.textContent.trim().toLowerCase();
     const count = tagCounts[tag] || 0;
     btn.textContent = btn.textContent.trim() + " (" + count + ")";
+    if (newTags.has(tag)) {
+      const badge = document.createElement("span");
+      badge.className = "tag-new-badge";
+      badge.textContent = "New!";
+      btn.appendChild(badge);
+    }
+    filtersDiv.appendChild(btn);
   });
 
   const filterItems = (searchTerm) => {
