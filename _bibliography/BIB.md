@@ -198,9 +198,23 @@ Every entry must have 1–3 tags from this fixed vocabulary. Tags are pipe-separ
 
 Do not add these fields to entries:
 
-`pages`, `publisher`, `number`, `address`, `editor`, `organization`, `isbn`, `issn`, `numpages`, `articleno`, `series`, `location`, `keywords`, `issue_date`, `day`, `eprint`, `acl`, `acm`, `openreview`, `nature`, `sciencedirect`, `oup`, `pmc`, `jama`, `aaai`
+`pages`, `publisher`, `number`, `address`, `editor`, `organization`, `isbn`, `issn`, `numpages`, `articleno`, `series`, `location`, `keywords`, `issue_date`, `day`, `eprint`
 
-Note: Some legacy entries still have these fields. They can be cleaned up over time but are not breaking.
+## Optional Paper-ID Fields
+
+These fields store alternate identifiers that enable linking to specific publisher pages. They are optional but should be preserved when present:
+
+| Field | Description |
+|---|---|
+| `acl` | ACL Anthology ID (e.g., `2024.acl-long.841`) |
+| `acm` | ACM Digital Library ID (e.g., `10.1145/3544548.3580847`) |
+| `openreview` | OpenReview ID (e.g., `z1d8fUiS8Cr`) |
+| `nature` | Nature article ID (e.g., `s41597-022-01533-w`) |
+| `sciencedirect` | ScienceDirect article ID |
+| `oup` | Oxford University Press article path |
+| `pmc` | PubMed Central ID (e.g., `PMC8025972`) |
+| `jama` | JAMA Network article ID |
+| `aaai` | AAAI article path |
 
 ---
 
