@@ -207,11 +207,11 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.profile.float-right {
+.profile.float-end {
   margin-left: 1rem;
 }
 
-.profile.float-left {
+.profile.float-start {
   margin-right: 1rem;
 }
 
@@ -1097,7 +1097,8 @@ progress::-moz-progress-bar {
 }
 
 /* Table of Contents */
-nav[data-toggle="toc"] {
+nav[data-toggle="toc"],
+nav[data-bs-toggle="toc"] {
   top: 5rem;
 
   .nav .nav > li > a {
@@ -1129,7 +1130,8 @@ nav[data-toggle="toc"] {
 /* small screens */
 @media (max-width: 576px) {
   /* override stickyness so that the navigation does not follow scrolling */
-  nav[data-toggle="toc"] {
+  nav[data-toggle="toc"],
+  nav[data-bs-toggle="toc"] {
     visibility: hidden;
     height: 0;
     top: 0;
@@ -1352,24 +1354,45 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .bs-popover-top {
   // arrow fill color
-  .arrow::after {
+  .popover-arrow::after {
     border-top-color: var(--global-bg-color);
   }
 
   // arrow border color
-  .arrow:before {
+  .popover-arrow:before {
     border-top-color: var(--global-divider-color);
   }
 }
 
 .bs-popover-bottom {
   // arrow fill color
-  .arrow::after {
+  .popover-arrow::after {
     border-bottom-color: var(--global-bg-color);
   }
 
   // arrow border color
-  .arrow:before {
+  .popover-arrow:before {
     border-bottom-color: var(--global-divider-color);
   }
+}
+
+// MDB replacement classes
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow:
+    0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.hoverable {
+  transition: box-shadow 0.25s;
+  &:hover {
+    box-shadow:
+      0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+.danger-color-dark {
+  background-color: #cc0000 !important;
 }
