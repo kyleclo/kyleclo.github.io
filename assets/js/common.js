@@ -15,8 +15,6 @@ $(document).ready(function () {
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
   });
-  $("a").removeClass("waves-effect waves-light");
-
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
     // remove related publications years from the TOC
@@ -26,7 +24,7 @@ $(document).ready(function () {
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
-    $("body").scrollspy({
+    new bootstrap.ScrollSpy(document.body, {
       target: navSelector,
     });
   }
@@ -53,7 +51,7 @@ $(document).ready(function () {
   });
 
   // trigger popovers
-  $('[data-toggle="popover"]').popover({
-    trigger: "hover",
+  document.querySelectorAll('[data-bs-toggle="popover"]').forEach(function (el) {
+    new bootstrap.Popover(el, { trigger: "hover" });
   });
 });
