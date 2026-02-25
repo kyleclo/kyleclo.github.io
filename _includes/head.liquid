@@ -12,30 +12,14 @@
   <link rel="preload" as="image" type="image/webp" href="{{ profile_basename | prepend: 'assets/img/' | append: '-800.webp' | relative_url }}">
 {% endif %}
 
-<!-- Bootstrap & MDB (preloaded to avoid render-blocking) -->
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
-  rel="preload"
-  as="style"
-  href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}"
-  onload="this.onload=null;this.rel='stylesheet'"
->
-<link
-  rel="preload"
-  as="style"
+  rel="stylesheet"
   href="{{ site.third_party_libraries.mdb.url.css }}"
   integrity="{{ site.third_party_libraries.mdb.integrity.css }}"
   crossorigin="anonymous"
-  onload="this.onload=null;this.rel='stylesheet'"
 >
-<noscript>
-  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
-  <link
-    rel="stylesheet"
-    href="{{ site.third_party_libraries.mdb.url.css }}"
-    integrity="{{ site.third_party_libraries.mdb.integrity.css }}"
-    crossorigin="anonymous"
-  >
-</noscript>
 
 <!-- Bootstrap Table -->
 {% if page.pretty_table %}
@@ -49,22 +33,12 @@
 {% endif %}
 
 <!-- Fonts & Icons -->
+<link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
 <link
-  rel="preload"
-  as="style"
-  href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}"
-  onload="this.onload=null;this.rel='stylesheet'"
->
-<link
-  rel="preload"
-  as="style"
+  rel="stylesheet"
+  type="text/css"
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
-  onload="this.onload=null;this.rel='stylesheet'"
 >
-<noscript>
-  <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
-  <link rel="stylesheet" href="{{ site.third_party_libraries.google_fonts.url.fonts }}">
-</noscript>
 
 <!-- Code Syntax Highlighting -->
 <link
@@ -101,15 +75,7 @@
 {% elsif site.icon != blank %}
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
 {% endif %}
-<link
-  rel="preload"
-  as="style"
-  href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}"
-  onload="this.onload=null;this.rel='stylesheet'"
->
-<noscript>
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
-</noscript>
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 <!-- Dark Mode -->
