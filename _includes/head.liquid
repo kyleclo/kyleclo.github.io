@@ -6,6 +6,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
+<!-- Preload LCP image on pages with a profile image -->
+{% if page.profile.image %}
+  <link rel="preload" as="image" type="image/webp" href="{{ page.profile.image | prepend: 'assets/img/' | append: '-800.webp' | relative_url }}">
+{% endif %}
+
 <!-- Bootstrap & MDB -->
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
