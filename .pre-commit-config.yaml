@@ -8,3 +8,38 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@3.1.0
+          - "@shopify/prettier-plugin-liquid@1.4.4"
+  - repo: local
+    hooks:
+      - id: lychee
+        name: Check for broken links
+        entry: lychee
+        language: system
+        args:
+          [
+            "--user-agent",
+            "curl/7.54",
+            "--exclude",
+            "https://allenai\\.org",
+            "--exclude-path",
+            "README.md",
+            "--exclude-path",
+            "_pages/404.md",
+            "--exclude-path",
+            "_pages/blog.md",
+            "--exclude-path",
+            "_pages/_unused/",
+            "--exclude-path",
+            "_posts/2018-12-22-distill.md",
+            "--exclude-path",
+            "_posts/2023-04-24-videos.md",
+            "--no-progress",
+          ]
+        types_or: [markdown, html]
+        pass_filenames: true
