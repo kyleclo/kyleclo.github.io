@@ -29,8 +29,21 @@
         {% endif %}
       >
     {% endif %}
+    {% assign is_raster = false %}
+    {% if ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}
+      {% assign is_raster = true %}
+    {% endif %}
+    {% if site.imagemagick.enabled and is_raster %}
+      {% assign fallback_src = img_path | append: '-800.webp' | relative_url %}
+    {% elsif include.url %}
+      {% assign fallback_src = include.url %}
+    {% elsif include.cache_bust %}
+      {% assign fallback_src = include.path | relative_url | bust_file_cache %}
+    {% else %}
+      {% assign fallback_src = include.path | relative_url %}
+    {% endif %}
     <img
-      src="{% if include.url %}{{ include.url }}{% elsif include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
+      src="{{ fallback_src }}"
       {% if include.class %}
         class="{{ include.class }}"
       {% endif %}
