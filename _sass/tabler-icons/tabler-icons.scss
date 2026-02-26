@@ -13,9 +13,7 @@ $ti-prefix: 'ti' !default;
   font-style: normal;
   font-weight: 400;
   font-display: $ti-font-display;
-  src: url('#{$ti-font-path}/tabler-icons.woff2?v3.16.0') format('woff2'),
-    url('#{$ti-font-path}/tabler-icons.woff?') format('woff'),
-    url('#{$ti-font-path}/tabler-icons.ttf?v3.16.0') format('truetype');
+  src: url('#{$ti-font-path}/tabler-icons.woff2?v3.16.0') format('woff2');
 }
 
 .#{$ti-prefix} {
@@ -11316,4 +11314,3 @@ $ti-icon-zzz-off: unicode('f440');
 .#{$ti-prefix}-circle-dashed-letter-letter-v:before { content: $ti-icon-circle-dashed-letter-v; }
 .#{$ti-prefix}-discount-check-filled:before { content: $ti-icon-rosette-discount-check-filled; }
 .#{$ti-prefix}-message-circle-2-filled:before { content: $ti-icon-message-circle-filled; }
-
