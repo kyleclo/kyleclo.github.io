@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a research scientist at the [Allen Institute for AI](https://allenai.org/) where I co-lead the [OLMo](https://allenai.org/olmo) project on open language modeling.
+I was formerly a research scientist at the [Allen Institute for AI](https://allenai.org/), where I co-led the [OLMo](https://allenai.org/olmo) project on open language modeling. I'm now working on something new.
 
 <!-- for scientific research assistance  -->
 

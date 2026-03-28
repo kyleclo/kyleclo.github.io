@@ -6,9 +6,9 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Kyle
 middle_name: >
 last_name: Lo
-email: kylel@allenai.org
+email: kyleclo@cs.washington.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  NLP + HCI researcher at Ai2 in Seattle. Open language models & data-centric methods.
+  AI researcher in Seattle. Formerly at Ai2; now working on something new. Language models, data-centric methods, evaluation.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -113,7 +113,8 @@ x_username: kylelostat # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
-contact_note: > # I'm best reached via email: kylel at allenai dot org
+contact_note: >
+  I'm best reached via email: kyleclo@cs.washington.edu
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

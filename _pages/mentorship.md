@@ -7,15 +7,9 @@ nav: true
 nav_order: 3
 ---
 
-Interested in working with me? Apply to join our team as a [**Research Intern**](#research-internship) or [**Predoctoral Researcher**](#predoctoral-research)!
-
-As an intern or predoctoral researcher, you'll work directly with me and other full-time researchers on a research project tailored to your interests. We aim for high-impact research publications at top-tier computer science venues, and we make all project artifacts open and accessible, including code, models and data.
-
-See [**FAQs**](#faqs) for more info about working with me.
+This page is an archive of former interns and predoctoral researchers I mentored during my time at Ai2. I'm no longer at Ai2 and am not currently recruiting through this page.
 
 ### Research Internship
-
-<a href="https://job-boards.greenhouse.io/thealleninstitute/jobs/7376971">⭐ **Apply Here** ⭐</a>!
 
 I've had the pleasure of working with some amazing interns:
 
@@ -106,6 +100,7 @@ My current and former predoc researchers:
 
 - David Heineman
   - <a href="https://arxiv.org/abs/2508.13144">Signal and Noise: A Framework for Reducing Uncertainty in Language Model Evaluation</a> (NeurIPS 2025 Datasets and Benchmarks)
+  - <a href="https://arxiv.org/abs/2512.13961">OLMo 3</a> (arXiv)
 - Benjamin Newman → PhD student at University of Washington (2023)
   - <a href="https://aclanthology.org/2023.emnlp-main.193/">A Question Answering Framework for Decontextualizing User-facing Snippets from Scientific Documents</a> (EMNLP 2023)
 - Zejiang Shen → PhD student at MIT (2022)
@@ -115,41 +110,3 @@ My current and former predoc researchers:
 - Haokun Liu → PhD student at University of North Carolina at Chapel Hill (2021)
 - Isabel Cachola → PhD student at Johns Hopkins University (2020)
   - <a href="https://aclanthology.org/2020.findings-emnlp.428/">TLDR: Extreme Summarization of Scientific Documents</a> (EMNLP Findings 2020)
-
-### FAQs
-
-⚠️ **For 2025/2026 applicants** ⚠️ I'm specifically looking for candidates who are available for extended internships (20+ weeks) and excited to contribute to the [OLMo project](https://allenai.org/olmo).
-
-For interns:
-
-- **Who?**
-  - **Eligibility?**
-    - ✅ Current students,
-    - ✅ Incoming students to a PhD program,
-    - ❌ Non-students,
-    - ✅ Domestic and international applicants welcome.
-  - **Experience?**
-    - Most interns are PhD students, but we've also (on rare occasion) hired exceptional Master's and undergraduate students,
-    - I tend to hire students with aligned interests as me and a track record of research contributions, whether that's writing papers (published or preprints) or open-source contributions. Your total publication count or university affiliation doesn't matter; I look more for a good collaboration fit and quality of work. Engineering skills are a must and just as important as research skills.
-- **When?** All research internships are paid, full-time positions for 12 weeks, though we have also done extended internships on part-time basis. Start times are flexible, though I typically recommend starting in May or June for summer internships as there is usually a large, fun cohort at the office.
-- **Where?** Internships are typically in-person at the AI2 office in Seattle. I've also hired remote interns before, but only on rare exception.
-- **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
-
-For predocs:
-
-- **Who?**
-  - **Eligibility?** This is a great position for:
-    - ✅ Any prospective PhD applicant, including current students near graduation and former students already working,
-    - ✅ Anyone already been accepted to a PhD program and looking to defer enrollment for a year,
-    - ❌ Already enrolled in a PhD program,
-    - ✅ Domestic and international applicants welcome.
-  - **Experience?**
-    - Some research experience required. You don't need many papers, nor do they have to be published (preprints are OK).
-    - Strong coding skills preferred. Especially if you can point to contributions to open-source projects or demonstrations of your work. You don't need industry software development experience.
-- **When?** All predoctoral research positions are paid, full-time positions for 1-3 years. Start times are flexible. Contracts must be renewed each year.
-- **Where?** All predoctoral research positions must be in-person at the AI2 office in Seattle at least part of the week.
-- **How?** Apply at the link above and mention my name in your application. I recommend taking a look at my recent publications to get a sense of what type of projects I'm interested in.
-
-Advice for all applicants:
-
-- We read all your appication short answer responses. Since we get a lot of applicants, I encourage you to be thoughtful & creative. Avoid sounding too generic.
