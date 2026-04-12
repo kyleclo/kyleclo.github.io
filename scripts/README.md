@@ -10,15 +10,35 @@ uv run scripts/1_scrape_google_scholar.py
 
 Fetches papers from Google Scholar and saves to `_bibliography/gscholar_export.db`.
 
-### 2. Check Paper Quality
+### 2. Scholar Hygiene Workflow
+
+```bash
+uv run scripts/scholar_hygiene.py refresh --coauthors
+uv run scripts/scholar_hygiene.py detect
+uv run scripts/scholar_hygiene.py review
+uv run scripts/scholar_hygiene.py verify
+```
+
+Builds a ranked queue of:
+- missing profile papers
+- under-clustered profile entries
+- metadata anomalies
+
+Structured outputs:
+- `_bibliography/scholar_issues.json`
+- `_bibliography/scholar_issues.csv`
+- `_bibliography/scholar_state.json`
+
+### 3. Legacy Wrappers
 
 ```bash
 uv run scripts/2_check_paper_quality.py
+uv run scripts/3_check_coauthor_versions.py
 ```
 
-Generates `_bibliography/quality_report.html` with duplicate detection, missing fields, etc.
+Deprecated wrappers around the new Scholar hygiene workflow.
 
-### 3. Download PDFs and Thumbnails
+### 4. Download PDFs and Thumbnails
 
 ```bash
 uv run scripts/get_pdfs.py
@@ -27,7 +47,7 @@ uv run scripts/get_paper_thumbnails.py
 
 Downloads PDFs to `assets/pdf/` and generates preview thumbnails in `assets/img/publication_preview/`.
 
-### 4. Screenshot HF Dataset Cards
+### 5. Screenshot HF Dataset Cards
 
 ```bash
 uv run scripts/screenshot_hf_dataset.py
@@ -52,3 +72,6 @@ Generates `publications.tex` from `papers.bib` and pushes to the Overleaf CV pro
 - `scripts/sort_news_articles.py` — Renumber news article files
 - `scripts/inspect_papers_db.sh` — Print summary of the Google Scholar SQLite DB
 - `scripts/check_file_sizes.py` — Check for oversized files in the repo
+- `scripts/investigate_scholar_ui.py` — Read-only Playwright helper for Scholar UI investigation, including CDP attach, bounded Add Articles pagination, and curated multi-query scanning
+- `scripts/mutate_scholar_add_articles.py` — Bounded one-row Add Articles mutation helper with explicit confirmation and pre/post evidence capture
+- `scripts/run_scholar_add_articles_scan.py` — File-based wrapper for bounded curated Add Articles scans
