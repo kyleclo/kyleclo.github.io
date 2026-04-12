@@ -6,10 +6,11 @@
 # ]
 # ///
 """
-Deprecated wrapper for the old paper quality report.
+Deprecated wrapper for the old coauthor discrepancy report.
 
-Use `uv run scripts/scholar_hygiene.py detect` and
-`uv run scripts/scholar_hygiene.py review --type metadata_anomaly` instead.
+Use `uv run scripts/scholar_hygiene.py refresh --coauthors`,
+`uv run scripts/scholar_hygiene.py detect`, and
+`uv run scripts/scholar_hygiene.py review --type missing_profile_article` instead.
 """
 
 from __future__ import annotations
@@ -23,7 +24,7 @@ from scripts.scholar_hygiene.workflow import collect_issues, review_issues
 
 def main() -> None:
     collect_issues()
-    print(review_issues(issue_type="metadata_anomaly", limit=50))
+    print(review_issues(issue_type="missing_profile_article", limit=50))
 
 
 if __name__ == "__main__":

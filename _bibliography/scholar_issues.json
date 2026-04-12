@@ -1,0 +1,2628 @@
+[
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Sewon Min"
+      ],
+      "observed_venues": [
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "dd9ed6e335f3d89e98063d51203e4d14",
+      "publication_title": "Olmoe: Open mixture-of-experts language models",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "1 divergent version titles",
+        "local bibliography year differs: 2025",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:dd9ed6e335f3d89e98063d51203e4d14",
+    "manual_queries": [
+      "\"Olmoe: Open mixture-of-experts language models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.65,
+    "status": "open",
+    "title": "Olmoe: Open mixture-of-experts language models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Faeze Brahman, Christopher Clark, Pradeep Dasigi, Nouha Dziri, Michal Guerquin, Hamish Ivison, Pang Wei Koh, Jiacheng Liu, Saumya Malik, William \u2026"
+      ],
+      "observed_venues": [
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "1e7ded607d03289d86afb5757db852be",
+      "publication_title": "2 OLMo 2 Furious",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "1 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:1e7ded607d03289d86afb5757db852be",
+    "manual_queries": [
+      "\"2 OLMo 2 Furious\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "2 OLMo 2 Furious",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Funk K, Kinney Rodney Michael, Liu Ziyang, Merrill W, Mooney P, et al"
+      ],
+      "observed_venues": [
+        "ACL 2020 Workshop on \u2026",
+        "Annual Meeting of \u2026",
+        "ArXiv",
+        "Arxiv",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2020",
+        "NA"
+      ],
+      "publication_id": "fbda45252358efa894d7f38a31a41b73",
+      "publication_title": "CORD-19: The Covid-19 Open Research Dataset",
+      "reasons": [
+        "conflicting years in versions: ['2020', 'NA']",
+        "conflicting venues across versions",
+        "1 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:fbda45252358efa894d7f38a31a41b73",
+    "manual_queries": [
+      "\"CORD-19: The Covid-19 Open Research Dataset\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "CORD-19: The Covid-19 Open Research Dataset",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "The Dolma Toolkit. Apache 2.0 License, Version 0.9. 0",
+        "The Dolma Toolkit"
+      ],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023",
+        "2024",
+        "NA"
+      ],
+      "publication_id": "ba16f24023bedab551e8123242c37762",
+      "publication_title": "Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+      "reasons": [
+        "conflicting years in versions: ['2023', '2024', 'NA']",
+        "conflicting venues across versions",
+        "2 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:ba16f24023bedab551e8123242c37762",
+    "manual_queries": [
+      "\"Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Ana Marasovi?, Swabha Swayamdipta, Kyle Lo, Iz Beltagy, Doug Downey, and Noah A Smith. 2020. Don't Stop Pretraining: Adapt Language Models to \u2026"
+      ],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the 58th \u2026",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2020",
+        "NA"
+      ],
+      "publication_id": "7f60710b91c746f2bea6ef797b9658af",
+      "publication_title": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks",
+      "reasons": [
+        "conflicting years in versions: ['2020', 'NA']",
+        "conflicting venues across versions",
+        "1 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:7f60710b91c746f2bea6ef797b9658af",
+    "manual_queries": [
+      "\"Don't Stop Pretraining: Adapt Language Models to Domains and Tasks\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Citation text generation"
+      ],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2020",
+        "2021",
+        "NA"
+      ],
+      "publication_id": "4fd41695f33167920c274e0972be1264",
+      "publication_title": "Explaining Relationships Between Scientific Documents",
+      "reasons": [
+        "conflicting years in versions: ['2020', '2021', 'NA']",
+        "conflicting venues across versions",
+        "1 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:4fd41695f33167920c274e0972be1264",
+    "manual_queries": [
+      "\"Explaining Relationships Between Scientific Documents\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "Explaining Relationships Between Scientific Documents",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+      ],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2020",
+        "NA"
+      ],
+      "publication_id": "e5f2159b660a11d325dcb36083c86f8f",
+      "publication_title": "Fact or Fiction: Verifying Scientific Claims",
+      "reasons": [
+        "conflicting years in versions: ['2020', 'NA']",
+        "conflicting venues across versions",
+        "1 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:e5f2159b660a11d325dcb36083c86f8f",
+    "manual_queries": [
+      "\"Fact or Fiction: Verifying Scientific Claims\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "Fact or Fiction: Verifying Scientific Claims",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Explanation-based tuning of opaque machine learners with application to paper recommendation",
+        "Limeade: A general framework for explanation-based human tuning of opaque machine learners"
+      ],
+      "observed_venues": [
+        "ACM Transactions on Interactive \u2026",
+        "NA",
+        "arXiv preprint arXiv \u2026",
+        "arXiv preprint arXiv:2003.04315"
+      ],
+      "observed_years": [
+        "2020",
+        "2023",
+        "NA"
+      ],
+      "publication_id": "5d770b1bdd784dc05c9a7fb1524073cb",
+      "publication_title": "LIMEADE: From AI Explanations to Advice Taking",
+      "reasons": [
+        "conflicting years in versions: ['2020', '2023', 'NA']",
+        "conflicting venues across versions",
+        "2 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:5d770b1bdd784dc05c9a7fb1524073cb",
+    "manual_queries": [
+      "\"LIMEADE: From AI Explanations to Advice Taking\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "LIMEADE: From AI Explanations to Advice Taking",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Ananya Harsh Jha, Oyvind Tafjord, Dustin Schwenk, Evan Pete Walsh, Yanai Elazar, Kyle Lo, Dirk Groeneveld, Iz Beltagy, Hannaneh Hajishirzi, Noah A \u2026",
+        "Dirk Groeneveld \u03b1 Iz Beltagy \u03b1 Pete Walsh \u03b1 Akshita Bhagia \u03b1 Rodney Kinney \u03b1 Oyvind Tafjord \u03b1 Ananya Harsh Jha \u03b1 Hamish Ivison \u03b1\u03b2 Ian Magnusson \u03b1 Yizhong \u2026",
+        "Dirk Groeneveld \u03b1 Iz Beltagy \u03b1 Pete Walsh \u03b1 Akshita Bhagia \u03b1 Rodney Kinney \u03b1 Oyvind Tafjord \u03b1 Ananya Harsh Jha \u03b1 Hamish Ivison \u03b1\u03b2 Ian Magnusson \u03b1 Yizhong \u2026"
+      ],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026",
+        "arXiv preprint \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "d7278a67855db6cf1cd4c4c49fcd66f3",
+      "publication_title": "Olmo: Accelerating the science of language models",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "3 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:d7278a67855db6cf1cd4c4c49fcd66f3",
+    "manual_queries": [
+      "\"Olmo: Accelerating the science of language models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "Olmo: Accelerating the science of language models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "GORC: A large contextual citation graph of academic papers",
+        "Weld Daniel S"
+      ],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the 58th \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2019",
+        "2020",
+        "NA"
+      ],
+      "publication_id": "96148af13d0936eeb13d00f19e2a7db2",
+      "publication_title": "S2orc: The semantic scholar open research corpus",
+      "reasons": [
+        "conflicting years in versions: ['2019', '2020', 'NA']",
+        "conflicting venues across versions",
+        "2 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:96148af13d0936eeb13d00f19e2a7db2",
+    "manual_queries": [
+      "\"S2orc: The semantic scholar open research corpus\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "S2orc: The semantic scholar open research corpus",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Hersh William R"
+      ],
+      "observed_venues": [
+        "JAMIA-Journal of the \u2026",
+        "JOURNAL OF THE \u2026",
+        "Journal of the American \u2026",
+        "Journal of the \u2026",
+        "NA"
+      ],
+      "observed_years": [
+        "2020",
+        "NA"
+      ],
+      "publication_id": "2f1a382fdb4cea4a127d03cdf5946bba",
+      "publication_title": "TREC-COVID: Rationale and Structure of an Information Retrieval Shared Task for COVID-19",
+      "reasons": [
+        "conflicting years in versions: ['2020', 'NA']",
+        "conflicting venues across versions",
+        "1 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:2f1a382fdb4cea4a127d03cdf5946bba",
+    "manual_queries": [
+      "\"TREC-COVID: Rationale and Structure of an Information Retrieval Shared Task for COVID-19\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "TREC-COVID: Rationale and Structure of an Information Retrieval Shared Task for COVID-19",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "Incorporating visual layout structures for scientific text classification",
+        "Incorporating Visual Layout Structures for Scientific Text Classification"
+      ],
+      "observed_venues": [
+        "NA",
+        "Transactions of the Association for Computational \u2026",
+        "Transactions of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2021",
+        "2022",
+        "NA"
+      ],
+      "publication_id": "fe4d93217095160660da5f2f6a30fbb3",
+      "publication_title": "VILA: Improving structured content extraction from scientific PDFs using visual layout groups",
+      "reasons": [
+        "conflicting years in versions: ['2021', '2022', 'NA']",
+        "conflicting venues across versions",
+        "2 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:fe4d93217095160660da5f2f6a30fbb3",
+    "manual_queries": [
+      "\"VILA: Improving structured content extraction from scientific PDFs using visual layout groups\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.4,
+    "status": "open",
+    "title": "VILA: Improving structured content extraction from scientific PDFs using visual layout groups",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "The Twelfth International Conference on \u2026",
+        "arXiv e-prints",
+        "arXiv preprint arXiv:2310.00785"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "9007aa1222506f3ed7b22fe3d5a1ef9b",
+      "publication_title": "Booookscore: A systematic exploration of book-length summarization in the era of llms",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography year differs: 2024",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:9007aa1222506f3ed7b22fe3d5a1ef9b",
+    "manual_queries": [
+      "\"Booookscore: A systematic exploration of book-length summarization in the era of llms\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.3,
+    "status": "open",
+    "title": "Booookscore: A systematic exploration of book-length summarization in the era of llms",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Second Conference on \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "fb97a18a044eb90ccd56132bcfe1b380",
+      "publication_title": "Llms as research tools: A large scale survey of researchers' usage and perceptions",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography year differs: 2025",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:fb97a18a044eb90ccd56132bcfe1b380",
+    "manual_queries": [
+      "\"Llms as research tools: A large scale survey of researchers' usage and perceptions\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.3,
+    "status": "open",
+    "title": "Llms as research tools: A large scale survey of researchers' usage and perceptions",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Findings of the \u2026",
+        "NA"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "49c41388a0e6740629817d9f84eb037a",
+      "publication_title": "When do generative query and document expansions fail? a comprehensive study across methods, retrievers, and datasets",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography year differs: 2023",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:49c41388a0e6740629817d9f84eb037a",
+    "manual_queries": [
+      "\"When do generative query and document expansions fail? a comprehensive study across methods, retrievers, and datasets\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.3,
+    "status": "open",
+    "title": "When do generative query and document expansions fail? a comprehensive study across methods, retrievers, and datasets",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "high",
+    "evidence": {
+      "divergent_titles": [
+        "The semantic reader project: Augmenting scholarly documents through ai-powered interactive reading interfaces",
+        "The Semantic Reader Project: Augmenting Scholarly Documents through AI-Powered Interactive Reading Interfaces",
+        "The Semantic Reader Project: Augmenting Scholarly Documents through AI-Powered Interactive Reading Interfaces",
+        "The Semantic Reader Project: Augmenting Scholarly Documents through AI-Powered Interactive Reading Interfaces"
+      ],
+      "observed_venues": [
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "23cd58b1d2f8420a14e5c86b2d0a231c",
+      "publication_title": "The semantic reader project",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions",
+        "4 divergent version titles"
+      ]
+    },
+    "id": "metadata:23cd58b1d2f8420a14e5c86b2d0a231c",
+    "manual_queries": [
+      "\"The semantic reader project\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.2,
+    "status": "open",
+    "title": "The semantic reader project",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2021",
+        "NA"
+      ],
+      "publication_id": "adca721bee7896ab9d02d79ed637aa64",
+      "publication_title": "A dataset of information-seeking questions and answers anchored in research papers",
+      "reasons": [
+        "conflicting years in versions: ['2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:adca721bee7896ab9d02d79ed637aa64",
+    "manual_queries": [
+      "\"A dataset of information-seeking questions and answers anchored in research papers\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "A dataset of information-seeking questions and answers anchored in research papers",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the 2023 \u2026",
+        "arXiv e-prints"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "674cf9cd8d79c4eccf31296a91cd1b82",
+      "publication_title": "A question answering framework for decontextualizing user-facing snippets from scientific documents",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:674cf9cd8d79c4eccf31296a91cd1b82",
+    "manual_queries": [
+      "\"A question answering framework for decontextualizing user-facing snippets from scientific documents\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "A question answering framework for decontextualizing user-facing snippets from scientific documents",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "2022 Conference on \u2026",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2022",
+        "NA"
+      ],
+      "publication_id": "94bac1ce765551aa490384a8a41a192f",
+      "publication_title": "ACCoRD: A multi-document approach to generating diverse descriptions of scientific concepts",
+      "reasons": [
+        "conflicting years in versions: ['2022', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:94bac1ce765551aa490384a8a41a192f",
+    "manual_queries": [
+      "\"ACCoRD: A multi-document approach to generating diverse descriptions of scientific concepts\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "ACCoRD: A multi-document approach to generating diverse descriptions of scientific concepts",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Findings of the \u2026",
+        "NA",
+        "The 61st Annual \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "58ae75bd5263329e3bb62db01e8d30d6",
+      "publication_title": "Are layout-infused language models robust to layout distribution shifts? a case study with scientific documents",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:58ae75bd5263329e3bb62db01e8d30d6",
+    "manual_queries": [
+      "\"Are layout-infused language models robust to layout distribution shifts? a case study with scientific documents\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Are layout-infused language models robust to layout distribution shifts? a case study with scientific documents",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "2024 Conference on \u2026",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "655067a6d93ffc98f5db340594422022",
+      "publication_title": "ArxivDIGESTables: Synthesizing scientific literature into tables using language models",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:655067a6d93ffc98f5db340594422022",
+    "manual_queries": [
+      "\"ArxivDIGESTables: Synthesizing scientific literature into tables using language models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "ArxivDIGESTables: Synthesizing scientific literature into tables using language models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "CHI'21: CHI \u2026",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2020",
+        "2021",
+        "NA"
+      ],
+      "publication_id": "1ff5771aaff6008dc97eb3e9f311e005",
+      "publication_title": "Augmenting scientific papers with just-in-time, position-sensitive definitions of terms and symbols",
+      "reasons": [
+        "conflicting years in versions: ['2020', '2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:1ff5771aaff6008dc97eb3e9f311e005",
+    "manual_queries": [
+      "\"Augmenting scientific papers with just-in-time, position-sensitive definitions of terms and symbols\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Augmenting scientific papers with just-in-time, position-sensitive definitions of terms and symbols",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "ArXiv e-prints",
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2022",
+        "2023",
+        "NA"
+      ],
+      "publication_id": "293c27826be32208f16e0334b5dc2d07",
+      "publication_title": "Bloom: A 176b-parameter open-access multilingual language model",
+      "reasons": [
+        "conflicting years in versions: ['2022', '2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:293c27826be32208f16e0334b5dc2d07",
+    "manual_queries": [
+      "\"Bloom: A 176b-parameter open-access multilingual language model\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Bloom: A 176b-parameter open-access multilingual language model",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "NAACL HLT \u2026",
+        "Proceedings of NAACL \u2026",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2018",
+        "NA"
+      ],
+      "publication_id": "04130f02d7860ee273eab72a50a02194",
+      "publication_title": "Construction of the literature graph in semantic scholar",
+      "reasons": [
+        "conflicting years in versions: ['2018', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:04130f02d7860ee273eab72a50a02194",
+    "manual_queries": [
+      "\"Construction of the literature graph in semantic scholar\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Construction of the literature graph in semantic scholar",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Transactions of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "2025",
+        "NA"
+      ],
+      "publication_id": "eea36d377c91b0f862a95421c527c85b",
+      "publication_title": "Contextualized evaluations: Judging language model responses to underspecified queries",
+      "reasons": [
+        "conflicting years in versions: ['2024', '2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:eea36d377c91b0f862a95421c527c85b",
+    "manual_queries": [
+      "\"Contextualized evaluations: Judging language model responses to underspecified queries\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Contextualized evaluations: Judging language model responses to underspecified queries",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Advances in \u2026",
+        "Conference on \u2026",
+        "NA",
+        "Proceedings of the 38th \u2026",
+        "The Thirty-eight \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "2025",
+        "NA"
+      ],
+      "publication_id": "2966919a1396566f531540fcb0feeac1",
+      "publication_title": "Datacomp-lm: In search of the next generation of training sets for language models",
+      "reasons": [
+        "conflicting years in versions: ['2024', '2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:2966919a1396566f531540fcb0feeac1",
+    "manual_queries": [
+      "\"Datacomp-lm: In search of the next generation of training sets for language models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Datacomp-lm: In search of the next generation of training sets for language models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Findings of the Association for \u2026",
+        "NA",
+        "The 2023 Conference on Empirical \u2026",
+        "arXiv e-prints",
+        "\u2026 of Machine Learning \u2026"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "0aa9c52a65c6b8eac0b79194f4600a82",
+      "publication_title": "Decomposing complex queries for tip-of-the-tongue retrieval",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:0aa9c52a65c6b8eac0b79194f4600a82",
+    "manual_queries": [
+      "\"Decomposing complex queries for tip-of-the-tongue retrieval\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Decomposing complex queries for tip-of-the-tongue retrieval",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the First \u2026",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2020",
+        "NA"
+      ],
+      "publication_id": "7896c2ea2cb1bf5415abb83717ddf61c",
+      "publication_title": "Document-level definition detection in scholarly documents: Existing models, error analyses, and future directions",
+      "reasons": [
+        "conflicting years in versions: ['2020', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:7896c2ea2cb1bf5415abb83717ddf61c",
+    "manual_queries": [
+      "\"Document-level definition detection in scholarly documents: Existing models, error analyses, and future directions\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Document-level definition detection in scholarly documents: Existing models, error analyses, and future directions",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "The 4th Workshop on \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2025",
+        "NA"
+      ],
+      "publication_id": "9c11c8f7beddc32bfe9d97179f514040",
+      "publication_title": "Drawedumath: Evaluating vision language models with expert-annotated students\u2019 hand-drawn math images",
+      "reasons": [
+        "conflicting years in versions: ['2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:9c11c8f7beddc32bfe9d97179f514040",
+    "manual_queries": [
+      "\"Drawedumath: Evaluating vision language models with expert-annotated students\u2019 hand-drawn math images\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Drawedumath: Evaluating vision language models with expert-annotated students\u2019 hand-drawn math images",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Chi conference on \u2026",
+        "NA",
+        "arXiv e \u2026"
+      ],
+      "observed_years": [
+        "2021",
+        "2022",
+        "NA"
+      ],
+      "publication_id": "0eb0906bdfb1635fc5d32a42a0cc40ee",
+      "publication_title": "Exploring the role of local and global explanations in recommender systems",
+      "reasons": [
+        "conflicting years in versions: ['2021', '2022', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:0eb0906bdfb1635fc5d32a42a0cc40ee",
+    "manual_queries": [
+      "\"Exploring the role of local and global explanations in recommender systems\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Exploring the role of local and global explanations in recommender systems",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Advances in Neural Information \u2026",
+        "Advances in Neural \u2026",
+        "Advances in neural \u2026",
+        "NA",
+        "Proceedings of the 35th International \u2026",
+        "arXiv e-prints",
+        "arXiv preprint arXiv:2107.07170"
+      ],
+      "observed_years": [
+        "2021",
+        "NA"
+      ],
+      "publication_id": "155ccdb799783ab9b6e21edee7506948",
+      "publication_title": "Flex: Unifying evaluation for few-shot nlp",
+      "reasons": [
+        "conflicting years in versions: ['2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:155ccdb799783ab9b6e21edee7506948",
+    "manual_queries": [
+      "\"Flex: Unifying evaluation for few-shot nlp\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Flex: Unifying evaluation for few-shot nlp",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2025",
+        "NA"
+      ],
+      "publication_id": "ca41d5e4b44511114cde84073e7f7ef0",
+      "publication_title": "Fluid language model benchmarking",
+      "reasons": [
+        "conflicting years in versions: ['2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:ca41d5e4b44511114cde84073e7f7ef0",
+    "manual_queries": [
+      "\"Fluid language model benchmarking\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Fluid language model benchmarking",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "2025",
+        "NA"
+      ],
+      "publication_id": "33bb087449e8053769a6b11b663ceefd",
+      "publication_title": "Followir: Evaluating and teaching information retrieval models to follow instructions",
+      "reasons": [
+        "conflicting years in versions: ['2024', '2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:33bb087449e8053769a6b11b663ceefd",
+    "manual_queries": [
+      "\"Followir: Evaluating and teaching information retrieval models to follow instructions\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Followir: Evaluating and teaching information retrieval models to follow instructions",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2022",
+        "NA"
+      ],
+      "publication_id": "5a6808338f44d0b568ad663664eda592",
+      "publication_title": "Generating scientific claims for zero-shot scientific fact checking",
+      "reasons": [
+        "conflicting years in versions: ['2022', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:5a6808338f44d0b568ad663664eda592",
+    "manual_queries": [
+      "\"Generating scientific claims for zero-shot scientific fact checking\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Generating scientific claims for zero-shot scientific fact checking",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "IEEE INTERNET OF \u2026",
+        "IEEE Internet of \u2026",
+        "IEEE internet of \u2026",
+        "Ieee Internet of \u2026",
+        "NA"
+      ],
+      "observed_years": [
+        "2021",
+        "NA"
+      ],
+      "publication_id": "2623cb1bc6056629c6c7a3b407f42011",
+      "publication_title": "Harnessing the power of smart and connected health to tackle COVID-19: IoT, AI, robotics, and blockchain for a better world",
+      "reasons": [
+        "conflicting years in versions: ['2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:2623cb1bc6056629c6c7a3b407f42011",
+    "manual_queries": [
+      "\"Harnessing the power of smart and connected health to tackle COVID-19: IoT, AI, robotics, and blockchain for a better world\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Harnessing the power of smart and connected health to tackle COVID-19: IoT, AI, robotics, and blockchain for a better world",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "b4e07768f55cb48d59a691469ff20037",
+      "publication_title": "InfoLossQA: Characterizing and recovering information loss in text simplification",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:b4e07768f55cb48d59a691469ff20037",
+    "manual_queries": [
+      "\"InfoLossQA: Characterizing and recovering information loss in text simplification\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "InfoLossQA: Characterizing and recovering information loss in text simplification",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "d093eff35c8f6c449ebcf49e2b2258ab",
+      "publication_title": "Mathfish: Evaluating language model math reasoning via grounding in educational curricula",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:d093eff35c8f6c449ebcf49e2b2258ab",
+    "manual_queries": [
+      "\"Mathfish: Evaluating language model math reasoning via grounding in educational curricula\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Mathfish: Evaluating language model math reasoning via grounding in educational curricula",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "2025 IEEE/CVF \u2026",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "2025",
+        "NA"
+      ],
+      "publication_id": "0aed4a6194b0d9e7ea6f435aeade1055",
+      "publication_title": "Molmo and pixmo: Open weights and open data for state-of-the-art vision-language models",
+      "reasons": [
+        "conflicting years in versions: ['2024', '2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:0aed4a6194b0d9e7ea6f435aeade1055",
+    "manual_queries": [
+      "\"Molmo and pixmo: Open weights and open data for state-of-the-art vision-language models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Molmo and pixmo: Open weights and open data for state-of-the-art vision-language models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Advances in \u2026",
+        "NA",
+        "Proceedings of the 36th \u2026",
+        "Thirty-sixth Conference \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2022",
+        "NA"
+      ],
+      "publication_id": "cde610a5ce3ffbbc27b7a010d524abfe",
+      "publication_title": "Multi-lexsum: Real-world summaries of civil rights lawsuits at multiple granularities",
+      "reasons": [
+        "conflicting years in versions: ['2022', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:cde610a5ce3ffbbc27b7a010d524abfe",
+    "manual_queries": [
+      "\"Multi-lexsum: Real-world summaries of civil rights lawsuits at multiple granularities\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Multi-lexsum: Real-world summaries of civil rights lawsuits at multiple granularities",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2021",
+        "2022",
+        "NA"
+      ],
+      "publication_id": "a84dec40e678e3690466c5712bb94054",
+      "publication_title": "MultiCite: Modeling realistic citations requires moving beyond the single-sentence single-label setting",
+      "reasons": [
+        "conflicting years in versions: ['2021', '2022', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:a84dec40e678e3690466c5712bb94054",
+    "manual_queries": [
+      "\"MultiCite: Modeling realistic citations requires moving beyond the single-sentence single-label setting\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "MultiCite: Modeling realistic citations requires moving beyond the single-sentence single-label setting",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Findings of the \u2026",
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2021",
+        "2022",
+        "NA"
+      ],
+      "publication_id": "0a65d84b1de8a4d9d3069467691fc6af",
+      "publication_title": "MultiVerS: Improving scientific claim verification with weak supervision and full-document context",
+      "reasons": [
+        "conflicting years in versions: ['2021', '2022', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:0a65d84b1de8a4d9d3069467691fc6af",
+    "manual_queries": [
+      "\"MultiVerS: Improving scientific claim verification with weak supervision and full-document context\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "MultiVerS: Improving scientific claim verification with weak supervision and full-document context",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "arXiv e-prints",
+        "arXiv preprint arXiv:2510.19817"
+      ],
+      "observed_years": [
+        "2025",
+        "NA"
+      ],
+      "publication_id": "27047ceb31e77c3e229a1794afe46ae9",
+      "publication_title": "olmocr 2: Unit test rewards for document ocr",
+      "reasons": [
+        "conflicting years in versions: ['2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:27047ceb31e77c3e229a1794afe46ae9",
+    "manual_queries": [
+      "\"olmocr 2: Unit test rewards for document ocr\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "olmocr 2: Unit test rewards for document ocr",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026",
+        "\u2026 -source DEvelopment in \u2026"
+      ],
+      "observed_years": [
+        "2025",
+        "NA"
+      ],
+      "publication_id": "28d6e543ac8f62391cd9e8e31eb378c3",
+      "publication_title": "olmocr: Unlocking trillions of tokens in pdfs with vision language models",
+      "reasons": [
+        "conflicting years in versions: ['2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:28d6e543ac8f62391cd9e8e31eb378c3",
+    "manual_queries": [
+      "\"olmocr: Unlocking trillions of tokens in pdfs with vision language models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "olmocr: Unlocking trillions of tokens in pdfs with vision language models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the 2024 \u2026",
+        "arXiv e-prints",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "d01152f6055a6f7ca0a741526e9677c4",
+      "publication_title": "One thousand and one pairs: A \u201cnovel\u201d challenge for long-context language models",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:d01152f6055a6f7ca0a741526e9677c4",
+    "manual_queries": [
+      "\"One thousand and one pairs: A \u201cnovel\u201d challenge for long-context language models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "One thousand and one pairs: A \u201cnovel\u201d challenge for long-context language models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "BioNLP 2018",
+        "BioNLP \u2026",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2018",
+        "NA"
+      ],
+      "publication_id": "c5a52db2f9050f91a440f378ca639df0",
+      "publication_title": "Ontology alignment in the biomedical domain using entity definitions and context",
+      "reasons": [
+        "conflicting years in versions: ['2018', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:c5a52db2f9050f91a440f378ca639df0",
+    "manual_queries": [
+      "\"Ontology alignment in the biomedical domain using entity definitions and context\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Ontology alignment in the biomedical domain using entity definitions and context",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "International \u2026",
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026",
+        "\u2026 Conference on Machine \u2026"
+      ],
+      "observed_years": [
+        "2025",
+        "NA"
+      ],
+      "publication_id": "f3d919547472eb8164bd2bba899eb79b",
+      "publication_title": "Organize the web: Constructing domains enhances pre-training data curation",
+      "reasons": [
+        "conflicting years in versions: ['2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:f3d919547472eb8164bd2bba899eb79b",
+    "manual_queries": [
+      "\"Organize the web: Constructing domains enhances pre-training data curation\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Organize the web: Constructing domains enhances pre-training data curation",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the Second Workshop on \u2026",
+        "arXiv e-prints",
+        "arXiv preprint arXiv:2107.08188"
+      ],
+      "observed_years": [
+        "2021",
+        "NA"
+      ],
+      "publication_id": "894229d98a723a695ff109aafbccf106",
+      "publication_title": "Overview and insights from the SCIVER shared task on scientific claim verification",
+      "reasons": [
+        "conflicting years in versions: ['2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:894229d98a723a695ff109aafbccf106",
+    "manual_queries": [
+      "\"Overview and insights from the SCIVER shared task on scientific claim verification\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Overview and insights from the SCIVER shared task on scientific claim verification",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026"
+      ],
+      "observed_years": [
+        "2021",
+        "NA"
+      ],
+      "publication_id": "11159c58660a22106008f1d313537a05",
+      "publication_title": "Overview of the second workshop on scholarly document processing",
+      "reasons": [
+        "conflicting years in versions: ['2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:11159c58660a22106008f1d313537a05",
+    "manual_queries": [
+      "\"Overview of the second workshop on scholarly document processing\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Overview of the second workshop on scholarly document processing",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "ACM Transactions on \u2026",
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026",
+        "\u2026 on Computer-Human \u2026"
+      ],
+      "observed_years": [
+        "2022",
+        "2023"
+      ],
+      "publication_id": "39a1641938cd1d26de8642ecc5148841",
+      "publication_title": "Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing",
+      "reasons": [
+        "conflicting years in versions: ['2022', '2023']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:39a1641938cd1d26de8642ecc5148841",
+    "manual_queries": [
+      "\"Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "JAMA Network \u2026",
+        "JAMA network \u2026",
+        "NA"
+      ],
+      "observed_years": [
+        "2019",
+        "NA"
+      ],
+      "publication_id": "f1ed963a8c5206f2008227e1f23fa1bb",
+      "publication_title": "Quantifying sex bias in clinical studies at scale with automated data extraction",
+      "reasons": [
+        "conflicting years in versions: ['2019', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:f1ed963a8c5206f2008227e1f23fa1bb",
+    "manual_queries": [
+      "\"Quantifying sex bias in clinical studies at scale with automated data extraction\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Quantifying sex bias in clinical studies at scale with automated data extraction",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Communications of the ACM",
+        "NA",
+        "Proceedings of the AAAI \u2026",
+        "Proceedings of the Thirty \u2026",
+        "arXiv e-prints"
+      ],
+      "observed_years": [
+        "2024",
+        "2025"
+      ],
+      "publication_id": "6b254ab1ab9574f2e7a3227f915a5867",
+      "publication_title": "Routerretriever: Routing over a mixture of expert embedding models",
+      "reasons": [
+        "conflicting years in versions: ['2024', '2025']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:6b254ab1ab9574f2e7a3227f915a5867",
+    "manual_queries": [
+      "\"Routerretriever: Routing over a mixture of expert embedding models\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Routerretriever: Routing over a mixture of expert embedding models",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the 2019 Conference on \u2026",
+        "Proceedings of the 2019 conference on \u2026",
+        "arXiv e-prints",
+        "arXiv preprint arXiv:1903.10676"
+      ],
+      "observed_years": [
+        "2019",
+        "NA"
+      ],
+      "publication_id": "5eade41bbeedf82c0cc2740de67eb0a1",
+      "publication_title": "SciBERT: A Pretrained Language Model for Scientific Text",
+      "reasons": [
+        "conflicting years in versions: ['2019', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:5eade41bbeedf82c0cc2740de67eb0a1",
+    "manual_queries": [
+      "\"SciBERT: A Pretrained Language Model for Scientific Text\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "SciBERT: A Pretrained Language Model for Scientific Text",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Findings of the \u2026",
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2022",
+        "NA"
+      ],
+      "publication_id": "eb96469764dbe35b94f62e1333b21217",
+      "publication_title": "SciFact-open: Towards open-domain scientific claim verification",
+      "reasons": [
+        "conflicting years in versions: ['2022', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:eb96469764dbe35b94f62e1333b21217",
+    "manual_queries": [
+      "\"SciFact-open: Towards open-domain scientific claim verification\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "SciFact-open: Towards open-domain scientific claim verification",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the 28th \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026",
+        "arXiv: 2205.04561"
+      ],
+      "observed_years": [
+        "2022",
+        "2023"
+      ],
+      "publication_id": "7c435e740d3656d3c85cf0f7ff5f195a",
+      "publication_title": "Scim: Intelligent skimming support for scientific papers",
+      "reasons": [
+        "conflicting years in versions: ['2022', '2023']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:7c435e740d3656d3c85cf0f7ff5f195a",
+    "manual_queries": [
+      "\"Scim: Intelligent skimming support for scientific papers\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Scim: Intelligent skimming support for scientific papers",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Neurips 2024 Workshop \u2026",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026",
+        "arXiv preprint \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "2025",
+        "NA"
+      ],
+      "publication_id": "bc11b533f435b4e3a04f1d805fc12caa",
+      "publication_title": "Sciriff: A resource to enhance language model instruction-following over scientific literature",
+      "reasons": [
+        "conflicting years in versions: ['2024', '2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:bc11b533f435b4e3a04f1d805fc12caa",
+    "manual_queries": [
+      "\"Sciriff: A resource to enhance language model instruction-following over scientific literature\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Sciriff: A resource to enhance language model instruction-following over scientific literature",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Journal of Biomedical \u2026",
+        "Journal of \u2026",
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2021",
+        "NA"
+      ],
+      "publication_id": "acb8e3c0487068e547c812a196ed0c89",
+      "publication_title": "Searching for scientific evidence in a pandemic: An overview of TREC-COVID",
+      "reasons": [
+        "conflicting years in versions: ['2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:acb8e3c0487068e547c812a196ed0c89",
+    "manual_queries": [
+      "\"Searching for scientific evidence in a pandemic: An overview of TREC-COVID\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Searching for scientific evidence in a pandemic: An overview of TREC-COVID",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "The Thirty-ninth Annual \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2025",
+        "NA"
+      ],
+      "publication_id": "20970369b279b9c0bd505e3c75db3fe6",
+      "publication_title": "Signal and noise: A framework for reducing uncertainty in language model evaluation",
+      "reasons": [
+        "conflicting years in versions: ['2025', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:20970369b279b9c0bd505e3c75db3fe6",
+    "manual_queries": [
+      "\"Signal and noise: A framework for reducing uncertainty in language model evaluation\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "Signal and noise: A framework for reducing uncertainty in language model evaluation",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "36th Conference \u2026",
+        "Advances in \u2026",
+        "NA",
+        "Proceedings of the 36th \u2026",
+        "Thirty-sixth Conference \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2022",
+        "2023",
+        "NA"
+      ],
+      "publication_id": "3955a9df07eb2740128ed4df0b8726de",
+      "publication_title": "The bigscience roots corpus: A 1.6 tb composite multilingual dataset",
+      "reasons": [
+        "conflicting years in versions: ['2022', '2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:3955a9df07eb2740128ed4df0b8726de",
+    "manual_queries": [
+      "\"The bigscience roots corpus: A 1.6 tb composite multilingual dataset\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "The bigscience roots corpus: A 1.6 tb composite multilingual dataset",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2024",
+        "NA"
+      ],
+      "publication_id": "e212bf08a83a3064811bb25beaac5035",
+      "publication_title": "The responsible foundation model development cheatsheet: A review of tools & resources",
+      "reasons": [
+        "conflicting years in versions: ['2024', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:e212bf08a83a3064811bb25beaac5035",
+    "manual_queries": [
+      "\"The responsible foundation model development cheatsheet: A review of tools & resources\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "The responsible foundation model development cheatsheet: A review of tools & resources",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "d53a0acb7b899378a493d192d3c54e51",
+      "publication_title": "The rise of open science: Tracking the evolution and perceived value of data and methods link-sharing practices",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:d53a0acb7b899378a493d192d3c54e51",
+    "manual_queries": [
+      "\"The rise of open science: Tracking the evolution and perceived value of data and methods link-sharing practices\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "The rise of open science: Tracking the evolution and perceived value of data and methods link-sharing practices",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "66323bcc8be45db0ebc1471dff84506c",
+      "publication_title": "The semantic scholar open data platform",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:66323bcc8be45db0ebc1471dff84506c",
+    "manual_queries": [
+      "\"The semantic scholar open data platform\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "The semantic scholar open data platform",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "ACM SIGIR Forum",
+        "NA",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2020",
+        "2021",
+        "NA"
+      ],
+      "publication_id": "071ef8ea5b400caf7b0d482a41e11036",
+      "publication_title": "TREC-COVID: constructing a pandemic information retrieval test collection",
+      "reasons": [
+        "conflicting years in versions: ['2020', '2021', 'NA']",
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:071ef8ea5b400caf7b0d482a41e11036",
+    "manual_queries": [
+      "\"TREC-COVID: constructing a pandemic information retrieval test collection\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 1.05,
+    "status": "open",
+    "title": "TREC-COVID: constructing a pandemic information retrieval test collection",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [
+        "Yekyung Kim, Yapei Chang, Marzena Karpinska, Aparna Garimella",
+        "Yekyung Kim, Yapei Chang, Marzena Karpinska, Aparna Garimella"
+      ],
+      "observed_venues": [
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026",
+        "arXiv preprint arXiv:2404.01261"
+      ],
+      "observed_years": [
+        "2024"
+      ],
+      "publication_id": "b35e9a5e047e8967f42f8826a298100b",
+      "publication_title": "Fables: Evaluating faithfulness and content selection in book-length summarization",
+      "reasons": [
+        "conflicting venues across versions",
+        "2 divergent version titles",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:b35e9a5e047e8967f42f8826a298100b",
+    "manual_queries": [
+      "\"Fables: Evaluating faithfulness and content selection in book-length summarization\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.9,
+    "status": "open",
+    "title": "Fables: Evaluating faithfulness and content selection in book-length summarization",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "EACL",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023",
+        "NA"
+      ],
+      "publication_id": "999dda7fb654441e98904269ab191d2c",
+      "publication_title": "LongEval: Guidelines for Human Evaluation of Faithfulness in Long-form Summarization",
+      "reasons": [
+        "conflicting years in versions: ['2023', 'NA']",
+        "conflicting venues across versions"
+      ]
+    },
+    "id": "metadata:999dda7fb654441e98904269ab191d2c",
+    "manual_queries": [
+      "\"LongEval: Guidelines for Human Evaluation of Faithfulness in Long-form Summarization\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.85,
+    "status": "open",
+    "title": "LongEval: Guidelines for Human Evaluation of Faithfulness in Long-form Summarization",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "BRIEFINGS IN BIOINFORMATICS",
+        "Briefings in Bioinformatics",
+        "Briefings in bioinformatics",
+        "NA"
+      ],
+      "observed_years": [
+        "2020",
+        "2021"
+      ],
+      "publication_id": "ef72fa240033aa4f450d700ef660c28a",
+      "publication_title": "Text mining approaches for dealing with the rapidly expanding literature on COVID-19",
+      "reasons": [
+        "conflicting years in versions: ['2020', '2021']",
+        "conflicting venues across versions"
+      ]
+    },
+    "id": "metadata:ef72fa240033aa4f450d700ef660c28a",
+    "manual_queries": [
+      "\"Text mining approaches for dealing with the rapidly expanding literature on COVID-19\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.85,
+    "status": "open",
+    "title": "Text mining approaches for dealing with the rapidly expanding literature on COVID-19",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "medium",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "Findings of EMNLP",
+        "Findings of the Association \u2026",
+        "NA",
+        "arXiv e-prints",
+        "arXiv preprint arXiv:2004.15011"
+      ],
+      "observed_years": [
+        "2020",
+        "NA"
+      ],
+      "publication_id": "8cfbe00021bbfdfbdfcde05db1e834c3",
+      "publication_title": "TLDR: Extreme summarization of scientific documents",
+      "reasons": [
+        "conflicting years in versions: ['2020', 'NA']",
+        "conflicting venues across versions"
+      ]
+    },
+    "id": "metadata:8cfbe00021bbfdfbdfcde05db1e834c3",
+    "manual_queries": [
+      "\"TLDR: Extreme summarization of scientific documents\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.85,
+    "status": "open",
+    "title": "TLDR: Extreme summarization of scientific documents",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2025"
+      ],
+      "publication_id": "6d8a30b8bbf57e424557579b54631629",
+      "publication_title": "Automatic detection of research values from scientific abstracts across computer science subfields",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:6d8a30b8bbf57e424557579b54631629",
+    "manual_queries": [
+      "\"Automatic detection of research values from scientific abstracts across computer science subfields\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Automatic detection of research values from scientific abstracts across computer science subfields",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "arXiv e-prints",
+        "arXiv preprint arXiv \u2026",
+        "arXiv preprint arXiv:2311.09765"
+      ],
+      "observed_years": [
+        "2023"
+      ],
+      "publication_id": "2a32d23e2ad89ee7b8128d6d8794c6f2",
+      "publication_title": "Back to basics: A simple recipe for improving out-of-domain retrieval in dense encoders",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:2a32d23e2ad89ee7b8128d6d8794c6f2",
+    "manual_queries": [
+      "\"Back to basics: A simple recipe for improving out-of-domain retrieval in dense encoders\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Back to basics: A simple recipe for improving out-of-domain retrieval in dense encoders",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023"
+      ],
+      "publication_id": "08307e172e34a70140280c903078f9c1",
+      "publication_title": "Beyond summarization: Designing ai support for real-world expository writing tasks",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:08307e172e34a70140280c903078f9c1",
+    "manual_queries": [
+      "\"Beyond summarization: Designing ai support for real-world expository writing tasks\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Beyond summarization: Designing ai support for real-world expository writing tasks",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023"
+      ],
+      "publication_id": "77157c917365179fbf972c26fd6b1d78",
+      "publication_title": "CiteSee: Augmenting Citations in Scientific Papers with Persistent and Personalized Historical Context",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:77157c917365179fbf972c26fd6b1d78",
+    "manual_queries": [
+      "\"CiteSee: Augmenting Citations in Scientific Papers with Persistent and Personalized Historical Context\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "CiteSee: Augmenting Citations in Scientific Papers with Persistent and Personalized Historical Context",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "2022 ACM Conference \u2026",
+        "5th ACM \u2026",
+        "5th Annual ACM \u2026",
+        "NA",
+        "Proceedings of the \u2026",
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2022"
+      ],
+      "publication_id": "87a78325dda4d73bd3d04d33a66a6bf5",
+      "publication_title": "Data governance in the age of large-scale data-driven language technology",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:87a78325dda4d73bd3d04d33a66a6bf5",
+    "manual_queries": [
+      "\"Data governance in the age of large-scale data-driven language technology\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Data governance in the age of large-scale data-driven language technology",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "arXiv e \u2026",
+        "arXiv preprint arXiv \u2026"
+      ],
+      "observed_years": [
+        "2023"
+      ],
+      "publication_id": "3ad2e9c7568c614d82c27cd3b883bdef",
+      "publication_title": "Efficiency pentathlon: A standardized arena for efficiency evaluation",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:3ad2e9c7568c614d82c27cd3b883bdef",
+    "manual_queries": [
+      "\"Efficiency pentathlon: A standardized arena for efficiency evaluation\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Efficiency pentathlon: A standardized arena for efficiency evaluation",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "2024 CHI Conference on \u2026",
+        "NA",
+        "arXiv e-prints",
+        "arXiv preprint arXiv:2403.04979",
+        "\u2026 of the 2024 CHI Conference on \u2026"
+      ],
+      "observed_years": [
+        "2024"
+      ],
+      "publication_id": "231fb4b4537b98835262b702609b88d3",
+      "publication_title": "Know Your Audience: The benefits and pitfalls of generating plain language summaries beyond the\" general\" audience",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:231fb4b4537b98835262b702609b88d3",
+    "manual_queries": [
+      "\"Know Your Audience: The benefits and pitfalls of generating plain language summaries beyond the\" general\" audience\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Know Your Audience: The benefits and pitfalls of generating plain language summaries beyond the\" general\" audience",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "FRONTIERS",
+        "Front. Res. Metr. Anal \u2026",
+        "Front. Res. Metr. Anal. 5 \u2026",
+        "\u2026 in research metrics \u2026"
+      ],
+      "observed_years": [
+        "2020"
+      ],
+      "publication_id": "7dff936ba6844e7dc8c6f0720e712ad4",
+      "publication_title": "Mitigating biases in cord-19 for analyzing covid-19 literature",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:7dff936ba6844e7dc8c6f0720e712ad4",
+    "manual_queries": [
+      "\"Mitigating biases in cord-19 for analyzing covid-19 literature\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Mitigating biases in cord-19 for analyzing covid-19 literature",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "International \u2026",
+        "NA",
+        "Proceedings of the \u2026",
+        "Proceedings \u2026",
+        "Third Workshop on \u2026"
+      ],
+      "observed_years": [
+        "2022"
+      ],
+      "publication_id": "b00ac4057a0e8cb75d050f281bd5dab9",
+      "publication_title": "Overview of the third workshop on scholarly document processing",
+      "reasons": [
+        "conflicting venues across versions",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:b00ac4057a0e8cb75d050f281bd5dab9",
+    "manual_queries": [
+      "\"Overview of the third workshop on scholarly document processing\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.55,
+    "status": "open",
+    "title": "Overview of the third workshop on scholarly document processing",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "arXiv preprint arXiv:1810.12956"
+      ],
+      "observed_years": [
+        "2018"
+      ],
+      "publication_id": "03b5af6a42a127e823c865ca21d1d36e",
+      "publication_title": "Combining Distant and Direct Supervision for Neural Relation Extraction",
+      "reasons": [
+        "local bibliography year differs: 2019",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:03b5af6a42a127e823c865ca21d1d36e",
+    "manual_queries": [
+      "\"Combining Distant and Direct Supervision for Neural Relation Extraction\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.45,
+    "status": "open",
+    "title": "Combining Distant and Direct Supervision for Neural Relation Extraction",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA"
+      ],
+      "observed_years": [
+        "NA"
+      ],
+      "publication_id": "bac8a87da711534d646747120942560a",
+      "publication_title": "Discourse Understanding and Factual Consistency in Abstractive Summarization",
+      "reasons": [
+        "local bibliography year differs: 2021",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:bac8a87da711534d646747120942560a",
+    "manual_queries": [
+      "\"Discourse Understanding and Factual Consistency in Abstractive Summarization\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.45,
+    "status": "open",
+    "title": "Discourse Understanding and Factual Consistency in Abstractive Summarization",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA"
+      ],
+      "observed_years": [
+        "NA"
+      ],
+      "publication_id": "8042cc1b86e283160f6b184c2af9f1ce",
+      "publication_title": "Open domain multi-document summarization: A comprehensive study of model brittleness under retrieval",
+      "reasons": [
+        "local bibliography year differs: 2023",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:8042cc1b86e283160f6b184c2af9f1ce",
+    "manual_queries": [
+      "\"Open domain multi-document summarization: A comprehensive study of model brittleness under retrieval\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.45,
+    "status": "open",
+    "title": "Open domain multi-document summarization: A comprehensive study of model brittleness under retrieval",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA"
+      ],
+      "observed_years": [
+        "NA"
+      ],
+      "publication_id": "1b23178e3b75459689e847ab813cc428",
+      "publication_title": "Overview of the 2020 epidemic question answering track",
+      "reasons": [
+        "local bibliography year differs: 2020",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:1b23178e3b75459689e847ab813cc428",
+    "manual_queries": [
+      "\"Overview of the 2020 epidemic question answering track\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.45,
+    "status": "open",
+    "title": "Overview of the 2020 epidemic question answering track",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA"
+      ],
+      "observed_years": [
+        "NA"
+      ],
+      "publication_id": "1b8d031586768f70a35e58d69720bdd9",
+      "publication_title": "PaperMage: A Unified Toolkit for Processing, Representing, and Manipulating Visually-Rich Scientific Documents",
+      "reasons": [
+        "local bibliography year differs: 2023",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:1b8d031586768f70a35e58d69720bdd9",
+    "manual_queries": [
+      "\"PaperMage: A Unified Toolkit for Processing, Representing, and Manipulating Visually-Rich Scientific Documents\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.45,
+    "status": "open",
+    "title": "PaperMage: A Unified Toolkit for Processing, Representing, and Manipulating Visually-Rich Scientific Documents",
+    "type": "metadata_anomaly"
+  },
+  {
+    "confidence": "low",
+    "evidence": {
+      "divergent_titles": [],
+      "observed_venues": [
+        "NA"
+      ],
+      "observed_years": [
+        "NA"
+      ],
+      "publication_id": "20de7b02c2429970d470b5a9e5d23ac0",
+      "publication_title": "peS2o (pretraining efficiently on S2ORC) dataset",
+      "reasons": [
+        "local bibliography year differs: 2023",
+        "local bibliography venue differs"
+      ]
+    },
+    "id": "metadata:20de7b02c2429970d470b5a9e5d23ac0",
+    "manual_queries": [
+      "\"peS2o (pretraining efficiently on S2ORC) dataset\""
+    ],
+    "recommended_action": "Inspect the Scholar cluster and choose the canonical entry with the correct year/venue metadata.",
+    "score": 0.45,
+    "status": "open",
+    "title": "peS2o (pretraining efficiently on S2ORC) dataset",
+    "type": "metadata_anomaly"
+  }
+]
