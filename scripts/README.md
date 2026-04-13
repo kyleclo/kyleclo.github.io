@@ -29,6 +29,12 @@ Structured outputs:
 - `_bibliography/scholar_issues.csv`
 - `_bibliography/scholar_state.json`
 
+Scholar UI artifact paths:
+- committed reference notes stay in `plans/artifacts/scholar_ui/`
+- raw Playwright screenshots / HTML / parsed modal captures should go to `_local/scholar_ui/`
+- `scripts/investigate_scholar_ui.py`, `scripts/mutate_scholar_add_articles.py`, and `scripts/run_scholar_add_articles_scan.py` default to `_local/scholar_ui/`
+- only point `--artifact-dir` at `plans/artifacts/scholar_ui/` when intentionally promoting a small curated artifact or note into version control
+
 ### 3. Legacy Wrappers
 
 ```bash

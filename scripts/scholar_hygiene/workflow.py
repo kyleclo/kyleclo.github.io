@@ -36,6 +36,7 @@ def run_refresh(refresh_profile_data: bool = True, refresh_coauthors_data: bool 
 def collect_issues() -> list[dict]:
     conn = connect()
     try:
+        ensure_base_tables(conn)
         publications = load_publications(conn)
         versions_by_publication = load_versions_for_publication_ids(
             conn, {publication["id"] for publication in publications}

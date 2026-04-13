@@ -231,6 +231,12 @@ This command:
 - prefers the newest artifact for each candidate
 - shows title, `doc_id`, query, Scholar URL, and artifact path
 
+Artifact management convention for the completed 002 branch:
+
+- keep commit-safe summaries, query lists, and review notes in `plans/artifacts/scholar_ui/`
+- keep raw screenshots, HTML captures, and parsed modal dumps in `_local/scholar_ui/` by default
+- only override `--artifact-dir` back to `plans/artifacts/scholar_ui/` when intentionally curating a small reference artifact for the branch history
+
 This is now the preferred way to inspect the current add-articles queue outside raw JSON.
 
 ## Additional Repeated Validation
@@ -923,6 +929,17 @@ Current next practical step:
    - or metadata-anomaly review if merge automation is deferred
 4. Keep raw URL navigation out of mutation flows; use DOM-level Scholar actions only.
 
+Current follow-up status after the original checkpoint:
+
+1. `002` did continue with a small amount of targeted add follow-up after the April 11 checkpoint.
+2. That follow-up produced:
+   - a strongly verified `2 OLMo 2 Furious` attach outcome
+   - a likely-successful but not yet strongly verified `Molmo/Pixmo` attach outcome
+3. So the branch should now be understood as:
+   - add automation mechanics complete
+   - targeted under-clustering follow-up still possible
+   - merge cleanup still deferred to `003`
+
 ## Useful Commands To Remember
 
 ### Existing UI Investigation Seed
@@ -995,6 +1012,75 @@ If this session is lost, resume from here:
    - selecting one reviewed merge family
    - performing one bounded merge action
    - recapturing evidence afterward to confirm the expected Scholar state change
+
+## 002 Continuation: Deeper Kyle Lo Exhaustion
+
+This continuation stays inside the `002` add-automation track. It is not a new plan and it is not merge automation.
+
+Goal:
+
+- continue exhausting the `Kyle Lo` `Add articles` surface before expanding to broader queries
+
+Operational workflow:
+
+1. Attach to the existing logged-in Scholar session over CDP.
+2. Open or reuse the `Add articles` modal on the `Kyle Lo` query.
+3. Capture deeper bounded pagination with `scripts/investigate_scholar_ui.py`.
+4. For this continuation run, write parsed captures to `plans/artifacts/scholar_ui/` so `python3 scripts/scholar_hygiene.py detect` can consume them directly.
+5. Run `python3 scripts/scholar_hygiene.py detect`.
+6. Review add-backed issues from the refreshed evidence.
+7. Use `scripts/mutate_scholar_add_articles.py` for reviewed candidates one at a time.
+8. After each add, capture verification evidence and rerun detection / review as needed.
+9. Stop when deeper `Kyle Lo` pagination stops yielding reviewed add candidates or the remaining candidates are too weak or ambiguous.
+
+Guardrails:
+
+- no merge automation here
+- no bulk adds
+- one reviewed mutation at a time
+- explicit confirmation for every add
+- preserve evidence before and after each mutation
+
+Success condition:
+
+- the deeper `Kyle Lo` surface has been reviewed to a practical stopping point
+- newly surfaced reviewed add candidates have either been added or intentionally deferred
+- the add-backed queue has been refreshed from current evidence
+
+## Possible Next 002 Continuation: All-Profile Targeted Under-Clustering Campaign
+
+This would still belong to `002`, not `003`.
+
+Goal:
+
+- systematically probe the existing profile for additional under-clustered paper families using targeted `Add articles` queries derived from current profile titles
+
+Why this is a separate continuation rather than the default next step:
+
+- the `Kyle Lo` broad-name pass is now deep enough to have diminishing returns
+- targeted family queries have already produced higher-value results (`2 OLMo 2 Furious`, `Molmo/Pixmo`)
+- the main unresolved technical gap is freshness handling after successful adds, not basic capture or add execution
+
+Recommended prerequisites before running this campaign:
+
+1. keep `003` responsible for merge automation only
+2. harden freshness handling so successful adds can retire stale add-backed issues more naturally
+3. keep query batches small and reviewable, ideally 3 at a time
+
+Campaign shape:
+
+1. derive candidate queries from the existing profile title list
+2. rank them by distinctiveness and expected under-clustering yield
+3. run bounded query batches with `scripts/run_scholar_add_articles_scan.py`
+4. review only high-confidence add-backed issues
+5. attach one reviewed candidate at a time
+6. leave all merge cleanup to `003`
+
+Success condition:
+
+- the highest-signal existing paper families have been probed for attachable variants
+- additional under-clustered families have either been attached, deferred, or ruled too noisy
+- `002` remains the stable record of bounded add-discovery and add-execution behavior
 
 ### Current Hygiene Workflow For Comparison
 

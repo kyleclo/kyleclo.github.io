@@ -14,3 +14,4 @@ vendor
 .vscode/
 __pycache__/
 _overleaf/
+_local/

@@ -64,6 +64,14 @@ def author_overlap_score(left: str, right: str) -> float:
     return len(left_names & right_names) / len(left_names | right_names)
 
 
+def author_shared_last_name_count(left: str, right: str) -> int:
+    left_names = author_last_names(left)
+    right_names = author_last_names(right)
+    if not left_names or not right_names:
+        return 0
+    return len(left_names & right_names)
+
+
 def safe_int(value) -> int | None:
     if value in (None, "", []):
         return None
@@ -75,4 +83,3 @@ def safe_int(value) -> int | None:
 
 def compact_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "")).strip()
-

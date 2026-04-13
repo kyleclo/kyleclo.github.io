@@ -128,6 +128,55 @@ class TestUnderClusteredDetection(unittest.TestCase):
             "; ".join(issues[0]["evidence"]["reasons"]),
         )
 
+    def test_detects_misparsed_targeted_variant_with_shared_authors(self) -> None:
+        publications = [
+            {
+                "id": "olmo-profile",
+                "title": "2 OLMo 2 Furious",
+                "author": (
+                    "Team OLMo and Pete Walsh and Luca Soldaini and Dirk Groeneveld and Kyle Lo "
+                    "and Shane Arora and Akshita Bhagia and Yuling Gu"
+                ),
+                "year": "2024",
+                "num_citations": 24,
+                "cites_id": ["2928412902057166176"],
+                "full_json": {"bib": {"title": "2 OLMo 2 Furious"}},
+            }
+        ]
+        add_articles_candidates = [
+            {
+                "title": "& Hajishirzi, H.(2024). 2 OLMo 2 Furious",
+                "title_url": "https://scholar.google.com/scholar?oi=bibs&cluster=12399768441388500268&btnI=1&hl=en",
+                "authors_venue": "T OLMo, P Walsh, L Soldaini, D Groeneveld, K Lo - arXiv preprint arXiv:2501.00656",
+                "author": "T OLMo, P Walsh, L Soldaini, D Groeneveld, K Lo",
+                "year": "2024",
+                "doc_id": "misparsed-variant",
+                "search_query": '"2 OLMo 2 Furious"',
+                "captured_url": "https://scholar.google.com/citations?...imstart=10",
+                "artifact_file": "misparsed.json",
+                "in_profile": False,
+            }
+        ]
+
+        issues = detect_under_clustered_articles(
+            publications,
+            [],
+            add_articles_candidates=add_articles_candidates,
+        )
+        self.assertEqual(len(issues), 1)
+        self.assertEqual(
+            issues[0]["evidence"]["add_articles_candidate"]["doc_id"],
+            "misparsed-variant",
+        )
+        self.assertIn(
+            'found in Add articles results: "2 OLMo 2 Furious"',
+            "; ".join(issues[0]["evidence"]["reasons"]),
+        )
+        self.assertIn(
+            "candidate row not marked in profile",
+            "; ".join(issues[0]["evidence"]["reasons"]),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

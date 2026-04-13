@@ -27,11 +27,15 @@ from urllib.parse import parse_qs, quote, quote_plus, unquote, urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scripts.parse_scholar_add_articles_snapshot import parse_snapshot
-from scripts.scholar_hygiene.config import get_scholar_user_id
+from scripts.scholar_hygiene.config import (
+    LOCAL_SCHOLAR_UI_ARTIFACT_DIR,
+    SCHOLAR_UI_ARTIFACT_DIR,
+    get_scholar_user_id,
+)
 
 
 def default_artifact_dir() -> Path:
-    return Path(__file__).resolve().parents[1] / "plans" / "artifacts" / "scholar_ui"
+    return LOCAL_SCHOLAR_UI_ARTIFACT_DIR
 
 
 def normalize_query_text(text: str) -> str:
@@ -139,6 +143,16 @@ async def run(
                 "(#gsc_ia_ac, #gsc_ia_res, or #gsc_md_iad)."
             )
 
+    async def wait_for_profile_page(page, timeout_seconds: int) -> None:
+        deadline = asyncio.get_running_loop().time() + timeout_seconds
+        while asyncio.get_running_loop().time() < deadline:
+            has_profile_table = await page.locator(".gsc_a_tr").count() > 0
+            has_add_button = await page.locator("#gsc_dd_add-b").count() > 0
+            if has_profile_table and has_add_button:
+                return
+            await page.wait_for_timeout(500)
+        raise RuntimeError("Timed out waiting for the Scholar profile page action bar.")
+
     async def page_markers(page) -> dict[str, bool]:
         return {
             "has_profile_table": await page.locator(".gsc_a_tr").count() > 0,
@@ -187,6 +201,31 @@ async def run(
             }""",
             query_text,
         )
+
+    async def open_add_articles_modal_from_profile(page, query_text: str) -> None:
+        await wait_for_profile_page(page, wait_seconds)
+        close_button = page.locator("#gsc_md_iad-x")
+        if await close_button.count() > 0:
+            modal_root = page.locator("#gsc_md_iad")
+            modal_classes = await modal_root.first.get_attribute("class") if await modal_root.count() > 0 else ""
+            if modal_classes and "gs_vis" in modal_classes.split():
+                await close_button.first.evaluate("(button) => button.click()")
+                deadline = asyncio.get_running_loop().time() + wait_seconds
+                while asyncio.get_running_loop().time() < deadline:
+                    modal_classes = await modal_root.first.get_attribute("class") if await modal_root.count() > 0 else ""
+                    if not modal_classes or "gs_vis" not in modal_classes.split():
+                        break
+                    await page.wait_for_timeout(250)
+        add_dropdown = page.locator("#gsc_dd_add-b")
+        if await add_dropdown.count() == 0:
+            raise RuntimeError("Could not find the profile-page Add control #gsc_dd_add-b.")
+        await add_dropdown.first.evaluate("(button) => button.click()")
+        menu_item = page.locator("#gsc_dd_add-d a.gs_md_li").filter(has_text="Add articles")
+        if await menu_item.count() == 0:
+            raise RuntimeError("Could not find the Add articles menu item in the profile menu.")
+        await menu_item.first.click()
+        await wait_for_add_articles_ui(page, wait_seconds)
+        await submit_add_articles_query(page, query_text, wait_seconds)
 
     async def submit_add_articles_query(page, query_text: str, timeout_seconds: int) -> None:
         form_locator = page.locator("#gsc_iads_frm")
@@ -508,7 +547,7 @@ async def run(
                         await page.wait_for_timeout(between_queries_seconds * 1000)
                     else:
                         print(f'Starting Add Articles query 1: "{add_articles_query}"')
-                    await submit_add_articles_query(page, add_articles_query, wait_seconds)
+                    await open_add_articles_modal_from_profile(page, add_articles_query)
                     await rewind_add_articles_to_first_page(page, wait_seconds)
                     print(f'Add Articles results loaded for query: "{add_articles_query}"')
                     await capture_add_articles_sequence(page, query_label=add_articles_query)
@@ -584,7 +623,11 @@ def main() -> None:
         "--artifact-dir",
         type=Path,
         default=default_artifact_dir(),
-        help="Directory where screenshots and HTML snapshots should be written.",
+        help=(
+            "Directory where screenshots and HTML snapshots should be written. "
+            f"Defaults to the ignored local path {LOCAL_SCHOLAR_UI_ARTIFACT_DIR}. "
+            f"Use {SCHOLAR_UI_ARTIFACT_DIR} only for commit-safe curated notes or evidence."
+        ),
     )
     parser.add_argument(
         "--cdp-url",
