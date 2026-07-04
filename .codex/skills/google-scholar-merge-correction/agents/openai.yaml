@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Scholar Merge Correction"
+  short_description: "Review and merge Scholar duplicate rows"
+  default_prompt: "Use -scholar-merge-correction to review and dry-run one approved Scholar merge family."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Scholar Add Correction"
+  short_description: "Review and add missing Scholar papers"
+  default_prompt: "Use -scholar-add-correction to dry-run a reviewed Google Scholar Add Articles correction."

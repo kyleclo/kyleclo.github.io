@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Scholar Hygiene"
+  short_description: "Collect and review Scholar profile evidence"
+  default_prompt: "Use -scholar-hygiene to refresh and review Google Scholar profile evidence."
