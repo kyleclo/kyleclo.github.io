@@ -29,6 +29,18 @@ Structured outputs:
 - `_bibliography/scholar_issues.csv`
 - `_bibliography/scholar_state.json`
 
+Scholar UI artifact paths:
+- committed reference notes stay in `plans/artifacts/scholar_ui/`
+- raw Playwright screenshots / HTML / parsed modal captures should go to `_local/scholar_ui/`
+- `scripts/investigate_scholar_ui.py`, `scripts/mutate_scholar_add_articles.py`, and `scripts/run_scholar_add_articles_scan.py` default to `_local/scholar_ui/`
+- only point `--artifact-dir` at `plans/artifacts/scholar_ui/` when intentionally promoting a small curated artifact or note into version control
+
+Scholar merge correction helpers:
+- `scripts/discover_scholar_merge_queue.py` — Read-only discovery for likely duplicate profile-row families
+- `scripts/review_scholar_merge_queue.py` — Review, show, approve, skip, and annotate merge queue items
+- `scripts/run_next_scholar_merge_queue_item.py` — Dry-run or execute exactly one approved merge family
+- `scripts/run_batch_scholar_merge_queue.py` — Batch dry-run only; live batch execution is intentionally disabled
+
 ### 3. Legacy Wrappers
 
 ```bash

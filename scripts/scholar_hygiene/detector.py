@@ -7,7 +7,14 @@ from datetime import datetime
 from pathlib import Path
 
 from .config import DISMISSALS_JSON_FILE, ISSUES_CSV_FILE, ISSUES_JSON_FILE, STATE_JSON_FILE
-from .utils import author_overlap_score, normalize_text, safe_int, title_similarity, token_jaccard
+from .utils import (
+    author_overlap_score,
+    author_shared_last_name_count,
+    normalize_text,
+    safe_int,
+    title_similarity,
+    token_jaccard,
+)
 
 
 @dataclass
@@ -124,13 +131,30 @@ def score_publication_to_add_articles_candidate(publication: dict, candidate: di
         },
     }
     result = score_expected_to_publication(publication, publication_like)
+    query = candidate.get("search_query") or "unknown query"
+    bonus, bonus_reason = query_specificity_bonus(publication["title"], query)
+    shared_author_count = author_shared_last_name_count(
+        publication.get("author", ""),
+        candidate.get("author", ""),
+    )
+
+    if result.score == 0 and bonus >= 0.3 and shared_author_count >= 3:
+        result.score += bonus
+        result.reasons.append(bonus_reason)
+        result.score += 0.35
+        result.reasons.append(f"shared author last names {shared_author_count}")
+
     if result.score > 0:
-        query = candidate.get("search_query") or "unknown query"
         result.reasons.append(f"found in Add articles results: {query}")
-        bonus, bonus_reason = query_specificity_bonus(publication["title"], query)
-        if bonus > 0:
+        if bonus > 0 and bonus_reason not in result.reasons:
             result.score += bonus
             result.reasons.append(bonus_reason)
+        if shared_author_count >= 3 and not any(
+            reason.startswith("author overlap") or reason.startswith("shared author last names")
+            for reason in result.reasons
+        ):
+            result.score += 0.15
+            result.reasons.append(f"shared author last names {shared_author_count}")
         if candidate.get("in_profile"):
             result.reasons.append("candidate row already marked in profile")
         else:

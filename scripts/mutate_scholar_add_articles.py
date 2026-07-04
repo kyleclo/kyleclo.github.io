@@ -27,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scripts.investigate_scholar_ui import default_artifact_dir
 from scripts.parse_scholar_add_articles_snapshot import parse_snapshot
 from scripts.parse_scholar_add_articles_snapshot import normalize_space
+from scripts.scholar_hygiene.config import LOCAL_SCHOLAR_UI_ARTIFACT_DIR, SCHOLAR_UI_ARTIFACT_DIR
 
 
 def normalize_title_text(text: str) -> str:
@@ -393,7 +394,11 @@ def main() -> None:
         "--artifact-dir",
         type=Path,
         default=default_artifact_dir(),
-        help="Directory where pre/post mutation evidence snapshots should be written.",
+        help=(
+            "Directory where pre/post mutation evidence snapshots should be written. "
+            f"Defaults to the ignored local path {LOCAL_SCHOLAR_UI_ARTIFACT_DIR}. "
+            f"Use {SCHOLAR_UI_ARTIFACT_DIR} only for commit-safe curated notes or evidence."
+        ),
     )
     parser.add_argument(
         "--wait-seconds",

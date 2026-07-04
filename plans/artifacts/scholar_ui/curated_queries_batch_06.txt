@@ -1,0 +1,4 @@
+# 002 targeted under-clustering batch 6
+"Fact or Fiction" "Wadden"
+SciFact-open
+MultiVerS

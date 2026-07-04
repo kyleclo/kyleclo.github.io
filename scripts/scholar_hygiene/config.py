@@ -13,6 +13,7 @@ ISSUES_CSV_FILE = REPO_ROOT / "_bibliography" / "scholar_issues.csv"
 STATE_JSON_FILE = REPO_ROOT / "_bibliography" / "scholar_state.json"
 DISMISSALS_JSON_FILE = REPO_ROOT / "_bibliography" / "scholar_dismissals.json"
 SCHOLAR_UI_ARTIFACT_DIR = REPO_ROOT / "plans" / "artifacts" / "scholar_ui"
+LOCAL_SCHOLAR_UI_ARTIFACT_DIR = REPO_ROOT / "_local" / "scholar_ui"
 
 
 def get_scholar_user_id() -> str:
