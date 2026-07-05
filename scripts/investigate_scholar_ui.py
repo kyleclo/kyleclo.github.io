@@ -223,7 +223,7 @@ async def run(
         menu_item = page.locator("#gsc_dd_add-d a.gs_md_li").filter(has_text="Add articles")
         if await menu_item.count() == 0:
             raise RuntimeError("Could not find the Add articles menu item in the profile menu.")
-        await menu_item.first.click()
+        await menu_item.first.evaluate("(item) => item.click()")
         await wait_for_add_articles_ui(page, wait_seconds)
         await submit_add_articles_query(page, query_text, wait_seconds)
 

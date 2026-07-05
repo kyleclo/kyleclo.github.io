@@ -70,6 +70,7 @@ async def run(
     title: str | None,
     query: str | None,
     target_start: str | None,
+    find_doc_id_pages: int,
     confirm: str | None,
     execute: bool,
     artifact_dir: Path,
@@ -203,7 +204,7 @@ async def run(
         menu_item = page.locator("#gsc_dd_add-d a.gs_md_li").filter(has_text="Add articles")
         if await menu_item.count() == 0:
             raise RuntimeError("Could not find the Add articles menu item in the profile menu.")
-        await menu_item.first.click()
+        await menu_item.first.evaluate("(item) => item.click()")
         await wait_for_add_articles_ui(page, wait_seconds)
         input_locator = page.locator("#gsc_iads_tsi")
         if await input_locator.count() == 0:
@@ -278,6 +279,22 @@ async def run(
             f"Could not reach Add Articles start={desired_start} within the bounded page limit."
         )
 
+    async def page_has_doc_id(page, target_doc_id: str) -> bool:
+        return any(row.get("doc_id") == target_doc_id for row in await add_articles_rows(page))
+
+    async def find_doc_id_across_pages(page, target_doc_id: str, max_pages: int) -> bool:
+        if max_pages < 1:
+            return False
+        if await page_has_doc_id(page, target_doc_id):
+            return True
+        for _ in range(max_pages - 1):
+            advanced = await advance_add_articles_page(page)
+            if not advanced:
+                return False
+            if await page_has_doc_id(page, target_doc_id):
+                return True
+        return False
+
     async def wait_for_post_add_change(page, original_rows: list[dict]) -> tuple[dict | None, list[dict]]:
         original_doc_ids = tuple(row.get("doc_id", "") for row in original_rows)
         deadline = asyncio.get_running_loop().time() + wait_seconds
@@ -315,7 +332,31 @@ async def run(
         else:
             await wait_for_add_articles_ui(page, wait_seconds)
         if target_start:
-            await page_to_add_articles_start(page, target_start)
+            try:
+                await page_to_add_articles_start(page, target_start)
+            except RuntimeError:
+                if find_doc_id_pages <= 1 or not query:
+                    raise
+                await open_add_articles_modal_from_profile(page, query)
+                found = await find_doc_id_across_pages(page, doc_id, find_doc_id_pages)
+                if not found:
+                    raise RuntimeError(
+                        f"Could not find doc_id={doc_id} within {find_doc_id_pages} Add Articles pages."
+                    )
+        elif find_doc_id_pages > 1:
+            found = await find_doc_id_across_pages(page, doc_id, find_doc_id_pages)
+            if not found:
+                raise RuntimeError(
+                    f"Could not find doc_id={doc_id} within {find_doc_id_pages} Add Articles pages."
+                )
+
+        if find_doc_id_pages > 1 and not await page_has_doc_id(page, doc_id) and query:
+            await open_add_articles_modal_from_profile(page, query)
+            found = await find_doc_id_across_pages(page, doc_id, find_doc_id_pages)
+            if not found:
+                raise RuntimeError(
+                    f"Could not find doc_id={doc_id} within {find_doc_id_pages} Add Articles pages."
+                )
 
         pre_artifacts = await capture_page_artifacts(
             page,
@@ -382,6 +423,15 @@ def main() -> None:
         help="Optional Add Articles result-page start offset to reach via bounded DOM pagination.",
     )
     parser.add_argument(
+        "--find-doc-id-pages",
+        type=int,
+        default=1,
+        help=(
+            "If the reviewed result page has shifted, scan this many Add Articles pages "
+            "for the requested doc_id before giving up."
+        ),
+    )
+    parser.add_argument(
         "--confirm",
         help='Explicit confirmation phrase. Must exactly match "ADD <doc_id>" when --execute is used.',
     )
@@ -414,6 +464,7 @@ def main() -> None:
             title=args.title,
             query=args.query,
             target_start=args.target_start,
+            find_doc_id_pages=args.find_doc_id_pages,
             confirm=args.confirm,
             execute=args.execute,
             artifact_dir=args.artifact_dir,
